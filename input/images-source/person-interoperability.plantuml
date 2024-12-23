@@ -1,0 +1,44 @@
+@startuml
+
+
+component Zwift
+
+component Strava
+
+component "Heart Rate Device" as HeartRateDevice
+component "Apple Watch Device" as OtherMeasurementDevice
+component "Oura Ring Device" as ouraRing
+
+component "Power Device" as PowerDevice
+
+component AppleHealth
+note right
+Person Health Data Repository
+end note
+
+component Oura
+
+interface DataExtraction
+note right
+Converts aggregate into resources
+(Internal to Zwift or Strava)
+end note
+
+HeartRateDevice --> Zwift : **Events** (Real Time)
+PowerDevice --> Zwift : **Events** (Real Time)
+OtherMeasurementDevice --> AppleHealth : **Events** (Real Time)
+
+Zwift --> Strava: Aggregate (as data transfer object)
+Zwift --> DataExtraction: Aggregate (as data transfer object)
+Strava --> DataExtraction: Aggregate (as data transfer object)
+DataExtraction --> AppleHealth
+
+ouraRing --> Oura : **Events** (Real Time)
+Oura --> AppleHealth
+
+entity Person as "Other Applications"
+
+Person <-u-> AppleHealth: Resource **Query API**
+
+
+@enduml
