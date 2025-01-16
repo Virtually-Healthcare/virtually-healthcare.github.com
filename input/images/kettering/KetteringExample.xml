@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportMsg MsgRcptAckRequest="Always" MsgUrgency="Normal" MsgStatus="Live">
+    <MsgId>288d0f12-d4e8-4489-bc0a-2a91a78f3d99</MsgId>
+    <!-- Change Me-->
+    <MsgIssueDate>202144161244</MsgIssueDate>
+    <MsgSender>Ommited</MsgSender>
+    <MsgRecipient>Ommited</MsgRecipient>
+    <ServiceRequester>
+        <IdValue>1</IdValue>
+    </ServiceRequester>
+    <ServiceProvider>
+        <IdValue>2</IdValue>
+    </ServiceProvider>
+    <PatientMatchingInfo>
+        <PatientId>
+            <Id>
+                <IdType>Nhs</IdType>
+                <IdValue>Ommited</IdValue>
+            </Id>
+        </PatientId>
+        <PersonName_s>
+            <PersonNameType>CU</PersonNameType>
+            <StructPersonName>
+                <FamilyName>
+                    Ommited
+                </FamilyName>
+                <GivenName>Ommited</GivenName>
+                <Title>MR</Title>
+            </StructPersonName>
+        </PersonName_s>
+        <BirthDate>Ommited</BirthDate>
+        <Sex>2</Sex>
+        <Address_u AddrType="Current">
+            <PostCode>Ommited</PostCode>
+            <UnstructAddress>
+                <UnstructAddressLine>1 Road</UnstructAddressLine>
+                <UnstructAddressLine>somwhere</UnstructAddressLine>
+                <UnstructAddressLine>Newcastle upon Tyne</UnstructAddressLine>
+            </UnstructAddress>
+        </Address_u>
+    </PatientMatchingInfo>
+    <Parties>
+        <!--  Recipient  -->
+        <Party AgentId="1">
+            <OrgCode IdType="PRA">Ommited</OrgCode>
+            <OrgName>Ommited</OrgName>
+        </Party>
+        <!--  Sender  -->
+        <Party AgentId="2">
+            <DepartmentCode IdType="Internal">3071</DepartmentCode>
+            <DepartmentName>DIABETES SERVICE</DepartmentName>
+            <OrgCode IdType="Provider">Ommited</OrgCode>
+            <OrgName>NORTHUMBRIA HEALTHCARE NHS FOUNDATION TRUST</OrgName>
+        </Party>
+    </Parties>
+    <ClinicalReport>
+        <ReportID>a2ef9f7c-d9f1-46fe-9410-70375451383a</ReportID>
+        <!-- Change Me-->
+        <ReportType>Outpatient Letter</ReportType>
+        <ReportCode>OUTP</ReportCode>
+        <ReportSourceType>2</ReportSourceType>
+        <ReportContributor>Christopher Rouse</ReportContributor>
+        <EventDate>202154151254</EventDate>
+        <EventUrgencyStatus>R</EventUrgencyStatus>
+        <DocCreationDate>202154151254</DocCreationDate>
+        <TextItem RcStatus="Current">
+            <Cuid IdScope="Message"/>
+            <TextMarkupIndicator>-//IETF//DTD HTML//EN</TextMarkupIndicator>
+            <TextBlock><![CDATA[Documnet]]></TextBlock>
+        </TextItem>
+    </ClinicalReport>
+</ReportMsg>

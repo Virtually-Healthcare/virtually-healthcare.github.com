@@ -103,7 +103,9 @@ pages:
   clinical-assessment.md:
     title: Clinical Assessment
     generation: markdown
-
+  kettering.md:
+    title: Kettering XML
+    generation: markdown
 
 resources:
   Patient/3:
