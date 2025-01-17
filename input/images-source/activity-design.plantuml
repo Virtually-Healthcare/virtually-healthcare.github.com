@@ -1,0 +1,34 @@
+@startuml
+
+start
+:**Analysis**;
+fork
+  :**Business Process**
+  using NICE, GIRFT, IHE, etc;
+fork again
+  :**Arhitecture Analysis**
+  using IHE and HL7;
+fork again
+  :**Data Requirements**
+  using PRSB, openEHR, UK SNOMED CT,
+  Information Standards, etc;
+end fork
+:**Design**;
+
+fork
+  :**System Design**
+  System specification
+  includes interface specifications;
+fork again
+  :**Logical Domain Model**
+  may include Composition and Archetypes;
+   :**Normalised Domain Model**
+  includes Aggregates (Composition and Archetypes)
+  and Resources (Entities and Events);
+  :**FHIR Conformance**
+  profiles, definitions, mappings and examples;
+end fork
+:**Implementation Guide(s)**;
+stop
+
+@enduml
