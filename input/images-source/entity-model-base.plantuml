@@ -1,6 +1,6 @@
 @startuml
 
-frame PD1 as "Patient" {
+frame PD1 as "Patient Administration" {
 class "[[StructureDefinition-Patient.html Patient]]" as Patient <<aggregate root>> {
 identifier 1..* : PatientIdentifier
 name
@@ -18,11 +18,19 @@ CHINumber 0..1
 MedicalRecordNumber (EMIS, TPP, Hospital Number, etc)
 }
 
+class "[[StructureDefinition-Encounter.html Encounter]]" as Encounter <<aggregate root>> {
+subject 1..1: PatientIdentifier
+period
+participant 1..*
+}
+
+
 Patient "identifier" --> PatientIdentifier
+Encounter "subject" --|> PatientIdentifier
 
 }
 
-frame Diagnostics as "Diagnostics" {
+frame Diagnostics as "Reports" {
 class "[[StructureDefinition-Observation.html Observation]]" as Observation <<entity>> {
 identifier 1..*
 subject 1..1: PatientIdentifier
@@ -129,11 +137,18 @@ ObservationPanel "subject" --|> PatientIdentifier
 DiagnosticReport "subject" --|> PatientIdentifier
 DocumentEntry "subject" --|> PatientIdentifier
 
+Observation "encounter" <-- Encounter
+ObservationPanel "encounter" <-- Encounter
+DiagnosticReport "encounter" <-- Encounter
+DocumentEntry "encounter" <-- Encounter
+
 labOrder "subject" -u-|> PatientIdentifier
 Referral "subject" -u-|> PatientIdentifier
 Prescription "subject" -u-|> PatientIdentifier
 
-
+labOrder "encounter" <-- Encounter
+Referral "encounter" <-- Encounter
+Prescription "encounter" <-- Encounter
 
 DiagnosticReport "attachment" --> Attachment
 
