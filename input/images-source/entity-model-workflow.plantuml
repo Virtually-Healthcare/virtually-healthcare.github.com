@@ -1,0 +1,186 @@
+@startuml
+
+skinparam svgDimensionStyle false
+
+frame PD1 as "Patient Administration" {
+  class "[[StructureDefinition-Patient.html Patient]]" as Patient <<aggregate root>> {
+    identifier 1..* : PatientIdentifier
+    name
+    gender
+    birthDate
+    address
+    telecom
+    address
+  }
+
+
+  class PatientIdentifier <<entity>> {
+    NHSNumber 0..1
+    CHINumber 0..1
+    MedicalRecordNumber (EMIS, TPP, Hospital Number, etc)
+  }
+
+  Patient "identifier" --> PatientIdentifier
+
+}
+
+frame Diagnostics as "Clinical Record" {
+
+  class "[[StructureDefinition-Encounter.html Encounter]]" as Encounter <<aggregate root>> {
+    subject 1..1: PatientIdentifier
+    period
+    participant 1..*
+    condition
+  }
+
+
+
+  class "[[StructureDefinition-Observation.html Observation]]" as Observation <<entity>> {
+    identifier 1..*
+    subject 1..1: PatientIdentifier
+    code : UK SNOMED CT or LOINC
+    effectiveDateTime
+    value[x]: codes are UK SNOMED CT or LOINC
+    encounter 0..1
+  }
+
+
+
+  class "[[assessments-and-observations.html Observation Panel]]" as ObservationPanel <<entity>> {
+    identifier 1..*
+    subject 1..1: PatientIdentifier
+    code : UK SNOMED CT or LOINC
+    effectiveDateTime
+    hasMember: 1..*: Observation
+    encounter 0..1
+  }
+
+  class "[[StructureDefinition-AllergyIntolerance.html Allergy]]" as Allergy <<entity>> {
+    identifier 1..*
+    subject 1..1: PatientIdentifier
+    code : UK SNOMED CT or LOINC
+    encounter 0..1
+  }
+
+  class "[[StructureDefinition-Immunization.html Immunisation]]" as Immunisation <<entity>> {
+    identifier 1..*
+    subject 1..1: PatientIdentifier
+    vaccindecCode : UK SNOMED CT or LOINC
+    encounter 0..1
+  }
+
+  class "[[StructureDefinition-MedicationRequest.html Medication]]" as Medication <<entity>> {
+    identifier 1..*
+    subject 1..1: PatientIdentifier
+    medication : UK SNOMED CT (dm+d)
+    encounter 0..1
+  }
+
+  ObservationPanel "hasMember" --> Observation
+
+}
+
+
+frame DataCapture as "Data Capture & Archetype" {
+  class "[[StructureDefinition-QuestionnaireResponse.html Form]]" as Form <<data transfer object>> {
+    identifier 1..1
+    subject
+    questionnaire 0..1 : Questionnaire
+    code : (in FHIR from Questionnaire)
+    authored 1..1 : DateTime
+    answers 1..*
+  }
+
+
+  class "[[StructureDefinition-Questionnaire.html Form Definition]]" as FormDefinition <<aggregate root>> {
+    identifier 1..1
+    url
+    code : UK SNOMED CT or LOINC
+    questions 1..*
+  }
+
+
+  FormDefinition "url" -d-|> "questionnaire" Form : defintion
+
+}
+
+frame PCC as "Care Coordination" {
+
+  class "[[StructureDefinition-Condition.html Condition]]" as Condition {
+    subject 1..1: PatientIdentifier
+  }
+
+   class "[[StructureDefinition-DetectedIssue.html DetectedIssue]]" as DetectedIssue {
+    subject 1..1: PatientIdentifier
+    code: UK SNOMED CT?
+    evidence
+    mitigation
+  }
+
+  class "[[StructureDefinition-CarePlan.html CarePlan]]" as CarePlan <<aggregate root>>  {
+    subject 1..1: PatientIdentifier
+    addresses: condition
+    careTeam
+    goal
+    activity: Task
+    supportingInfo: Assessment
+  }
+
+   class "[[StructureDefinition-CareTeam.html CareTeam]]" as CareTeam <<entity>> {
+    subject 1..1: PatientIdentifier
+    name
+    managingOrganisation
+    reason
+    telecom
+  }
+
+  class "[[StructureDefinition-Goal.html Goal]]" as Goal <<entity>> {
+    subject 1..1: PatientIdentifier
+    addresses: condition
+    target
+  }
+
+  class "[[StructureDefinition-Task.html Task]]" as Task <<entity>> {
+    for 1..1: PatientIdentifier
+    focus
+    performer
+  }
+
+  CarePlan "careTeam" --> CareTeam
+  CarePlan "activity" --> Task
+  CarePlan "goal" --> Goal
+  CarePlan "addresses" <-- Condition
+}
+
+Condition "subject" --|> PatientIdentifier
+DetectedIssue "subject" --|> PatientIdentifier
+
+Observation "subject" --|> PatientIdentifier
+ObservationPanel "subject" --|> PatientIdentifier
+Allergy "subject" --|> PatientIdentifier
+Immunisation "subject" --|> PatientIdentifier
+Medication "subject" --|> PatientIdentifier
+
+Observation "encounter" <-- Encounter
+ObservationPanel "encounter" <-- Encounter
+Medication "encounter" <-- Encounter
+Immunisation  "encounter" <-- Encounter
+Allergy "encounter" <-- Encounter
+
+
+Form "subject" --|> PatientIdentifier
+Form "encounter" <-- Encounter
+
+
+Form "answers" --|> Observation : data extraction
+Form "code and answers" --|> ObservationPanel: data extraction
+Encounter "condition" --|> Condition
+Encounter "subject" --|> PatientIdentifier
+
+CarePlan "subject" --|> PatientIdentifier
+CarePlan "supportingInfo" --|> FormDefinition: NHS tends to also call this a Care Plan
+CareTeam "subject" --|> PatientIdentifier
+Goal "subject" --|> PatientIdentifier
+Task "for" --|> PatientIdentifier
+
+@enduml

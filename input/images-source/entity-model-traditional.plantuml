@@ -1,5 +1,7 @@
 @startuml
 
+skinparam svgDimensionStyle false
+
 frame PD1 as "Patient Administration" {
 class "[[StructureDefinition-Patient.html Patient]]" as Patient <<aggregate root>> {
 identifier 1..* : PatientIdentifier

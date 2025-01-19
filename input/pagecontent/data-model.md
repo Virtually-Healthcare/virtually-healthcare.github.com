@@ -1,17 +1,21 @@
 
 ### Traditional Data Model 
 
-The base data model is on a union of data requirements extracted from a series of HL7 v2 and IHE XDS interoperability specifications (see [references](#references))
+The traditional data model is on a union of data requirements extracted from a series of HL7 v2 and IHE XDS interoperability specifications (see [references](#references)) and so has a base on existing data flows. 
 
 <figure>
-{%include entity-model-base.svg%}
-<p id="fX.X.X.X-X" class="figureTitle">Base Clinical Data Repository Model</p>
+{%include entity-model-traditional.svg%}
+<p id="fX.X.X.X-X" class="figureTitle">Traditional Clinical Data Repository Model</p>
 </figure>
 <br clear="all">
 
 ### Workflow Data Model
 
-
+<figure>
+{%include entity-model-workflow.svg%}
+<p id="fX.X.X.X-X" class="figureTitle">Workflow Clinical Data Repository Model</p>
+</figure>
+<br clear="all">
 
 
 ### References
