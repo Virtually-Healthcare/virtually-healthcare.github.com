@@ -1,6 +1,8 @@
 
 ### Base Data Model 
 
+The base data model is on a union of data requirements extracted from a series of HL7 v2 and IHE XDS interoperability specifications (see [references](#references))
+
 <figure>
 {%include entity-model-base.svg%}
 <p id="fX.X.X.X-X" class="figureTitle">Base Clinical Data Repository Model</p>
@@ -14,21 +16,21 @@
 ### References
 
 - Patient 
-  - [NHS England HL7 v2 ADT](HSCIC-ITK-HL7-V2-Message-Specifications.pdf) and [NHS England HL7 v2 ADT Reference Tables](HSCIC-ITK-HL7-V2-Reference-Tables.pdf). Examples:
+  - [NHS England HL7 v2 ADT](NHS/HSCIC-ITK-HL7-V2-Message-Specifications.pdf) and [NHS England HL7 v2 ADT Reference Tables](NHS/HSCIC-ITK-HL7-V2-Reference-Tables.pdf). Examples:
     - [ADT_A28](ADT/A28_Example.txt) Add person information (Create Patient Event)
     - [ADT_A31](ADT/A31_example.txt) Update person information (Update Patient Event)
     - [ADT_A40](ADT/A40_Example.txt) Merge person information (Merge Patient Event)
 - Encounter
-  - [NHS England HL7 v2 ADT](HSCIC-ITK-HL7-V2-Message-Specifications.pdf) and [NHS England HL7 v2 ADT Reference Tables](HSCIC-ITK-HL7-V2-Reference-Tables.pdf). Examples:
+  - [NHS England HL7 v2 ADT](NHS/HSCIC-ITK-HL7-V2-Message-Specifications.pdf) and [NHS England HL7 v2 ADT Reference Tables](NHS/HSCIC-ITK-HL7-V2-Reference-Tables.pdf). Examples:
     - [ADT_A05](ADT/A05_Example.txt) Pre-admit a patient (*Inpatient* Admission Notification Event)
     - [ADT_A01](ADT/A01_example.txt) Admit/visit notification (Admission/Visit Notification Event)
     - [ADT_A03](ADT/A03_example.txt) Discharge/end visit (Dischage/Visit End Notification Event)
     - [ADT_A04](ADT/A04_example.txt) Register a patient (*Outpatient* or *Emergency* Encounter (and Patient) Notification Event)
     - [ADT_A08](ADT/A08_example.txt) Update patient information (*Outpatient* or *Emergency* Encounter (and Patient) Updated Notification Event)
 - Diagnostic Report, Observation Panel and Observation
-  - [Digital Health and Care Wales Laboratory Report / Observation Result  - HL7 v2 ORU](DHCW-HL7v25-ORUR01-Specification.pdf). Examples:
-    - [ORU_R01 Pathology Report](DHCW-Example-Pathology-Report-HL7v2ORU.txt)
-    - [ORU_R01 Pathology Report with ranges and attachments](DHCW-Example-PathologyReport-withAttachementsAndRanges-HL7v2ORU.txt)
+  - [Digital Health and Care Wales Laboratory Report / Observation Result  - HL7 v2 ORU](NHS/DHCW-HL7v25-ORUR01-Specification.pdf). Examples:
+    - [ORU_R01 Pathology Report](ORU/DHCW-Example-Pathology-Report-HL7v2ORU.txt)
+    - [ORU_R01 Pathology Report with ranges and attachments](ORU/DHCW-Example-PathologyReport-withAttachementsAndRanges-HL7v2ORU.txt)
   - [Royal College of Radiologists Imaging Report - HL7 v2 ORU](https://www.rcr.ac.uk/media/wwtp2mif/rcr-publications_radiology-reporting-networks-understanding-the-technical-options_march-2022.pdf)
   - [NLM Newborn Screening LOINC Panel and Example HL7 Result Message](https://lhncbc.nlm.nih.gov/newbornscreeningcodes/nb/sc/constructingNBSHL7messages.html), this has detailed clinical coding (LOINC) and a good example of a panel.
 - Document Reference
