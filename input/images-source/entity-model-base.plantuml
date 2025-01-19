@@ -1,7 +1,5 @@
 @startuml
 
-skinparam svgDimensionStyle false
-
 frame PD1 as "Patient" {
 class "[[StructureDefinition-Patient.html Patient]]" as Patient <<aggregate root>> {
 identifier 1..* : PatientIdentifier
@@ -61,29 +59,6 @@ ObservationPanel "hasMember" --> Observation
 }
 
 
-frame DataCapture as "Archetype" {
-
-class "[[StructureDefinition-QuestionnaireResponse.html Form]]" as Form <<data transfer object>> {
-identifier 1..1
-subject
-questionnaire 0..1 : Questionnaire
-code : (in FHIR from Questionnaire)
-authored 1..1 : DateTime
-answers 1..*
-}
-
-
-
-class "[[StructureDefinition-Questionnaire.html Form Definition]]" as FormDefinition <<aggregate root>> {
-identifier 1..1
-url
-code : UK SNOMED CT or LOINC
-questions 1..*
-}
-
-FormDefinition "url" -d-|> "questionnaire" Form : defintion
-
-}
 
 frame Documents {
 
@@ -110,7 +85,7 @@ DocumentEntry "attachment" -d-> Attachment
 
 frame Orders {
 
-class "Laboratory/Imaging Order" as labOrder <<aggregate root>> {
+class "[[StructureDefinition-ServiceRequest-LaboratoryOrder.html Laboratory/Imaging Order]]" as labOrder <<aggregate root>> {
 accessionNumber 1..1 : AccessionNumber
 filerOrderNumber 1..1: Identifier
 placerOrderNumber 1..1 : Identifier
@@ -122,14 +97,14 @@ class AccessionNumber <<value>> {
 
 }
 
-class "Prescription (MedicationeRequest)" as Prescription <<aggregate root>> {
+class "[[StructureDefinition-MedicationRequest.html Prescription]]" as Prescription <<aggregate root>> {
 identifier 1..*
 subject: PatientIdentifier
 medication: UK SNOMED CT (dm+d)
 }
 
 
-class "Referral" as Referral <<aggregate root>> {
+class "[[StructureDefinition-ServiceRequest-Referral.html Referral]]" as Referral <<aggregate root>> {
 identifier 1..*
 subject: PatientIdentifier
 code: Procedure code UK SNOMED CT
@@ -153,14 +128,11 @@ Observation "subject" --|> PatientIdentifier
 ObservationPanel "subject" --|> PatientIdentifier
 DiagnosticReport "subject" --|> PatientIdentifier
 DocumentEntry "subject" --|> PatientIdentifier
-Form "subject" --|> PatientIdentifier
+
 labOrder "subject" -u-|> PatientIdentifier
 Referral "subject" -u-|> PatientIdentifier
 Prescription "subject" -u-|> PatientIdentifier
 
-
-Form "answers" --|> Observation : data extraction
-Form "code and answers" --|> ObservationPanel: data extraction
 
 
 DiagnosticReport "attachment" --> Attachment

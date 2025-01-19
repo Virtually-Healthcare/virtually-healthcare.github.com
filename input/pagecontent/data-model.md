@@ -1,9 +1,15 @@
 
+### Base Data Model 
+
 <figure>
-{%include entity-model.svg%}
-<p id="fX.X.X.X-X" class="figureTitle">Repository Data Model</p>
+{%include entity-model-base.svg%}
+<p id="fX.X.X.X-X" class="figureTitle">Base Clinical Data Repository Model</p>
 </figure>
 <br clear="all">
+
+### Workflow extension
+
+
 
 ### References
 
