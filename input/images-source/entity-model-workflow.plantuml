@@ -81,7 +81,7 @@ frame Diagnostics as "Clinical Record" {
 }
 
 
-frame DataCapture as "Data Capture & Archetype" {
+frame DataCapture as "Data Capture & Assessments" {
   class "[[StructureDefinition-QuestionnaireResponse.html Form]]" as Form <<data transfer object>> {
     identifier 1..1
     subject
