@@ -1,5 +1,5 @@
 
-### Traditional Data Model 
+### Referral Model 
 
 The traditional data model is on a union of data requirements extracted from a series of HL7 v2 and IHE XDS interoperability specifications (see [references](#references)) and so has a base on existing data flows. 
 
@@ -9,7 +9,7 @@ The traditional data model is on a union of data requirements extracted from a s
 </figure>
 <br clear="all">
 
-### Workflow Data Model
+### Clinical Record and Workflow Model
 
 <figure>
 {%include entity-model-workflow.svg%}
