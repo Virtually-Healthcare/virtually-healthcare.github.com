@@ -106,6 +106,9 @@ pages:
   kettering.md:
     title: Kettering XML
     generation: markdown
+  api-standards.md:
+    title: API Standards
+    generation: markdown
 
 resources:
   Patient/3:

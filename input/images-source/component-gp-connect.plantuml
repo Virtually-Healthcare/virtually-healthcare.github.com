@@ -1,0 +1,35 @@
+@startuml
+
+title GP Connect
+
+component ClinicalDataRepository
+
+interface QueryAPI
+interface UpdateRecord
+interface EventAPI
+
+QueryAPI <-d- ClinicalDataRepository
+UpdateRecord -r-> ClinicalDataRepository
+EventAPI -l-> ClinicalDataRepository
+
+note right of QueryAPI
+Access Record HTML (HL7 IPS + IHE sIPS) (for compatibility with regional
+IHE XDS/MHD and national NRL)
+Access Record Structure (HL7 IPA)
+Access Document (IHE MHD)
+end note
+
+note bottom of EventAPI
+IHE DSUBm (for compatibility with regional
+IHE XDS/MHD and national NRL)
+end note
+
+note bottom of UpdateRecord
+- Send Document (IHE MHD) (replaces Send Document, HL7 v2 MDM_T02,
+Kettering XML, TOC, Digital Medicine and ITK3)
+  - images and documents follow HL7 International plus EU document standards and pdf/html/jpg etc
+- Update Record (FHIR RESTful plus traditional
+messaging support via FHIR Messaging)
+end note
+
+@enduml
