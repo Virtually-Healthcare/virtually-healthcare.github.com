@@ -9,7 +9,7 @@ The traditional data model is on a union of data requirements extracted from a s
 </figure>
 <br clear="all">
 
-### Clinical Record and Workflow Model
+### Clinical Record and Care Coordination Model
 
 <figure>
 {%include entity-model-workflow.svg%}
