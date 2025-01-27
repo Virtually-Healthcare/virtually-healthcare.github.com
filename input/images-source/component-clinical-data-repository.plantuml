@@ -1,18 +1,27 @@
 @startuml
 
-component ClientApplication as "Client Application"
+frame ViewRecord {
+  component ClientApplication as "Client Application"
+}
 
-interface facade as "[[CapabilityStatement-VH-ClinicalDataRepository.html Clinical Data Sharing API]]"
+interface facade as "[[CapabilityStatement-VH-ClinicalDataRepository.html Clinical Data Sharing API\n(Internal+External)]]"
 
 component "[[ActorDefinition-ClinicalDataRepository.html Clinical Data Repository]]" as CDR
 
 component "[[ActorDefinition-EventSource.html Event Source]]" as EventSource
 
-interface "Incoming Events" as EventServiceIn
+frame DataCapture {
+  component "Data Capture Application" as sdc
+
+  component "Data Extraction Service" as sdcExtract
+  component "Pre-populate Service" as sdcPrePopulate
+}
+
+interface "Incoming Events\n(Internal+External)" as EventServiceIn
 
 component "[[ActorDefinition-EventConsumer.html Event Consumer]]" as EventConsumer
 
-interface "Outgoing Events" as EventServiceOut
+interface "Outgoing Events\n(Internal+External)" as EventServiceOut
 
 CDR -u-> facade
 
@@ -23,6 +32,13 @@ EventServiceIn -r-> CDR
 
 CDR -r-> EventServiceOut
 EventServiceOut -r-> EventConsumer
+
+sdc <-d- sdcPrePopulate
+sdcPrePopulate <-d- facade
+
+sdc -d-> sdcExtract
+sdcExtract -d-> CDR
+
 
 
 
