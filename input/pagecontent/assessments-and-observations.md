@@ -60,7 +60,7 @@ See also [Exercise Activity](Questionnaire-ExerciseActivity.html) ([Preview](htt
 
 #### Daily Physical Activity
 
-See also [Daily Physical Activity](Questionnaire-DailyPhysicalActivity.html) ([Preview](https://virtually-healthcare.github.io/HL7-FHIR-Implementation-Guide/Questionnaire-DailyPhysicalActivity.json)) form/data capture definition. Hint: Use [NLM Form Builder](https://formbuilder.nlm.nih.gov/) to view these definitions.
+See also [Daily Physical Activity](Questionnaire-DailyPhysicalActivity.html) ([Preview](https://project-wildfyre.github.io/questionnaire-viewer/?q=https://virtually-healthcare.github.io/HL7-FHIR-Implementation-Guide/Questionnaire-DailyPhysicalActivity.json)) form/data capture definition. Hint: Use [NLM Form Builder](https://formbuilder.nlm.nih.gov/) to view these definitions.
 
 | Panel | SNOMED CT | SNOMED CT Display | LOINC | Example |
 |-------|-----------|-------------------|-------|---------|
