@@ -2,17 +2,17 @@
 
 component ClientApplication as "Client Application"
 
-interface facade as "[[CapabilityStatement-VH-ClinicalDataRepository.html Clinical Data Query API]]"
+interface facade as "[[CapabilityStatement-VH-ClinicalDataRepository.html Clinical Data Sharing API]]"
 
 component "[[ActorDefinition-ClinicalDataRepository.html Clinical Data Repository]]" as CDR
 
 component "[[ActorDefinition-EventSource.html Event Source]]" as EventSource
 
-interface "Events In" as EventServiceIn
+interface "Incoming Events" as EventServiceIn
 
 component "[[ActorDefinition-EventConsumer.html Event Consumer]]" as EventConsumer
 
-interface "Events Out" as EventServiceOut
+interface "Outgoing Events" as EventServiceOut
 
 CDR -u-> facade
 
@@ -24,24 +24,7 @@ EventServiceIn -r-> CDR
 CDR -r-> EventServiceOut
 EventServiceOut -r-> EventConsumer
 
- note bottom of EventServiceIn
- IHE DSUBm
- IHE PIX/PIXm and HL7 v2 ADT
- HL7 v2 ORU
- FHIR Subscription Consumer
- end note
 
- note bottom of EventServiceOut
- IHE DSUBm
- IHE PIX/PIXm and HL7 v2 ADT
- FHIR Subscription Publish
- end note
-
- note right of facade
- HL7 International Patient Access (IPA)
- and/or IHE Query for Existing Data (QEDm)
- HL7 International Patient Summary (IPS) + IHE sIPS
- end note
 
 
 @enduml
