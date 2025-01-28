@@ -5,7 +5,7 @@ All units are [UCUM](http://unitsofmeasure.org) unless stated.
 
 #### Vital Signs
 
-See also [Vital Signs](Questionnaire-VitalSigns.html) ([Preview](https://project-wildfyre.github.io/questionnaire-viewer/?q=https://virtually-healthcare.github.io/HL7-FHIR-Implementation-Guide/Questionnaire-VitalSigns.json)) form/data capture definition. Hint: Use [NLM Form Builder](https://formbuilder.nlm.nih.gov/) to view these definitions.
+See also [Vital Signs](Questionnaire-VitalSigns.html) ([Questionnaire Viewer](https://project-wildfyre.github.io/questionnaire-viewer/?q=https://virtually-healthcare.github.io/HL7-FHIR-Implementation-Guide/Questionnaire-VitalSigns.json)) form/data capture definition. Hint: Use [NLM Form Builder](https://formbuilder.nlm.nih.gov/) to view these definitions.
 This relates to the *Vital Signs* section of the [HL7 International Patient Summary](https://build.fhir.org/ig/HL7/fhir-ips/Structure-of-the-International-Patient-Summary.html#vital-signs)
 
 | Panel                                                       | SNOMED CT | SNOMED CT Display | LOINC                         | Example                                                                            |
@@ -43,7 +43,7 @@ This is related to the [HL7 Physical Activity Implementation Guide](https://buil
 
 #### Exercise Activity
 
-See also [Exercise Activity](Questionnaire-ExerciseActivity.html) ([Preview](https://project-wildfyre.github.io/questionnaire-viewer/?q=https://virtually-healthcare.github.io/HL7-FHIR-Implementation-Guide/Questionnaire-ExerciseActivity.json)) form/data capture definition. Hint: Use [NLM Form Builder](https://formbuilder.nlm.nih.gov/) to view these definitions.
+See also [Exercise Activity](Questionnaire-ExerciseActivity.html) ([Questionnaire Viewer](https://project-wildfyre.github.io/questionnaire-viewer/?q=https://virtually-healthcare.github.io/HL7-FHIR-Implementation-Guide/Questionnaire-ExerciseActivity.json)) form/data capture definition. Hint: Use [NLM Form Builder](https://formbuilder.nlm.nih.gov/) to view these definitions.
 
 | Panel             | SNOMED CT                                          | SNOMED CT Display | LOINC | Example                                                                                  |
 |-------------------|----------------------------------------------------|-------------------|-------|------------------------------------------------------------------------------------------|
@@ -60,7 +60,7 @@ See also [Exercise Activity](Questionnaire-ExerciseActivity.html) ([Preview](htt
 
 #### Daily Physical Activity
 
-See also [Daily Physical Activity](Questionnaire-DailyPhysicalActivity.html) ([Preview](https://project-wildfyre.github.io/questionnaire-viewer/?q=https://virtually-healthcare.github.io/HL7-FHIR-Implementation-Guide/Questionnaire-DailyPhysicalActivity.json)) form/data capture definition. Hint: Use [NLM Form Builder](https://formbuilder.nlm.nih.gov/) to view these definitions.
+See also [Daily Physical Activity](Questionnaire-DailyPhysicalActivity.html) ([Questionnaire Viewer](https://project-wildfyre.github.io/questionnaire-viewer/?q=https://virtually-healthcare.github.io/HL7-FHIR-Implementation-Guide/Questionnaire-DailyPhysicalActivity.json)) form/data capture definition. Hint: Use [NLM Form Builder](https://formbuilder.nlm.nih.gov/) to view these definitions.
 
 | Panel | SNOMED CT | SNOMED CT Display | LOINC | Example |
 |-------|-----------|-------------------|-------|---------|
@@ -78,6 +78,6 @@ See also [Daily Physical Activity](Questionnaire-DailyPhysicalActivity.html) ([P
 **Draft** for elaboration
 
 This relates to the [PRSB NHS Health Check Standard](https://theprsb.org/standards/nhshealthcheckstandard)
-See also [NHS Health Check Asessment](Questionnaire-NHSHealthCheckAssessment.html) ([Preview](https://project-wildfyre.github.io/questionnaire-viewer/?q=https://virtually-healthcare.github.io/HL7-FHIR-Implementation-Guide/Questionnaire-NHSHealthCheckAssessment.json)) form/data capture definition. Hint: Use [NLM Form Builder](https://formbuilder.nlm.nih.gov/) to view these definitions.
+See also [NHS Health Check Asessment](Questionnaire-NHSHealthCheckAssessment.html) ([Questionnaire Viewer](https://project-wildfyre.github.io/questionnaire-viewer/?q=https://virtually-healthcare.github.io/HL7-FHIR-Implementation-Guide/Questionnaire-NHSHealthCheckAssessment.json)) form/data capture definition. Hint: Use [NLM Form Builder](https://formbuilder.nlm.nih.gov/) to view these definitions.
 
 This has overlap with [vital-signs](#vital-signs) and uses consistent SNOMED CT coding.
