@@ -63,16 +63,20 @@
             "coding": [
               {
                 "system": "http://hl7.org/fhir/questionnaire-item-control",
-                "code": "autocomplete",
-                "display": "Auto-complete"
+                "code": "drop-down",
+                "display": "Drop down"
               }
             ]
           }
+        },
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-preferredTerminologyServer",
+          "valueUrl": "https://snowstorm.ihtsdotools.org/fhir"
         }
       ],
       "linkId": "clinicalTerm",
       "text": "Requested procedure",
-      "answerValueSet": "http://snomed.info/sct/900000000000207008?fhir_vs=ecl%2F%3C71388002"
+      "answerValueSet": "http://snomed.info/sct/900000000000207008?fhir_vs=ecl%2F%3C%3C+71388002"
     },
     {
       "type": "choice",
@@ -364,6 +368,9 @@
       ]
     },
     {
+      "type": "date",
+      "linkId": "eReferralPathwayStart",
+      "text": "Referral Pathway Start",
       "item": [
         {
           "type": "display",
@@ -385,10 +392,7 @@
           "linkId": "629233464929_helpText",
           "text": "The e-Referral Pathway Start Date is a derived value of when the Referral To Treatment (RTT) clock starts. You can supply an optional, alternate pathway start date when creating a referral. For more information see the e-RS FHIR API documentation."
         }
-      ],
-      "type": "date",
-      "linkId": "eReferralPathwayStart",
-      "text": "Referral Pathway Start"
+      ]
     },
     {
       "type": "choice",
