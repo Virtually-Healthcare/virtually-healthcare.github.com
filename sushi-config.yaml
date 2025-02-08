@@ -375,9 +375,9 @@ menu:
   Analysis and Design (Vol 1):
     Health Information Exchange (HIE): HIE.md
     Mobile access to Health Documents (MHD): MHD.md
+    Clinical Data Repository (CDR):  clinical-data-repository.html
     Internet User Authorization (IUA): IUA.md
   Interfaces (Vol 2):
-    Clinical Data Repository:  clinical-data-repository.html
     NHS England Interfaces: NHS-England.html
   #  e-Referral Service: e-Referral-Service.html
     IM1 Transaction and Patient: IM1.html
