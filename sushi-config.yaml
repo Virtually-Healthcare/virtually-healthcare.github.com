@@ -117,6 +117,9 @@ pages:
   MHD.md:
     title: Mobile access to Health Documents (MHD)
     generation: markdown
+  testing.md:
+    title: Testing
+    generation: markdown
 
 
 
@@ -381,4 +384,5 @@ menu:
   Data Models (Vol 3):
     Data Model: data-model.html
     Assessments and Observations: assessments-and-observations.html
-  FHIR Assets: artifacts.html
+  Artefacts: artifacts.html
+  Testing: testing.html
