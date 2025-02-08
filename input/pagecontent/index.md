@@ -14,6 +14,9 @@ We are also moving towards several international standards such as:
 
 The section on **adaptors** describes how we have interfaced to external systems, as we internally use a domain model we need to build an [Anti-Corruption-Layer](https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/acl.html) to convert external models to our domain model.
 
+## SNOMED CT
+
+UK edition of SNOMED (83821000000107)
 
 ### Dependencies
 

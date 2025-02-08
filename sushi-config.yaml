@@ -8,9 +8,9 @@ FSHOnly: false
   # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: virtually.healthcare
 canonical: https://fhir.virtually.healthcare
-name: Virtually Healthcare HL7 FHIR Implementation Guide
+name: Virtually Healthcare Patient Care Coordination (PCC)
 
-title: Virtually Healthcare HL7 FHIR R4 Implementation Guide
+title: Virtually Healthcare Patient Care Coordination (PCC)
 
 # description: Example Implementation Guide for getting started with SUSHI
 status: draft
@@ -31,7 +31,7 @@ publisher:
 #
 dependencies:
   fhir.r4.ukcore.stu3.currentbuild:
-    version: 0.0.15-pre-release
+    version: 0.0.18-pre-release
     uri: https://simplifier.net/guide/ukcoreversionhistory
   hl7.fhir.uv.sdc:
    version: 3.0.0
@@ -109,6 +109,18 @@ pages:
   api-standards.md:
     title: API Standards
     generation: markdown
+  HIE.md:
+    title: Health Information Exchange (HIE)
+    generation: markdown
+  IUA.md:
+    title: Internet User Authorization (IUA)
+    generation: markdown
+  MHD.md:
+    title: Mobile access to Health Documents (MHD)
+    generation: markdown
+
+
+
 
 resources:
   Patient/3:
@@ -358,12 +370,16 @@ resources:
 
 menu:
   Home: index.html
-  Adaptors:
+  Analysis and Design (Vol 1):
+    Health Information Exchange (HIE): HIE.md
+    Mobile access to Health Documents (MHD): MHD.md
+    Internet User Authorization (IUA): IUA.md
+  Interfaces (Vol 2):
     Clinical Data Repository:  clinical-data-repository.html
     NHS England Interfaces: NHS-England.html
   #  e-Referral Service: e-Referral-Service.html
     IM1 Transaction and Patient: IM1.html
-  Domain Model:
+  Data Models (Vol 3):
     Data Model: data-model.html
     Assessments and Observations: assessments-and-observations.html
   FHIR Assets: artifacts.html
