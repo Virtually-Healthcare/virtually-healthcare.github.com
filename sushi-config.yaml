@@ -35,10 +35,9 @@ dependencies:
     uri: https://simplifier.net/guide/ukcoreversionhistory
   hl7.fhir.uv.sdc:
    version: 3.0.0
-  hl7.fhir.uv.phd: 1.1.0
   hl7.fhir.uv.ipa: 1.0.0
-  # hl7.fhir.uv.ips: 2.0.0
-  # ihe.pcc.qedm: 3.0.0-comment1
+  hl7.fhir.eu.laboratory:
+    version: 0.1.0
   hl7.fhir.extensions.r5:
     id: r5ext
     version: 4.0.1
