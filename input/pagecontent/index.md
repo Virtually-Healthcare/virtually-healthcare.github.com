@@ -1,4 +1,23 @@
-## Virtually Healthcare Health Information Exchange (HIE)
+## Patient Care Coordination (PCC)
+
+<table style="width:100%">
+  <tr>
+    <td>
+       <img style="padding:3px;width:80%;" src="ReferralsAndActivities.png" alt="Patient Care Coordination Manager (Community)"/>
+      <p class="figureTitle">Patient Care Coordination Manager (Community)</p>   
+    </td>
+  </tr>
+</table>
+
+### Clinical Process
+
+The `Patient Care Coordination Manager (Community)` is aimed at supporting clinical process in the community. It is aligned with [Nursing Process (ADPIE)](https://en.wikipedia.org/wiki/Nursing_process)
+
+<img style="padding:3px;width:80%;" src="NursingProcess.png" alt="Nursing Process (ADPIE)"/>
+<p class="figureTitle">Nursing Process (ADPIE)</p> 
+<br clear="all">
+
+## Standards
 
 This guide documents the [canonical data model](https://www.enterpriseintegrationpatterns.com/patterns/messaging/CanonicalDataModel.html)/[domain model](https://martinfowler.com/eaaCatalog/domainModel.html) we use internally to meet general NHS requirements such as using:
 
@@ -8,13 +27,14 @@ This guide documents the [canonical data model](https://www.enterpriseintegratio
 
 We are also moving towards several international standards such as:
 
+- [HL7 Europe Hospital Discharge Report](https://build.fhir.org/ig/hl7-eu/hdr/)
 - [HL7 International Patient Access](https://build.fhir.org/ig/HL7/fhir-ipa/)
 - [HL7 Structured Data Capture](https://build.fhir.org/ig/HL7/sdc/)
 - [IHE Mobile Care Services Discovery (mCSD)](https://profiles.ihe.net/ITI/mCSD/volume-1.html)
 
 The section on **adaptors** describes how we have interfaced to external systems, as we internally use a domain model we need to build an [Anti-Corruption-Layer](https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/acl.html) to convert external models to our domain model.
 
-## SNOMED CT
+### SNOMED CT
 
 UK edition of SNOMED (83821000000107)
 

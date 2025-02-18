@@ -36,8 +36,6 @@ dependencies:
   hl7.fhir.uv.sdc:
    version: 3.0.0
   hl7.fhir.uv.ipa: 1.0.0
-  hl7.fhir.eu.laboratory:
-    version: 0.1.0
   hl7.fhir.extensions.r5:
     id: r5ext
     version: 4.0.1
