@@ -14,8 +14,9 @@
 The `Patient Care Coordination Manager (Community)` is aimed at supporting clinical process in the community. It is aligned with [Nursing Process (ADPIE)](https://en.wikipedia.org/wiki/Nursing_process)
 
 <img style="padding:3px;width:80%;" src="NursingProcess.png" alt="Nursing Process (ADPIE)"/>
-<p class="figureTitle">Nursing Process (ADPIE)</p> 
 <br clear="all">
+<p class="figureTitle">Nursing Process (ADPIE)</p> 
+
 
 ## Standards
 
