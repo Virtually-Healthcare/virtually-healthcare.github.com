@@ -1,4 +1,4 @@
-Profile:        NHSNumbers
+Profile:        NHSNumber
 Parent:         http://hl7.org/fhir/StructureDefinition/Identifier
 Id:             nhs-numbers
 Title:          "NHS, HCSN and CHI Numbers"

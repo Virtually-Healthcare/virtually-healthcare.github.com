@@ -4,10 +4,10 @@ Id: AllergyIntolerance
 Description: "Extension to [HL7 IPA AllergyIntolerance](http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-allergyintolerance) and includes elements from [UKCore AllergyIntolerance](https://simplifier.net/hl7fhirukcorer4/ukcore-allegyintolerance)"
 
 * identifier 1..* MS
-* identifier only CommonResourceIdentifiers
+* identifier only CorrelationIdentifier
 
 * patient 1..1
-* patient.identifier only NHSNumbers
+* patient.identifier only NHSNumber
 
 * code.coding ^slicing.discriminator[0].type = #value
 * code.coding ^slicing.discriminator[=].path = "system"

@@ -10,6 +10,8 @@ Usage: #example
 
 * identifier.system = "https://tools.ietf.org/html/rfc4122"
 * identifier.value = "71fae5af-0b9e-4b9e-b6af-3d1bb4e223a0"
+* identifier.assigner.identifier.system = $ods-code
+* identifier.assigner.identifier.value = "FK502"
 
 * clinicalStatus = $condition-clinical#active
 * verificationStatus = $condition-ver-status#confirmed

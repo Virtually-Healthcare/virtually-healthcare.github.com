@@ -9,7 +9,7 @@ Not following UKCore-Composition due to coding issues around section.code.
 * subject 1..1
 * subject.reference 1..1
 * subject only Reference(Patient)
-* subject.identifier only NHSNumbers
+* subject.identifier only NHSNumber
 * relatesTo.target[x] only Identifier or Reference(Composition)
 * custodian.identifier only OrganisationCode
 

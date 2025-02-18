@@ -7,7 +7,7 @@ to include  Royal College of Radiologists (HL7 v2 ORU), Digital Health and Care 
 """
 
 * identifier 1..* MS
-* identifier only CommonResourceIdentifiers
+* identifier only CorrelationIdentifier
 
 * code.coding ^slicing.discriminator[0].type = #value
 * code.coding ^slicing.discriminator[=].path = "system"
@@ -22,7 +22,7 @@ to include  Royal College of Radiologists (HL7 v2 ORU), Digital Health and Care 
 * code.coding[LOINC].system = $loinc
 
 * subject.reference 1..1 MS
-* subject.identifier only NHSNumbers
+* subject.identifier only NHSNumber
 
 * effective[x] 1..1 MS
 * effective[x] only dateTime

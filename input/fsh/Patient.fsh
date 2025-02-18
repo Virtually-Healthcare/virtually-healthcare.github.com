@@ -9,7 +9,7 @@ Description: "Extension of UKCore-Patient and includes elements from [HL7 Intern
 * identifier contains
   MedicalRecordNumber 0..*
 
-* identifier[nhsNumber] only NHSNumbers
+* identifier[nhsNumber] only NHSNumber
 * identifier[nhsNumber] ^short = "UK National Health Identifiers"
 * identifier[MedicalRecordNumber] only MedicalRecordNumber
 * identifier[MedicalRecordNumber] ^short = "Medical Record Number"

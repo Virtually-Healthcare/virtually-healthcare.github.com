@@ -4,7 +4,7 @@ Id: Observation
 Description: "Extension of [HL7 IPA Observation](https://build.fhir.org/ig/HL7/fhir-ipa/StructureDefinition-ipa-observation.html) to include elements of [UKCore-Observation](https://simplifier.net/hl7fhirukcorer4/ukcore-observation)"
 
 * identifier 1..* MS
-* identifier only CommonResourceIdentifiers
+* identifier only BaseIdentifier
 
 * contained 0..0
 
@@ -45,7 +45,7 @@ Description: "Extension of [HL7 IPA Observation](https://build.fhir.org/ig/HL7/f
 * valueCodeableConcept.coding[LOINC].system = $loinc
 
 * subject.reference 1..1 MS
-* subject.identifier only NHSNumbers
+* subject.identifier only NHSNumber
 
 * effective[x] 1..1 MS
 * effective[x] only dateTime
@@ -55,7 +55,7 @@ Description: "Extension of [HL7 IPA Observation](https://build.fhir.org/ig/HL7/f
 * performer 1..* MS
 * performer only Reference(Practitioner or Patient)
 * performer.reference 0..1
-* performer.identifier only ProfessionalLicense or NHSNumbers or StaffEnterpriseNumber
+* performer.identifier only EnglandPractitionerIdentifier or NHSNumber or StaffEnterpriseNumber
 
 //* value[x] insert Obligation(#SHALL:populate-if-known, https://fhir.virtually.healthcare/ActorDefinition/ClinicalDataRepository)
 //* value[x] insert Obligation(#SHALL:populate-if-known, https://fhir.virtually.healthcare/ActorDefinition/ClinicalDataService)

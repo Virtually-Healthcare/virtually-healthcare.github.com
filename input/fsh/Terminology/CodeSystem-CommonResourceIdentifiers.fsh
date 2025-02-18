@@ -1,6 +1,6 @@
-CodeSystem:  CommonResourceIdentifiers
-Id: UKCommonResourceIdentifiers
-Title: "UKCommonResourceIdentifiers"
+CodeSystem:  CorrelationIdentifier
+Id: UKCorrelationIdentifier
+Title: "UKCorrelationIdentifier"
 Description:  "UK Common Resource Identifiers"
 
 * ^experimental  = false

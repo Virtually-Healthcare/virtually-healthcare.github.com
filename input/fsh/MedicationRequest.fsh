@@ -6,10 +6,10 @@ Description: "[HL7 IPA MedicationRequest](http://hl7.org/fhir/uv/ipa/StructureDe
 * extension contains ExtensionCourses named extensionCourses 0..1
 
 * identifier 1..* MS
-* identifier only CommonResourceIdentifiers
+* identifier only CorrelationIdentifier
 
 * subject.reference 1..1 MS
-* subject.identifier only NHSNumbers
+* subject.identifier only NHSNumber
 
 * medication[x] from VHMedicationCode (extensible)
 * medication[x] only CodeableConcept
@@ -19,5 +19,5 @@ Description: "[HL7 IPA MedicationRequest](http://hl7.org/fhir/uv/ipa/StructureDe
 
 * performer only Reference(Practitioner)
 * performer.reference 1..1
-* performer.identifier only ProfessionalLicense or StaffEnterpriseNumber
+* performer.identifier only EnglandPractitionerIdentifier or StaffEnterpriseNumber
 

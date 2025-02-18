@@ -1,7 +1,7 @@
-Profile:        OrganisationSiteIdentifier
+Profile:        OrganisationSiteCode
 Parent:         http://hl7.org/fhir/StructureDefinition/Identifier
-Id:             organisation-site-identifier
-Title:          "Organisation Site Identifier"
+Id:             OrganisationSiteCode
+Title:          "Organisation Site Code"
 Description:     """
 NHS Data Dictionary [ORGANISATION SITE IDENTIFIER](https://www.datadictionary.nhs.uk/attributes/organisation_site_identifier.html)
 

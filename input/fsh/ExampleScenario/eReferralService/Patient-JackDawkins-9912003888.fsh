@@ -15,13 +15,13 @@ Usage: #example
 * identifier[nhsNumber].assigner.identifier.value = "X24"
 * identifier[MedicalRecordNumber][+]
   * type = $v2-0203#MR
-  * system = "https://hospitalpas.example.nhs.uk/Id/MRN"
+  * system = "https://fhir.nhs.uk/Id/medical-record-number"
   * value = "A12356565"
   * assigner.identifier.value = "RW1"
 
 * identifier[MedicalRecordNumber][+]
   * type = $v2-0203#MR
-  * system = "https://gpsupplier.example.nhs.uk/Id/MRN"
+  * system = "https://fhir.nhs.uk/Id/medical-record-number"
   * value = "633"
   * assigner.identifier.value = "YHMS"
 
