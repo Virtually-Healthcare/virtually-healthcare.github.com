@@ -85,6 +85,9 @@ pages:
   e-Referral-Service.md:
     title: e-Referral Service Facade (NHS England)
     generation: markdown
+  eReferral.md:
+    title: eReferral
+    generation: markdown
   IM1.md:
     title: IM1 Transaction and Patient
     generation: markdown
@@ -370,7 +373,8 @@ resources:
 
 menu:
   Home: index.html
-#  Analysis and Design (Vol 1):
+  Analysis and Design (Vol 1):
+     eReferral: eReferral.html
 #    Health Information Exchange (HIE): HIE.html
 #    Mobile access to Health Documents (MHD): MHD.html
 #    Clinical Data Repository (CDR):  clinical-data-repository.html

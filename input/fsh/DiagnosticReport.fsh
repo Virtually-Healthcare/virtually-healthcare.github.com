@@ -9,6 +9,24 @@ to include  Royal College of Radiologists (HL7 v2 ORU), Digital Health and Care 
 * identifier 1..* MS
 * identifier only CorrelationIdentifier
 
+* basedOn only CodeableReference
+* basedOn.identifier 1..1 MS
+* basedOn.identifier only CorrelationIdentifier
+
+* basedOn ^slicing.discriminator.type = #value
+* basedOn ^slicing.discriminator.path = "identifier.type"
+* basedOn ^slicing.rules = #open
+* basedOn ^slicing.description = "Slice based on the type"
+* basedOn ^slicing.ordered = false
+* basedOn contains
+  OriginatingReferralIdentifier 0..1 MS
+
+* basedOn[OriginatingReferralIdentifier] ^short = "Identifier assigned by the referrer"
+* basedOn[OriginatingReferralIdentifier].type 1..1 MS
+* basedOn[OriginatingReferralIdentifier].type = "ServiceRequest"
+* basedOn[OriginatingReferralIdentifier].identifier 1..1
+* basedOn[OriginatingReferralIdentifier].identifier only OriginatingReferralIdentifier
+
 * code.coding ^slicing.discriminator[0].type = #value
 * code.coding ^slicing.discriminator[=].path = "system"
 * code.coding ^slicing.ordered = false
@@ -23,6 +41,14 @@ to include  Royal College of Radiologists (HL7 v2 ORU), Digital Health and Care 
 
 * subject.reference 1..1 MS
 * subject.identifier only NHSNumber
+
+* encounter 0..1 MS
+* encounter only Reference(Encounter)
+* encounter.identifier ^short = "Episode or Stay ID (HL7 v2 PV1-19 Visit Number)"
+* encounter.identifier only VisitNumber
+* encounter.identifier insert Obligation(#SHALL:populate-if-known, ttps://fhir.virtually.healthcare/ActorDefinition/ReferralInitiator)
+* encounter.identifier insert Obligation(#SHALL:populate-if-known, ttps://fhir.virtually.healthcare/ActorDefinition/ReferralRecipient)
+
 
 * effective[x] 1..1 MS
 * effective[x] only dateTime
