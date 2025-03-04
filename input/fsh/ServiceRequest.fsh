@@ -67,7 +67,7 @@ and [NHS England - Booking and Referral Standard](https://simplifier.net/guide/n
 * supportingInfo ^slicing.description = "Slice based on the coding.system"
 * supportingInfo ^slicing.ordered = false
 * supportingInfo contains
-  Attachments 0..1 MS
+  ReferralLetter 0..1 MS
 
-* supportingInfo[Attachments] only Reference(DocumentReference)
-* supportingInfo[Attachments].type = #DocumentReference
+* supportingInfo[ReferralLetter] only Reference(DocumentReference)
+* supportingInfo[ReferralLetter].type = #DocumentReference
