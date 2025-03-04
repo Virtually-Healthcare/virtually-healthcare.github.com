@@ -374,7 +374,7 @@ resources:
 menu:
   Home: index.html
   Analysis and Design (Vol 1):
-     eReferral: eReferral.html
+     eReferral and eDischarge: eReferral.html
 #    Health Information Exchange (HIE): HIE.html
 #    Mobile access to Health Documents (MHD): MHD.html
 #    Clinical Data Repository (CDR):  clinical-data-repository.html
