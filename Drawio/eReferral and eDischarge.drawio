@@ -4,7 +4,7 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="g5N9hE3hsBz0X4arDoTH-1" value="eReferral and eDischage" style="swimlane;html=1;childLayout=stackLayout;resizeParent=1;resizeParentMax=0;horizontal=1;startSize=20;horizontalStack=0;whiteSpace=wrap;" vertex="1" parent="1">
+        <mxCell id="g5N9hE3hsBz0X4arDoTH-1" value="eReferral and eDischarge" style="swimlane;html=1;childLayout=stackLayout;resizeParent=1;resizeParentMax=0;horizontal=1;startSize=20;horizontalStack=0;whiteSpace=wrap;" vertex="1" parent="1">
           <mxGeometry x="40" y="40" width="1340" height="780" as="geometry" />
         </mxCell>
         <mxCell id="g5N9hE3hsBz0X4arDoTH-2" value="Referral Initiator" style="swimlane;html=1;startSize=20;horizontal=0;" vertex="1" parent="g5N9hE3hsBz0X4arDoTH-1">
