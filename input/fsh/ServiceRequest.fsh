@@ -8,6 +8,8 @@ and [NHS England - Booking and Referral Standard](https://simplifier.net/guide/n
 
 """
 
+* extension[additionalContact] ^short = "Do not use, not supported. Use CareTeam instead."
+
 * identifier 1..* MS
 * identifier only CorrelationIdentifier
 
@@ -23,8 +25,6 @@ and [NHS England - Booking and Referral Standard](https://simplifier.net/guide/n
 * identifier[OriginatingReferralIdentifier] ^short = "Identifier assigned by the Referrer. (HL7 v2 RF1-6 Originating Referral Identifier)"
 * identifier[OriginatingReferralIdentifier] insert Obligation(#SHOULD:populate-if-known, ttps://fhir.virtually.healthcare/ActorDefinition/ReferralRecipient)
 * identifier[OriginatingReferralIdentifier] insert Obligation(#SHALL:populate, ttps://fhir.virtually.healthcare/ActorDefinition/ReferralInitiator)
-
-
 
 * code 1..1
 * code ^short = "What is being requested/ordered. (HL7 v2 RF1-3 Referral Type)"
