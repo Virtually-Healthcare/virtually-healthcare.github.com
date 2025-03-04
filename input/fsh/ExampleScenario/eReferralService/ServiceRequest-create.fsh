@@ -6,7 +6,7 @@ Example conversion of [$ers.createReferral multishortlist](eRS/ers-GenerateRefer
 """
 Usage: #example
 
-* identifier[placerOrderNumber]
+* identifier[OriginatingReferralIdentifier]
   * system = "https://tools.ietf.org/html/rfc4122"
   * value = "f3533ea0-9588-4f25-ace7-969d80823b20"
   * assigner.identifier.system = $ods-code
