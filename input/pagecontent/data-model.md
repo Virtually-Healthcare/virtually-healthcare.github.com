@@ -1,11 +1,11 @@
 
-### Referral Model 
+### Referral and Discharge Model 
 
 The traditional data model is on a union of data requirements extracted from a series of HL7 v2 and IHE XDS interoperability specifications (see [references](#references)) and so has a base on existing data flows. 
 
 <figure>
-{%include entity-model-traditional.svg%}
-<p id="fX.X.X.X-X" class="figureTitle">Traditional Clinical Data Repository Model</p>
+{%include entity-model-referral.svg%}
+<p id="fX.X.X.X-X" class="figureTitle">Referral and Discharge Model</p>
 </figure>
 <br clear="all">
 

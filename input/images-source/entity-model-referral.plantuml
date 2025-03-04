@@ -1,0 +1,143 @@
+@startuml
+
+skinparam svgDimensionStyle false
+
+frame PD1 as "Patient Administration" {
+  class "[[StructureDefinition-Patient.html Patient]]" as Patient <<aggregate root>> {
+  identifier 1..* : PatientIdentifier
+  name
+  gender
+  birthDate
+  address
+  telecom
+  address
+  }
+
+
+  class PatientIdentifier <<entity>> {
+  NHSNumber 0..1
+  CHINumber 0..1
+  MedicalRecordNumber (EMIS, TPP, Hospital Number, etc)
+  }
+
+  class "[[StructureDefinition-Encounter.html Encounter]]" as Encounter <<aggregate root>> {
+  subject 1..1: PatientIdentifier
+  period
+  participant 1..*
+  }
+
+
+  Patient "identifier" *--> PatientIdentifier
+  Encounter "subject" o--|> PatientIdentifier
+
+}
+
+frame Diagnostics as "Reports" {
+  class "[[StructureDefinition-Observation.html Observation]]" as Observation <<entity>> {
+  identifier 1..*
+  subject 1..1: PatientIdentifier
+  code : UK SNOMED CT or LOINC
+  effectiveDateTime
+  value[x]: codes are UK SNOMED CT or LOINC
+  encounter 0..1
+  }
+
+
+  class "[[assessments-and-observations.html Observation Panel]]" as ObservationPanel <<entity>> {
+  identifier 1..*
+  subject 1..1: PatientIdentifier
+  code : UK SNOMED CT or LOINC
+  effectiveDateTime
+  hasMember: 1..*: Observation
+  encounter 0..1
+  }
+
+
+  class "[[StructureDefinition-DiagnosticReport.html Diagnostic Report]]" as DiagnosticReport <<aggregate root>> {
+  identifier 1..*
+  basedOn 0..1: AccessionNumber
+  subject: PatientIdentifier
+  code : UK SNOMED CT or LOINC
+  effectiveDateTime
+  result: ObservationPanel and Observation
+  presentedForm 0..* : Attachment
+  }
+
+  DiagnosticReport "result" *--> ObservationPanel
+  ObservationPanel "hasMember" *--> Observation
+
+}
+
+
+
+frame Documents {
+
+  class Attachment <<entity>> {
+  contentType: (also mimeType and file extension)
+  title
+  languageCode
+  data: file contents
+  }
+
+
+  class "[[StructureDefinition-DocumentReference.html Document Entry]]" as DocumentEntry <<aggregate root>> {
+  category: UK SNOMED CT
+  type : UK SNOMED CT
+  subject : PatientIdentifier
+  attachment 1..*
+  referenceIdList : AccessionNumber (FHIR context.related)
+  }
+
+
+  DocumentEntry "attachment" *-d-> Attachment
+
+}
+
+frame Orders {
+
+
+
+
+  class "[[StructureDefinition-MedicationRequest.html Prescription]]" as Prescription <<aggregate root>> {
+  identifier 1..*
+  subject: PatientIdentifier
+  medication: UK SNOMED CT (dm+d)
+  }
+
+
+  class "[[StructureDefinition-ServiceRequest.html Referral]]" as Referral <<aggregate root>> {
+  identifier 1..*
+  subject: PatientIdentifier
+  code: Procedure code UK SNOMED CT
+  supportingInfo: Referral Letter
+  }
+
+  Prescription -d[hidden]- Referral
+
+
+
+}
+
+
+
+
+Observation "subject" o--|> PatientIdentifier
+ObservationPanel "subject" o--|> PatientIdentifier
+DiagnosticReport "subject" o--|> PatientIdentifier
+DocumentEntry "subject" o--|> PatientIdentifier
+
+Observation "encounter" <--o Encounter
+ObservationPanel "encounter" <--o Encounter
+DiagnosticReport "encounter" <--o Encounter
+DocumentEntry "encounter" <--o Encounter
+
+Referral "supportingInfo\nReferralLetter" --> DocumentEntry
+Referral "subject" o-u-|> PatientIdentifier
+Prescription "subject" o-u-|> PatientIdentifier
+
+Referral "encounter" <--o Encounter
+Prescription "encounter" <--o Encounter
+
+DiagnosticReport "attachment" --> Attachment
+
+@enduml

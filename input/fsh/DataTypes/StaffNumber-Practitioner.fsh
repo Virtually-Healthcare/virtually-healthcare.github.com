@@ -3,7 +3,7 @@ Parent:         http://hl7.org/fhir/StructureDefinition/Identifier
 Id:             Staff-Enterprise-Number
 Title:          "Staff Enterprise Number"
 Description:     """
-[UK Professional Licence](StructureDefinition-ProfessionalLicense.html) should take precedence over staff numbers (i.e. SDS User Id) in HL7 FHIR Reference and other interoperability standards.
+[England Practitioner Identifier](StructureDefinition-EnglandPractitionerIdentifier.html) should take precedence over staff numbers (i.e. SDS User Id) in HL7 FHIR Reference and other interoperability standards.
 
 E.g. SDS User ID and Ministry of Defence Doctor.
 """
