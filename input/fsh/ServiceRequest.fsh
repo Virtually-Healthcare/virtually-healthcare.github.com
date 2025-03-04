@@ -36,11 +36,25 @@ and [NHS England - Booking and Referral Standard](https://simplifier.net/guide/n
 * code.coding ^slicing.description = "Slice based on the system"
 * code.coding ^slicing.ordered = false
 * code.coding contains
-  ProcedureCodeSCT 1..1 MS
+  PatientReferralSCT 1..1 MS
 
-* code.coding[ProcedureCodeSCT] ^short = "Referral Type UK SNOMED CT"
-* code.coding[ProcedureCodeSCT] from https://fhir.hl7.org.uk/ValueSet/UKCore-ProcedureCode
-* code.coding[ProcedureCodeSCT].system = $sct
+* code.coding[PatientReferralSCT] ^short = "Patient Referral Type UK SNOMED CT"
+* code.coding[PatientReferralSCT] from PatientReferral (extensible)
+* code.coding[PatientReferralSCT].system = $sct
+
+* category 1..* MS
+* category ^slicing.discriminator.type = #value
+* category ^slicing.discriminator.path = "coding.system"
+* category ^slicing.rules = #open
+* category ^slicing.description = "Slice based on the coding.system"
+* category ^slicing.ordered = false
+* category contains
+  PatientReferral 1..1 MS
+
+* category[PatientReferral].coding.code = #3457005
+* category[PatientReferral].coding.system = $sct
+
+* category[genomicsWholeCaseSequencing] 0..0
 
 * subject.reference 0..1 MS
 * subject.identifier only NHSNumber

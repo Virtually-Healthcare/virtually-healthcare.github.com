@@ -17,8 +17,9 @@ Usage: #example
 * subject.identifier.system = $nhs-number
 * subject.identifier.value = "9912003888"
 
-* code.coding[+] = https://fhir.nhs.uk/STU3/CodeSystem/eRS-ClinicType-1#HEART_FAILURE
-* code.coding[+] = $sct#425315000 "Cardiac assessment"
+* code.coding[PatientReferralSCT] = $sct#425315000 "Cardiac assessment"
+
+* category[PatientReferral] = $sct#3457005 "Patient Referral"
 
 * priority = #routine
 
