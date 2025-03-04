@@ -16,3 +16,23 @@
 | [Referral Initiator](ActorDefinition-ReferralInitiator.html) | The provider asking for a referral or advice/guidance   |
 | [Referral Recipient](ActorDefinition-ReferralRecipient.html) | The provider providing the procedure or advice/guidance |
 
+## Relationship to other Standards and Services
+
+### eRequesting
+
+<img style="padding:3px;width:80%;" src="eRequesting relationship to other standards.drawio.png" alt="eReferral relationships"/>
+<br clear="all">
+<p class="figureTitle">eReferral relationships</p> 
+
+### eDischarge (and Encounters)
+
+<img style="padding:3px;width:80%;" src="eDischarge relationship to other standards.drawio.png" alt="eDischarge relationships"/>
+<br clear="all">
+<p class="figureTitle">eDischarge relationships</p> 
+
+## Overview
+
+<img style="padding:3px;width:95%;" src="eReferral and eDischarge.drawio" alt="eReferral and eDischarge Process"/>
+<br clear="all">
+<p class="figureTitle">eReferral and eDischarge Process</p> 
+<br clear="all">
