@@ -5,11 +5,7 @@ This is a [Service Facade](ActorDefinition-ServiceFacade.html) to [e-Referral Se
 
 ### Clinical Data Repository Model
 
-<figure>
-{%include referral-model.svg%}
-<p id="fX.X.X.X-X" class="figureTitle">CDR Referral Model</p>
-</figure>
-<br clear="all">
+
 
 ### Clinical Data Repository and eReferral Service Mapping
 
