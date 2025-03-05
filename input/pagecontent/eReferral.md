@@ -53,12 +53,13 @@
 
 ### Routing Table
 
-| Interaction | Sender Role                  | Recipient      | Method                      |
-|-------------|------------------------------|----------------|-----------------------------|
-| eReferral   | Pharmacy                     | GP             | BARS                        |
-|             | Private                      | Secondary Care | eRS                         |
-|             | Other                        | Other          | eReferral (this)            |
-| eDischarge  | Pharmacy                     | GP             | GP Connect Send Document    |
-|             | Online Consultation Provider | GP             | IM1 (or Ketting XML + MESH) |
-|             | Other                        | GP             | IM1 (or Ketting XML + MESH) |
-|             | Other                        | Other          | eDischarge (this)           |
+| Interaction | Direction | Sender Role                        | Recipient      | Method                      |
+|-------------|-----------|------------------------------------|----------------|-----------------------------|
+| eReferral   | Out       | Pharmacy                           | GP             | BARS                        |
+|             | Out       | Private                            | Secondary Care | eRS                         |
+|             | In        | GP, Unscheduled and Emergency Care | Other          | BARS                        |
+|             | In/Out    | Other                              | Other          | eReferral (this)            |
+| eDischarge  | Out       | Pharmacy                           | GP             | GP Connect Send Document    |
+|             | Out       | Online Consultation Provider       | GP             | IM1 (or Ketting XML + MESH) |
+|             | Out       | Other                              | GP             | IM1 (or Ketting XML + MESH) |
+|             | In/Out    | Other                              | Other          | eDischarge (this)           |
