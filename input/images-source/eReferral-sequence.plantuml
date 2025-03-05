@@ -1,0 +1,21 @@
+@startuml
+
+hide footbox
+
+participant "Referral Initiator" as placer
+participant "Referral Recipient" as filler
+
+placer -> placer : Complete Referral Form
+placer -> filler : Submit eReferral
+opt
+  filler -> filler: Triage Referral
+end
+opt Referral Accepted
+  filler -> placer: Accept Referral
+  placer -> placer: Perform procedure/activity
+  placer -> filler: Send eDischarge
+else Referral Rejected
+  filler -> placer: Reject Referral
+end
+
+@enduml

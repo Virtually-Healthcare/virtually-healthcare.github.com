@@ -16,6 +16,21 @@
 | [Referral Initiator](ActorDefinition-ReferralInitiator.html) | The provider asking for a referral or advice/guidance   |
 | [Referral Recipient](ActorDefinition-ReferralRecipient.html) | The provider providing the procedure or advice/guidance |
 
+
+## Overview
+
+<img style="padding:3px;width:95%;" src="eReferral and eDischarge.drawio.png" alt="eReferral and eDischarge Process"/>
+<br clear="all">
+<p class="figureTitle">eReferral and eDischarge Process</p> 
+<br clear="all">
+
+<figure>
+{%include eReferral-sequence.svg%}
+<p id="fX.X.X.X-X" class="figureTitle">eReferral and eDischarge Sequence Diagram</p>
+</figure>
+<br clear="all">
+
+
 ## Relationship to other Standards and Services
 
 ### eRequesting
@@ -30,9 +45,20 @@
 <br clear="all">
 <p class="figureTitle">eDischarge relationships</p> 
 
-## Overview
+## Architecture
 
-<img style="padding:3px;width:95%;" src="eReferral and eDischarge.drawio.png" alt="eReferral and eDischarge Process"/>
+<img style="padding:3px;width:80%;" src="Referral Enterprise Integration.drawio.png" alt="Enterprise Integration - Community and Primary Care"/>
 <br clear="all">
-<p class="figureTitle">eReferral and eDischarge Process</p> 
-<br clear="all">
+<p class="figureTitle">Enterprise Integration - Community and Primary Care</p> 
+
+### Routing Table
+
+| Interaction | Sender Role                  | Recipient      | Method                      |
+|-------------|------------------------------|----------------|-----------------------------|
+| eReferral   | Pharmacy                     | GP             | BARS                        |
+|             | Private                      | Secondary Care | eRS                         |
+|             | Other                        | Other          | eReferral (this)            |
+| eDischarge  | Pharmacy                     | GP             | GP Connect Send Document    |
+|             | Online Consultation Provider | GP             | IM1 (or Ketting XML + MESH) |
+|             | Other                        | GP             | IM1 (or Ketting XML + MESH) |
+|             | Other                        | Other          | eDischarge (this)           |
