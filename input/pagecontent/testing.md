@@ -19,7 +19,7 @@ The FHIR Validator defaults to validating individual FHIR resources (not FHIR Bu
 #### FHIR Patient Example
 
 ```aiignore
- java -jar validator_cli.jar c:\temp\patient.json -version 4.0.1 -ig package.tgz https://fhir.virtually.healthcare/StructureDefinition/Patient
+ java -jar validator_cli.jar c:\temp\patient.json -version 4.0.1 -ig package.tgz -profile https://fhir.virtually.healthcare/StructureDefinition/Patient
 ```
 
 ## Asking a FHIR Server
