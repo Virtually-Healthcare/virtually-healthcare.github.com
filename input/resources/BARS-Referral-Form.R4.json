@@ -1,0 +1,305 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "BARS-Referral-Form",
+  "title": "BARS Referral Form",
+  "status": "draft",
+  "purpose": "Mapping of BARS to FHIR Data Model",
+  "code": [
+    {
+      "system": "http://snomed.info/sct",
+      "code": "3457005",
+      "display": "Patient referral"
+    }
+  ],
+  "item": [
+    {
+      "item": [
+        {
+          "type": "string",
+          "linkId": "1.1",
+          "definition": "http://hl7.org/fhir/StructureDefinition/Patient#Patient.name.family",
+          "text": "Patient last name "
+        },
+        {
+          "type": "string",
+          "linkId": "1.2",
+          "definition": "http://hl7.org/fhir/StructureDefinition/Patient#Patient.name.given",
+          "text": "Patient first name"
+        },
+        {
+          "type": "date",
+          "linkId": "1.3",
+          "definition": "http://hl7.org/fhir/StructureDefinition/Patient#Patient.birthDate",
+          "text": "Date of birth"
+        },
+        {
+          "type": "string",
+          "linkId": "1.4",
+          "definition": "http://hl7.org/fhir/StructureDefinition/Patient#Patient.address.postalCode",
+          "text": "Postcode"
+        },
+        {
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "drop-down",
+                    "display": "Drop down"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId": "1.5",
+          "definition": "http://hl7.org/fhir/StructureDefinition/Patient#Patient.gender",
+          "text": "Sex registered at birth",
+          "answerValueSet": "http://hl7.org/fhir/ValueSet/administrative-gender"
+        },
+        {
+          "type": "string",
+          "linkId": "1.6",
+          "definition": "http://hl7.org/fhir/StructureDefinition/Patient#Patient.identifier:nhsNumber.value",
+          "text": "NHS Number"
+        },
+        {
+          "type": "string",
+          "linkId": "1.7",
+          "definition": "http://hl7.org/fhir/StructureDefinition/Patient#Patient.identifier:MedicalRecordNumber.value",
+          "text": "Hospital/Provider Number (Medical Record Number)",
+          "required": true
+        },
+        {
+          "type": "string",
+          "linkId": "146294380059",
+          "text": "Phone Number"
+        },
+        {
+          "type": "string",
+          "linkId": "274455524547",
+          "text": "Email"
+        },
+        {
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "drop-down",
+                    "display": "Drop down"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId": "864384971437",
+          "text": "GP Surgery ODS Code"
+        }
+      ],
+      "type": "group",
+      "linkId": "1",
+      "definition": "http://hl7.org/fhir/StructureDefinition/Patient#Patient",
+      "text": "Patient Details"
+    },
+    {
+      "item": [
+        {
+          "type": "string",
+          "linkId": "230324696587",
+          "text": "Episode Id (Patient Journey Id)"
+        },
+        {
+          "type": "date",
+          "linkId": "415619018714",
+          "text": "Start Date"
+        }
+      ],
+      "type": "group",
+      "linkId": "695187913578",
+      "text": "Episode Details"
+    },
+    {
+      "item": [
+        {
+          "type": "string",
+          "linkId": "3.1",
+          "definition": "http://hl7.org/fhir/StructureDefinition/PractitionerRole#PractitionerRole.name",
+          "text": "Name"
+        },
+        {
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "drop-down",
+                    "display": "Drop down"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId": "3.2",
+          "definition": "http://hl7.org/fhir/StructureDefinition/PractitionerRole#PractitionerRole.specialty.coding.code",
+          "text": "Specialty",
+          "answerValueSet": "https://fhir.hl7.org.uk/ValueSet/UKCore-PracticeSettingCode"
+        },
+        {
+          "type": "string",
+          "linkId": "3.3",
+          "definition": "http://hl7.org/fhir/StructureDefinition/PractitionerRole#PractitionerRole.practitioner.identifier.value",
+          "text": "Professional/Consultant Code",
+          "required": true
+        },
+        {
+          "type": "string",
+          "linkId": "3.4",
+          "definition": "http://hl7.org/fhir/StructureDefinition/PractitionerRole#PractitionerRole.telecom.value",
+          "text": "Phone"
+        },
+        {
+          "type": "string",
+          "linkId": "3.5",
+          "definition": "http://hl7.org/fhir/StructureDefinition/PractitionerRole#PractitionerRole.telecom.value",
+          "text": "Email"
+        },
+        {
+          "type": "string",
+          "linkId": "3.6",
+          "definition": "http://hl7.org/fhir/StructureDefinition/PractitionerRole#PractitionerRole.organization.identifier.value",
+          "text": "Referring Organisation ODS Code "
+        }
+      ],
+      "type": "group",
+      "linkId": "3",
+      "definition": "http://hl7.org/fhir/StructureDefinition/PractitionerRole#PractitionerRole",
+      "text": "Referring Clinician"
+    },
+    {
+      "item": [
+        {
+          "type": "string",
+          "linkId": "4.1",
+          "definition": "http://hl7.org/fhir/StructureDefinition/ServiceRequest#ServiceRequest.identifier:placerOrderNumber",
+          "text": "Order Number",
+          "required": false,
+          "readOnly": true
+        },
+        {
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "drop-down",
+                    "display": "Drop down"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId": "4.2",
+          "definition": "http://hl7.org/fhir/StructureDefinition/ServiceRequest#ServiceRequest.code",
+          "text": "Referral code",
+          "required": true,
+          "repeats": true,
+          "answerValueSet": "https://fhir.virtually.healthcare/ValueSet/BARSReferralCode"
+        },
+        {
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "drop-down",
+                    "display": "Drop down"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-preferredTerminologyServer",
+              "valueUrl": "https://snowstorm.ihtsdotools.org/fhir"
+            }
+          ],
+          "linkId": "143246062430",
+          "text": "Condition Code",
+          "repeats": true,
+          "answerValueSet": "http://snomed.info/sct/900000000000207008?fhir_vs=ecl%2F%3C404684003"
+        },
+        {
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "drop-down",
+                    "display": "Drop down"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId": "369422130938",
+          "text": "Provider Directory of Service Id"
+        },
+        {
+          "type": "group",
+          "linkId": "436057053828",
+          "text": "When the procedure should take place",
+          "item": [
+            {
+              "type": "date",
+              "linkId": "185899744449",
+              "text": "Start Date"
+            },
+            {
+              "type": "date",
+              "linkId": "839893041416",
+              "text": "End Date"
+            }
+          ]
+        }
+      ],
+      "type": "group",
+      "linkId": "4",
+      "definition": "http://hl7.org/fhir/StructureDefinition/ServiceRequest#ServiceRequest",
+      "text": "Referral Details"
+    },
+    {
+      "type": "group",
+      "linkId": "337865918395",
+      "text": "Triage Assessment Details"
+    },
+    {
+      "type": "group",
+      "linkId": "603552049723",
+      "text": "Consent",
+      "item": [
+        {
+          "type": "boolean",
+          "linkId": "498010386717",
+          "text": "Patient Consent for Referral and Sharing Data"
+        }
+      ]
+    }
+  ]
+}
