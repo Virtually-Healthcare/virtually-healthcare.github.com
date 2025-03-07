@@ -74,12 +74,14 @@
         },
         {
           "type": "string",
-          "linkId": "146294380059",
+          "linkId": "1.8",
+          "definition": "http://hl7.org/fhir/StructureDefinition/Patient#Patient.telecom",
           "text": "Phone Number"
         },
         {
           "type": "string",
-          "linkId": "274455524547",
+          "linkId": "1.9",
+          "definition": "http://hl7.org/fhir/StructureDefinition/Patient#Patient.telecom",
           "text": "Email"
         },
         {
@@ -98,7 +100,8 @@
               }
             }
           ],
-          "linkId": "864384971437",
+          "definition": "http://hl7.org/fhir/StructureDefinition/Patient#Patient.generalPractitioner.identifier.value",
+          "linkId": "1.10",
           "text": "GP Surgery ODS Code"
         }
       ],
@@ -111,17 +114,19 @@
       "item": [
         {
           "type": "string",
-          "linkId": "230324696587",
+          "linkId": "2.1",
+          "definition": "http://hl7.org/fhir/StructureDefinition/ServiceRequest#ServiceRequest.encounter.identifier.value",
           "text": "Episode Id (Patient Journey Id)"
         },
         {
           "type": "date",
-          "linkId": "415619018714",
+          "linkId": "2.2",
+          "definition": "http://hl7.org/fhir/StructureDefinition/Encounter#Encounter.period.start",
           "text": "Start Date"
         }
       ],
       "type": "group",
-      "linkId": "695187913578",
+      "linkId": "2",
       "text": "Episode Details"
     },
     {
@@ -189,7 +194,7 @@
         {
           "type": "string",
           "linkId": "4.1",
-          "definition": "http://hl7.org/fhir/StructureDefinition/ServiceRequest#ServiceRequest.identifier:placerOrderNumber",
+          "definition": "http://hl7.org/fhir/StructureDefinition/ServiceRequest#ServiceRequest.identifier:OriginatingReferralIdentifier",
           "text": "Order Number",
           "required": false,
           "readOnly": true
@@ -211,7 +216,7 @@
             }
           ],
           "linkId": "4.2",
-          "definition": "http://hl7.org/fhir/StructureDefinition/ServiceRequest#ServiceRequest.code",
+          "definition": "http://hl7.org/fhir/StructureDefinition/ServiceRequest#ServiceRequest.code:BARSReferralCode",
           "text": "Referral code",
           "required": true,
           "repeats": true,
@@ -231,14 +236,11 @@
                   }
                 ]
               }
-            },
-            {
-              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-preferredTerminologyServer",
-              "valueUrl": "https://snowstorm.ihtsdotools.org/fhir"
             }
           ],
-          "linkId": "143246062430",
+          "linkId": "4.3",
           "text": "Condition Code",
+          "definition": "http://hl7.org/fhir/StructureDefinition/ServiceRequest#ServiceRequest.reasonCode",
           "repeats": true,
           "answerValueSet": "http://snomed.info/sct/900000000000207008?fhir_vs=ecl%2F%3C404684003"
         },
@@ -258,22 +260,25 @@
               }
             }
           ],
-          "linkId": "369422130938",
+          "linkId": "4.4",
+          "definition": "http://hl7.org/fhir/StructureDefinition/ServiceRequest#ServiceRequest.performer.identifier.value",
           "text": "Provider Directory of Service Id"
         },
         {
           "type": "group",
-          "linkId": "436057053828",
+          "linkId": "4.5",
           "text": "When the procedure should take place",
           "item": [
             {
               "type": "date",
-              "linkId": "185899744449",
+              "linkId": "4.5.1",
+              "definition": "http://hl7.org/fhir/StructureDefinition/ServiceRequest#ServiceRequest.occurrencePeriod.start",
               "text": "Start Date"
             },
             {
               "type": "date",
-              "linkId": "839893041416",
+              "linkId": "4.5.2",
+              "definition": "http://hl7.org/fhir/StructureDefinition/ServiceRequest#ServiceRequest.occurrencePeriod.end",
               "text": "End Date"
             }
           ]
@@ -286,17 +291,18 @@
     },
     {
       "type": "group",
-      "linkId": "337865918395",
+      "linkId": "6",
       "text": "Triage Assessment Details"
     },
     {
       "type": "group",
-      "linkId": "603552049723",
+      "linkId": "7",
       "text": "Consent",
+      "definition": "http://hl7.org/fhir/StructureDefinition/Consent#Consent",
       "item": [
         {
           "type": "boolean",
-          "linkId": "498010386717",
+          "linkId": "7.1",
           "text": "Patient Consent for Referral and Sharing Data"
         }
       ]
