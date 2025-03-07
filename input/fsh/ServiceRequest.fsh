@@ -23,8 +23,8 @@ and [NHS England - Booking and Referral Standard](https://simplifier.net/guide/n
 
 * identifier[OriginatingReferralIdentifier] only OriginatingReferralIdentifier
 * identifier[OriginatingReferralIdentifier] ^short = "Identifier assigned by the Referrer. (HL7 v2 RF1-6 Originating Referral Identifier)"
-* identifier[OriginatingReferralIdentifier] insert Obligation(#SHOULD:populate-if-known, ttps://fhir.virtually.healthcare/ActorDefinition/ReferralRecipient)
-* identifier[OriginatingReferralIdentifier] insert Obligation(#SHALL:populate, ttps://fhir.virtually.healthcare/ActorDefinition/ReferralInitiator)
+* identifier[OriginatingReferralIdentifier] insert Obligation(#SHOULD:populate-if-known, https://fhir.virtually.healthcare/ActorDefinition/ReferralRecipient)
+* identifier[OriginatingReferralIdentifier] insert Obligation(#SHALL:populate, https://fhir.virtually.healthcare/ActorDefinition/ReferralInitiator)
 
 * code 1..1
 * code ^short = "What is being requested/ordered. (HL7 v2 RF1-3 Referral Type)"
@@ -67,8 +67,8 @@ and [NHS England - Booking and Referral Standard](https://simplifier.net/guide/n
 * encounter only Reference(Encounter)
 * encounter.identifier ^short = "Episode or Stay ID (HL7 v2 PV1-19 Visit Number)"
 * encounter.identifier only VisitNumber
-* encounter.identifier insert Obligation(#SHALL:populate-if-known, ttps://fhir.virtually.healthcare/ActorDefinition/ReferralInitiator)
-* encounter.identifier insert Obligation(#SHALL:populate-if-known, ttps://fhir.virtually.healthcare/ActorDefinition/ReferralRecipient)
+* encounter.identifier insert Obligation(#SHALL:populate-if-known, https://fhir.virtually.healthcare/ActorDefinition/ReferralInitiator)
+* encounter.identifier insert Obligation(#SHALL:populate-if-known, https://fhir.virtually.healthcare/ActorDefinition/ReferralRecipient)
 
 
 

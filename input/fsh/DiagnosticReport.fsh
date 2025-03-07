@@ -46,8 +46,8 @@ to include  Royal College of Radiologists (HL7 v2 ORU), Digital Health and Care 
 * encounter only Reference(Encounter)
 * encounter.identifier ^short = "Episode or Stay ID (HL7 v2 PV1-19 Visit Number)"
 * encounter.identifier only VisitNumber
-* encounter.identifier insert Obligation(#SHALL:populate-if-known, ttps://fhir.virtually.healthcare/ActorDefinition/ReferralInitiator)
-* encounter.identifier insert Obligation(#SHALL:populate-if-known, ttps://fhir.virtually.healthcare/ActorDefinition/ReferralRecipient)
+* encounter.identifier insert Obligation(#SHALL:populate-if-known, https://fhir.virtually.healthcare/ActorDefinition/ReferralInitiator)
+* encounter.identifier insert Obligation(#SHALL:populate-if-known, https://fhir.virtually.healthcare/ActorDefinition/ReferralRecipient)
 
 
 * effective[x] 1..1 MS
