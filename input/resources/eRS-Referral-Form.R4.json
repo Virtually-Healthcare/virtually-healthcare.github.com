@@ -211,29 +211,7 @@
         {
           "type": "date",
           "linkId": "3.5",
-          "text": "Referral Pathway Start",
-          "item": [
-            {
-              "linkId": "629233464929_helpText",
-              "type": "display",
-              "text": "The e-Referral Pathway Start Date is a derived value of when the Referral To Treatment (RTT) clock starts. You can supply an optional, alternate pathway start date when creating a referral. For more information see the e-RS FHIR API documentation.",
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
-                  "valueCodeableConcept": {
-                    "coding": [
-                      {
-                        "system": "http://hl7.org/fhir/questionnaire-item-control",
-                        "code": "help",
-                        "display": "Help-Button"
-                      }
-                    ],
-                    "text": "Help-Button"
-                  }
-                }
-              ]
-            }
-          ]
+          "text": "Referral Pathway Start"
         }
       ],
       "type": "group",
@@ -386,29 +364,7 @@
           "type": "integer",
           "linkId": "4.5",
           "text": "First Patient Reminder Letter Follow Up",
-          "required": true,
-          "item": [
-            {
-              "linkId": "firstReminderLetterFollowUpDays_helpText",
-              "type": "display",
-              "text": "f > 0, the system will send an automated letter to the patient after the number of days stated, if the patient hasn't yet booked or deferred to a Service. If = 0, the system will not send reminder letters for this referral.",
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
-                  "valueCodeableConcept": {
-                    "coding": [
-                      {
-                        "system": "http://hl7.org/fhir/questionnaire-item-control",
-                        "code": "help",
-                        "display": "Help-Button"
-                      }
-                    ],
-                    "text": "Help-Button"
-                  }
-                }
-              ]
-            }
-          ]
+          "required": true
         },
         {
           "type": "choice",
