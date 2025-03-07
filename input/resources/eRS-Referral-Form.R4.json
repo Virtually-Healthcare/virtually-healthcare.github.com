@@ -1,0 +1,504 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "eRS-Referral-Request",
+  "meta": {
+    "profile": [
+      "https://fhir.virtually.healthcare/StructureDefinition/Questionnaire"
+    ]
+  },
+  "url": "https://fhir.virtually.healthcare/Questionnaire/eRS-Referral-Request",
+  "title": "eRS Referral Form",
+  "status": "draft",
+  "description": "Representation of eRS Referral Request as a Questionnaire [A011: Create Referral (Deprecated)](https://developer.nhs.uk/apis/e-Referrals/explore_endpoint_a011.html)",
+  "code": [
+    {
+      "system": "http://snomed.info/sct",
+      "code": "3457005",
+      "display": "Patient referral"
+    }
+  ],
+  "item": [
+    {
+      "item": [
+        {
+          "type": "string",
+          "linkId": "1.1",
+          "text": "NHS Number",
+          "required": true
+        }
+      ],
+      "type": "group",
+      "linkId": "1",
+      "text": "Patient Details"
+    },
+    {
+      "type": "string",
+      "linkId": "2",
+      "text": "Referring Clinician",
+      "item": [
+        {
+          "type": "reference",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "drop-down",
+                    "display": "Drop down"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId": "2.1",
+          "text": "SDS User Id (from SmartCard)",
+          "required": true
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/questionnaire-item-control",
+                "code": "drop-down",
+                "display": "Drop down"
+              }
+            ]
+          }
+        }
+      ],
+      "linkId": "requestType",
+      "text": "Request Type",
+      "required": true,
+      "answerOption": [
+        {
+          "valueCoding": {
+            "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-RequestType-1",
+            "code": "ADVICE_AND_GUIDANCE_REQUEST",
+            "display": "Advice and Guidance Request"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-RequestType-1",
+            "code": "APPOINTMENT_REQUEST",
+            "display": "Appointment Request"
+          }
+        }
+      ]
+    },
+    {
+      "item": [
+        {
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "drop-down",
+                    "display": "Drop down"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId": "4.1",
+          "text": "Clinic/Service Type",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-ClinicType-1",
+                "code": "GENERAL_SURGERY",
+                "display": "General Surgery"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-ClinicType-1",
+                "code": "HEART_FAILURE",
+                "display": "Heart Failure"
+              }
+            }
+          ]
+        },
+        {
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "drop-down",
+                    "display": "Drop down"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId": "4.2",
+          "text": "Priority",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-Priority-1",
+                "code": "ROUTINE",
+                "display": "Routine"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-Priority-1",
+                "code": "TWO_WEEK_WAIT",
+                "display": "2 Week Wait"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-Priority-1",
+                "code": "URGENT",
+                "display": "Urgent"
+              }
+            }
+          ]
+        },
+        {
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "drop-down",
+                    "display": "Drop down"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId": "4.3",
+          "text": "Selected Services (eRS Service Id)",
+          "repeats": true,
+          "readOnly": false,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://fhir.nhs.net/Id/ers-service",
+                "code": "12000"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://fhir.nhs.net/Id/ers-service",
+                "code": "12001"
+              }
+            }
+          ]
+        },
+        {
+          "type": "date",
+          "linkId": "eReferralPathwayStart",
+          "text": "Referral Pathway Start",
+          "item": [
+            {
+              "linkId": "629233464929_helpText",
+              "type": "display",
+              "text": "The e-Referral Pathway Start Date is a derived value of when the Referral To Treatment (RTT) clock starts. You can supply an optional, alternate pathway start date when creating a referral. For more information see the e-RS FHIR API documentation.",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "help",
+                        "display": "Help-Button"
+                      }
+                    ],
+                    "text": "Help-Button"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "type": "group",
+      "linkId": "4",
+      "text": "Referral Details"
+    },
+    {
+      "item": [
+        {
+          "item": [
+            {
+              "type": "url",
+              "linkId": "5.1.1",
+              "text": "Attachment Location",
+              "required": true
+            },
+            {
+              "type": "choice",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "drop-down",
+                        "display": "Drop down"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId": "5.1.2",
+              "text": "Attachment Type",
+              "required": true,
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-AttachmentType-1",
+                    "code": "REFERRER",
+                    "display": "Referrer"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-AttachmentType-1",
+                    "code": "PROVIDER",
+                    "display": "Provider"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-AttachmentType-1",
+                    "code": "ADVICE_REQUEST",
+                    "display": "Advice Request"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-AttachmentType-1",
+                    "code": "GUIDANCE_RESPONSE",
+                    "display": "Guidance Response"
+                  }
+                }
+              ]
+            }
+          ],
+          "type": "group",
+          "linkId": "5.1",
+          "text": "Attachments",
+          "repeats": true
+        },
+        {
+          "item": [
+            {
+              "type": "choice",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "drop-down",
+                        "display": "Drop down"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId": "5.2.1",
+              "text": "Specialty",
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-Specialty",
+                    "code": "CARDIOLOGY",
+                    "display": "Cardiology"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "string",
+              "linkId": "5.2.2",
+              "text": "Services near postcode",
+              "readOnly": true
+            },
+            {
+              "type": "integer",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+                  "valueCoding": {
+                    "system": "http://unitsofmeasure.org",
+                    "code": "[mi_br]",
+                    "display": "[mi_br]"
+                  }
+                }
+              ],
+              "linkId": "5.2.3",
+              "text": "Distance Limit"
+            }
+          ],
+          "type": "group",
+          "linkId": "5.2",
+          "text": "Service Selection Criteria"
+        },
+        {
+          "type": "boolean",
+          "linkId": "5.3",
+          "text": "Age and Gender Appropriate"
+        },
+        {
+          "type": "integer",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+              "valueCoding": {
+                "system": "http://unitsofmeasure.org",
+                "code": "d",
+                "display": "d"
+              }
+            }
+          ],
+          "linkId": "5.4",
+          "text": "Maximum wait time for appointment"
+        },
+        {
+          "type": "integer",
+          "linkId": "5.5",
+          "text": "First Patient Reminder Letter Follow Up",
+          "required": true,
+          "item": [
+            {
+              "linkId": "firstReminderLetterFollowUpDays_helpText",
+              "type": "display",
+              "text": "f > 0, the system will send an automated letter to the patient after the number of days stated, if the patient hasn't yet booked or deferred to a Service. If = 0, the system will not send reminder letters for this referral.",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "help",
+                        "display": "Help-Button"
+                      }
+                    ],
+                    "text": "Help-Button"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "drop-down",
+                    "display": "Drop down"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId": "5.6",
+          "text": "Commissioning Provisioning",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-CommissioningProvisioning-1",
+                "code": "ALL_AVAILABLE_FOR_BOOKING",
+                "display": "All available for Booking"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-CommissioningProvisioning-1",
+                "code": "ALL_SERVICES",
+                "display": "All Services"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-CommissioningProvisioning-1",
+                "code": "LOCALLY_COMMISSIONABLE",
+                "display": "Locally Commissionable"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-CommissioningProvisioning-1",
+                "code": "NATIONALLY_AVAILABLE",
+                "display": "Nationally Available"
+              }
+            }
+          ]
+        },
+        {
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "drop-down",
+                    "display": "Drop down"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId": "5.7",
+          "text": "Intention to add referral letter",
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-ReferralLetterIntention-1",
+                "code": "NEED_TO_ADD_LATER",
+                "display": "Need to add later"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-ReferralLetterIntention-1",
+                "code": "NOT_INTENDING_TO_ADD",
+                "display": "Not intending to add"
+              }
+            }
+          ]
+        }
+      ],
+      "type": "group",
+      "linkId": "5",
+      "text": "Supporting Information"
+    }
+  ]
+}
