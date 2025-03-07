@@ -24,7 +24,8 @@
           "type": "string",
           "linkId": "1.1",
           "text": "NHS Number",
-          "required": true
+          "required": true,
+          "definition": "http://hl7.org/fhir/StructureDefinition/ServiceRequest#ServiceRequest.subject.identifier:NHSNumber.value"
         }
       ],
       "type": "group",
@@ -54,6 +55,7 @@
           ],
           "linkId": "2.1",
           "text": "SDS User Id (from SmartCard)",
+          "definition": "http://hl7.org/fhir/StructureDefinition/PractitionerRole#PractitionerRole.practitioner.identifier.value",
           "required": true
         }
       ]
@@ -78,6 +80,7 @@
           ],
           "linkId": "3.1",
           "text": "Clinic/Service Type",
+          "definition": "http://hl7.org/fhir/StructureDefinition/ServiceRequest#ServiceRequest.code",
           "answerOption": [
             {
               "valueCoding": {
@@ -113,6 +116,7 @@
           ],
           "linkId": "3.2",
           "text": "Priority",
+          "definition": "http://hl7.org/fhir/StructureDefinition/ServiceRequest#ServiceRequest.priority",
           "answerOption": [
             {
               "valueCoding": {
@@ -155,6 +159,7 @@
           ],
           "linkId": "3.3",
           "text": "Selected Services (eRS Service Id)",
+          "definition": "http://hl7.org/fhir/StructureDefinition/ServiceRequest#ServiceRequest.performer.identifier.value",
           "repeats": true,
           "readOnly": false,
           "answerOption": [
@@ -191,6 +196,7 @@
           "linkId": "3.4",
           "text": "Request Type",
           "required": true,
+          "definition": "http://hl7.org/fhir/StructureDefinition/ServiceRequest#ServiceRequest.code",
           "answerOption": [
             {
               "valueCoding": {
@@ -211,12 +217,14 @@
         {
           "type": "date",
           "linkId": "3.5",
-          "text": "Referral Pathway Start"
+          "text": "Referral Pathway Start",
+          "definition": "http://hl7.org/fhir/StructureDefinition/ServiceRequest#ServiceRequest.authoredOn"
         }
       ],
       "type": "group",
       "linkId": "3",
-      "text": "Referral Details"
+      "text": "Referral Details",
+      "definition": "http://hl7.org/fhir/StructureDefinition/ServiceRequest#ServiceRequest"
     },
     {
       "item": [
@@ -282,6 +290,7 @@
           "type": "group",
           "linkId": "4.1",
           "text": "Attachments",
+          "definition": "http://hl7.org/fhir/StructureDefinition/ServiceRequest#ServiceRequest.supportingInfo:ReferralLetter",
           "repeats": true
         },
         {
@@ -318,6 +327,7 @@
               "type": "string",
               "linkId": "4.2.2",
               "text": "Services near postcode",
+              "definition": "http://hl7.org/fhir/StructureDefinition/ServiceRequest#ServiceRequest.supportingInfo",
               "readOnly": true
             },
             {
@@ -333,16 +343,19 @@
                 }
               ],
               "linkId": "4.2.3",
+              "definition": "http://hl7.org/fhir/StructureDefinition/ServiceRequest#ServiceRequest.supportingInfo",
               "text": "Distance Limit"
             }
           ],
           "type": "group",
           "linkId": "4.2",
+          "definition": "http://hl7.org/fhir/StructureDefinition/ServiceRequest#ServiceRequest.supportingInfo",
           "text": "Service Selection Criteria"
         },
         {
           "type": "boolean",
           "linkId": "4.3",
+          "definition": "http://hl7.org/fhir/StructureDefinition/ServiceRequest#ServiceRequest.supportingInfo",
           "text": "Age and Gender Appropriate"
         },
         {
@@ -358,12 +371,14 @@
             }
           ],
           "linkId": "4.4",
+          "definition": "http://hl7.org/fhir/StructureDefinition/ServiceRequest#ServiceRequest.supportingInfo",
           "text": "Maximum wait time for appointment"
         },
         {
           "type": "integer",
           "linkId": "4.5",
           "text": "First Patient Reminder Letter Follow Up",
+          "definition": "http://hl7.org/fhir/StructureDefinition/ServiceRequest#ServiceRequest.supportingInfo",
           "required": true
         },
         {
@@ -384,6 +399,7 @@
           ],
           "linkId": "4.6",
           "text": "Commissioning Provisioning",
+          "definition": "http://hl7.org/fhir/StructureDefinition/ServiceRequest#ServiceRequest.supportingInfo",
           "answerOption": [
             {
               "valueCoding": {
@@ -433,6 +449,7 @@
           ],
           "linkId": "4.7",
           "text": "Intention to add referral letter",
+          "definition": "http://hl7.org/fhir/StructureDefinition/ServiceRequest#ServiceRequest.supportingInfo",
           "required": true,
           "answerOption": [
             {
