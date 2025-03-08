@@ -1,0 +1,41 @@
+@startuml
+
+component "**Referral Recipient**\n\nCommunity, Primary,Mental\nHealth, Social Care, Private\nand Secondary Care" as LIMS
+
+component "**Referral Recipient**\n\nSecondary Care" as secondary
+
+component "**Referral Recipient**\n\nUnscheduled Care" as UEC
+
+component "**Intermediary**\n\nHealth Information Exchange" as TIE
+
+component "**Referral Initiator**\n\nPrimary Care" as gp
+component "**Referral Initiator**\n\nCommunity, Primary,Mental\nHealth, Social Care, Private\nand Secondary Care" as userOther
+
+interface "**eReferral**\nHL7 v2 ORU_R01 or\nFHIR R01 Message" as HL7_I12
+interface "**eReferral**\nHL7 v2 ORU_R01 or\nFHIR R01 Message" as HL7_I122
+
+frame "NHS England Intermediary Services" as service {
+  interface "**eRS**\nFHIR RESTful" as eRS
+  interface "**BARS**\nFHIR Message" as BARS
+}
+
+userOther -d-> HL7_I12
+HL7_I12 -d-> TIE
+
+gp .d.> eRS
+
+TIE -d-> HL7_I122
+HL7_I122 -d-> LIMS
+
+TIE -d-> eRS
+eRS .d.> secondary
+
+TIE -d-> BARS
+BARS .d.> UEC
+
+note right of HL7_I12
+email + pdf adaptor
+end note
+
+
+@enduml

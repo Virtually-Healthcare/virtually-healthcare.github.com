@@ -2,12 +2,12 @@
 
 * [IHE 360 Exchange Closed Loop Referral(360X)](https://www.ihe.net/uploadedFiles/Documents/PCC/IHE_PCC_Suppl_360X.pdf)
 * eReferral - [AU eRequesting Implementation Guide](https://build.fhir.org/ig/hl7au/au-fhir-erequesting/index.html)
-* eDischarge - [HL7 Europe Hospital Discharge Report](https://build.fhir.org/ig/hl7-eu/hdr/index.html)
+* eReport - [HL7 Europe Hospital Discharge Report](https://build.fhir.org/ig/hl7-eu/hdr/index.html)
 * NHS England
   * eReferral - [e-Referral Service - FHIR API](https://digital.nhs.uk/developer/api-catalogue/e-referral-service-fhir)
   * eReferral - [Booking and Referral Standard](https://digital.nhs.uk/services/booking-and-referral-standard) 
-  * eDischarge - [Transfer of Care](https://digital.nhs.uk/services/transfer-of-care-initiative)
-  * eDischarge - [GP Connect and IM1](https://digital.nhs.uk/services/gp-connect) Send Document, Update Record and IM1 Write back operations.
+  * eReport - [Transfer of Care](https://digital.nhs.uk/services/transfer-of-care-initiative)
+  * eReport - [GP Connect and IM1](https://digital.nhs.uk/services/gp-connect) Send Document, Update Record and IM1 Write back operations.
 
 ## Actors and Transactions
 
@@ -39,11 +39,11 @@
 <br clear="all">
 <p class="figureTitle">eReferral relationships</p> 
 
-### eDischarge (and Encounters)
+### eReport
 
-<img style="padding:3px;width:50%;" src="eDischarge relationship to other standards.drawio.png" alt="eDischarge relationships"/>
+<img style="padding:3px;width:50%;" src="eDischarge relationship to other standards.drawio.png" alt="eReport relationships"/>
 <br clear="all">
-<p class="figureTitle">eDischarge relationships</p> 
+<p class="figureTitle">eReport relationships</p> 
 
 ## Architecture
 
@@ -59,7 +59,7 @@
 |             | Out       | Private                            | Secondary Care | eRS                         |
 |             | In        | GP, Unscheduled and Emergency Care | Other          | BARS                        |
 |             | In/Out    | Other                              | Other          | eReferral (this)            |
-| eDischarge  | Out       | Pharmacy                           | GP             | GP Connect Send Document    |
+| eReport     | Out       | Pharmacy                           | GP             | GP Connect Send Document    |
 |             | Out       | Online Consultation Provider       | GP             | IM1 (or Ketting XML + MESH) |
 |             | Out       | Other                              | GP             | IM1 (or Ketting XML + MESH) |
 |             | In/Out    | Other                              | Other          | eDischarge (this)           |

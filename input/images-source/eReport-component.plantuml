@@ -1,0 +1,41 @@
+@startuml
+
+
+component "**Referral Recipient**\n**Care Event Notifier**" as LIMS
+
+component "**Intermediary**\n\nHealth Information Exchange" as TIE
+
+component "**Referral Initiator**\n**Patient Care Provider**\n\nPrimary Care" as gp
+component "**Referral Initiator**\n**Patient Care Provider**\n\nCommunity, Mental Health, Private\nSocial Care and Secondary Care" as other
+
+interface "**eReport**\nHL7 v2 ORU_R01 or\nFHIR R01 Message" as HL7_ORU1
+
+interface "**other options**\nKettering XML\nIM1" as im1
+
+
+frame "NHS England Services" as service {
+  interface "GP Connect Send Document\n(bespoke FHIR)\nTransfer of Care (FHIR Document)" as HL7_ORU2
+}
+interface "**eReport**\nHL7 v2 ORU_R01 or\nFHIR R01 Message" as HL7_ORU3
+
+
+LIMS -d-> HL7_ORU1
+HL7_ORU1 -d-> TIE
+
+
+TIE -d-> HL7_ORU2
+HL7_ORU2 .d.> gp
+
+TIE -d-> HL7_ORU3
+HL7_ORU3 -d-> other
+
+TIE -d-> im1
+im1 -d-> gp
+
+
+note right of HL7_ORU1
+email + pdf adaptor
+end note
+
+
+@enduml

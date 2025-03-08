@@ -1,6 +1,6 @@
-Instance:  referral-create
+Instance:  referral
 InstanceOf: MessageDefinition
-Title:   "Message Definition - Referral Create"
+Title:   "Message Definition - Referral"
 Usage:  #definition
 
 * status = #draft

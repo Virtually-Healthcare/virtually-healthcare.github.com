@@ -72,59 +72,6 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
 instanceOptions:
   setMetaProfile: never
 
-pages:
-  index.md:
-    title: Home
-    generation: markdown
-  clinical-data-repository.md:
-    title: Clinical Data Repository
-    generation: markdown
-  NHS-England.md:
-    title: NHS England Directory Services Facade
-    generation: markdown
-  e-Referral-Service.md:
-    title: e-Referral Service Facade (NHS England)
-    generation: markdown
-  eReferral.md:
-    title: eReferral
-    generation: markdown
-  IM1.md:
-    title: IM1 Transaction and Patient
-    generation: markdown
-  data-model.md:
-    title: Data Model
-    generation: markdown
-  assessments-and-observations.md:
-    title: Assessments and Observation Definitions
-    generation: markdown
-  structured-data-capture.md:
-    title: Structured Data Capture (Assessments)
-    generation: markdown
-  clinical-assessment.md:
-    title: Clinical Assessment
-    generation: markdown
-  kettering.md:
-    title: Kettering XML
-    generation: markdown
-  api-standards.md:
-    title: API Standards
-    generation: markdown
-  HIE.md:
-    title: Health Information Exchange (HIE)
-    generation: markdown
-  IUA.md:
-    title: Internet User Authorization (IUA)
-    generation: markdown
-  MHD.md:
-    title: Mobile access to Health Documents (MHD)
-    generation: markdown
-  testing.md:
-    title: Testing
-    generation: markdown
-
-
-
-
 resources:
   Patient/3:
     name: Patient-EMIS-IM1-Daniel-ODonnell
@@ -371,15 +318,73 @@ resources:
 #      - Observation/35eb7da3-9b85-46ce-bd29-75c2263b514a
 #      - Observation/ad7c1832-f855-4ece-a4c7-c79b433a7890
 
+pages:
+  index.md:
+    title: Home
+    generation: markdown
+  clinical-data-repository.md:
+    title: Clinical Data Repository
+    generation: markdown
+  NHS-England.md:
+    title: NHS England Directory Services Facade
+    generation: markdown
+  e-Referral-Service.md:
+    title: e-Referral Service Facade (NHS England)
+    generation: markdown
+  eReferral.md:
+    title: eReferral and eReport
+    generation: markdown
+  IM1.md:
+    title: IM1 Transaction and Patient
+    generation: markdown
+  data-model.md:
+    title: Data Model
+    generation: markdown
+  assessments-and-observations.md:
+    title: Assessments and Observation Definitions
+    generation: markdown
+  structured-data-capture.md:
+    title: Structured Data Capture (Assessments)
+    generation: markdown
+  clinical-assessment.md:
+    title: Clinical Assessment
+    generation: markdown
+  kettering.md:
+    title: Kettering XML
+    generation: markdown
+  api-standards.md:
+    title: API Standards
+    generation: markdown
+  HIE.md:
+    title: Health Information Exchange (HIE)
+    generation: markdown
+  IUA.md:
+    title: Internet User Authorization (IUA)
+    generation: markdown
+  MHD.md:
+    title: Mobile access to Health Documents (MHD)
+    generation: markdown
+  testing.md:
+    title: Testing
+    generation: markdown
+  I12.md:
+    title: eReferral
+    generation: markdown
+  R01.md:
+    title: eReport
+    generation: markdown
+
 menu:
   Home: index.html
   Analysis and Design (Vol 1):
-     eReferral and eDischarge: eReferral.html
+     eReferral and eReport: eReferral.html
 #    Health Information Exchange (HIE): HIE.html
 #    Mobile access to Health Documents (MHD): MHD.html
 #    Clinical Data Repository (CDR):  clinical-data-repository.html
 #    Internet User Authorization (IUA): IUA.html
-#  Interfaces (Vol 2):
+  Interfaces (Vol 2):
+    eReferral: I12.html
+    eReport: R01.html
 #    NHS England Interfaces: NHS-England.html
   #  e-Referral Service: e-Referral-Service.html
 #    IM1 Transaction and Patient: IM1.html
