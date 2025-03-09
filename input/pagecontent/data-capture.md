@@ -13,11 +13,23 @@
 
 ## Overview
 
+<figure>
+{%include data-capture-activity.svg%}
+<p id="fX.X.X.X-X" class="figureTitle">Data Capture Process</p>
+</figure>
+<br clear="all">
+
+<figure>
+{%include data-capture-sequence.svg%}
+<p id="fX.X.X.X-X" class="figureTitle">Data Capture Sequence Diagram</p>
+</figure>
+<br clear="all">
 
 
 ## Use Case
 
 ### Use Case 1 - Online Consultation - Patient Request and Practitioner Response
+
 
 ### Use Case 2 - eReferral and eReport
 

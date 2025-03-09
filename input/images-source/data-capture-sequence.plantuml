@@ -1,0 +1,34 @@
+@startuml
+
+hide footbox
+
+participant "**Form Filler**" as filler
+participant "**Form Manager**" as manager
+participant "**Intermediary**\nHealth Information Exchange" as TIE
+participant "**Clinical Data Repositories**\nEMIS, TPP, Cerner, EPIC, Virtually, etc" as CDR
+
+filler -> filler: Select Form
+opt
+filler -> manager: Prepopulate Form
+manager -> TIE: Retrieve Existing Data
+loop
+TIE -> CDR: Retrieve Existing Data
+CDR --> TIE: Existing Data
+end
+TIE -> TIE: Aggregate Data
+
+TIE --> manager:
+manager --> filler: Prepopulated Form
+end
+
+filler -> filler: Complete Form
+
+filler -> TIE: Submit Form
+TIE -> TIE: Validate submission request
+TIE --> filler: Accept or Reject
+TIE -> manager: Extract Data
+manager --> TIE: Extracted Data
+TIE -> CDR: Persist data (Virtually only)
+CDR --> TIE: Response
+
+@enduml
