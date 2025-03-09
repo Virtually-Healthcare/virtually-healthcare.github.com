@@ -30,6 +30,10 @@
 
 ### Use Case 1 - Online Consultation - Patient Request and Practitioner Response
 
+<img style="padding:3px;width:80%;" src="Online Consulations.drawio.png" alt="Online Consultations"/>
+<br clear="all">
+<p class="figureTitle">Online Consultations</p> 
 
 ### Use Case 2 - eReferral and eReport
 
+TODO
