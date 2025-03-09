@@ -2,7 +2,7 @@ Instance: f3533ea0-9588-4f25-ace7-969d80823b20
 InstanceOf: ServiceRequest
 Title: "ServiceRequest - Create"
 Description: """
-Example conversion of [$ers.createReferral multishortlist](eRS/ers-GenerateReferral-multishortlist-FHIR-STU3.json) to FHIR R4 ServiceRequest in a Clinical Data Repository
+Example conversion of [$ers.createReferral multishortlist](https://digital.nhs.uk/developer/api-catalogue/e-referral-service-fhir#post-/STU3/ReferralRequest/$ers.createReferral) to FHIR R4 ServiceRequest in a Clinical Data Repository
 """
 Usage: #example
 

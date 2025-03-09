@@ -322,20 +322,11 @@ pages:
   index.md:
     title: Home
     generation: markdown
-  clinical-data-repository.md:
-    title: Clinical Data Repository
-    generation: markdown
-  NHS-England.md:
-    title: NHS England Directory Services Facade
-    generation: markdown
-  e-Referral-Service.md:
-    title: e-Referral Service Facade (NHS England)
-    generation: markdown
   eReferral.md:
     title: eReferral and eReport
     generation: markdown
-  IM1.md:
-    title: IM1 Transaction and Patient
+  data-capture.md:
+    title: Data Capture
     generation: markdown
   data-model.md:
     title: Data Model
@@ -343,17 +334,11 @@ pages:
   assessments-and-observations.md:
     title: Assessments and Observation Definitions
     generation: markdown
-  structured-data-capture.md:
-    title: Structured Data Capture (Assessments)
-    generation: markdown
   clinical-assessment.md:
     title: Clinical Assessment
     generation: markdown
   kettering.md:
     title: Kettering XML
-    generation: markdown
-  api-standards.md:
-    title: API Standards
     generation: markdown
   HIE.md:
     title: Health Information Exchange (HIE)
@@ -378,6 +363,7 @@ menu:
   Home: index.html
   Analysis and Design (Vol 1):
      eReferral and eReport: eReferral.html
+     Data Capture: data-capture.html
 #    Health Information Exchange (HIE): HIE.html
 #    Mobile access to Health Documents (MHD): MHD.html
 #    Clinical Data Repository (CDR):  clinical-data-repository.html
@@ -385,9 +371,7 @@ menu:
   Interfaces (Vol 2):
     eReferral: I12.html
     eReport: R01.html
-#    NHS England Interfaces: NHS-England.html
-  #  e-Referral Service: e-Referral-Service.html
-#    IM1 Transaction and Patient: IM1.html
+
   Data Models (Vol 3):
     Data Model: data-model.html
     Assessments and Observations: assessments-and-observations.html

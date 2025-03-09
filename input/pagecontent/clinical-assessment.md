@@ -6,7 +6,7 @@
 
 ## Pre Conditions
 
-Data is entered into the `Clinical Data Repository` via Apple HealthKit/Google Health/[Hl7 Personal Health Device](https://hl7.org/fhir/uv/phd/STU1.1/) integration or [Structured Data Capture](structured-data-capture.html).
+Data is entered into the `Clinical Data Repository` via Apple HealthKit/Google Health/[Hl7 Personal Health Device](https://hl7.org/fhir/uv/phd/STU1.1/) integration or [Structured Data Capture](data-capture.html).
 This data is also sent to an `Event Service`, this emits the data as an event feed.
 
 ## Event Feed
