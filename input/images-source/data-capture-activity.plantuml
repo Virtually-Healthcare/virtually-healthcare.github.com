@@ -3,7 +3,7 @@
 start
 
 :Select Form;
-:Prepopulate Form from existing data (automatic);
+:Prepopulate Form from existing data (optional);
 :Complete Form;
 :Submit Form;
 stop
