@@ -1,3 +1,6 @@
+### References
+
+- Digital Health and Care Wales - HL7 ORU_R01 2.5.1 Implementation Guide
 
 ### eReport
 
