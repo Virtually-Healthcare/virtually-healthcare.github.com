@@ -1,0 +1,14 @@
+@startuml
+
+start
+
+:Select provider via directory services;
+:Select Referral Form (this may be specified by provider);
+:Prepopulate Referral Form from existing data (optional);
+:Complete Referral Form;
+:Submit Referral Form;
+:Procedure or Request is performed;
+:Create Report (discharge letter);
+
+stop
+@enduml

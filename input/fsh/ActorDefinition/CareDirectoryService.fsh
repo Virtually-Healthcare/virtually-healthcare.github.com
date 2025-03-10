@@ -1,9 +1,9 @@
-Instance:  DirectoryService
+Instance:  CareDirectoryService
 InstanceOf: ActorDefinition
-Title:   "Directory Service"
+Title:   "CareDirectory Service"
 Usage:  #definition
 
-* name = "DirectoryService"
+* name = "CareDirectoryService"
 * type = http://hl7.org/fhir/examplescenario-actor-type#system
 * status = http://hl7.org/fhir/publication-status#draft
 * description = """

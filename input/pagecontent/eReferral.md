@@ -11,13 +11,20 @@
 
 ## Actors and Transactions
 
-| Actor                                                        | Definition                                              |
-|--------------------------------------------------------------|---------------------------------------------------------|
-| [Referral Initiator](ActorDefinition-ReferralInitiator.html) | The provider asking for a referral or advice/guidance   |
-| [Referral Recipient](ActorDefinition-ReferralRecipient.html) | The provider providing the procedure or advice/guidance |
-
+| Actor                                                               | Definition                                                                                                            |
+|---------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
+| [Referral Initiator](ActorDefinition-ReferralInitiator.html)        | The provider asking for a referral or advice/guidance                                                                 |
+| [Referral Recipient](ActorDefinition-ReferralRecipient.html)        | The provider providing the procedure or advice/guidance                                                               |
+| [Care Directory Serivce](ActorDefinition-CareDirectoryService.html) | Details on services provided by providers, i.e. eRS Healthcare Service, UEC Directory of Services, NHS Service Finder |                
 
 ## Overview
+
+<figure>
+{%include eReferral-actitity.svg%}
+<p id="fX.X.X.X-X" class="figureTitle">eReferral and eDischarge Overview Diagram</p>
+</figure>
+<br clear="all">
+
 
 <img style="padding:3px;width:95%;" src="eReferral and eDischarge.drawio.png" alt="eReferral and eDischarge Process"/>
 <br clear="all">
