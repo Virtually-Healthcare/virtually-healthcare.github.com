@@ -328,8 +328,14 @@ pages:
   data-capture.md:
     title: Data Capture
     generation: markdown
-  data-model.md:
-    title: Data Model
+  pcc-model.md:
+    title: Patient Care Coordination Model
+    generation: markdown
+  eReferral-model.md:
+    title: eReferral Model
+    generation: markdown
+  eReport-model.md:
+    title: eReport Model
     generation: markdown
   assessments-and-observations.md:
     title: Assessments and Observation Definitions
@@ -373,7 +379,9 @@ menu:
     eReport: R01.html
 
   Data Models (Vol 3):
-    Data Model: data-model.html
+    eReferral: eReferral-model.html
+    eReport: eReport-model.html
+    Patient Care Coordination: pcc-model.html
     Assessments and Observations: assessments-and-observations.html
   Artefacts: artifacts.html
   Testing: testing.html

@@ -38,19 +38,6 @@
 <br clear="all">
 
 
-## Relationship to other Standards and Services
-
-### eRequesting
-
-<img style="padding:3px;width:50%;" src="eRequesting relationship to other standards.drawio.png" alt="eReferral relationships"/>
-<br clear="all">
-<p class="figureTitle">eReferral relationships</p> 
-
-### eReport
-
-<img style="padding:3px;width:50%;" src="eDischarge relationship to other standards.drawio.png" alt="eReport relationships"/>
-<br clear="all">
-<p class="figureTitle">eReport relationships</p> 
 
 ## Architecture
 
