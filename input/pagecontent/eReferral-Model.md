@@ -8,7 +8,7 @@
 
 [eRS Referral Form](Questionnaire-eRS-Referral-Request.html)
 
-## Entity Model
+## eReferral
 
 <img style="padding:3px;width:50%;" src="eRequesting relationship to other standards.drawio.png" alt="eReferral relationships"/>
 <br clear="all">

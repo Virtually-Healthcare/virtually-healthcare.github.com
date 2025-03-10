@@ -9,7 +9,7 @@
 ### Entity Model
 
 <figure>
-{%include eReport-model.svg%}
+{%include eReport-entity-model.svg%}
 <p id="fX.X.X.X-X" class="figureTitle">eReport Model</p>
 </figure>
 <br clear="all">
