@@ -4,7 +4,10 @@ hide footbox
 
 participant "Referral Initiator" as placer
 participant "Referral Recipient" as filler
+participant "Care Directory Service" as mMCSD
 
+placer -> mMCSD: Lookup of care providers
+placer -> placer: Select care provider(s)
 placer -> placer : Complete Referral Form
 placer -> filler : Submit eReferral
 opt
