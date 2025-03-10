@@ -20,7 +20,7 @@
 ## Overview
 
 <figure>
-{%include eReferral-actitity.svg%}
+{%include eReferral-activity.svg%}
 <p id="fX.X.X.X-X" class="figureTitle">eReferral and eDischarge Overview Diagram</p>
 </figure>
 <br clear="all">
