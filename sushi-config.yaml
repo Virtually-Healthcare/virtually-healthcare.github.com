@@ -8,9 +8,9 @@ FSHOnly: false
   # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: virtually.healthcare
 canonical: https://fhir.virtually.healthcare
-name: Virtually Healthcare Patient Care Coordination (PCC)
+name: Virtually Healthcare - Patient Care Coordination (PCC)
 
-title: Virtually Healthcare Patient Care Coordination (PCC)
+title: Virtually Healthcare - Patient Care Coordination (PCC)
 
 # description: Example Implementation Guide for getting started with SUSHI
 status: draft
