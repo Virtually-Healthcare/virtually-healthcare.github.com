@@ -358,6 +358,9 @@ pages:
   testing.md:
     title: Testing
     generation: markdown
+  architecture.md:
+    title: Architecture
+    generation: markdown
   I12.md:
     title: eReferral
     generation: markdown
@@ -384,4 +387,6 @@ menu:
     Patient Care Coordination: pcc-model.html
     Assessments and Observations: assessments-and-observations.html
   Artefacts: artifacts.html
-  Testing: testing.html
+  Development:
+    Architecture: architecture.html
+    Testing: testing.html
