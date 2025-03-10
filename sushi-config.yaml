@@ -8,7 +8,7 @@ FSHOnly: false
   # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: virtually.healthcare
 canonical: https://fhir.virtually.healthcare
-name: Virtually Healthcare - IHE Patient Care Coordination (PCC)
+name: VirtuallyHealthcare_IHEPCC
 
 title: Virtually Healthcare - IHE Patient Care Coordination (PCC)
 
