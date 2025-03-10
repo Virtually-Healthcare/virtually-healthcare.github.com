@@ -1,6 +1,7 @@
 ### References
 
 - Digital Health and Care Wales - HL7 ORU_R01 2.5.1 Implementation Guide
+- [HL7 Europe Hospital Discharge Report](https://build.fhir.org/ig/hl7-eu/hdr/index.html)
 
 ### eReport
 
