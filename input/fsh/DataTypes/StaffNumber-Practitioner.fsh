@@ -26,20 +26,17 @@ A = any alpha
 (*) NHS Prescription Services systems require these prescriber codes to be 8 characters long. Additional zeroes (0) should be inserted immediately following the first 2 alpha characters to extend the code to 8 characters as necessary.
 
 
-Code
-
-Format
-
-Example
-GP/medical prescriber (DIN)	NNNNNN	954000
-Nurse prescriber (NMC)	NNANNNNA	71A2998E
-Pharmacist prescriber (GPHC)	NNNNNNN	2033467
-Optometrist prescriber	NN-NNNNN	01-09491
-Podiatrist prescriber (HCPC)	CHNNNNNN	CH029821
-Physiotherapist prescriber (HCPC)	PHNNNNNN	PH095159
-Radiographer prescriber (HCPC)	RANNNNNN	RA088262
-Dietician prescriber (HCPC)	DTNNNNNN	DT012345
-Paramedic prescriber (HCPC)	PANNNNNN	PA054321
+| Code |Format | Example|
+|------|--------|---------|
+| GP/medical prescriber (DIN)| 	NNNNNN| 	954000 |
+| Nurse prescriber (NMC) | NNANNNNA	| 71A2998E |
+| Pharmacist prescriber (GPHC)| 	NNNNNNN	| 2033467 |
+| Optometrist prescriber| 	NN-NNNNN| 01-09491 |
+| Podiatrist prescriber (HCPC)| 	CHNNNNNN| CH029821 |
+| Physiotherapist prescriber (HCPC)| 	PHNNNNNN| PH095159 |
+| Radiographer prescriber (HCPC)| 	RANNNNNN| RA088262 |
+| Dietician prescriber (HCPC)	| DTNNNNNN| DT012345 |
+| Paramedic prescriber (HCPC)	| PANNNNNN| PA054321 |
 """
 
 
