@@ -19,11 +19,12 @@ NHS Data Dictionary [CONSULTANT CODE](https://www.datadictionary.nhs.uk/data_ele
 | https://fhir.nhs.uk/Id/sds-user-id | 1.2.826.0.1285.0.2.0.65	| |	N(*) |SDS User ID	|
 | https://fhir.nhs.uk/Id/gmc-reference-number | 2.16.840.1.113883.2.1.3.2.4.18.29 || NNNNNNN |	GMC Reference Number|
 
+
 Format
 
-N = any number
-A = any alpha
-(*) NHS Prescription Services systems require these prescriber codes to be 8 characters long. Additional zeroes (0) should be inserted immediately following the first 2 alpha characters to extend the code to 8 characters as necessary.
+- N = any number
+- A = any alpha
+- (*) NHS Prescription Services systems require these prescriber codes to be 8 characters long. Additional zeroes (0) should be inserted immediately following the first 2 alpha characters to extend the code to 8 characters as necessary.
 
 
 | Code |Format | Example|
