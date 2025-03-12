@@ -397,6 +397,33 @@ RuleSet: DailyCalories(patient, patientName, performer, performerName, effective
 * code = $loinc#41979-6 "Calories burned in 24 hour Calculated"
 * valueQuantity = {value} 'kcal/d' "kilokalories per day"
 
+// Bundle RuleSets
+RuleSet: DocumentBundle(uuid, documentdate)
+* type = #document
+* identifier.system = "urn:oid:2.16.724.4.8.10.200.10"
+* identifier.value = {uuid}
+* timestamp = {documentdate}
+
+RuleSet: EntryDocument(uuid, resourceId)
+* entry[+]
+  * fullUrl = {uuid}
+  * resource = {resourceId}
+
+RuleSet: EntryTransaction(type, uuid, resourceId)
+* entry[+]
+  * fullUrl = {uuid}
+  * resource = {resourceId}
+  * request.method = #POST
+  * request.url = {type}
+
+// Bundle RuleSets
+RuleSet: MessageBundle(uuid, documentdate)
+* type = #message
+* identifier.system = "https://tools.ietf.org/html/rfc4122"
+* identifier.value = {uuid}
+* timestamp = {documentdate}
+
+
 
 Profile:        ReferenceRest
 Parent:         Reference

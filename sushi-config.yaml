@@ -43,6 +43,7 @@ dependencies:
       Makes available certain R5 elements for use as part of this R4 IG
 
 parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters
+  path-binary: input/attachments
   path-resource:
     - input/resources
     - fsh-generated/resources
@@ -311,6 +312,8 @@ groups:
     name: "Example: eReferral"
     description: "eReferral examples"
     resources:
+      - Bundle/PatientReferralMessage
+      - MessageHeader/MessageHeaderPatientReferral
       - Patient/Patient-JackDawkins-9912003888
       - ServiceRequest/f3533ea0-9588-4f25-ace7-969d80823b20
       - Condition/Condition-Dyspnoea-9912003888
