@@ -335,6 +335,26 @@ groups:
       - Observation/65083da2-c77f-419e-a205-68a7d3863e90
       - Observation/f268716f-9dc6-4361-a124-0aad3604d8a2
       - Observation/88b99ab6-0990-4f1c-b1a7-6adb50dd70b7
+  -ex-example-ExerciseActivity:
+    name: "Example: Patient Remote Monitoring - Exercise Activity"
+    description: "Patient Remote Monitoring Exercise Activity examples"
+    resources:
+      - QuestionnaireResponse/questionnaireresponse-exercise-activity
+      - Observation/71fae5af-0b9e-4b9e-b6af-3d1bb4e223a0
+      - Observation/cffe1a6e-8eda-4613-bf54-119b374bb5b9
+      - Observation/35eb7da3-9b85-46ce-bd29-75c2263b514a
+      - Observation/ad7c1832-f855-4ece-a4c7-c79b433a7890
+      - Observation/cb3c778b-cee4-4027-8163-c082958f87f1
+      - Observation/8f750590-30d6-425f-a8c4-f0a7c41e01d4
+  -ex-example-DailyActivity:
+    name: "Example: Patient Remote Monitoring - Daily Activity"
+    description: "Patient Remote Monitoring Daily Activity examples"
+    resources:
+      - QuestionnaireResponse/questionnaireresponse-daily-physical-activity
+      - Observation/0a7f38ae-9658-4b43-a3f9-02f66f65bf38
+      - Observation/a14a52b7-b647-45f3-851a-8c00e28c0968
+      - Observation/ea09866e-d540-4d9c-ba9c-8e22338e524c
+      - Observation/b8df13d9-86f3-4545-9e82-50bca88090d9
 
 pages:
   index.md:
