@@ -317,10 +317,14 @@ groups:
       - Patient/Patient-JackDawkins-9912003888
       - ServiceRequest/f3533ea0-9588-4f25-ace7-969d80823b20
       - Condition/Condition-Dyspnoea-9912003888
+      - QuestionnaireResponse/ers-Referral-Request
   -ex-example-eDischarge:
     name: "Example: eDischarge"
     description: "eDischarge examples"
     resources:
+      - Bundle/DischargeLetterMessage
+      - MessageHeader/MessageHeaderDischargeLetter
+      - DocumentReference/94bf65ba-cd6c-4601-b339-6d547f424646
       - Binary/d6eeedd1-92d3-45b9-bf33-6401e804425f
   -ex-example-VitalSigns:
     name: "Example: Patient Remote Monitoring - Vital Signs"
