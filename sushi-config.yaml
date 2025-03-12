@@ -290,20 +290,20 @@ resources:
     description: Example
     exampleBoolean: true
   QuestionnaireResponse/ers-Referral-Request:
-    name: Example
-    description: Example
+    name: QuestionnaireResponse eRS Referral Request
+    description: eRS Referral Request Form based Data Capture
     exampleBoolean: true
   QuestionnaireResponse/questionnaireresponse-daily-physical-activity:
-    name: Example
-    description: Example
+    name: QuestionnaireResponse Daily Physical Activity
+    description: Daily Physical Activity Form based Data Capture
     exampleBoolean: true
   QuestionnaireResponse/questionnaireresponse-exercise-activity:
-    name: Example
-    description: Example
+    name: QuestionnaireResponse Exercise Activity
+    description: Exercise Activity Form based Data Capture
     exampleBoolean: true
   QuestionnaireResponse/questionnaireresponse-vital-signs:
-    name: Example
-    description: Example
+    name: Questionnaire Response Vital Signs
+    description: Vital Signs Form based Data Capture
     exampleBoolean: true
 
 groups:
@@ -369,6 +369,9 @@ pages:
   pcc-model.md:
     title: Patient Care Coordination Model
     generation: markdown
+  remote-patient-monitoring.md:
+    title: Remote Patient Monitoring
+    generation: markdown
   eReferral-model.md:
     title: eReferral Model
     generation: markdown
@@ -411,6 +414,7 @@ menu:
   Analysis and Design (Vol 1):
      eReferral and eReport: eReferral.html
      Data Capture: data-capture.html
+     Remote Patient Monitoring: remote-patient-monitoring.html
 #    Health Information Exchange (HIE): HIE.html
 #    Mobile access to Health Documents (MHD): MHD.html
 #    Clinical Data Repository (CDR):  clinical-data-repository.html
