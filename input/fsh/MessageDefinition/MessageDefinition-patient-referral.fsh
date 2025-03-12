@@ -1,6 +1,6 @@
-Instance:  referral
+Instance:  patient-referral
 InstanceOf: MessageDefinition
-Title:   "Message Definition - Referral"
+Title:   "Message Definition - Patient Referral"
 Usage:  #definition
 
 * status = #draft

@@ -37,3 +37,12 @@
 </figure>
 <br clear="all">
 
+## Message
+
+The following messages are used to support the transmission of a consultation summary.
+
+| FHIR Message                                                                                                                          | Purpose                                                                                                                                                                                                         | EIP Type                                                                                                |
+|---------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
+| [Patient Referral](#patient-referral) <br> Definition: <br/> [patient-referral (I12)](MessageDefinition-unsolicited-observation.html) | The (structured) patient referral <br/> Is compatible with HL7 v2 [REF_I12](https://hl7-definition.caristix.com/v2/HL7v2.5.1/TriggerEvents/REF_I12) Message. <br/> Can be converted to NHS England eRS and BARS | [Command Message](https://www.enterpriseintegrationpatterns.com/patterns/messaging/CommandMessage.html) |
+
+### Patient Referral
