@@ -24,3 +24,10 @@ DRAFT conversion of [HL7 v2.5.1 ORU_R01](https://hl7-definition.caristix.com/v2/
   * profile = Canonical(DocumentReference)
   * min = 0
   * max = "*"
+
+* focus[+]
+* focus[=]
+  * code = #Patient
+  * profile = Canonical(Patient)
+  * min = 0
+  * max = "*"
