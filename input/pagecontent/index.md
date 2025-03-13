@@ -1,9 +1,9 @@
 ## Patient Care Coordination (PCC)
 
-<table style="width:100%">
+<table style="width:80%">
   <tr>
     <td>
-       <img style="padding:3px;width:40%;" src="ReferralsAndActivities.png" alt="Patient Care Coordination Manager (Community)"/>
+       <img style="padding:3px;width:40%;" src="VHDomain.drawio.png" alt="Patient Care Coordination Manager (Community)"/>
       <p class="figureTitle">Patient Care Coordination Manager (Community)</p>   
     </td>
   </tr>
