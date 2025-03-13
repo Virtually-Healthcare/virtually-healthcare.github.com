@@ -267,27 +267,27 @@ resources:
     description: NHS Health Check Assessment, based on [PRSB NHS Health Check Standard](https://theprsb.org/standards/nhshealthcheckstandard)
     exampleBoolean: false
   Encounter/93d2c059-a934-4796-827b-dee1158cc4dc:
-    name: Example
+    name: Encounter Example
     description: Example
     exampleBoolean: true
   QuestionnaireResponse/9449304424:
-    name: Example
+    name: QuestionnaireResponse Patient Preferences Example
     description: Example
     exampleBoolean: true
   Patient/9730906181:
-    name: Example
+    name: Patient 9730906181 Example
     description: Example
     exampleBoolean: true
   RelatedPerson/CE234750:
-    name: Example
+    name: RelatedPerson CE234750 Example
     description: Example
     exampleBoolean: true
   QuestionnaireResponse/patient-3-pharmacy-nomination:
-    name: Example
+    name: QuestionnaireResponse pharmacy nomination Example
     description: Example
     exampleBoolean: true
   Device/TransformationService:
-    name: Example
+    name: Device Example
     description: Example
     exampleBoolean: true
   QuestionnaireResponse/ers-Referral-Request:
@@ -306,6 +306,9 @@ resources:
     name: Questionnaire Response Vital Signs
     description: Example of [Questionnaire-VitalSigns](Questionnaire-VitalSigns.html) - Vital Signs Form based Data Capture
     exampleBoolean: true
+  Binary/e9bcaf5d-e9ce-45d4-b656-1aebd6ce60e4:
+    name: Binary Discharge Summary
+    description: Binary Discharge Summary Report as PDF
 
 groups:
   -ex-example-eReferral:
@@ -326,6 +329,7 @@ groups:
       - MessageHeader/MessageHeaderDischargeLetter
       - DocumentReference/94bf65ba-cd6c-4601-b339-6d547f424646
       - Binary/d6eeedd1-92d3-45b9-bf33-6401e804425f
+      - Binary/e9bcaf5d-e9ce-45d4-b656-1aebd6ce60e4
   -ex-example-VitalSigns:
     name: "Example: Patient Remote Monitoring - Vital Signs"
     description: "Patient Remote Monitoring Vital Signs examples"
@@ -362,6 +366,17 @@ groups:
       - Observation/a14a52b7-b647-45f3-851a-8c00e28c0968
       - Observation/ea09866e-d540-4d9c-ba9c-8e22338e524c
       - Observation/b8df13d9-86f3-4545-9e82-50bca88090d9
+  -ex-example-CareDirectoryService:
+    name: "Example: Care Directory Service"
+    description: "Care Directory Service examples"
+    resources:
+      - Patient/9730906181
+      - QuestionnaireResponse/patient-3-pharmacy-nomination
+      - RelatedPerson/CE234750
+      - Organization/e2d3115b-402b-45a5-a01d-7acb64466ddc
+      - Organization/RR8
+      - Organization/C81010
+
 
 pages:
   index.md:
