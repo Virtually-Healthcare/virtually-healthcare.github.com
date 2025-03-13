@@ -5,7 +5,8 @@ start
 repeat
 :Device Data Capture;
 :Assessment;
-:Diagnosis (Triage);
+:Diagnosis;
+:Triage;
 :Plan;
 :Intervention;
 repeat while (Evaluate (still a problem?)) is (yes) not (no)

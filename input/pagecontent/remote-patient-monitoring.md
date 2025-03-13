@@ -12,8 +12,9 @@
 | Actor                                                                   | Definition                                                          |
 |-------------------------------------------------------------------------|---------------------------------------------------------------------|
 | [Clinical Data Repository](ActorDefinition-ClinicalDataRepository.html) | The system holding the patients provider health record              |    
-| Personal Health Record                                                  | Citizen held records, e.g. Apple Health and Google Health Connect   |
-| Personal Health Device                                                  | A device capturing health related data, e.g. Oura Ring, FitBit, etc |
+| Clinical Decision Support                                               ||
+| Personal Health Record (PHR)                                            | Citizen held records, e.g. Apple Health and Google Health Connect   |
+| Personal Health Device (PHD)                                            | A device capturing health related data, e.g. Oura Ring, FitBit, etc |
 
 ## Overview
 
@@ -22,3 +23,9 @@
 <p id="fX.X.X.X-X" class="figureTitle">Remote Patient Monitoring Overview</p>
 </figure>
 <br clear="all">
+
+<img style="padding:3px;width:95%;" src="Remote Patient Monitoring.drawio.png" alt="Remote Patient Monitoring Process"/>
+<br clear="all">
+<p class="figureTitle">Remote Patient Monitoring Process</p> 
+<br clear="all">
+
