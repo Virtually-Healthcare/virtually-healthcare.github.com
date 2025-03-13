@@ -35,7 +35,7 @@
           <mxGeometry x="355" y="440" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="w4Dr3OeFcrMAhnn8j9h_-11" value="Care Service Directory" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
-          <mxGeometry x="554" y="370" width="120" height="60" as="geometry" />
+          <mxGeometry x="220" y="370" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
