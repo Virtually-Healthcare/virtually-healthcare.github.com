@@ -292,19 +292,19 @@ resources:
     exampleBoolean: true
   QuestionnaireResponse/ers-Referral-Request:
     name: QuestionnaireResponse eRS Referral Request
-    description: eRS Referral Request Form based Data Capture
+    description: Example of [Questionnaire-eRS-Referral-Request](Questionnaire-eRS-Referral-Request.html) - eRS Referral Request Form based Data Capture
     exampleBoolean: true
   QuestionnaireResponse/questionnaireresponse-daily-physical-activity:
     name: QuestionnaireResponse Daily Physical Activity
-    description: Daily Physical Activity Form based Data Capture
+    description: Example of [Questionnaire-DailyPhysicalActivity](Questionnaire-DailyPhysicalActivity.html) - Daily Physical Activity Form based Data Capture
     exampleBoolean: true
   QuestionnaireResponse/questionnaireresponse-exercise-activity:
     name: QuestionnaireResponse Exercise Activity
-    description: Exercise Activity Form based Data Capture
+    description: Example of [Questionnaire-DailyPhysicalActivity](Questionnaire-DailyPhysicalActivity.html) - Exercise Activity Form based Data Capture
     exampleBoolean: true
   QuestionnaireResponse/questionnaireresponse-vital-signs:
     name: Questionnaire Response Vital Signs
-    description: Vital Signs Form based Data Capture
+    description: Example of [Questionnaire-VitalSigns](Questionnaire-VitalSigns.html) - Vital Signs Form based Data Capture
     exampleBoolean: true
 
 groups:
