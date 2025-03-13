@@ -331,8 +331,8 @@ groups:
       - Binary/d6eeedd1-92d3-45b9-bf33-6401e804425f
       - Binary/e9bcaf5d-e9ce-45d4-b656-1aebd6ce60e4
   -ex-example-VitalSigns:
-    name: "Example: Patient Remote Monitoring - Vital Signs"
-    description: "Patient Remote Monitoring Vital Signs examples"
+    name: "Example: Remote Patient Monitoring - Vital Signs"
+    description: "Remote Patient Monitoring Vital Signs examples"
     resources:
       - Patient/073eef49-81ee-4c2e-893b-bc2e4efd2630
       - QuestionnaireResponse/questionnaireresponse-vital-signs
@@ -347,8 +347,8 @@ groups:
       - Observation/f268716f-9dc6-4361-a124-0aad3604d8a2
       - Observation/88b99ab6-0990-4f1c-b1a7-6adb50dd70b7
   -ex-example-ExerciseActivity:
-    name: "Example: Patient Remote Monitoring - Exercise Activity"
-    description: "Patient Remote Monitoring Exercise Activity examples"
+    name: "Example: Remote Patient Monitoring - Exercise Activity"
+    description: "Remote Patient Monitoring Exercise Activity examples"
     resources:
       - QuestionnaireResponse/questionnaireresponse-exercise-activity
       - Observation/71fae5af-0b9e-4b9e-b6af-3d1bb4e223a0
@@ -358,8 +358,8 @@ groups:
       - Observation/cb3c778b-cee4-4027-8163-c082958f87f1
       - Observation/8f750590-30d6-425f-a8c4-f0a7c41e01d4
   -ex-example-DailyActivity:
-    name: "Example: Patient Remote Monitoring - Daily Activity"
-    description: "Patient Remote Monitoring Daily Activity examples"
+    name: "Example: Remote Patient Monitoring - Daily Activity"
+    description: "Remote Patient Monitoring Daily Activity examples"
     resources:
       - QuestionnaireResponse/questionnaireresponse-daily-physical-activity
       - Observation/0a7f38ae-9658-4b43-a3f9-02f66f65bf38
