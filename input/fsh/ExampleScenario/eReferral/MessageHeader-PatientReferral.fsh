@@ -10,16 +10,16 @@ Usage: #example
 * eventCoding = http://terminology.hl7.org/CodeSystem/v2-0003#I12
 
 * sender.identifier.system = $ods-code
-* sender.identifier.value = "R0A"
-* sender.display = "MANCHESTER UNIVERSITY NHS FOUNDATION TRUST"
+* sender.identifier.value = "F83004"
+* sender.display = "Archway Practice"
 
 * destination.receiver.identifier.system = $ods-code
-* destination.receiver.identifier.value = "699X0"
-* destination.receiver.display = "NORTH WEST GLH"
-* destination.endpoint = "https//fhir.mft.nhs.uk/Endpoint/LIMS"
+* destination.receiver.identifier.value = "FFX11"
+* destination.receiver.display = "London Islington High St"
+* destination.endpoint = "https://fhir.virtually.healthcare/Endpoint/MESH"
 
-* source.endpoint = "https//fhir.mft.nhs.uk/Endpoint/HIVE"
-* source.software = "MFT Epic"
+* source.endpoint = "https://fhir.virtually.healthcare/Endpoint/ESB"
+* source.software = "VH Enterprise Service Bus"
 
 * focus[+]
   * reference = "urn:uuid:f3533ea0-9588-4f25-ace7-969d80823b20"

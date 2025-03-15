@@ -11,12 +11,16 @@ Usage: #example
   * value = "f3533ea0-9588-4f25-ace7-969d80823b20"
   * type = http://terminology.hl7.org/CodeSystem/v2-0203#PLAC
   * assigner.identifier.system = $ods-code
-  * assigner.identifier.value = "FK502"
+  * assigner.identifier.value = "F83004"
 
 * status = #active
 * intent = #order
 * subject.identifier.system = $nhs-number
 * subject.identifier.value = "9912003888"
+
+* performer[+]
+  * identifier.value = "FFX11"
+  * identifier.system = $ods-code
 
 * code.coding[PatientReferralSCT] = $sct#425315000 "Cardiac assessment"
 

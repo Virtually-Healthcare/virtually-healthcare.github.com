@@ -6,7 +6,7 @@ Description: "TODO"
 * identifier[+].value = "94bf65ba-cd6c-4601-b339-6d547f424646"
 * identifier[=].system = "urn:oid:1.2.840.114350.1.13.5325.1.7.2.798268"
 * identifier[=].assigner.identifier.system = $ods-code
-* identifier[=].assigner.identifier.value = "699X0"
+* identifier[=].assigner.identifier.value = "FFX11"
 
 * status = #current
 
@@ -22,16 +22,16 @@ Description: "TODO"
 * context.encounter[+]
   * identifier
     * value = "1001166717"
-    * system = "https://fhir.nhs.uk/Id/visit-number/R0A"
+    * system = "https://fhir.nhs.uk/Id/visit-number/F83004"
     * type = $v2-0203#VN
     * assigner.identifier.system = $ods-code
-    * assigner.identifier.value = "R0A"
+    * assigner.identifier.value = "F83004"
 
-* context.related[fillerOrderNumber].identifier.value = "1001166717"
-* context.related[fillerOrderNumber].identifier.system = "https://fhir.mft.nhs.uk/Id/FillerOrderNumber"
-* context.related[fillerOrderNumber].identifier.type = http://terminology.hl7.org/CodeSystem/v2-0203#FILL
-* context.related[fillerOrderNumber].identifier.assigner.identifier.system = $ods-code
-* context.related[fillerOrderNumber].identifier.assigner.identifier.value = "699X0"
+* context.related[OriginatingReferralIdentifier].identifier.value = "f3533ea0-9588-4f25-ace7-969d80823b20"
+* context.related[OriginatingReferralIdentifier].identifier.system = "https://tools.ietf.org/html/rfc4122"
+* context.related[OriginatingReferralIdentifier].identifier.type = http://terminology.hl7.org/CodeSystem/v2-0203#PLAC
+* context.related[OriginatingReferralIdentifier].identifier.assigner.identifier.system = $ods-code
+* context.related[OriginatingReferralIdentifier].identifier.assigner.identifier.value = "F83004"
 
 * content[+]
   * attachment.contentType = #application/pdf
@@ -43,11 +43,11 @@ Description: "TODO"
   * system = $nhs-number
   * value = "9449305552"
 
-* context.event[+] = $test-directory#R240.1
+* context.event[+] = $sct#425315000
 
 * context.sourcePatientInfo.identifier.type = $v2-0203#MR
 * context.sourcePatientInfo.identifier.value = "633"
 * context.sourcePatientInfo.identifier.assigner.identifier.system = $ods-code
-* context.sourcePatientInfo.identifier.assigner.identifier.value = "R0A"
+* context.sourcePatientInfo.identifier.assigner.identifier.value = "FFX11"
 
 

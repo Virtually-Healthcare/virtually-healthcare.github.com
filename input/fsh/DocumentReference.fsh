@@ -34,17 +34,12 @@ Based on UK Definitions from [IHE Europe Metadata for exchange medical documents
 * context.related ^slicing.ordered = false
 
 * context.related contains
-  fillerOrderNumber 0..1 MS and accessionNumber 0..1 MS
-* context.related[accessionNumber] only Reference(ServiceRequest)
-* context.related[accessionNumber].type 1..1 MS
-* context.related[accessionNumber].type = "ServiceRequest"
-* context.related[accessionNumber].identifier 1..1
-* context.related[accessionNumber].identifier only AccessionNumber
-* context.related[fillerOrderNumber] only Reference(ServiceRequest)
-* context.related[fillerOrderNumber].type 1..1 MS
-* context.related[fillerOrderNumber].type = "ServiceRequest"
-* context.related[fillerOrderNumber].identifier 1..1
-* context.related[fillerOrderNumber].identifier only FillerOrderNumber
+  OriginatingReferralIdentifier 0..1 MS
+* context.related[OriginatingReferralIdentifier] only Reference(ServiceRequest)
+* context.related[OriginatingReferralIdentifier].type 1..1 MS
+* context.related[OriginatingReferralIdentifier].type = "ServiceRequest"
+* context.related[OriginatingReferralIdentifier].identifier 1..1
+* context.related[OriginatingReferralIdentifier].identifier only OriginatingReferralIdentifier
 
 * context.sourcePatientInfo only Reference(Patient)
 * context.sourcePatientInfo.identifier only MedicalRecordNumber
