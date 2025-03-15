@@ -1,8 +1,8 @@
-Instance: Condition-Dyspnoea-9912003888
+Instance: Condition-Dyspnoea
 InstanceOf: Condition
 Title: "Condition - Dyspnoea"
 Description: """
-Condition Dyspnoea Jack Dawkins NHS Number: 9912003888
+Condition Dyspnoea
 
 Loosely based on [NHS Digital End of Life Care FHIR STU3 - Advance Treatment Preferences Atomic Unit](https://nhsconnect.github.io/FHIR-END-OF-LIFE-API/api_eol_atp.html)
 """
@@ -18,8 +18,8 @@ Usage: #example
 * severity = $sct#24484000 "Severe"
 
 * subject.identifier.system = $nhs-number
-* subject.identifier.value = "9912003888"
-* subject.display = "Jack DAWKINS"
+* subject.identifier.value = "9449305552"
+* subject.display = "Octavia CHISLETT"
 
 * code = $sct#267036007 "Dyspnoea"
 
