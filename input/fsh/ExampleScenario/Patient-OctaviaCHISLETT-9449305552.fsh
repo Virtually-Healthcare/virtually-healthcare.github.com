@@ -11,7 +11,6 @@ Usage: #example
 * identifier[0].type = $v2-0203#NH
 * identifier[0].system = $nhs-number
 * identifier[0].value = "9449305552"
-* identifier[0].assigner.identifier.value = "X24"
 * identifier[1].type = $v2-0203#MR
 * identifier[1].value = "A12356565"
 * identifier[1].system = "https://devmtx-restapis-stable.meditech.com:443/identifier/MRN"
