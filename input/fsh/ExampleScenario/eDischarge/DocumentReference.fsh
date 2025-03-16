@@ -12,6 +12,14 @@ Description: "TODO"
 
 * date = "2025-01-29T10:37:26+00:00"
 
+* custodian.identifier.system = $ods-code
+* custodian.identifier.value = "FFX11"
+
+* author[+]
+  * identifier.system = "https://fhir.hl7.org.uk/Id/gphc-number"
+  * identifier.value = "ABCDEF1234"
+  * display = "Miss Charlotte Chemist"
+
 * type
   * coding[+]
     * code = #823691000000103
