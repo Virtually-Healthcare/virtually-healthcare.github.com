@@ -10,7 +10,7 @@ and [NHS England - Booking and Referral Standard](https://simplifier.net/guide/n
 
 * extension[additionalContact] ^short = "Do not use, not supported. Use CareTeam instead."
 
-* identifier 1..* MS
+* identifier 0..* MS
 * identifier only CorrelationIdentifier
 
 * identifier ^slicing.discriminator.type = #value
@@ -19,7 +19,7 @@ and [NHS England - Booking and Referral Standard](https://simplifier.net/guide/n
 * identifier ^slicing.description = "Slice based on the type"
 * identifier ^slicing.ordered = false
 * identifier contains
-  OriginatingReferralIdentifier 1..1 MS
+  OriginatingReferralIdentifier 0..1 MS
 
 * identifier[OriginatingReferralIdentifier] only OriginatingReferralIdentifier
 * identifier[OriginatingReferralIdentifier] ^short = "Identifier assigned by the Referrer. (HL7 v2 RF1-6 Originating Referral Identifier)"
@@ -70,10 +70,8 @@ and [NHS England - Booking and Referral Standard](https://simplifier.net/guide/n
 * encounter.identifier insert Obligation(#SHALL:populate-if-known, https://fhir.virtually.healthcare/ActorDefinition/ReferralInitiator)
 * encounter.identifier insert Obligation(#SHALL:populate-if-known, https://fhir.virtually.healthcare/ActorDefinition/ReferralRecipient)
 
-
-
 * supportingInfo 0..* MS
-* supportingInfo only Reference(ObservationPanel or Observation or DiagnosticReport or DocumentReference)
+* supportingInfo only Reference(ObservationPanel or Observation or DiagnosticReport or DocumentReference or Consent)
 
 * supportingInfo ^slicing.discriminator.type = #value
 * supportingInfo ^slicing.discriminator.path = "type"
