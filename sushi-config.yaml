@@ -14,7 +14,7 @@ title: Virtually Healthcare - IHE Patient Care Coordination (PCC)
 
 # description: Example Implementation Guide for getting started with SUSHI
 status: draft
-version: 0.1.0-current
+version: 0.1.1-current
 fhirVersion: 4.0.1
 copyrightYear: 2024+
 releaseLabel: ci-build
