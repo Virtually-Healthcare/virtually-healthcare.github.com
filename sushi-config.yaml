@@ -31,7 +31,7 @@ publisher:
 #
 dependencies:
   fhir.r4.ukcore.stu3.currentbuild:
-    version: 0.0.18-pre-release
+    version: 0.0.19-pre-release
     uri: https://simplifier.net/guide/ukcoreversionhistory
   hl7.fhir.uv.sdc:
    version: 3.0.0
