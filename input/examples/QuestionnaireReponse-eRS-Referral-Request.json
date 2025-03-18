@@ -18,6 +18,41 @@
   },
   "item": [
     {
+      "linkId": "2.1",
+      "text": "Referring Clinician",
+      "answer": [
+        {
+          "valueString":  "G2435868"
+        }
+      ]
+    },
+    {
+      "linkId": "3.1",
+      "text": "Clinic/Service Type",
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-ClinicType-1",
+            "code": "HEART_FAILURE",
+            "display": "Heart Failure"
+          }
+        }
+      ]
+    },
+{
+  "linkId": "3.2",
+  "text": "Priority",
+  "answer": [
+    {
+      "valueCoding": {
+        "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-Priority-1",
+        "code": "ROUTINE",
+        "display": "Routine"
+      }
+    }
+  ]
+},
+    {
       "linkId": "3.4",
       "text": "Request Type",
       "answer": [
@@ -30,34 +65,7 @@
         }
       ]
     },
-    {
-      "linkId": "3.2",
-      "text": "Priority",
-      "answer": [
-        {
-          "valueCoding": {
-            "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-Priority-1",
-            "code": "ROUTINE",
-            "display": "Routine"
-          }
-        }
-      ]
-    },
-    {
-      "linkId": "2.1",
-      "text": "Referring Clinician",
-      "answer": [
-        {
-          "valueReference": {
-            "identifier": {
-            "system": "https://fhir.hl7.org.uk/Id/gmp-number",
-            "value": "G2435868"
-            },
-            "display": "Dr Emis Test"
-          }
-        }
-      ]
-    },
+
     {
       "linkId": "3.6",
       "text": "Organisation or clinician providing the service",
@@ -92,19 +100,7 @@
         }
       ]
     },
-    {
-      "linkId": "3.1",
-      "text": "Clinic/Service Type",
-      "answer": [
-        {
-          "valueCoding": {
-            "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-ClinicType-1",
-            "code": "HEART_FAILURE",
-            "display": "Heart Failure"
-          }
-        }
-      ]
-    },
+
     {
       "linkId": "4.2.2",
       "text": "Services near postcode",
