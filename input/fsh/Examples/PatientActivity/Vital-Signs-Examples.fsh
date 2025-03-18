@@ -276,7 +276,7 @@ Usage: #example
   * value = "1300fffb-e319-400b-84d0-4e9c1f619af4"
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
-* code = http://loinc.org#85353-1
+* code = http://loinc.org#85353-1 "Vital signs, weight, height, head circumference, oxygen saturation and BMI panel"
 * subject.reference = "urn:uuid:073eef49-81ee-4c2e-893b-bc2e4efd2630"
 * effectiveDateTime = "2024-03-04T06:27:40.701Z"
 * performer.reference = "urn:uuid:073eef49-81ee-4c2e-893b-bc2e4efd2630"
