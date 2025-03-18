@@ -1,4 +1,4 @@
-Instance: MessageHeaderDischargeLetter
+Instance: DischargeLetter
 InstanceOf: MessageHeader
 Title: "Message Header - Discharge Letter"
 Description: "TODO"
