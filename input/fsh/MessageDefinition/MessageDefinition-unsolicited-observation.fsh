@@ -15,13 +15,13 @@ DRAFT conversion of [HL7 v2.5.1 ORU_R01](https://hl7-definition.caristix.com/v2/
 * focus[=]
   * code = #DiagnosticReport
   * profile = Canonical(DiagnosticReport)
-  * min = 1
+  * min = 0
   * max = "*"
 
 * focus[+]
 * focus[=]
-  * code = #DocumentReference
-  * profile = Canonical(DocumentReference)
+  * code = #Observation
+  * profile = Canonical(ObservationPanel)
   * min = 0
   * max = "*"
 
