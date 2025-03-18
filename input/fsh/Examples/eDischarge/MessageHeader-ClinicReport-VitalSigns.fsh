@@ -22,5 +22,5 @@ Usage: #example
 * source.software = "Virtually App 1.02"
 
 * focus[+]
-  * reference = "urn:uuid:94bf65ba-cd6c-4601-b339-6d547f424646"
+  * reference = "urn:uuid:88b99ab6-0990-4f1c-b1a7-6adb50dd70b7"
   * type = #Observation
