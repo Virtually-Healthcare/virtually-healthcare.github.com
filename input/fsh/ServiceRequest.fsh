@@ -70,6 +70,23 @@ and [NHS England - Booking and Referral Standard](https://simplifier.net/guide/n
 * encounter.identifier insert Obligation(#SHALL:populate-if-known, https://fhir.virtually.healthcare/ActorDefinition/ReferralInitiator)
 * encounter.identifier insert Obligation(#SHALL:populate-if-known, https://fhir.virtually.healthcare/ActorDefinition/ReferralRecipient)
 
+* performer 1..* MS
+* performer only Reference(Practitioner or PractitionerRole or Organization or HealthcareService)
+
+* performer ^slicing.discriminator.type = #value
+* performer ^slicing.discriminator.path = "type"
+* performer ^slicing.rules = #open
+* performer ^slicing.description = "Slice based on the type"
+* performer ^slicing.ordered = false
+* performer contains
+  Clinician 0..1 MS and Service 0..1 MS
+
+* performer[Clinician].type = "Practitioner"
+* performer[Clinician].identifier only EnglandPractitionerIdentifier
+* performer[Service].type = "HealthcareService"
+* performer[Service].identifier only EnglandServiceIdentifier
+
+
 * supportingInfo 0..* MS
 * supportingInfo only Reference(ObservationPanel or Observation or DiagnosticReport or DocumentReference or Consent)
 

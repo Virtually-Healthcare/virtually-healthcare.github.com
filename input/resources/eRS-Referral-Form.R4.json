@@ -38,7 +38,7 @@
       "text": "Referring Clinician",
       "item": [
         {
-          "type": "reference",
+          "type": "string",
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
@@ -54,8 +54,8 @@
             }
           ],
           "linkId": "2.1",
+          "definition": "http://hl7.org/fhir/StructureDefinition/ServiceRequest#ServiceRequest.requester.identifier.value",
           "text": "SDS User Id (from SmartCard)",
-          "definition": "http://hl7.org/fhir/StructureDefinition/PractitionerRole#PractitionerRole.practitioner.identifier.value",
           "required": true
         }
       ]
@@ -219,12 +219,25 @@
           "linkId": "3.5",
           "text": "Referral Pathway Start",
           "definition": "http://hl7.org/fhir/StructureDefinition/ServiceRequest#ServiceRequest.authoredOn"
+        },
+        {
+          "type": "group",
+          "linkId": "3.6",
+          "text": "Organisation or clinician providing the service",
+          "item": [
+            {
+              "type": "string",
+              "linkId": "3.6.1",
+              "text": "SDS User Id (from SmartCard)",
+              "definition": "http://hl7.org/fhir/StructureDefinition/ServiceRequest#ServiceRequest.performer.identifier.value"
+            }
+          ]
         }
       ],
       "type": "group",
       "linkId": "3",
-      "text": "Referral Details",
-      "definition": "http://hl7.org/fhir/StructureDefinition/ServiceRequest#ServiceRequest"
+      "definition": "http://hl7.org/fhir/StructureDefinition/ServiceRequest#ServiceRequest",
+      "text": "Referral Details"
     },
     {
       "item": [

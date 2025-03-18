@@ -18,7 +18,7 @@
   },
   "item": [
     {
-      "linkId": "requestType",
+      "linkId": "3.4",
       "text": "Request Type",
       "answer": [
         {
@@ -31,7 +31,7 @@
       ]
     },
     {
-      "linkId": "priority",
+      "linkId": "3.2",
       "text": "Priority",
       "answer": [
         {
@@ -44,7 +44,7 @@
       ]
     },
     {
-      "linkId": "referringClinician",
+      "linkId": "2.1",
       "text": "Referring Clinician",
       "answer": [
         {
@@ -59,11 +59,11 @@
       ]
     },
     {
-      "linkId": "performer",
+      "linkId": "3.6",
       "text": "Organisation or clinician providing the service",
       "item": [
         {
-          "linkId": "namedClinician",
+          "linkId": "3.6.1",
           "text": "Services provided by a specific clinician",
           "answer": [
             {
@@ -80,7 +80,7 @@
         ]
     },
     {
-      "linkId": "specialty",
+      "linkId": "4.2.1",
       "text": "Specialty",
       "answer": [
         {
@@ -93,7 +93,7 @@
       ]
     },
     {
-      "linkId": "clinicType",
+      "linkId": "3.1",
       "text": "Clinic/Service Type",
       "answer": [
         {
@@ -106,7 +106,7 @@
       ]
     },
     {
-      "linkId": "postcode",
+      "linkId": "4.2.2",
       "text": "Services near postcode",
       "answer": [
         {
@@ -115,7 +115,7 @@
       ]
     },
     {
-      "linkId": "firstReminderLetterFollowUpDays",
+      "linkId": "4.5",
       "text": "First Patient Reminder Letter Follow Up",
       "answer": [
         {
@@ -124,16 +124,7 @@
       ]
     },
     {
-      "linkId": "eReferralPathwayStart",
-      "text": "Referral Pathway Start",
-      "answer": [
-        {
-          "valueDate": "2024-11-01"
-        }
-      ]
-    },
-    {
-      "linkId": "intentionToAddReferralLetter",
+      "linkId": "4.7",
       "text": "Intention to add referral letter",
       "answer": [
         {
