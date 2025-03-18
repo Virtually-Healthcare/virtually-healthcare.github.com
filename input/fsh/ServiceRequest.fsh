@@ -82,11 +82,11 @@ and [NHS England - Booking and Referral Standard](https://simplifier.net/guide/n
   Clinician 0..1 MS and Service 0..1 MS
 
 * performer[Clinician].type = "Practitioner"
-* performer[Clinician] only Practitioner
+* performer[Clinician] only Reference(Practitioner)
 * performer[Clinician].identifier 0..1 MS
 * performer[Clinician].identifier only EnglandPractitionerIdentifier
 * performer[Service].type = "HealthcareService"
-* performer[Service] only HealthcareService
+* performer[Service] only Reference(HealthcareService)
 * performer[Service].identifier 0..1 MS
 * performer[Service].identifier only EnglandServiceIdentifier
 
