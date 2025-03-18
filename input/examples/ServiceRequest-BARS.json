@@ -1,0 +1,97 @@
+{
+  "resourceType": "ServiceRequest",
+  "id": "REFREQ03",
+  "meta": {
+    "lastUpdated": "2023-06-26T11:30:00.8185338+00:00",
+    "profile" : [
+      "https://fhir.virtually.healthcare/StructureDefinition/ServiceRequest"
+    ]
+  },
+  "status": "active",
+  "intent": "plan",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "https://fhir.nhs.uk/CodeSystem/message-category-servicerequest",
+          "code": "referral",
+          "display": "Transfer of Care"
+        },
+        {
+          "system": "https://fhir.nhs.uk/CodeSystem/usecases-categories-bars",
+          "code": "a5t1",
+          "display": "Primary Care to Community Pharmacy"
+        }
+      ]
+    },
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "3457005"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "1577041000000109",
+        "display": "Community Pharmacist Consultation Service for minor illness (procedure)"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "urn:uuid:9589fb37-87a2-48d8-968f-b371429208a8",
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "3478526985"
+    },
+    "display": "Mrs Julie Jones"
+  },
+  "encounter": {
+    "reference": "urn:uuid:8c63d621-4d86-4f57-8699-e8e22d49935d"
+  },
+  "occurrencePeriod": {
+    "start": "2023-06-26T11:30:00+00:00",
+    "end": "2023-06-27T11:30:00+00:00"
+  },
+  "authoredOn": "2023-06-26T11:30:00+00:00",
+  "requester": {
+    "reference": "urn:uuid:7d948662-bade-450e-b6c5-9bb6ee39cb56",
+    "type": "Practitioner",
+    "display": "Marcy BLAKE"
+  },
+  "performer": [
+    {
+      "type": "HealthcareService",
+      "identifier": {
+        "system": "http://fhir.nhs.uk/Id/dos-service-id",
+        "value": "111111111"
+      },
+      "display": "Emergency Department - Adult"
+    }
+  ],
+  "reasonReference": [
+    {
+      "reference": "urn:uuid:4b816945-a51b-47c4-9efd-4d7f94c8e8b4",
+      "display": "Vomiting"
+    }
+  ],
+  "supportingInfo": [
+    {
+      "reference": "urn:uuid:1e91008e-96d0-438b-873c-c6d2c007fc29",
+      "type": "Consent"
+    }
+  ],
+  "note": [
+    {
+      "text": "Who is this query about constipation about?: An adult or child over 10 years old\\n Do you have constipation and any of the following apply to you?: None of the above\\n\\n Symptoms: 2/7 hx constipation\\n\\n Self-care / medication already tried: None\\n\\n Patient concerns: Unable to pass stool dor 2/7; straining.\\n"
+    },
+    {
+      "time": "2023-06-26T11:30:00+00:00",
+      "text": "Patient will contact pharmacy service in 24 hours. If, upon receipt, the pharmacist has concerns over the patient's condition they should contact the patient."
+    }
+  ]
+}

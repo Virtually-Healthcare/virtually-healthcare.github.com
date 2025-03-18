@@ -309,6 +309,12 @@ resources:
   Binary/e9bcaf5d-e9ce-45d4-b656-1aebd6ce60e4:
     name: Binary Discharge Summary
     description: Binary Discharge Summary Report as PDF
+  Bundle/REFREQ03:
+    name: Bundle Message I12 - BARS REFREQ03
+    description: BARS Message REFREQ03 converted to I12 Message format
+  ServiceRequest/REFREQ03:
+    name: ServiceRequest BARS REFREQ03
+    description: BARS Example REFREQ03 converted to ServiceRequest
 
 groups:
   -ex-example-eReferral:
@@ -316,8 +322,10 @@ groups:
     description: "eReferral examples"
     resources:
       - Bundle/PatientReferralMessage
+      - Bundle/REFREQ03
       - MessageHeader/MessageHeaderPatientReferral
       - ServiceRequest/f3533ea0-9588-4f25-ace7-969d80823b20
+      - ServiceRequest/REFREQ03
       - Condition/Condition-Dyspnoea
       - QuestionnaireResponse/ers-Referral-Request
   -ex-example-eDischarge:

@@ -1,0 +1,605 @@
+{
+  "resourceType": "Bundle",
+  "id": "REFREQ03",
+  "meta": {
+    "lastUpdated": "2023-06-26T11:30:00.818+00:00"
+  },
+  "type": "message",
+  "timestamp": "2023-06-26T11:30:00.000+00:00",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:c89a8895-56fe-41de-b20b-fab6efa99c99",
+      "resource": {
+        "resourceType": "MessageHeader",
+        "meta": {
+          "lastUpdated": "2023-06-26T11:30:00.8185338+00:00"
+        },
+        "eventCoding": {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0003",
+          "code": "I12"
+        },
+        "destination": [
+          {
+            "endpoint": "https://fhir.nhs.uk/Id/dos-service-id|111111111",
+            "receiver": {
+              "type": "Organization",
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "RYE"
+              },
+              "display": "Receiving/performing Organization"
+            }
+          }
+        ],
+        "sender": {
+          "type": "Organization",
+          "identifier": {
+            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+            "value": "RND"
+          },
+          "display": "Sender Organization"
+        },
+        "source": {
+          "name": "Emergency service",
+          "software": "Anon Patient Manager",
+          "version": "2.1.45",
+          "contact": {
+            "system": "phone",
+            "value": "+44 (0113) 123 4567"
+          },
+          "endpoint": "https://fhir.nhs.uk/Id/dos-service-id|2222222222"
+        },
+        "reason": {
+          "coding": [
+            {
+              "system": "https://fhir.nhs.uk/CodeSystem/message-reason-bars",
+              "code": "new"
+            }
+          ]
+        },
+        "focus": [
+          {
+            "reference": "urn:uuid:236bb75d-90ef-461f-b71e-fde7f899802c"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:236bb75d-90ef-461f-b71e-fde7f899802c",
+      "resource": {
+        "resourceType": "ServiceRequest",
+        "meta": {
+          "lastUpdated": "2023-06-26T11:30:00.8185338+00:00"
+        },
+        "status": "active",
+        "intent": "plan",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.nhs.uk/CodeSystem/message-category-servicerequest",
+                "code": "referral",
+                "display": "Transfer of Care"
+              },
+              {
+                "system": "https://fhir.nhs.uk/CodeSystem/usecases-categories-bars",
+                "code": "a5t1",
+                "display": "Primary Care to Community Pharmacy"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "3457005"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "1577041000000109",
+              "display": "Community Pharmacist Consultation Service for minor illness (procedure)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:9589fb37-87a2-48d8-968f-b371429208a8",
+          "identifier": {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "3478526985"
+          },
+          "display": "Mrs Julie Jones"
+        },
+        "encounter": {
+          "reference": "urn:uuid:8c63d621-4d86-4f57-8699-e8e22d49935d"
+        },
+        "occurrencePeriod": {
+          "start": "2023-06-26T11:30:00+00:00",
+          "end": "2023-06-27T11:30:00+00:00"
+        },
+        "authoredOn": "2023-06-26T11:30:00+00:00",
+        "requester": {
+          "reference": "urn:uuid:7d948662-bade-450e-b6c5-9bb6ee39cb56",
+          "type": "Practitioner",
+          "display": "Marcy BLAKE"
+        },
+        "performer": [
+          {
+            "type": "HealthcareService",
+            "identifier": {
+              "system": "http://fhir.nhs.uk/Id/dos-service-id",
+              "value": "111111111"
+            },
+            "display": "Emergency Department - Adult"
+          }
+        ],
+        "reasonReference": [
+          {
+            "reference": "urn:uuid:4b816945-a51b-47c4-9efd-4d7f94c8e8b4",
+            "display": "Vomiting"
+          }
+        ],
+        "supportingInfo": [
+          {
+            "reference": "urn:uuid:1e91008e-96d0-438b-873c-c6d2c007fc29",
+            "type": "Consent"
+          }
+        ],
+        "note": [
+          {
+            "text": "Who is this query about constipation about?: An adult or child over 10 years old\\n Do you have constipation and any of the following apply to you?: None of the above\\n\\n Symptoms: 2/7 hx constipation\\n\\n Self-care / medication already tried: None\\n\\n Patient concerns: Unable to pass stool dor 2/7; straining.\\n"
+          },
+          {
+            "time": "2023-06-26T11:30:00+00:00",
+            "text": "Patient will contact pharmacy service in 24 hours. If, upon receipt, the pharmacist has concerns over the patient's condition they should contact the patient."
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:8c63d621-4d86-4f57-8699-e8e22d49935d",
+      "resource": {
+        "resourceType": "Encounter",
+        "meta": {
+          "lastUpdated": "2023-06-26T11:30:00.8185338+00:00"
+        },
+        "identifier": [
+          {
+            "system": "https://sender.url/Id/case-number",
+            "value": "sender1234"
+          }
+        ],
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "EMER",
+          "display": "emergency"
+        },
+        "subject": {
+          "reference": "urn:uuid:9589fb37-87a2-48d8-968f-b371429208a8",
+          "identifier": {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "3478526985"
+          },
+          "display": "Mrs Julie Jones"
+        },
+        "episodeOfCare": [
+          {
+            "reference": "EpisodeOfCare/d877b820-e72b-44d1-a627-195f54bfc606"
+          }
+        ],
+        "period": {
+          "start": "2023-06-26T11:30:00+00:00"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:4b816945-a51b-47c4-9efd-4d7f94c8e8b4",
+      "resource": {
+        "resourceType": "Condition",
+        "meta": {
+          "lastUpdated": "2023-06-26T11:30:00.8185338+00:00"
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "provisional"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "33962009",
+                "display": "Presenting complaint"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "text": "Vomiting"
+        },
+        "subject": {
+          "reference": "urn:uuid:9589fb37-87a2-48d8-968f-b371429208a8"
+        },
+        "encounter": {
+          "reference": "urn:uuid:8c63d621-4d86-4f57-8699-e8e22d49935d"
+        },
+        "onsetDateTime": "2023-06-26"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:9589fb37-87a2-48d8-968f-b371429208a8",
+      "resource": {
+        "resourceType": "Patient",
+        "meta": {
+          "lastUpdated": "2023-06-26T11:30:00.8185338+00:00"
+        },
+        "extension": [
+          {
+            "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-EthnicCategory",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategory",
+                  "code": "A",
+                  "display": "British, Mixed British"
+                }
+              ]
+            }
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-religion",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v3-ReligiousAffiliation",
+                  "code": "1041",
+                  "display": "Roman Catholic Church"
+                }
+              ]
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "3478526985"
+          }
+        ],
+        "name": [
+          {
+            "use": "official",
+            "text": "Mrs Julie Jones",
+            "family": "Jones",
+            "given": [
+              "Julie"
+            ],
+            "prefix": [
+              "Mrs"
+            ]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1959-05-04",
+        "address": [
+          {
+            "use": "home",
+            "type": "both",
+            "text": "22 Brightside Crescent, Overtown, West Yorkshire, LS10 4YU",
+            "line": [
+              "22 Brightside Crescent"
+            ],
+            "city": "Overtown",
+            "district": "West Yorkshire",
+            "postalCode": "LS10 4YU"
+          }
+        ],
+        "contact": [
+          {
+            "extension": [
+              {
+                "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ContactRank",
+                "valuePositiveInt": 1
+              }
+            ],
+            "relationship": [
+              {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+                    "code": "ONESELF",
+                    "display": "self"
+                  }
+                ]
+              }
+            ],
+            "telecom": [
+              {
+                "system": "phone",
+                "value": "01138698975",
+                "use": "home",
+                "rank": 2
+              },
+              {
+                "system": "phone",
+                "value": "07736312544",
+                "use": "mobile",
+                "rank": 1
+              },
+              {
+                "system": "email",
+                "value": "jjones@hotmail.co.uk",
+                "use": "home",
+                "rank": 3
+              }
+            ]
+          },
+          {
+            "extension": [
+              {
+                "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ContactRank",
+                "valuePositiveInt": 2
+              }
+            ],
+            "relationship": [
+              {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+                    "code": "ECON",
+                    "display": "emergency contact"
+                  }
+                ]
+              }
+            ],
+            "name": {
+              "family": "Grayson",
+              "given": [
+                "Jack"
+              ]
+            },
+            "telecom": [
+              {
+                "system": "phone",
+                "value": "0789 1234567",
+                "use": "mobile",
+                "rank": 1
+              }
+            ],
+            "gender": "male"
+          }
+        ],
+        "communication": [
+          {
+            "language": {
+              "coding": [
+                {
+                  "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage",
+                  "code": "en",
+                  "display": "English"
+                }
+              ]
+            },
+            "preferred": true
+          }
+        ],
+        "generalPractitioner": [
+          {
+            "type": "Organization",
+            "identifier": {
+              "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+              "value": "G82080"
+            },
+            "display": "Patient's Surgery"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:1e744e34-6bbb-4aa9-8b20-fa3bb91f9d8f",
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "meta": {
+          "lastUpdated": "2023-06-26T11:30:00.8185338+00:00"
+        },
+        "practitioner": {
+          "reference": "urn:uuid:07dec093-be12-42f4-ade5-0d582d255ef1",
+          "type": "Practitioner",
+          "display": "John Smith"
+        },
+        "organization": {
+          "type": "Organization",
+          "identifier": {
+            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+            "value": "G82080"
+          },
+          "display": "Patient's Surgery"
+        },
+        "specialty": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "408443003",
+                "display": "General medical practice"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:b5e27389-3ca5-4cbc-9173-73f0c74915d9",
+      "resource": {
+        "resourceType": "Organization",
+        "meta": {
+          "lastUpdated": "2023-06-26T11:30:00.8185338+00:00"
+        },
+        "name": "Practitioner Org"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:07dec093-be12-42f4-ade5-0d582d255ef1",
+      "resource": {
+        "resourceType": "Practitioner",
+        "meta": {
+          "lastUpdated": "2023-06-26T11:30:00.8185338+00:00"
+        },
+        "identifier": [
+          {
+            "system": "https://fhir.nhs.uk/Id/sds-role-profile-id",
+            "value": "G823658"
+          }
+        ],
+        "name": [
+          {
+            "family": "Smith",
+            "given": [
+              "John"
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "0205663859",
+            "use": "work"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:7d948662-bade-450e-b6c5-9bb6ee39cb56",
+      "resource": {
+        "resourceType": "Practitioner",
+        "meta": {
+          "lastUpdated": "2023-06-26T11:30:00.8185338+00:00"
+        },
+        "identifier": [
+          {
+            "system": "https://fhir.nhs.uk/Id/sds-role-profile-id",
+            "value": "PT2489"
+          }
+        ],
+        "name": [
+          {
+            "family": "BLAKE",
+            "given": [
+              "Marcy"
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "0205568263",
+            "use": "work"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:b923aa53-2376-4015-a07d-afe8bf2310eb",
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "meta": {
+          "lastUpdated": "2023-06-26T11:30:00.8185338+00:00"
+        },
+        "practitioner": {
+          "reference": "urn:uuid:7d948662-bade-450e-b6c5-9bb6ee39cb56",
+          "type": "Practitioner",
+          "display": "Marcy BLAKE"
+        },
+        "organization": {
+          "reference": "urn:uuid:b5e27389-3ca5-4cbc-9173-73f0c74915d9",
+          "type": "Organization",
+          "display": "Practitioner Org"
+        },
+        "code": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "224608005",
+                "display": "Administrative healthcare staff"
+              }
+            ]
+          }
+        ],
+        "specialty": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "408443003",
+                "display": "General medical practice"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:1e91008e-96d0-438b-873c-c6d2c007fc29",
+      "resource": {
+        "resourceType": "Consent",
+        "meta": {
+          "lastUpdated": "2023-06-26T11:30:00.8185338+00:00"
+        },
+        "status": "active",
+        "scope": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/consentscope",
+              "code": "patient-privacy"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.nhs.uk/CodeSystem/consent-categories-bars",
+                "code": "DRC",
+                "display": "Direct Care"
+              }
+            ]
+          }
+        ],
+        "patient": {
+          "reference": "urn:uuid:9589fb37-87a2-48d8-968f-b371429208a8",
+          "identifier": {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "3478526985"
+          },
+          "display": "Mrs Julie Jones"
+        },
+        "dateTime": "2021-11-26",
+        "policyRule": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+              "code": "IMPLIED"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
