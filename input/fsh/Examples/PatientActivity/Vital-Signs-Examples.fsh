@@ -17,13 +17,13 @@ Usage: #example
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 * code.coding[SNOMED][+] = http://snomed.info/sct#27113001 "Body weight"
 * code.coding[LOINC][+] = http://loinc.org#29463-7
-* subject.reference = "Patient/073eef49-81ee-4c2e-893b-bc2e4efd2630"
+* subject.reference = "urn:uuid:073eef49-81ee-4c2e-893b-bc2e4efd2630"
 * effectiveDateTime = "2024-03-04T06:27:40.701Z"
 * valueQuantity.value = 81
 * valueQuantity.code = #kg
 * valueQuantity.unit = "kg"
 * valueQuantity.system = "http://unitsofmeasure.org"
-* performer.reference = "Patient/073eef49-81ee-4c2e-893b-bc2e4efd2630"
+* performer.reference = "urn:uuid:073eef49-81ee-4c2e-893b-bc2e4efd2630"
 * derivedFrom.reference = "QuestionnaireResponse/questionnaireresponse-vital-signs"
 
 
@@ -46,13 +46,13 @@ Usage: #example
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 * code.coding[SNOMED][+] = http://snomed.info/sct#442476006 "Arterial oxygen saturation"
 * code.coding[LOINC][+] = http://loinc.org#2708-6
-* subject.reference = "Patient/073eef49-81ee-4c2e-893b-bc2e4efd2630"
+* subject.reference = "urn:uuid:073eef49-81ee-4c2e-893b-bc2e4efd2630"
 * effectiveDateTime = "2024-03-04T06:27:40.701Z"
 * valueQuantity.value = 98
 * valueQuantity.code = #%
 * valueQuantity.unit = "%"
 * valueQuantity.system = "http://unitsofmeasure.org"
-* performer.reference = "Patient/073eef49-81ee-4c2e-893b-bc2e4efd2630"
+* performer.reference = "urn:uuid:073eef49-81ee-4c2e-893b-bc2e4efd2630"
 * derivedFrom.reference = "QuestionnaireResponse/questionnaireresponse-vital-signs"
 
 Instance: 78fef4ce-cb0a-4e7d-b768-2565550b62a2
@@ -74,13 +74,13 @@ Usage: #example
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 * code.coding[SNOMED][+] = http://snomed.info/sct#363811000 "Head circumference measure"
 * code.coding[LOINC][+] = http://loinc.org#9843-4 "Head Occipital-frontal circumference"
-* subject.reference = "Patient/073eef49-81ee-4c2e-893b-bc2e4efd2630"
+* subject.reference = "urn:uuid:073eef49-81ee-4c2e-893b-bc2e4efd2630"
 * effectiveDateTime = "2024-03-04T06:27:40.701Z"
 * valueQuantity.value = 59
 * valueQuantity.code = #cm
 * valueQuantity.unit = "cm"
 * valueQuantity.system = "http://unitsofmeasure.org"
-* performer.reference = "Patient/073eef49-81ee-4c2e-893b-bc2e4efd2630"
+* performer.reference = "urn:uuid:073eef49-81ee-4c2e-893b-bc2e4efd2630"
 * derivedFrom.reference = "QuestionnaireResponse/questionnaireresponse-vital-signs"
 
 Instance: ba92afc0-a1c5-41df-93d8-c3df49888bcd
@@ -102,13 +102,13 @@ Usage: #example
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 * code.coding[SNOMED][+] = http://snomed.info/sct#50373000 "Body height measure"
 * code.coding[LOINC][+] = http://loinc.org#8302-2 "Body height"
-* subject.reference = "Patient/073eef49-81ee-4c2e-893b-bc2e4efd2630"
+* subject.reference = "urn:uuid:073eef49-81ee-4c2e-893b-bc2e4efd2630"
 * effectiveDateTime = "2024-03-04T06:27:40.701Z"
 * valueQuantity.value = 179
 * valueQuantity.code = #cm
 * valueQuantity.unit = "cm"
 * valueQuantity.system = "http://unitsofmeasure.org"
-* performer.reference = "Patient/073eef49-81ee-4c2e-893b-bc2e4efd2630"
+* performer.reference = "urn:uuid:073eef49-81ee-4c2e-893b-bc2e4efd2630"
 * derivedFrom.reference = "QuestionnaireResponse/questionnaireresponse-vital-signs"
 
 Instance: 5ba52e14-9a98-48cb-8029-770e3e76f428
@@ -130,13 +130,13 @@ Usage: #example
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 * code.coding[SNOMED][+] = http://snomed.info/sct#276885007 "Core body temperature"
 * code.coding[LOINC][+] = http://loinc.org#8310-5 "Body temperature"
-* subject.reference = "Patient/073eef49-81ee-4c2e-893b-bc2e4efd2630"
+* subject.reference = "urn:uuid:073eef49-81ee-4c2e-893b-bc2e4efd2630"
 * effectiveDateTime = "2024-03-04T06:27:40.701Z"
 * valueQuantity.value = 36.1
 * valueQuantity.code = #Cel
 * valueQuantity.unit = "Cel"
 * valueQuantity.system = "http://unitsofmeasure.org"
-* performer.reference = "Patient/073eef49-81ee-4c2e-893b-bc2e4efd2630"
+* performer.reference = "urn:uuid:073eef49-81ee-4c2e-893b-bc2e4efd2630"
 * derivedFrom.reference = "QuestionnaireResponse/questionnaireresponse-vital-signs"
 
 
@@ -159,7 +159,7 @@ Usage: #example
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 * code.coding[LOINC][+] = http://loinc.org#85354-9
 * code.coding[SNOMED][+] = http://snomed.info/sct#75367002 "Blood pressure"
-* subject.reference = "Patient/073eef49-81ee-4c2e-893b-bc2e4efd2630"
+* subject.reference = "urn:uuid:073eef49-81ee-4c2e-893b-bc2e4efd2630"
 * effectiveDateTime = "2024-03-04T06:27:40.701Z"
 * component[+]
   * code.coding[SNOMED][+] = http://snomed.info/sct#72313002 "Systolic arterial pressure"
@@ -175,7 +175,7 @@ Usage: #example
   * valueQuantity.code = #mm[Hg]
   * valueQuantity.unit = "mm Hg"
   * valueQuantity.system = "http://unitsofmeasure.org"
-* performer.reference = "Patient/073eef49-81ee-4c2e-893b-bc2e4efd2630"
+* performer.reference = "urn:uuid:073eef49-81ee-4c2e-893b-bc2e4efd2630"
 * derivedFrom.reference = "QuestionnaireResponse/questionnaireresponse-vital-signs"
 
 
@@ -198,13 +198,13 @@ Usage: #example
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 * code.coding[SNOMED][+] = http://snomed.info/sct#364075005 "Heart rate"
 * code.coding[LOINC][+] = http://loinc.org#8867-4
-* subject.reference = "Patient/073eef49-81ee-4c2e-893b-bc2e4efd2630"
+* subject.reference = "urn:uuid:073eef49-81ee-4c2e-893b-bc2e4efd2630"
 * effectiveDateTime = "2024-03-04T06:27:40.701Z"
 * valueQuantity.value = 49
 * valueQuantity.code = #/min
 * valueQuantity.unit = "/min"
 * valueQuantity.system = "http://unitsofmeasure.org"
-* performer.reference = "Patient/073eef49-81ee-4c2e-893b-bc2e4efd2630"
+* performer.reference = "urn:uuid:073eef49-81ee-4c2e-893b-bc2e4efd2630"
 * derivedFrom.reference = "QuestionnaireResponse/questionnaireresponse-vital-signs"
 
 Instance: 65083da2-c77f-419e-a205-68a7d3863e90
@@ -226,13 +226,13 @@ Usage: #example
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 * code.coding[SNOMED][+] = http://snomed.info/sct#86290005 "Respiratory rate"
 * code.coding[LOINC][+] = http://loinc.org#9279-1
-* subject.reference = "Patient/073eef49-81ee-4c2e-893b-bc2e4efd2630"
+* subject.reference = "urn:uuid:073eef49-81ee-4c2e-893b-bc2e4efd2630"
 * effectiveDateTime = "2024-03-04T06:27:40.701Z"
 * valueQuantity.value = 19
 * valueQuantity.code = #/min
 * valueQuantity.unit = "/min"
 * valueQuantity.system = "http://unitsofmeasure.org"
-* performer.reference = "Patient/073eef49-81ee-4c2e-893b-bc2e4efd2630"
+* performer.reference = "urn:uuid:073eef49-81ee-4c2e-893b-bc2e4efd2630"
 * derivedFrom.reference = "QuestionnaireResponse/questionnaireresponse-vital-signs"
 
 Instance: f268716f-9dc6-4361-a124-0aad3604d8a2
@@ -254,13 +254,13 @@ Usage: #example
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 * code.coding[SNOMED][+] = http://snomed.info/sct#60621009 "Body mass index"
 * code.coding[LOINC][+] = http://loinc.org#39156-5
-* subject.reference = "Patient/073eef49-81ee-4c2e-893b-bc2e4efd2630"
+* subject.reference = "urn:uuid:073eef49-81ee-4c2e-893b-bc2e4efd2630"
 * effectiveDateTime = "2024-03-04T06:27:40.701Z"
 * valueQuantity.value = 25.1
 * valueQuantity.code = #kg/m2
 * valueQuantity.unit = "kg/m2"
 * valueQuantity.system = "http://unitsofmeasure.org"
-* performer.reference = "Patient/073eef49-81ee-4c2e-893b-bc2e4efd2630"
+* performer.reference = "urn:uuid:073eef49-81ee-4c2e-893b-bc2e4efd2630"
 * derivedFrom.reference = "QuestionnaireResponse/questionnaireresponse-vital-signs"
 
 Instance: 88b99ab6-0990-4f1c-b1a7-6adb50dd70b7
@@ -277,25 +277,25 @@ Usage: #example
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 * code = http://loinc.org#85353-1
-* subject.reference = "Patient/073eef49-81ee-4c2e-893b-bc2e4efd2630"
+* subject.reference = "urn:uuid:073eef49-81ee-4c2e-893b-bc2e4efd2630"
 * effectiveDateTime = "2024-03-04T06:27:40.701Z"
-* performer.reference = "Patient/073eef49-81ee-4c2e-893b-bc2e4efd2630"
+* performer.reference = "urn:uuid:073eef49-81ee-4c2e-893b-bc2e4efd2630"
 
 * hasMember[+]
-  * reference = "Observation/af22811f-218e-4ff6-aa07-93f12c666dd7"
+  * reference = "urn:uuid:af22811f-218e-4ff6-aa07-93f12c666dd7"
 * hasMember[+]
-  * reference = "Observation/9a2052b8-f00a-41ec-bc4e-3bd4cfae62c2"
+  * reference = "urn:uuid:9a2052b8-f00a-41ec-bc4e-3bd4cfae62c2"
 * hasMember[+]
-  * reference = "Observation/78fef4ce-cb0a-4e7d-b768-2565550b62a2"
+  * reference = "urn:uuid:78fef4ce-cb0a-4e7d-b768-2565550b62a2"
 * hasMember[+]
-  * reference = "Observation/ba92afc0-a1c5-41df-93d8-c3df49888bcd"
+  * reference = "urn:uuid:ba92afc0-a1c5-41df-93d8-c3df49888bcd"
 * hasMember[+]
-  * reference = "Observation/5ba52e14-9a98-48cb-8029-770e3e76f428"
+  * reference = "urn:uuid:5ba52e14-9a98-48cb-8029-770e3e76f428"
 * hasMember[+]
-  * reference = "Observation/3421ccda-63f3-4e6e-b39c-ca9e3850d3a2"
+  * reference = "urn:uuid:3421ccda-63f3-4e6e-b39c-ca9e3850d3a2"
 * hasMember[+]
-  * reference = "Observation/65083da2-c77f-419e-a205-68a7d3863e90"
+  * reference = "urn:uuid:65083da2-c77f-419e-a205-68a7d3863e90"
 * hasMember[+]
-  * reference = "Observation/f268716f-9dc6-4361-a124-0aad3604d8a2"
+  * reference = "urn:uuid:f268716f-9dc6-4361-a124-0aad3604d8a2"
 * hasMember[+]
-  * reference = "Observation/8037d992-5936-44bf-9253-f76f904ba7b9"
+  * reference = "urn:uuid:8037d992-5936-44bf-9253-f76f904ba7b9"
