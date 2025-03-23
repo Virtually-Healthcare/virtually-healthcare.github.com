@@ -334,11 +334,16 @@ groups:
     resources:
       - Bundle/DischargeLetterMessage
       - Bundle/DischargeReportMessage
-      - MessageHeader/DischargeLetter
+      - Bundle/PhysicalActivityReportMessage
+      - Bundle/ClinicReportMessage
       - DocumentReference/94bf65ba-cd6c-4601-b339-6d547f424646
       - Binary/d6eeedd1-92d3-45b9-bf33-6401e804425f
       - Binary/e9bcaf5d-e9ce-45d4-b656-1aebd6ce60e4
       - MessageHeader/ClinicReportVitalSigns
+      - MessageHeader/PhysicalActivityReport
+      - MessageHeader/DischargeReportRemotePatientMonitoring
+      - MessageHeader/DischargeLetter
+      - DiagnosticReport/PhysicalActivity
   -ex-example-VitalSigns:
     name: "Example: Remote Patient Monitoring - Vital Signs"
     description: "Remote Patient Monitoring Vital Signs examples"

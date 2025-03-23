@@ -1,4 +1,4 @@
-Instance: DischargeReportMessage
+Instance: ClinicReportMessage
 InstanceOf: Bundle
 Title:       "Bundle `Message` R01 - Clinic Report"
 Description:  "FHIR Message Clinic Report - Vital Signs"

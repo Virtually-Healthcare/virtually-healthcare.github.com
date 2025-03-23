@@ -1,6 +1,6 @@
 Instance: ClinicReportVitalSigns
 InstanceOf: MessageHeader
-Title: "Message Header - Clinic Report Vital Signs"
+Title: "Message Header - with single Observation Panel Clinic Report Vital Signs"
 Description: "TODO"
 Usage: #example
 
