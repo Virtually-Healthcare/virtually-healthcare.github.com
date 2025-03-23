@@ -64,6 +64,7 @@ frame Diagnostics as "Reports" {
   }
 
   DiagnosticReport "result" *--> ObservationPanel
+   DiagnosticReport "result" *--> Observation
   ObservationPanel "hasMember" *--> Observation
 
 }
