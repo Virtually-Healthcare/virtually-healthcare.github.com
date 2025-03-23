@@ -315,6 +315,9 @@ resources:
   ServiceRequest/REFREQ03:
     name: ServiceRequest BARS REFREQ03
     description: BARS Example REFREQ03 converted to ServiceRequest
+  Bundle/FHIRDocument-DischargeReport:
+    name: Bundle FHIR Document - Discharge Report
+    description: Discharge report with multiple panels and individual observations
 
 groups:
   -ex-example-eReferral:
@@ -344,6 +347,7 @@ groups:
       - MessageHeader/DischargeReportRemotePatientMonitoring
       - MessageHeader/DischargeLetter
       - DiagnosticReport/63487b62-cbdc-4f29-b393-70eed3fbc498
+      - Bundle/FHIRDocument-DischargeReport
   -ex-example-VitalSigns:
     name: "Example: Remote Patient Monitoring - Vital Signs"
     description: "Remote Patient Monitoring Vital Signs examples"

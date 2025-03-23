@@ -1,0 +1,1380 @@
+{
+  "resourceType": "Bundle",
+  "id": "FHIRDocument-DischargeReport",
+  "type": "document",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:6b1de5f4-c700-45f0-b23c-96c3584b9397",
+      "resource": {
+        "resourceType": "Composition",
+        "id": "6b1de5f4-c700-45f0-b23c-96c3584b9397",
+        "status": "final",
+        "type": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "823691000000103",
+              "display": "Clinical letter"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "417319006",
+                "display": "Record of health event"
+              }
+            ]
+          }
+        ],
+        "subject": {
+          "reference": "urn:uuid:073eef49-81ee-4c2e-893b-bc2e4efd2630"
+        },
+        "date": "2024-10-28T04:49:08+00:00",
+        "title": "Clinical Letter",
+        "section": [
+          {
+            "title": "Physical Findings",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "29545-1",
+                  "display": "Physical findings Narrative"
+                }
+              ]
+            },
+            "text": {
+              "status": "generated",
+              "div": "<null xmlns=\"http://www.w3.org/1999/xhtml\"><div>\n\n\n    <h3>Vital signs, weight, height, head circumference, oxygen saturation and BMI panel (85353-1)</h3>\n    \n    <div>\n\n        <div>\n            <table>\n                <thead>\n                <tr>\n                    <th>Date</th>\n                    <th>Name</th>\n                    <th>Value</th>\n                </tr>\n                </thead>\n                <tbody>\n                    <tr>\n                        <div>\n                            <div>\n                                <td>04 Mar 2024 06:27</td>\n                            </div>\n                            \n                        </div>\n                        \n\n                        <td>Body weight (27113001) (29463-7)</td>\n\n\n                        <div>\n                            <td>81 kg</td>\n                        </div>\n                        \n                    </tr>\n                    <tr>\n                        <div>\n                            <div>\n                                <td>04 Mar 2024 06:27</td>\n                            </div>\n                            \n                        </div>\n                        \n\n                        <td>Arterial oxygen saturation (442476006) (2708-6)</td>\n\n\n                        <div>\n                            <td>98 %</td>\n                        </div>\n                        \n                    </tr>\n                    <tr>\n                        <div>\n                            <div>\n                                <td>04 Mar 2024 06:27</td>\n                            </div>\n                            \n                        </div>\n                        \n\n                        <td>Head Occipital-frontal circumference (9843-4)</td>\n\n\n                        <div>\n                            <td>59 cm</td>\n                        </div>\n                        \n                    </tr>\n                    <tr>\n                        <div>\n                            <div>\n                                <td>04 Mar 2024 06:27</td>\n                            </div>\n                            \n                        </div>\n                        \n\n                        <td>Body height (8302-2)</td>\n\n\n                        <div>\n                            <td>179 cm</td>\n                        </div>\n                        \n                    </tr>\n                    <tr>\n                        <div>\n                            <div>\n                                <td>04 Mar 2024 06:27</td>\n                            </div>\n                            \n                        </div>\n                        \n\n                        <td>Body temperature (8310-5)</td>\n\n\n                        <div>\n                            <td>36.1 Cel</td>\n                        </div>\n                        \n                    </tr>\n                    <tr>\n                        <div>\n                            <div>\n                                <td>04 Mar 2024 06:27</td>\n                            </div>\n                            \n                        </div>\n                        \n\n                        <td>Heart rate (364075005) (8867-4)</td>\n\n\n                        <div>\n                            <td>49 /min</td>\n                        </div>\n                        \n                    </tr>\n                    <tr>\n                        <div>\n                            <div>\n                                <td>04 Mar 2024 06:27</td>\n                            </div>\n                            \n                        </div>\n                        \n\n                        <td>Respiratory rate (86290005) (9279-1)</td>\n\n\n                        <div>\n                            <td>19 /min</td>\n                        </div>\n                        \n                    </tr>\n                    <tr>\n                        <div>\n                            <div>\n                                <td>04 Mar 2024 06:27</td>\n                            </div>\n                            \n                        </div>\n                        \n\n                        <td>Body mass index (60621009) (39156-5)</td>\n\n\n                        <div>\n                            <td>25.1 kg/m2</td>\n                        </div>\n                        \n                    </tr>\n                    <tr>\n                        <div>\n                            <div>\n                                <td>04 Mar 2024 06:27</td>\n                            </div>\n                            \n                        </div>\n                        \n\n                        <td>Blood pressure (75367002)</td>\n\n\n                        \n                        <div>\n                            <td>\n                                <ul><li> 117 mm Hg Systolic arterial pressure (72313002) (8480-6)</li><li> 74 mm Hg Diastolic arterial pressure (1091811000000102) (8462-4)</li></ul>\n                            </td>\n                        </div>\n                    </tr>\n                </tbody>\n            </table>\n        </div>\n    </div>\n</div><div>\n\n\n    <h3>Physical activity (68130003)</h3>\n    \n    <div>\n\n        <div>\n            <table>\n                <thead>\n                <tr>\n                    <th>Date</th>\n                    <th>Name</th>\n                    <th>Value</th>\n                </tr>\n                </thead>\n                <tbody>\n                    <tr>\n                        <div>\n                            <div>\n                                <td>28 Oct 2024 04:49</td>\n                            </div>\n                            \n                        </div>\n                        \n\n                        <td>Exercise activity (73985-4)</td>\n\n\n                        \n                        <div>\n                            <td>\n                                <ul/>\n                            </td>\n                        </div>\n                    </tr>\n                    <tr>\n                        <div>\n                            <div>\n                                <td>28 Oct 2024 04:49</td>\n                            </div>\n                            \n                        </div>\n                        \n\n                        <td>Calories burned in Unspecified Time, Pedometer (55424-6)</td>\n\n\n                        <div>\n                            <td>413 kcal</td>\n                        </div>\n                        \n                    </tr>\n                    <tr>\n                        <div>\n                            <div>\n                                <td>28 Oct 2024 04:49</td>\n                            </div>\n                            \n                        </div>\n                        \n\n                        <td>Heart rate unspecified time mean by Pedometer (55425-3) (8867-4)</td>\n\n\n                        <div>\n                            <td>116 /min</td>\n                        </div>\n                        \n                    </tr>\n                    <tr>\n                        <div>\n                            <div>\n                                <td>28 Oct 2024 04:49</td>\n                            </div>\n                            \n                        </div>\n                        \n\n                        <td>Exercise duration (55411-3)</td>\n\n\n                        <div>\n                            <td>51 min</td>\n                        </div>\n                        \n                    </tr>\n                    <tr>\n                        <div>\n                            <div>\n                                <td>28 Oct 2024 04:49</td>\n                            </div>\n                            \n                        </div>\n                        \n\n                        <td>Maximum Heart rate in Unspecified Time (55426-1)</td>\n\n\n                        <div>\n                            <td>119 /min</td>\n                        </div>\n                        \n                    </tr>\n                </tbody>\n            </table>\n        </div>\n    </div>\n</div><div>\n    <h3>Observations - Unclassified</h3>\n    \n    <div>\n\n        <div>\n            <table>\n                <thead>\n                <tr>\n                    <th>Date</th>\n                    <th>Name</th>\n                    <th>Value</th>\n                </tr>\n                </thead>\n                <tbody>\n                    <tr>\n                        <div>\n                            <div>\n                                <td>28 Oct 2024 04:49</td>\n                            </div>\n                            \n                        </div>\n                        \n\n                        <td>Number of steps in 24 Hours, Measured (41950-7)</td>\n\n\n                        <div>\n                            <td>9607 /d</td>\n                        </div>\n                        \n                        \n                    </tr>\n                    <tr>\n                        <div>\n                            <div>\n                                <td>28 Oct 2024 04:49</td>\n                            </div>\n                            \n                        </div>\n                        \n\n                        <td>Maximum Heart rate in 24 Hours (8873-2) (8867-4)</td>\n\n\n                        <div>\n                            <td>132 /min</td>\n                        </div>\n                        \n                        \n                    </tr>\n                    <tr>\n                        <div>\n                            <div>\n                                <td>28 Oct 2024 04:49</td>\n                            </div>\n                            \n                        </div>\n                        \n\n                        <td>Heart rate - resting (40443-4) (8867-4)</td>\n\n\n                        <div>\n                            <td>64 /min</td>\n                        </div>\n                        \n                        \n                    </tr>\n                    <tr>\n                        <div>\n                            <div>\n                                <td>28 Oct 2024 04:49</td>\n                            </div>\n                            \n                        </div>\n                        \n\n                        <td>Calories burned in 24 Hours, Calc (41979-6)</td>\n\n\n                        <div>\n                            <td>714 kcal/(24.h)</td>\n                        </div>\n                        \n                        \n                    </tr>\n                </tbody>\n            </table>\n        </div>\n    </div>\n</div></null>"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:073eef49-81ee-4c2e-893b-bc2e4efd2630",
+      "resource": {
+        "resourceType": "Patient",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n    <h2>Patient Details</h2>\n    <table>\n        <tbody>\n            <tr>\n                <td>Name</td>\n                <td>Rachel Kanfeld</td>\n            </tr>\n            <tr>\n                <td>Patient Id</td>\n                <td>\n                    <span>\n                        <div>9876543210 NHS Number</div>\n                    </span>\n                </td>\n            </tr>\n            <tr>\n                <td>Date Of Birth</td>\n                <td>16 Mar 1998</td>\n            </tr>\n            <tr>\n                <td>Sex</td>\n                <div>\n                    <td>Female</td>\n                </div>\n                \n            </tr>\n            <tr>\n                <td>Contact Details</td>\n                <td>\n                    \n                </td>\n            </tr>\n            <tr>\n                <td>Address</td>\n                <td>\n                     <span>\n                        <span>\n                            <span>123 Dale Avenue</span><br/>\n                        </span><span>\n                            <span>Long Eaton</span><br/>\n                        </span><span>\n                            <span>Nottingham</span><br/>\n                        </span>\n                         \n                           \n                        <span>\n                               <span>NG10 1NP</span><br/>\n                        </span>\n                     </span>\n                </td>\n            </tr>\n            \n\n            <tr>\n                <td>GP Practice</td>\n                <td>\n                   <span>\n                        <span> (C81010 ODS)</span>\n                   </span>\n                </td>\n            </tr>\n        </tbody>\n\n    </table>\n</div>"
+        },
+        "identifier": [
+          {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9876543210"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "use": "usual",
+            "family": "Kanfeld",
+            "given": [
+              "Rachel"
+            ]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1998-03-16",
+        "address": [
+          {
+            "use": "home",
+            "line": [
+              "123 Dale Avenue",
+              "Long Eaton",
+              "Nottingham"
+            ],
+            "postalCode": "NG10 1NP"
+          }
+        ],
+        "generalPractitioner": [
+          {
+            "reference": "Organization/e2d3115b-402b-45a5-a01d-7acb64466ddc",
+            "identifier": {
+              "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+              "value": "C81010"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:63487b62-cbdc-4f29-b393-70eed3fbc498",
+      "resource": {
+        "resourceType": "DiagnosticReport",
+        "meta": {
+          "versionId": "1.0"
+        },
+        "identifier": [
+          {
+            "system": "https://fhir.virtually.healthcare/Id/ReportId",
+            "value": "25edee2b-add8-4522-9fa2-1ee8f229bd75",
+            "assigner": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "FFX11"
+              }
+            }
+          }
+        ],
+        "basedOn": [
+          {
+            "type": "ServiceRequest",
+            "identifier": {
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                    "code": "PLAC"
+                  }
+                ]
+              },
+              "system": "https://tools.ietf.org/html/rfc4122",
+              "value": "f3533ea0-9588-4f25-ace7-969d80823b20",
+              "assigner": {
+                "identifier": {
+                  "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                  "value": "F83004"
+                }
+              }
+            }
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/physical-activity/CodeSystem/pa-temporary-codes",
+                "code": "PhysicalActivity"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "11488-4"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:073eef49-81ee-4c2e-893b-bc2e4efd2630",
+          "identifier": {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9912003888"
+          }
+        },
+        "effectiveDateTime": "2023-09-07T11:45:41+00:00",
+        "performer": [
+          {
+            "type": "Organization",
+            "identifier": {
+              "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+              "value": "FFX11"
+            },
+            "display": "Boots"
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/event-performerFunction",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                      "code": "SPRF"
+                    }
+                  ]
+                }
+              }
+            ],
+            "type": "Practitioner",
+            "identifier": {
+              "system": "https://fhir.hl7.org.uk/Id/gmc-number",
+              "value": "C1234567"
+            },
+            "display": "FICTITIOUS, Ralph"
+          }
+        ],
+        "resultsInterpreter": [
+          {
+            "type": "Practitioner",
+            "identifier": {
+              "system": "https://fhir.hl7.org.uk/Id/gmc-number",
+              "value": "C1234567"
+            },
+            "display": "FICTITIOUS, Ralph"
+          }
+        ],
+        "result": [
+          {
+            "reference": "urn:uuid:88b99ab6-0990-4f1c-b1a7-6adb50dd70b7",
+            "type": "Observation"
+          },
+          {
+            "reference": "urn:uuid:8f750590-30d6-425f-a8c4-f0a7c41e01d4",
+            "type": "Observation"
+          },
+          {
+            "reference": "urn:uuid:0a7f38ae-9658-4b43-a3f9-02f66f65bf38",
+            "type": "Observation"
+          },
+          {
+            "reference": "urn:uuid:a14a52b7-b647-45f3-851a-8c00e28c0968",
+            "type": "Observation"
+          },
+          {
+            "reference": "urn:uuid:ea09866e-d540-4d9c-ba9c-8e22338e524c",
+            "type": "Observation"
+          },
+          {
+            "reference": "urn:uuid:b8df13d9-86f3-4545-9e82-50bca88090d9",
+            "type": "Observation"
+          }
+        ],
+        "conclusion": "Normal - no action"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:88b99ab6-0990-4f1c-b1a7-6adb50dd70b7",
+      "resource": {
+        "resourceType": "Observation",
+        "identifier": [
+          {
+            "system": "https://tools.ietf.org/html/rfc4122",
+            "value": "1300fffb-e319-400b-84d0-4e9c1f619af4"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "85353-1",
+              "display": "Vital signs, weight, height, head circumference, oxygen saturation and BMI panel"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:073eef49-81ee-4c2e-893b-bc2e4efd2630"
+        },
+        "effectiveDateTime": "2024-03-04T06:27:40.701Z",
+        "performer": [
+          {
+            "reference": "urn:uuid:073eef49-81ee-4c2e-893b-bc2e4efd2630"
+          }
+        ],
+        "hasMember": [
+          {
+            "reference": "urn:uuid:af22811f-218e-4ff6-aa07-93f12c666dd7"
+          },
+          {
+            "reference": "urn:uuid:9a2052b8-f00a-41ec-bc4e-3bd4cfae62c2"
+          },
+          {
+            "reference": "urn:uuid:78fef4ce-cb0a-4e7d-b768-2565550b62a2"
+          },
+          {
+            "reference": "urn:uuid:ba92afc0-a1c5-41df-93d8-c3df49888bcd"
+          },
+          {
+            "reference": "urn:uuid:5ba52e14-9a98-48cb-8029-770e3e76f428"
+          },
+          {
+            "reference": "urn:uuid:3421ccda-63f3-4e6e-b39c-ca9e3850d3a2"
+          },
+          {
+            "reference": "urn:uuid:65083da2-c77f-419e-a205-68a7d3863e90"
+          },
+          {
+            "reference": "urn:uuid:f268716f-9dc6-4361-a124-0aad3604d8a2"
+          },
+          {
+            "reference": "urn:uuid:8037d992-5936-44bf-9253-f76f904ba7b9"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:af22811f-218e-4ff6-aa07-93f12c666dd7",
+      "resource": {
+        "resourceType": "Observation",
+        "identifier": [
+          {
+            "system": "https://tools.ietf.org/html/rfc4122",
+            "value": "af22811f-218e-4ff6-aa07-93f12c666dd7"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "27113001",
+              "display": "Body weight"
+            },
+            {
+              "system": "http://loinc.org",
+              "code": "29463-7"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:073eef49-81ee-4c2e-893b-bc2e4efd2630"
+        },
+        "effectiveDateTime": "2024-03-04T06:27:40.701Z",
+        "performer": [
+          {
+            "reference": "urn:uuid:073eef49-81ee-4c2e-893b-bc2e4efd2630"
+          }
+        ],
+        "valueQuantity": {
+          "value": 81,
+          "unit": "kg",
+          "system": "http://unitsofmeasure.org",
+          "code": "kg"
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/questionnaireresponse-vital-signs"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:9a2052b8-f00a-41ec-bc4e-3bd4cfae62c2",
+      "resource": {
+        "resourceType": "Observation",
+        "identifier": [
+          {
+            "system": "https://tools.ietf.org/html/rfc4122",
+            "value": "9a2052b8-f00a-41ec-bc4e-3bd4cfae62c2"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "442476006",
+              "display": "Arterial oxygen saturation"
+            },
+            {
+              "system": "http://loinc.org",
+              "code": "2708-6"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:073eef49-81ee-4c2e-893b-bc2e4efd2630"
+        },
+        "effectiveDateTime": "2024-03-04T06:27:40.701Z",
+        "performer": [
+          {
+            "reference": "urn:uuid:073eef49-81ee-4c2e-893b-bc2e4efd2630"
+          }
+        ],
+        "valueQuantity": {
+          "value": 98,
+          "unit": "%",
+          "system": "http://unitsofmeasure.org",
+          "code": "%"
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/questionnaireresponse-vital-signs"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:78fef4ce-cb0a-4e7d-b768-2565550b62a2",
+      "resource": {
+        "resourceType": "Observation",
+        "identifier": [
+          {
+            "system": "https://tools.ietf.org/html/rfc4122",
+            "value": "78fef4ce-cb0a-4e7d-b768-2565550b62a2"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "363811000",
+              "display": "Head circumference measure"
+            },
+            {
+              "system": "http://loinc.org",
+              "code": "9843-4",
+              "display": "Head Occipital-frontal circumference"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:073eef49-81ee-4c2e-893b-bc2e4efd2630"
+        },
+        "effectiveDateTime": "2024-03-04T06:27:40.701Z",
+        "performer": [
+          {
+            "reference": "urn:uuid:073eef49-81ee-4c2e-893b-bc2e4efd2630"
+          }
+        ],
+        "valueQuantity": {
+          "value": 59,
+          "unit": "cm",
+          "system": "http://unitsofmeasure.org",
+          "code": "cm"
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/questionnaireresponse-vital-signs"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:ba92afc0-a1c5-41df-93d8-c3df49888bcd",
+      "resource": {
+        "resourceType": "Observation",
+        "identifier": [
+          {
+            "system": "https://tools.ietf.org/html/rfc4122",
+            "value": "ba92afc0-a1c5-41df-93d8-c3df49888bcd"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "50373000",
+              "display": "Body height measure"
+            },
+            {
+              "system": "http://loinc.org",
+              "code": "8302-2",
+              "display": "Body height"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:073eef49-81ee-4c2e-893b-bc2e4efd2630"
+        },
+        "effectiveDateTime": "2024-03-04T06:27:40.701Z",
+        "performer": [
+          {
+            "reference": "urn:uuid:073eef49-81ee-4c2e-893b-bc2e4efd2630"
+          }
+        ],
+        "valueQuantity": {
+          "value": 179,
+          "unit": "cm",
+          "system": "http://unitsofmeasure.org",
+          "code": "cm"
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/questionnaireresponse-vital-signs"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:5ba52e14-9a98-48cb-8029-770e3e76f428",
+      "resource": {
+        "resourceType": "Observation",
+        "identifier": [
+          {
+            "system": "https://tools.ietf.org/html/rfc4122",
+            "value": "5ba52e14-9a98-48cb-8029-770e3e76f428"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "276885007",
+              "display": "Core body temperature"
+            },
+            {
+              "system": "http://loinc.org",
+              "code": "8310-5",
+              "display": "Body temperature"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:073eef49-81ee-4c2e-893b-bc2e4efd2630"
+        },
+        "effectiveDateTime": "2024-03-04T06:27:40.701Z",
+        "performer": [
+          {
+            "reference": "urn:uuid:073eef49-81ee-4c2e-893b-bc2e4efd2630"
+          }
+        ],
+        "valueQuantity": {
+          "value": 36.1,
+          "unit": "Cel",
+          "system": "http://unitsofmeasure.org",
+          "code": "Cel"
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/questionnaireresponse-vital-signs"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:8037d992-5936-44bf-9253-f76f904ba7b9",
+      "resource": {
+        "resourceType": "Observation",
+        "identifier": [
+          {
+            "system": "https://tools.ietf.org/html/rfc4122",
+            "value": "8037d992-5936-44bf-9253-f76f904ba7b9"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "85354-9"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "75367002",
+              "display": "Blood pressure"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:073eef49-81ee-4c2e-893b-bc2e4efd2630"
+        },
+        "effectiveDateTime": "2024-03-04T06:27:40.701Z",
+        "performer": [
+          {
+            "reference": "urn:uuid:073eef49-81ee-4c2e-893b-bc2e4efd2630"
+          }
+        ],
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/questionnaireresponse-vital-signs"
+          }
+        ],
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "72313002",
+                  "display": "Systolic arterial pressure"
+                },
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 117,
+              "unit": "mm Hg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "1091811000000102",
+                  "display": "Diastolic arterial pressure"
+                },
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 74,
+              "unit": "mm Hg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:3421ccda-63f3-4e6e-b39c-ca9e3850d3a2",
+      "resource": {
+        "resourceType": "Observation",
+        "identifier": [
+          {
+            "system": "https://tools.ietf.org/html/rfc4122",
+            "value": "3421ccda-63f3-4e6e-b39c-ca9e3850d3a2"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "364075005",
+              "display": "Heart rate"
+            },
+            {
+              "system": "http://loinc.org",
+              "code": "8867-4"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:073eef49-81ee-4c2e-893b-bc2e4efd2630"
+        },
+        "effectiveDateTime": "2024-03-04T06:27:40.701Z",
+        "performer": [
+          {
+            "reference": "urn:uuid:073eef49-81ee-4c2e-893b-bc2e4efd2630"
+          }
+        ],
+        "valueQuantity": {
+          "value": 49,
+          "unit": "/min",
+          "system": "http://unitsofmeasure.org",
+          "code": "/min"
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/questionnaireresponse-vital-signs"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:f268716f-9dc6-4361-a124-0aad3604d8a2",
+      "resource": {
+        "resourceType": "Observation",
+        "identifier": [
+          {
+            "system": "https://tools.ietf.org/html/rfc4122",
+            "value": "f268716f-9dc6-4361-a124-0aad3604d8a2"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "60621009",
+              "display": "Body mass index"
+            },
+            {
+              "system": "http://loinc.org",
+              "code": "39156-5"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:073eef49-81ee-4c2e-893b-bc2e4efd2630"
+        },
+        "effectiveDateTime": "2024-03-04T06:27:40.701Z",
+        "performer": [
+          {
+            "reference": "urn:uuid:073eef49-81ee-4c2e-893b-bc2e4efd2630"
+          }
+        ],
+        "valueQuantity": {
+          "value": 25.1,
+          "unit": "kg/m2",
+          "system": "http://unitsofmeasure.org",
+          "code": "kg/m2"
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/questionnaireresponse-vital-signs"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:65083da2-c77f-419e-a205-68a7d3863e90",
+      "resource": {
+        "resourceType": "Observation",
+        "identifier": [
+          {
+            "system": "https://tools.ietf.org/html/rfc4122",
+            "value": "65083da2-c77f-419e-a205-68a7d3863e90"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "86290005",
+              "display": "Respiratory rate"
+            },
+            {
+              "system": "http://loinc.org",
+              "code": "9279-1"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:073eef49-81ee-4c2e-893b-bc2e4efd2630"
+        },
+        "effectiveDateTime": "2024-03-04T06:27:40.701Z",
+        "performer": [
+          {
+            "reference": "urn:uuid:073eef49-81ee-4c2e-893b-bc2e4efd2630"
+          }
+        ],
+        "valueQuantity": {
+          "value": 19,
+          "unit": "/min",
+          "system": "http://unitsofmeasure.org",
+          "code": "/min"
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/questionnaireresponse-vital-signs"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:8f750590-30d6-425f-a8c4-f0a7c41e01d4",
+      "resource": {
+        "resourceType": "Observation",
+        "identifier": [
+          {
+            "system": "https://tools.ietf.org/html/rfc4122",
+            "value": "8f750590-30d6-425f-a8c4-f0a7c41e01d4"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "activity"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "68130003",
+              "display": "Physical activity"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:073eef49-81ee-4c2e-893b-bc2e4efd2630"
+        },
+        "effectiveDateTime": "2024-10-28T04:49:08.943Z",
+        "performer": [
+          {
+            "reference": "urn:uuid:073eef49-81ee-4c2e-893b-bc2e4efd2630"
+          }
+        ],
+        "hasMember": [
+          {
+            "reference": "urn:uuid:cb3c778b-cee4-4027-8163-c082958f87f1"
+          },
+          {
+            "reference": "urn:uuid:71fae5af-0b9e-4b9e-b6af-3d1bb4e223a0"
+          },
+          {
+            "reference": "urn:uuid:cffe1a6e-8eda-4613-bf54-119b374bb5b9"
+          },
+          {
+            "reference": "urn:uuid:35eb7da3-9b85-46ce-bd29-75c2263b514a"
+          },
+          {
+            "reference": "urn:uuid:ad7c1832-f855-4ece-a4c7-c79b433a7890"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:cb3c778b-cee4-4027-8163-c082958f87f1",
+      "resource": {
+        "resourceType": "Observation",
+        "identifier": [
+          {
+            "system": "https://tools.ietf.org/html/rfc4122",
+            "value": "cb3c778b-cee4-4027-8163-c082958f87f1"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "activity"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "73985-4",
+              "display": "Exercise activity"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:073eef49-81ee-4c2e-893b-bc2e4efd2630"
+        },
+        "effectiveDateTime": "2024-10-28T04:49:08.943Z",
+        "performer": [
+          {
+            "reference": "urn:uuid:073eef49-81ee-4c2e-893b-bc2e4efd2630"
+          }
+        ],
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "870595007",
+              "display": "Walking"
+            }
+          ]
+        },
+        "device": {
+          "display": "Apple Healthkit"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:71fae5af-0b9e-4b9e-b6af-3d1bb4e223a0",
+      "resource": {
+        "resourceType": "Observation",
+        "identifier": [
+          {
+            "system": "https://tools.ietf.org/html/rfc4122",
+            "value": "71fae5af-0b9e-4b9e-b6af-3d1bb4e223a0"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "activity"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55424-6",
+              "display": "Calories burned in Unspecified Time, Pedometer"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:073eef49-81ee-4c2e-893b-bc2e4efd2630"
+        },
+        "effectiveDateTime": "2024-10-28T04:49:08.943Z",
+        "performer": [
+          {
+            "reference": "urn:uuid:073eef49-81ee-4c2e-893b-bc2e4efd2630"
+          }
+        ],
+        "valueQuantity": {
+          "value": 413,
+          "system": "http://unitsofmeasure.org",
+          "code": "kcal"
+        },
+        "device": {
+          "display": "Apple Healthkit"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:cffe1a6e-8eda-4613-bf54-119b374bb5b9",
+      "resource": {
+        "resourceType": "Observation",
+        "identifier": [
+          {
+            "system": "https://tools.ietf.org/html/rfc4122",
+            "value": "cffe1a6e-8eda-4613-bf54-119b374bb5b9"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55425-3",
+              "display": "Heart rate unspecified time mean by Pedometer"
+            },
+            {
+              "system": "http://loinc.org",
+              "code": "8867-4"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:073eef49-81ee-4c2e-893b-bc2e4efd2630"
+        },
+        "effectiveDateTime": "2024-10-28T04:49:08.943Z",
+        "performer": [
+          {
+            "reference": "urn:uuid:073eef49-81ee-4c2e-893b-bc2e4efd2630"
+          }
+        ],
+        "valueQuantity": {
+          "value": 116,
+          "unit": "/min",
+          "system": "http://unitsofmeasure.org",
+          "code": "/min"
+        },
+        "device": {
+          "display": "Apple Healthkit"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:35eb7da3-9b85-46ce-bd29-75c2263b514a",
+      "resource": {
+        "resourceType": "Observation",
+        "identifier": [
+          {
+            "system": "https://tools.ietf.org/html/rfc4122",
+            "value": "35eb7da3-9b85-46ce-bd29-75c2263b514a"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "activity"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55411-3",
+              "display": "Exercise duration"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:073eef49-81ee-4c2e-893b-bc2e4efd2630"
+        },
+        "effectiveDateTime": "2024-10-28T04:49:08.943Z",
+        "performer": [
+          {
+            "reference": "urn:uuid:073eef49-81ee-4c2e-893b-bc2e4efd2630"
+          }
+        ],
+        "valueQuantity": {
+          "value": 51,
+          "system": "http://unitsofmeasure.org",
+          "code": "min"
+        },
+        "device": {
+          "display": "Apple Healthkit"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:ad7c1832-f855-4ece-a4c7-c79b433a7890",
+      "resource": {
+        "resourceType": "Observation",
+        "identifier": [
+          {
+            "system": "https://tools.ietf.org/html/rfc4122",
+            "value": "ad7c1832-f855-4ece-a4c7-c79b433a7890"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "activity"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55426-1",
+              "display": "Maximum Heart rate in Unspecified Time"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:073eef49-81ee-4c2e-893b-bc2e4efd2630"
+        },
+        "effectiveDateTime": "2024-10-28T04:49:08.943Z",
+        "performer": [
+          {
+            "reference": "urn:uuid:073eef49-81ee-4c2e-893b-bc2e4efd2630"
+          }
+        ],
+        "valueQuantity": {
+          "value": 119,
+          "system": "http://unitsofmeasure.org",
+          "code": "/min"
+        },
+        "device": {
+          "display": "Apple Healthkit"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:0a7f38ae-9658-4b43-a3f9-02f66f65bf38",
+      "resource": {
+        "resourceType": "Observation",
+        "identifier": [
+          {
+            "system": "https://tools.ietf.org/html/rfc4122",
+            "value": "0a7f38ae-9658-4b43-a3f9-02f66f65bf38"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "activity"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "41950-7",
+              "display": "Number of steps in 24 Hours, Measured"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:073eef49-81ee-4c2e-893b-bc2e4efd2630"
+        },
+        "effectiveDateTime": "2024-10-28T04:49:08.943Z",
+        "performer": [
+          {
+            "reference": "urn:uuid:073eef49-81ee-4c2e-893b-bc2e4efd2630"
+          }
+        ],
+        "valueQuantity": {
+          "value": 9607,
+          "unit": "/d",
+          "system": "http://unitsofmeasure.org",
+          "code": "/d"
+        },
+        "device": {
+          "display": "Apple Healthkit"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:a14a52b7-b647-45f3-851a-8c00e28c0968",
+      "resource": {
+        "resourceType": "Observation",
+        "identifier": [
+          {
+            "system": "https://tools.ietf.org/html/rfc4122",
+            "value": "a14a52b7-b647-45f3-851a-8c00e28c0968"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8873-2",
+              "display": "Maximum Heart rate in 24 Hours"
+            },
+            {
+              "system": "http://loinc.org",
+              "code": "8867-4"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:073eef49-81ee-4c2e-893b-bc2e4efd2630"
+        },
+        "effectiveDateTime": "2024-10-28T04:49:08.943Z",
+        "performer": [
+          {
+            "reference": "urn:uuid:073eef49-81ee-4c2e-893b-bc2e4efd2630"
+          }
+        ],
+        "valueQuantity": {
+          "value": 132,
+          "unit": "/min",
+          "system": "http://unitsofmeasure.org",
+          "code": "/min"
+        },
+        "device": {
+          "display": "Apple Healthkit"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:ea09866e-d540-4d9c-ba9c-8e22338e524c",
+      "resource": {
+        "resourceType": "Observation",
+        "identifier": [
+          {
+            "system": "https://tools.ietf.org/html/rfc4122",
+            "value": "ea09866e-d540-4d9c-ba9c-8e22338e524c"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "40443-4",
+              "display": "Heart rate - resting"
+            },
+            {
+              "system": "http://loinc.org",
+              "code": "8867-4"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:073eef49-81ee-4c2e-893b-bc2e4efd2630"
+        },
+        "effectiveDateTime": "2024-10-28T04:49:08.943Z",
+        "performer": [
+          {
+            "reference": "urn:uuid:073eef49-81ee-4c2e-893b-bc2e4efd2630"
+          }
+        ],
+        "valueQuantity": {
+          "value": 64,
+          "unit": "/min",
+          "system": "http://unitsofmeasure.org",
+          "code": "/min"
+        },
+        "device": {
+          "display": "Apple Healthkit"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:b8df13d9-86f3-4545-9e82-50bca88090d9",
+      "resource": {
+        "resourceType": "Observation",
+        "identifier": [
+          {
+            "system": "https://tools.ietf.org/html/rfc4122",
+            "value": "b8df13d9-86f3-4545-9e82-50bca88090d9"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "activity"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "41979-6",
+              "display": "Calories burned in 24 Hours, Calc"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:073eef49-81ee-4c2e-893b-bc2e4efd2630"
+        },
+        "effectiveDateTime": "2024-10-28T04:49:08.943Z",
+        "performer": [
+          {
+            "reference": "urn:uuid:073eef49-81ee-4c2e-893b-bc2e4efd2630"
+          }
+        ],
+        "valueQuantity": {
+          "value": 714,
+          "unit": "kcal/(24.h)",
+          "system": "http://unitsofmeasure.org",
+          "code": "kcal/(24.h)"
+        },
+        "device": {
+          "display": "Apple Healthkit"
+        }
+      }
+    }
+  ]
+}
