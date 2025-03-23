@@ -1,4 +1,4 @@
-Instance: PhysicalActivity
+Instance: 63487b62-cbdc-4f29-b393-70eed3fbc498
 InstanceOf: DiagnosticReport
 Title: "Diagnostic Report Physical Activity Example."
 Description: "Based on US Physical Activity IG"
@@ -51,3 +51,25 @@ Description: "Based on US Physical Activity IG"
 
 * conclusion = "Normal - no action"
 
+// Panels
+* result[+]
+  * reference = "urn:uuid:88b99ab6-0990-4f1c-b1a7-6adb50dd70b7"
+  * type = #Observation
+* result[+]
+  * reference = "urn:uuid:8f750590-30d6-425f-a8c4-f0a7c41e01d4"
+  * type = #Observation
+
+// Individual Observations
+
+* result[+]
+  * reference = "urn:uuid:0a7f38ae-9658-4b43-a3f9-02f66f65bf38"
+  * type = #Observation
+* result[+]
+  * reference = "urn:uuid:a14a52b7-b647-45f3-851a-8c00e28c0968"
+  * type = #Observation
+* result[+]
+  * reference = "urn:uuid:ea09866e-d540-4d9c-ba9c-8e22338e524c"
+  * type = #Observation
+* result[+]
+  * reference = "urn:uuid:b8df13d9-86f3-4545-9e82-50bca88090d9"
+  * type = #Observation

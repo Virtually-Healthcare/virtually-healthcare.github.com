@@ -8,6 +8,8 @@ Usage: #example
 // Patient
 * insert EntryDocument("urn:uuid:073eef49-81ee-4c2e-893b-bc2e4efd2630", 073eef49-81ee-4c2e-893b-bc2e4efd2630)
 
+// Diagnostic Report
+* insert EntryDocument("urn:uuid:63487b62-cbdc-4f29-b393-70eed3fbc498", 63487b62-cbdc-4f29-b393-70eed3fbc498)
 
 // Observation Panel Vital Signs
 * insert EntryDocument("urn:uuid:88b99ab6-0990-4f1c-b1a7-6adb50dd70b7", 88b99ab6-0990-4f1c-b1a7-6adb50dd70b7)

@@ -1,7 +1,7 @@
 Instance: DischargeReportRemotePatientMonitoring
 InstanceOf: MessageHeader
-Title: "Message Header - DiagnosticReport with multiple Observation Panel Clinic and individual Observations"
-Description: "TODO"
+Title: "Message Header - Discharge Report R01"
+Description: "DiagnosticReport with multiple Observation Panel Clinic and individual Observations"
 Usage: #example
 
 
@@ -20,6 +20,12 @@ Usage: #example
 
 * source.endpoint = "https://fhir.virtually.healthcare/Endpoint/Online"
 * source.software = "Virtually App 1.02"
+
+// Panel Vital Signs
+* focus[+]
+  * reference = "urn:uuid:63487b62-cbdc-4f29-b393-70eed3fbc498"
+  * type = #DiagnosticReport
+
 // Panel Vital Signs
 * focus[+]
   * reference = "urn:uuid:88b99ab6-0990-4f1c-b1a7-6adb50dd70b7"

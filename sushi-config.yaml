@@ -343,7 +343,7 @@ groups:
       - MessageHeader/PhysicalActivityReport
       - MessageHeader/DischargeReportRemotePatientMonitoring
       - MessageHeader/DischargeLetter
-      - DiagnosticReport/PhysicalActivity
+      - DiagnosticReport/63487b62-cbdc-4f29-b393-70eed3fbc498
   -ex-example-VitalSigns:
     name: "Example: Remote Patient Monitoring - Vital Signs"
     description: "Remote Patient Monitoring Vital Signs examples"

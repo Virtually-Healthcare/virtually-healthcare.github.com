@@ -1,7 +1,7 @@
 Instance: PhysicalActivityReport
 InstanceOf: MessageHeader
-Title: "Message Header - with single Observation Panel and individual Observations- Physical and Daily Activity"
-Description: "TODO"
+Title: "Message Header - Activity Report"
+Description: "Activity Report with single Observation Panel and individual Observations- Physical and Daily Activity"
 Usage: #example
 
 
