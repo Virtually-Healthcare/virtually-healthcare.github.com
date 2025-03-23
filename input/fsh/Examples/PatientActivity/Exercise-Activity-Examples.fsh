@@ -12,12 +12,12 @@ Usage: #example
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#activity
 * code = http://loinc.org#55424-6 "Calories burned in Unspecified Time, Pedometer"
-* subject.reference = "Patient/073eef49-81ee-4c2e-893b-bc2e4efd2630"
+* subject.reference = "urn:uuid:073eef49-81ee-4c2e-893b-bc2e4efd2630"
 * effectiveDateTime = "2024-10-28T04:49:08.943Z"
 * valueQuantity.value = 413
 * valueQuantity.code = #kcal
 * valueQuantity.system = "http://unitsofmeasure.org"
-* performer.reference = "Patient/073eef49-81ee-4c2e-893b-bc2e4efd2630"
+* performer.reference = "urn:uuid:073eef49-81ee-4c2e-893b-bc2e4efd2630"
 * device.display = "Apple Healthkit"
 
 Instance: cffe1a6e-8eda-4613-bf54-119b374bb5b9
@@ -35,13 +35,13 @@ Usage: #example
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 * code.coding[LOINC][+] = http://loinc.org#55425-3 "Heart rate unspecified time mean by Pedometer"
 * code.coding[LOINC][+] = http://loinc.org#8867-4
-* subject.reference = "Patient/073eef49-81ee-4c2e-893b-bc2e4efd2630"
+* subject.reference = "urn:uuid:073eef49-81ee-4c2e-893b-bc2e4efd2630"
 * effectiveDateTime = "2024-10-28T04:49:08.943Z"
 * valueQuantity.value = 116
 * valueQuantity.code = #/min
 * valueQuantity.unit = "/min"
 * valueQuantity.system = "http://unitsofmeasure.org"
-* performer.reference = "Patient/073eef49-81ee-4c2e-893b-bc2e4efd2630"
+* performer.reference = "urn:uuid:073eef49-81ee-4c2e-893b-bc2e4efd2630"
 * device.display = "Apple Healthkit"
 
 Instance: 35eb7da3-9b85-46ce-bd29-75c2263b514a
@@ -58,12 +58,12 @@ Usage: #example
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#activity
 * code = http://loinc.org#55411-3 "Exercise duration"
-* subject.reference = "Patient/073eef49-81ee-4c2e-893b-bc2e4efd2630"
+* subject.reference = "urn:uuid:073eef49-81ee-4c2e-893b-bc2e4efd2630"
 * effectiveDateTime = "2024-10-28T04:49:08.943Z"
 * valueQuantity.value = 51
 * valueQuantity.code = #min
 * valueQuantity.system = "http://unitsofmeasure.org"
-* performer.reference = "Patient/073eef49-81ee-4c2e-893b-bc2e4efd2630"
+* performer.reference = "urn:uuid:073eef49-81ee-4c2e-893b-bc2e4efd2630"
 * device.display = "Apple Healthkit"
 
 Instance: ad7c1832-f855-4ece-a4c7-c79b433a7890
@@ -80,12 +80,12 @@ Usage: #example
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#activity
 * code = http://loinc.org#55426-1 "Maximum Heart rate in Unspecified Time"
-* subject.reference = "Patient/073eef49-81ee-4c2e-893b-bc2e4efd2630"
+* subject.reference = "urn:uuid:073eef49-81ee-4c2e-893b-bc2e4efd2630"
 * effectiveDateTime = "2024-10-28T04:49:08.943Z"
 * valueQuantity.value = 119
 * valueQuantity.code = #/min
 * valueQuantity.system = "http://unitsofmeasure.org"
-* performer.reference = "Patient/073eef49-81ee-4c2e-893b-bc2e4efd2630"
+* performer.reference = "urn:uuid:073eef49-81ee-4c2e-893b-bc2e4efd2630"
 * device.display = "Apple Healthkit"
 
 Instance: cb3c778b-cee4-4027-8163-c082958f87f1
@@ -102,10 +102,10 @@ Usage: #example
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#activity
 * code = http://loinc.org#73985-4 "Exercise activity"
-* subject.reference = "Patient/073eef49-81ee-4c2e-893b-bc2e4efd2630"
+* subject.reference = "urn:uuid:073eef49-81ee-4c2e-893b-bc2e4efd2630"
 * effectiveDateTime = "2024-10-28T04:49:08.943Z"
 * valueCodeableConcept = http://snomed.info/sct#870595007 "Walking"
-* performer.reference = "Patient/073eef49-81ee-4c2e-893b-bc2e4efd2630"
+* performer.reference = "urn:uuid:073eef49-81ee-4c2e-893b-bc2e4efd2630"
 * device.display = "Apple Healthkit"
 
 Instance: 8f750590-30d6-425f-a8c4-f0a7c41e01d4
@@ -122,17 +122,17 @@ Usage: #example
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#activity
 * code = http://snomed.info/sct#68130003 "Physical activity"
-* subject.reference = "Patient/073eef49-81ee-4c2e-893b-bc2e4efd2630"
+* subject.reference = "urn:uuid:073eef49-81ee-4c2e-893b-bc2e4efd2630"
 * effectiveDateTime = "2024-10-28T04:49:08.943Z"
-* performer.reference = "Patient/073eef49-81ee-4c2e-893b-bc2e4efd2630"
+* performer.reference = "urn:uuid:073eef49-81ee-4c2e-893b-bc2e4efd2630"
 
 * hasMember[+]
-  * reference = "Observation/cb3c778b-cee4-4027-8163-c082958f87f1"
+  * reference = "urn:uuid:cb3c778b-cee4-4027-8163-c082958f87f1"
 * hasMember[+]
-  * reference = "Observation/71fae5af-0b9e-4b9e-b6af-3d1bb4e223a0"
+  * reference = "urn:uuid:71fae5af-0b9e-4b9e-b6af-3d1bb4e223a0"
 * hasMember[+]
-  * reference = "Observation/cffe1a6e-8eda-4613-bf54-119b374bb5b9"
+  * reference = "urn:uuid:cffe1a6e-8eda-4613-bf54-119b374bb5b9"
 * hasMember[+]
-  * reference = "Observation/35eb7da3-9b85-46ce-bd29-75c2263b514a"
+  * reference = "urn:uuid:35eb7da3-9b85-46ce-bd29-75c2263b514a"
 * hasMember[+]
-  * reference = "Observation/ad7c1832-f855-4ece-a4c7-c79b433a7890"
+  * reference = "urn:uuid:ad7c1832-f855-4ece-a4c7-c79b433a7890"
