@@ -316,8 +316,8 @@ resources:
     name: ServiceRequest BARS REFREQ03
     description: BARS Example REFREQ03 converted to ServiceRequest
   Bundle/FHIRDocument-DischargeReport:
-    name: Bundle FHIR Document - Discharge Report
-    description: Discharge report with multiple panels and individual observations
+    name: Bundle `Document` - Discharge Report
+    description: FHIR Document Discharge report with multiple panels and individual observations
 
 groups:
   -ex-example-eReferral:
