@@ -9,6 +9,7 @@ to include  Royal College of Radiologists (HL7 v2 ORU), Digital Health and Care 
 * identifier 1..* MS
 * identifier only CorrelationIdentifier
 
+* basedOn 0..* MS
 * basedOn only CodeableReference
 * basedOn.identifier 1..1 MS
 * basedOn.identifier only CorrelationIdentifier
