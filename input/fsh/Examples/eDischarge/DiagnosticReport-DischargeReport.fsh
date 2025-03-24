@@ -51,11 +51,10 @@ Description: "Based on US Physical Activity IG"
 
 * conclusion = "Normal - no action"
 
-// Panels
+// Panels - just add one for testing purposes
 * result[+]
-  * reference = "urn:uuid:88b99ab6-0990-4f1c-b1a7-6adb50dd70b7"
+  * reference = "urn:uuid:8f750590-30d6-425f-a8c4-f0a7c41e01d4"
   * type = #Observation
-
 
 // Individual Observations
 
@@ -64,5 +63,8 @@ Description: "Based on US Physical Activity IG"
   * type = #Observation
 * result[+]
   * reference = "urn:uuid:a14a52b7-b647-45f3-851a-8c00e28c0968"
+  * type = #Observation
+* result[+]
+  * reference = "urn:uuid:ea09866e-d540-4d9c-ba9c-8e22338e524c"
   * type = #Observation
 
