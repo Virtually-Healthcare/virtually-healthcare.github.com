@@ -57,4 +57,6 @@ to include  Royal College of Radiologists (HL7 v2 ORU), Digital Health and Care 
 * performer only Reference(Practitioner)
 //* performer.reference 1..1
 
-* note 0..* MS
+* conclusion 0..1 MS
+* conclusionCode 0..* MS
+* presentedForm 0..* MS
