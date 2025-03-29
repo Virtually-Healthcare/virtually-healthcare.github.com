@@ -1,9 +1,6 @@
 
   @startuml
 
-  skinparam svgDimensionStyle false
-
-
     frame "Patient Referral I12" as Composition {
 
       entity "[[StructureDefinition-ServiceRequest.html ServiceRequest]]" as ORC <<aggregate>> {
@@ -25,6 +22,11 @@
         birthDate
       }
 
+      entity "[[StructureDefinition-Observation.html Observation]]\nCodedItems" as Observation {
+        code
+        value
+      }
+
       entity "[[StructureDefinition-DocumentReference.html DocumentReference]]" as documentReference <<aggregate>> {
         type
         subject : Patient
@@ -41,6 +43,7 @@
       ORC "subject" o-- PID
 
       ORC *-- "0" documentReference: supportingInfo
+      ORC *-- "0" Observation: supportingInfo
 
       documentReference o-- "1" PID : subject
       documentReference *-d-> attachment
