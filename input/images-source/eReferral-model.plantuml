@@ -51,7 +51,7 @@
     }
     frame "Care Directory Service" as mcsd {
 
-      entity "[[StructureDefinition-BHealthcareService.html HealthcareService]]" as HealthcareService {
+      entity "[[StructureDefinition-HealthcareService.html HealthcareService]]" as HealthcareService {
         type
         specialty
         name
