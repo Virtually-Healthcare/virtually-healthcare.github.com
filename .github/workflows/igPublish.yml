@@ -38,7 +38,7 @@ jobs:
         run: sudo apt install graphviz
 
       - name: Build IG
-        run: ./_genonce.sh ${{ vars.VALIDATOR_OFFLINE }}
+        run: ./_genKM.sh ${{ vars.VALIDATOR_OFFLINE }}
 
       - name: Download and unpack font-awesome
         run: wget https://fontawesome.com/v4/assets/font-awesome-4.7.0.zip; unzip font-awesome-4.7.0.zip -d output
