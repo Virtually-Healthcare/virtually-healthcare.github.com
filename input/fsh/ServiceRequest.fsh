@@ -56,6 +56,7 @@ and [NHS England - Booking and Referral Standard](https://simplifier.net/guide/n
 
 * category[genomicsWholeCaseSequencing] 0..0
 
+* subject only Patient
 * subject.reference 0..1 MS
 * subject.identifier only NHSNumber
 

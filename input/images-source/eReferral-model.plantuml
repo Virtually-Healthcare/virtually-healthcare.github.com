@@ -1,0 +1,73 @@
+
+  @startuml
+
+  skinparam svgDimensionStyle false
+
+
+    frame "Patient Referral I12" as Composition {
+
+      entity "[[StructureDefinition-ServiceRequest.html ServiceRequest]]" as ORC <<aggregate>> {
+        OriginatingReferralIdentifier : Order Number
+        subject : Patient
+        code:
+        requester
+        performer
+        encounter: stay, problem or episode number  [[StructureDefinition-VisitNumber.html Visit Number]]
+        supportingInfo: Patient Summary, Referral Letter, etc
+        reasonCode
+        note
+      }
+
+      entity "[[StructureDefinition-Patient.html Patient]]" as PID {
+        [[StructureDefinition-NHSNumber.html NHSNumber]]
+        [[StructureDefinition-MedicalRecordNumber.html MedicalRecordNumber]]
+        name
+        birthDate
+      }
+
+      entity "[[StructureDefinition-DocumentReference.html DocumentReference]]" as documentReference <<aggregate>> {
+        type
+        subject : Patient
+        context.encounter: stay, problem or episode number [[StructureDefinition-VisitNumber.html Visit Number]]
+      }
+
+      class "[[StructureDefinition-NWAttachment.html Attachment]]" as attachment {
+        contentType
+        url
+      }
+
+      class "[[StructureDefinition-Binary.html Binary]]" as binary
+
+      ORC "subject" o-- PID
+
+      ORC *-- "0" documentReference: supportingInfo
+
+      documentReference o-- "1" PID : subject
+      documentReference *-d-> attachment
+
+      attachment *-- binary : url
+
+
+    }
+    frame "Care Directory Service" as mcsd {
+
+      entity "[[StructureDefinition-BHealthcareService.html HealthcareService]]" as HealthcareService {
+        type
+        specialty
+        name
+        providedBy: Organisation
+      }
+
+      entity "InventoryItem/ServiceStatus" as InventoryItem {
+        code
+        responsibleOrganisation
+        inventoryStatus : available/unavailable
+      }
+
+      HealthcareService "type" --* "code" InventoryItem
+
+    }
+
+    ORC "code" --> "type" HealthcareService
+
+  @enduml
