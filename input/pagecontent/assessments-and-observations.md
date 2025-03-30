@@ -1,9 +1,9 @@
 
 All units are [UCUM](http://unitsofmeasure.org) unless stated.
 
-### Common Observations
+## Common Observations
 
-#### Vital Signs
+### Vital Signs
 
 See also [Vital Signs](Questionnaire-VitalSigns.html) ([Questionnaire Viewer](https://project-wildfyre.github.io/questionnaire-viewer/?q=https://virtually-healthcare.github.io/HL7-FHIR-Implementation-Guide/Questionnaire-VitalSigns.json)) form/data capture definition. Hint: Use [NLM Form Builder](https://formbuilder.nlm.nih.gov/) to view these definitions.
 This relates to the *Vital Signs* section of the [HL7 International Patient Summary](https://build.fhir.org/ig/HL7/fhir-ips/Structure-of-the-International-Patient-Summary.html#vital-signs)
@@ -27,7 +27,7 @@ This relates to the *Vital Signs* section of the [HL7 International Patient Summ
 | - Systolic blood pressure                                     | [72313002](http://snomed.info/id/72313002)                                                                    | Systolic arterial pressure                                              | [8480-6](https://loinc.org/8480-6)   | Quantity        | mm[Hg]    |                                                                                     |
 | - Diastolic blood pressure                                    | [1091811000000102](http://snomed.info/id/1091811000000102)                                                    | Diastolic arterial pressure                                             | [8462-4](https://loinc.org/8462-4)   | Quantity        | mm[Hg]    |                                                                                     |
 
-#### Miscellaneous
+### Miscellaneous
 
 These are additional observations which will be present in a patients (mobile device) health record.
 
@@ -37,11 +37,11 @@ These are additional observations which will be present in a patients (mobile de
 | Blood Glucose               | [997671000000106](http://snomed.info/id/997671000000106)  | Blood glucose level                           |                                      |                 |           |
 | Atrial Fibrillation Burden  | [713801000000102](http://snomed.info/id/713801000000102)    | Atrial fibrillation monitoring administration |                                      |
 
-### Physical Activity
+## Physical Activity
 
 This is related to the [HL7 Physical Activity Implementation Guide](https://build.fhir.org/ig/HL7/physical-activity/)
 
-#### Exercise Activity
+### Exercise Activity
 
 See also [Exercise Activity](Questionnaire-ExerciseActivity.html) ([Questionnaire Viewer](https://project-wildfyre.github.io/questionnaire-viewer/?q=https://virtually-healthcare.github.io/HL7-FHIR-Implementation-Guide/Questionnaire-ExerciseActivity.json)) form/data capture definition. Hint: Use [NLM Form Builder](https://formbuilder.nlm.nih.gov/) to view these definitions.
 
@@ -58,7 +58,7 @@ See also [Exercise Activity](Questionnaire-ExerciseActivity.html) ([Questionnair
 | Activity Duration        | [252132001](http://snomed.info/id/252132001) Recommendation by NHS England  | Measurement period   | [55411-3](https://loinc.org/55411-3)                                        | Quantity                                       | min       | [Activity Duration example](Observation-35eb7da3-9b85-46ce-bd29-75c2263b514a.html)        |
 | Peak Activity Heart Rate |                                                                            |                      | [55426-1](https://loinc.org/55426-1)                                        | Quantity                                       | /min      | [Peak Activity Heart Rate example](Observation-ad7c1832-f855-4ece-a4c7-c79b433a7890.html) |
 
-#### Daily Physical Activity
+### Daily Physical Activity
 
 See also [Daily Physical Activity](Questionnaire-DailyPhysicalActivity.html) ([Questionnaire Viewer](https://project-wildfyre.github.io/questionnaire-viewer/?q=https://virtually-healthcare.github.io/HL7-FHIR-Implementation-Guide/Questionnaire-DailyPhysicalActivity.json)) form/data capture definition. Hint: Use [NLM Form Builder](https://formbuilder.nlm.nih.gov/) to view these definitions.
 
@@ -73,7 +73,7 @@ See also [Daily Physical Activity](Questionnaire-DailyPhysicalActivity.html) ([Q
 | Average Resting Heart Rate |           |                   | [40443-4](https://loinc.org/40443-4) and [8867-4](https://loinc.org/8867-4) | Quantity        | /min        | [Average resting heart rate example](Observation-ea09866e-d540-4d9c-ba9c-8e22338e524c.html) | 
 | Calories per Day           |           |                   | [41979-6](https://loinc.org/41979-6)                                        | Quantity        | kcal/(24.h) | [Calories per Day example](Observation-b8df13d9-86f3-4545-9e82-50bca88090d9.html)          | 
 
-### NHS Health Assessment
+## NHS Health Assessment
 
 **Draft** for elaboration
 
@@ -81,3 +81,11 @@ This relates to the [PRSB NHS Health Check Standard](https://theprsb.org/standar
 See also [NHS Health Check Asessment](Questionnaire-NHSHealthCheckAssessment.html) ([Questionnaire Viewer](https://project-wildfyre.github.io/questionnaire-viewer/?q=https://virtually-healthcare.github.io/HL7-FHIR-Implementation-Guide/Questionnaire-NHSHealthCheckAssessment.json)) form/data capture definition. Hint: Use [NLM Form Builder](https://formbuilder.nlm.nih.gov/) to view these definitions.
 
 This has overlap with [vital-signs](#vital-signs) and uses consistent SNOMED CT coding.
+
+### Entity Model
+
+<figure>
+{%include data-capture-model.svg%}
+<p id="fX.X.X.X-X" class="figureTitle">Assessment and Observations Model</p>
+</figure>
+<br clear="all">

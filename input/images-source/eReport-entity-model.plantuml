@@ -81,7 +81,7 @@ frame Documents {
   }
 
 
-  class "[[StructureDefinition-DocumentReference.html Document Entry]]" as DocumentEntry <<aggregate root>> {
+  class "[[StructureDefinition-DocumentReference.html DocumentReference]]" as DocumentEntry <<aggregate root>> {
   category: UK SNOMED CT
   type : UK SNOMED CT
   subject : PatientIdentifier

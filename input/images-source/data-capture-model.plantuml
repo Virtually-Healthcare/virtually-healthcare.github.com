@@ -1,0 +1,88 @@
+
+  @startuml
+
+    frame DataCapture as "Data Capture & Assessments" {
+      class "[[StructureDefinition-QuestionnaireResponse.html Form]]" as Form <<data transfer object>> {
+        identifier 1..1
+        subject
+        questionnaire 0..1 : Questionnaire
+        code : (in FHIR from Questionnaire)
+        authored 1..1 : DateTime
+        answers 1..*
+      }
+
+
+      class "[[StructureDefinition-Questionnaire.html Form Definition]]" as FormDefinition <<aggregate root>> {
+        identifier 1..1
+        url
+        code : UK SNOMED CT or LOINC
+        questions 1..*
+      }
+
+
+      FormDefinition "url" -d-|> "questionnaire" Form : defintion
+
+    }
+
+
+    frame "Clinical Data Repository" as Composition {
+
+
+      entity "[[StructureDefinition-Patient.html Patient]]" as PID {
+        [[StructureDefinition-NHSNumber.html NHSNumber]]
+        [[StructureDefinition-MedicalRecordNumber.html MedicalRecordNumber]]
+        name
+        birthDate
+      }
+
+      entity "[[StructureDefinition-Observation.html Observation]]" as Observation <<entity>> {
+        identifier 1..*
+        subject 1..1: PatientIdentifier
+        code : UK SNOMED CT or LOINC
+        effectiveDateTime
+        value[x]: codes are UK SNOMED CT or LOINC
+        encounter 0..1
+        }
+
+
+      entity "[[assessments-and-observations.html Observation Panel]]" as ObservationPanel <<aggregate>> {
+        identifier 1..*
+        subject 1..1: PatientIdentifier
+        code : UK SNOMED CT or LOINC
+        effectiveDateTime
+        hasMember: 1..*: Observation
+        encounter 0..1
+      }
+
+      entity "[[StructureDefinition-DocumentReference.html DocumentReference]]" as documentReference <<aggregate>> {
+        type
+        subject : Patient
+        context.encounter: stay, problem or episode number [[StructureDefinition-VisitNumber.html Visit Number]]
+      }
+
+      class "[[StructureDefinition-NWAttachment.html Attachment]]" as attachment {
+        contentType
+        url
+      }
+
+      class "[[StructureDefinition-Binary.html Binary]]" as binary
+
+      ObservationPanel o-- "1" PID : subject
+      Observation o-- "1" PID : subject
+      documentReference o-- "1" PID : subject
+      documentReference *-d-> attachment
+
+        ObservationPanel "hasMember" *--> Observation
+
+      attachment *-- binary : url
+
+
+    }
+
+      Form "subject" o-- PID
+
+      Form *-- "0" documentReference: supportingInfo
+      Form "code" *-- "code" ObservationPanel
+
+
+  @enduml

@@ -467,7 +467,7 @@ menu:
   Data Models (Vol 3):
     eReferral: eReferral-model.html
     eReport: eReport-model.html
-    Patient Care Coordination: pcc-model.html
+ #   Patient Care Coordination: pcc-model.html
     Assessments and Observations: assessments-and-observations.html
   Artefacts: artifacts.html
   Development:
