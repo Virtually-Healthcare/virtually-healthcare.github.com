@@ -7,5 +7,5 @@ Known as Originating Referral Identifier (HL7 v2 RF1-6)
 """
 
 
-* type = http://terminology.hl7.org/CodeSystem/v2-0203#PLAC
+* type = $v2-0203#PLAC
 * value 1..1

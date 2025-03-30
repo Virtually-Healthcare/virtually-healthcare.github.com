@@ -19,4 +19,19 @@ These represent data that needs to be captured for use with these services. This
 </figure>
 <br clear="all">
 
+### Mapping
 
+| Name                            | eReferral HL7 FHIR                                                                  | BARS                                                                              | eRS                                          |
+|---------------------------------|-------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|----------------------------------------------|
+| Originating Referral Identifier | ServiceRequest.identifier[OriginatingReferralIdentifier] and [UBRN]                 |                                                                                   | ServiceRequest.identifier[UBRN]              |  
+| Service Code                    | ServiceRequest.code                                                                 | Task.code                                                                         |                                              |
+| Patient Identifier              | ServiceRequest.subject.identifier[NHSNumber] and/or ServiceRequest.subject.reference | ServiceRequest.subject.reference                                                  | ServiceRequest.subject.identifier[NHSNumber] |
+| Stay/Episode Number             | ServiceRequest.encounter.identifier (PV1-19)                                        | n/a - reference to clinical encounter required                                    | n/a                                          |
+| Requester                       | ServiceRequest.requester (PractitionerRole)                                         | ServiceRequest.requester                                                          | ServiceRequest.requester (PractitionerRole)  |
+| Performer (Service Id)          | ServiceRequest.performer.identifier (HealthcareService)                             | ServiceRequest.performer.reference (HealthcareService) \n Directory of Service Id | Relates to Service Search and eRS Service Id |
+| Performer Type                  | ServiceRequest.performerType                                                        | n/a                                                                               | ServiceRequest.performerType (eRS Specialty) |
+| Occurrence Period               | ServiceRequest.occurrencePeriod                                                     | ServiceRequest.occurrencePeriod                                                   | n/a                                          |
+| Referral Letter                 | ServiceReqest.suppportingInfo[ReferralLetter] - pointer to DocumentReference        | n/a                                                                               | ServiceReqest.suppportingInfo                |
+| Patient Summary                 | ServiceReqest.suppportingInfo (automatically generate if required)                  | n/a                                                                               | ServiceReqest.suppportingInfo                |
+| ReasonCode                      | ServiceRequest.reasonCode (Condition or SNOMED CT Condition code)                   | CarePlan.addresses (Condition)                                                    | n/a                                          |
+| Notes                           | ServiceRequest.note                                                                 | CarePlan.activity and Task.description                                            | n/a                                          |
