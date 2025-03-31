@@ -13,10 +13,10 @@
 
     component PrimaryCareCDR <<database>>
 
-    frame PatientObservatory {
+    frame "Population Management" as analytics {
       component "Population Management" as PopulationManagement
       component "Data Capture\nMobile" as DataCaptureMobile
-      component "Clinical Decision Support" as ClinicalDecisionSupport
+      component "Clinical Decision Support\nPatient Observatory" as ClinicalDecisionSupport
       component Analytics <<data warehouse>>
       component "Bulk Import\nIM1 Bulk" as BulkImport
 
