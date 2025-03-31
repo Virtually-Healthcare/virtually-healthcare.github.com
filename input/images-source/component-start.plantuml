@@ -3,7 +3,7 @@
 
     component "Clinical Data Repository" as ClinicalDataRepository <<database>>
 
-    component "Health Information Exchange\nand ICS Integratoin Engine" as HealthInformationExchange <<enterprise service bus>>
+    component "Health Information Exchange\nand ICS Integration Engine" as HealthInformationExchange <<enterprise service bus>>
 
 
     component PrimaryCareCDR <<database>>
