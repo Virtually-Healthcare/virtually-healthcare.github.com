@@ -1,0 +1,95 @@
+
+  @startuml
+
+    component "Clinical Data Repository" as ClinicalDataRepository <<database>>
+
+    component "Health Information Exchange\nand ICS Integratoin Engine" as HealthInformationExchange <<enterprise service bus>>
+
+    interface "eReferrals\nBARS and eRS" as eReferrals
+
+    interface "eReports\nGP Connect Send Document\nand IM1 Writeback" as eReports
+
+    component PrimaryCareCDR <<database>>
+
+    frame PatientObservatory {
+      component "Population Management" as PopulationManagement
+      component "Data Capture\nMobile" as DataCaptureMobile
+      component "Clinical Decision Support" as ClinicalDecisionSupport
+      component Analytics <<data warehouse>>
+      component "Bulk Import\nIM1 Bulk" as BulkImport
+
+
+      note as OMOP
+      Intersystems IRIS
+      includes ETL and OMOP support
+      end note
+
+      OMOP .u. Analytics
+      PopulationManagement --> ClinicalDataRepository : FHIR RESTful
+      PopulationManagement -u-> Analytics : SQL
+
+    }
+
+    frame "Patient Care Coordination" as BARS {
+      component "Workflow: \n- Referrals\n- Triage\n- Discharge" as Workflow
+    }
+
+    frame "Directory Services" as CSD {
+      component "PatientDemographicsService" as PDS
+      component "Organisation Directory Service" as ODS
+      component "UEC Directory of Service" as UEC
+      component "eRS Directory Service" as ersDOS
+
+      PDS -d[hidden]- ODS
+      ODS -d[hidden]- UEC
+      UEC -d[hidden]- ersDOS
+    }
+
+    frame "Online Consultations" as online {
+      component "Data Capture\nWeb" as DataCaptureWeb
+
+    }
+    frame Financial {
+      component "Claims/nNHS BSA" as BSA
+    }
+
+    note as FHIR
+AWS HealthLake or
+Intersystems IRIS FHIR Repo
+end note
+
+    note as ESB
+Apache Camel, MQ and HAPI FHIR/v2
+and/or Intersystems Health Connect
+end note
+
+
+    FHIR .. ClinicalDataRepository
+    ESB .. HealthInformationExchange
+
+
+    ClinicalDataRepository --> Analytics : ETL
+    BulkImport --> Analytics : ETL
+
+    DataCaptureWeb --> ClinicalDataRepository : FHIR RESTful
+    DataCaptureWeb --> HealthInformationExchange : FHIR RESTful
+
+
+    DataCaptureMobile --> ClinicalDecisionSupport
+    Workflow --> ClinicalDataRepository : FHIR RESTful
+    Workflow --> HealthInformationExchange : FHIR RESTful
+    ClinicalDecisionSupport --> ClinicalDataRepository : FHIR RESTful
+    ClinicalDecisionSupport --> Analytics : SQL
+
+
+    eReferrals --> HealthInformationExchange
+    HealthInformationExchange --> eReports
+    HealthInformationExchange --> PrimaryCareCDR : IM1 Transaction
+    HealthInformationExchange --> ClinicalDataRepository : FHIR RESTful
+    eReports --> PrimaryCareCDR : MESH
+
+    HealthInformationExchange --> BSA
+
+    HealthInformationExchange --> PDS
+
+  @enduml

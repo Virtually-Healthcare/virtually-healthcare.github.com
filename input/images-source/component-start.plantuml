@@ -1,0 +1,45 @@
+
+  @startuml
+
+    component "Clinical Data Repository" as ClinicalDataRepository <<database>>
+
+    component "Health Information Exchange\nand ICS Integratoin Engine" as HealthInformationExchange <<enterprise service bus>>
+
+
+    component PrimaryCareCDR <<database>>
+
+
+    frame "Directory Services" as CSD {
+      component "PatientDemographicsService" as PDS
+    }
+
+    frame "Online Consultations" as online {
+      component "Data Capture\nWeb" as DataCaptureWeb
+
+    }
+
+    note as FHIR
+AWS FHIRWorks
+end note
+
+    note as ESB
+HAPI FHIR
+end note
+
+
+    FHIR .. ClinicalDataRepository
+    ESB .. HealthInformationExchange
+
+
+    DataCaptureWeb --> ClinicalDataRepository : FHIR RESTful
+    DataCaptureWeb --> HealthInformationExchange : FHIR RESTful
+
+
+    HealthInformationExchange --> eReports
+    HealthInformationExchange --> PrimaryCareCDR : IM1 Transaction
+    HealthInformationExchange --> ClinicalDataRepository : FHIR RESTful
+    eReports --> PrimaryCareCDR : MESH
+
+    HealthInformationExchange --> PDS
+
+  @enduml

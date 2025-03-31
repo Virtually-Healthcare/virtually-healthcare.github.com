@@ -1,5 +1,5 @@
 Profile:        EnglandServiceIdentifier
-Parent:         CorrelationIdentifier
+Parent:         http://hl7.org/fhir/StructureDefinition/Identifier
 Id:             EnglandServiceIdentifier
 Title:          "England Service Identifier"
 Description:     """
