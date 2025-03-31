@@ -5,7 +5,7 @@
 
     component "Health Information Exchange\nand ICS Integration Engine" as HealthInformationExchange <<enterprise service bus>>
 
-  interface "eReports\nIM1 Writeback" as eReports
+    interface "eReports\nIM1 Writeback" as eReports
 
     component PrimaryCareCDR <<database>>
 
@@ -24,7 +24,7 @@ AWS FHIRWorks
 end note
 
     note as ESB
-HAPI FHIR
+HAPI FHIR Plain Server
 end note
 
 

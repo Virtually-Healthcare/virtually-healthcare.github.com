@@ -9,7 +9,7 @@
 
     interface "eReferrals\nBARS and eRS" as eReferrals
 
-    interface "eReports\nGP Connect Send Document\nand IM1 Writeback" as eReports
+    interface "eReports\nGP Connect Send Document\nand IM1 Write-back" as eReports
 
     component PrimaryCareCDR <<database>>
 
@@ -52,7 +52,7 @@
 
     }
     frame Financial {
-      component "Claims/nNHS BSA" as BSA
+      component "Claims\nNHS BSA" as BSA
     }
 
     note as FHIR
