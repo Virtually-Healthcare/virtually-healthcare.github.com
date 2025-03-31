@@ -5,6 +5,7 @@
 
     component "Health Information Exchange\nand ICS Integration Engine" as HealthInformationExchange <<enterprise service bus>>
 
+  interface "eReports\nIM1 Writeback" as eReports
 
     component PrimaryCareCDR <<database>>
 
@@ -38,7 +39,7 @@ end note
     HealthInformationExchange --> eReports
     HealthInformationExchange --> PrimaryCareCDR : IM1 Transaction
     HealthInformationExchange --> ClinicalDataRepository : FHIR RESTful
-    eReports --> PrimaryCareCDR : MESH
+    eReports --> PrimaryCareCDR : IM1 Transaction
 
     HealthInformationExchange --> PDS
 

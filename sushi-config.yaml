@@ -450,7 +450,7 @@ pages:
     title: eReport
     generation: markdown
   enterprise.md:
-    title: history
+    title: Design History
     generation: markdown
 
 menu:
