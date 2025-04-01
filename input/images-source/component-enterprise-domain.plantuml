@@ -1,0 +1,72 @@
+
+  @startuml
+
+    skinparam svgDimensionStyle false
+
+    frame "Enterprise Canonical Model (HL7 FHIR/ISO13972)" as canonical {
+
+    component "Clinical Data Repository" as CDR <<database>>
+
+    interface "IM1 Interface" as IM1 <<facade>>
+
+
+    component "Health Information Exchange" as HIE <<api managment>>
+
+    component "ICS Integration Engine" as ESB <<enterprise service bus>>
+
+    component "Directory Services" as csd <<api managment>>
+
+    interface "Directory Services\n(National)" as mcsd <<adaptor>>
+
+    component "Patient Care Coordination\nEnterprise Worklow" as PCC
+
+    interface "National Services\nInterface" as muddle <<adaptor>>
+
+    component "Clinical Data Repository\n(external - Primary Care)" as emis <<database>>
+
+    component "Trust Integration Engine (TIE)" as TIE <<enterprise service bus>>
+
+}
+
+
+
+
+    component "Organisation Data Service" as ODS
+
+    component "Personnel Demographic Service" as PDS
+
+    component "Directory of Services (DoS)" as DoS
+
+    component "eRS Directory Service" as eDOS
+
+
+    component "Message Exchange for Social Care and Health" as MESH
+    component "ITK3\nGP Connect Send Document" as ITK3
+    component "Booking and Referral Standard" as BARS
+    component "NHS Business Standards Authority" as BSA
+    component "e-Referral Service" as eRS
+
+
+    csd --> mcsd
+    mcsd --> PDS
+    mcsd --> ODS
+    mcsd --> DoS
+    mcsd --> eDOS
+
+    HIE --> CDR
+    HIE --> IM1
+    IM1 --> emis
+    HIE --> csd
+
+    ESB --> muddle
+    ESB --> csd
+    muddle --> MESH
+    MESH --> ITK3 : FHIR Messaging
+    muddle --> BARS : FHIR Messaging
+    muddle --> BSA : FHIR RESTful
+    muddle --> eRS: FHIR RESTful
+    ESB --> PCC
+    PCC --> muddle
+    PCC --> TIE: HL7 v2 OML/ORU\n/FHIR Messaging\nand FHIR Workflow
+
+  @enduml

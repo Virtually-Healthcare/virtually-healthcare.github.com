@@ -36,7 +36,7 @@ We are currently working in two areas.
 - Patient Care Coordination - we are looking at using BARS for referrals from GP/Online Consultations to Pharmacy and using GP Connect Send Document to send letters and reports back to GP systems (this is a PDF version of the consultation write-back). Future enhancements may include community referrals and triage capabilities. 
 
 <figure>
-{%include component-enterprise.svg%}
+{%include component-enterprise-detailed.svg%}
 <p id="fX.X.X.X-X" class="figureTitle">Future Design</p>
 </figure>
 <br clear="all">
