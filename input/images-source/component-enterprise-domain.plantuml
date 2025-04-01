@@ -3,7 +3,7 @@
 
     skinparam svgDimensionStyle false
 
-    frame "Enterprise Canonical Model (HL7 FHIR/ISO13972)" as canonical {
+    frame "Enterprise Canonical Model (HL7 FHIR `ISO-13972`)" as canonical {
 
     component "Clinical Data Repository" as CDR <<database>>
 
