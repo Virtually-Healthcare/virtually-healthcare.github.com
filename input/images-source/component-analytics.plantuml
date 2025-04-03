@@ -1,0 +1,52 @@
+
+  @startuml
+
+    skinparam svgDimensionStyle false
+
+    component "Online Consultation" as triage
+
+    frame "Patient Held Data" as phr {
+      component "Apple Health" as Apple
+      component "Google Health" as Google
+    }
+
+    frame "Community" as community {
+    component "Referrals and Reports\nBARS and GP Connect Send Document" as bars
+    }
+
+    frame "Primary Care" as pc {
+      component "IM1 Bulk" as im1
+    }
+    component "Patient Observatory\n(Clinical Decision Support)" as obs
+
+    component "Clinical Data Repository" as CDR <<database>>
+
+    component "Analytics Repository" as omop
+
+    triage --> CDR  : FHIR RESTful
+    Apple --> obs
+    Google --> obs
+
+    obs <--> CDR : FHIR RESTful\n+ SQL
+
+    bars <--> CDR: FHIR RESTful
+
+    im1 --> CDR : ETL + FHIR Bulk Load
+
+    CDR --> omop : ETL
+
+    note as OMOP
+      Future upgrade?
+      OMOP
+      Intersystems IRIS
+    end note
+
+    note as FHIR
+      Currently AWS FHIRWorks
+      Replace with AWS Healthlake or ISC FHIR Repository
+    end note
+
+    OMOP .l. omop
+    FHIR .l. CDR
+
+  @enduml

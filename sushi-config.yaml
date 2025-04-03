@@ -452,6 +452,9 @@ pages:
   enterprise.md:
     title: Design History
     generation: markdown
+  analytics.md:
+    title: Analytics and Databases
+    generation: markdown
 
 menu:
   Home: index.html
