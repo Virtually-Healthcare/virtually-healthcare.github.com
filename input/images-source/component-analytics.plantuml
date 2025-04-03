@@ -19,7 +19,7 @@
 
     component "Clinical Data Repository" as CDR <<database>>
 
-    component "Analytics Data Warehouse" as omop
+    component "Analytics - Population Management\nand Health Insights" as omop <<data warehouse>>
 
     triage --> CDR  : FHIR RESTful
     Apple --> obs
