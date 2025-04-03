@@ -1,8 +1,6 @@
 
   @startuml
 
-    skinparam svgDimensionStyle false
-
     component "Online Consultation" as triage
 
     frame "Patient Held Data" as phr {
@@ -21,7 +19,7 @@
 
     component "Clinical Data Repository" as CDR <<database>>
 
-    component "Analytics Repository" as omop
+    component "Analytics Data Warehouse" as omop
 
     triage --> CDR  : FHIR RESTful
     Apple --> obs
