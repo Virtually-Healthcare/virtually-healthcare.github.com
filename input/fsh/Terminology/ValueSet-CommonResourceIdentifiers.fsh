@@ -5,4 +5,5 @@ Description: """
 UK Common Resource Identifiers
 """
 * ^experimental  = false
-* include codes from system CorrelationIdentifier
+* include codes from system UKCorrelationIdentifier
+* include codes from system VirtuallyHealthcareIdentifier
