@@ -7,6 +7,7 @@ Description:  "Virtually Healthcare Resource Identifiers"
 * ^caseSensitive  = true
 
 * #https://fhir.virtually.healthcare/Id/Observation
+* #https://fhir.virtually.healthcare/Id/Encounter
 * #https://emis.com/Id/Event/DBID "EMIS Event DBID"
     "**Unofficial** Is known in EMIS IM1 as Event DBID"
 * #https://emis.com/Id/Event/GUID "EMIS Event GUID"
