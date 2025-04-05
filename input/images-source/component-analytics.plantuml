@@ -1,27 +1,37 @@
 
   @startuml
 
-    component "Online Consultation" as triage
+    skinparam svgDimensionStyle false
 
-    frame "Patient Held Data" as phr {
+    component "Online Consultation\n**Data Capture**" as triage
+
+    frame "Device Data Capture" as phr {
       component "Apple Health" as Apple
       component "Google Health" as Google
     }
 
-    frame "Community" as community {
-    component "Referrals and Reports\nBARS and GP Connect Send Document" as bars
+    frame "Patient Care Coordination" as community {
+    component "Referrals, Consultation Writeback \nand Discharge Reports" as bars
     }
 
     frame "Primary Care" as pc {
-      component "IM1 Bulk" as im1
+      component "Clinical Data Repository" as im1 <<database>>
     }
-    component "Patient Observatory\n(Clinical Decision Support)" as obs
+    component "Patient Observatory\n**Clinical Decision Support**" as obs
 
-    component "Clinical Data Repository" as CDR <<database>>
+    component "**Clinical Data Repository**" as CDR <<database>>
 
-    component "Analytics - Population Management\nand Health Insights" as omop <<data warehouse>>
+    component "**Clinical and Finanicial Analytics**\nPopulation Management\nand Health Insights" as omop <<data warehouse>>
 
-    triage --> CDR  : FHIR RESTful
+    component "Clinical Portal\n**Health Information Exchange**" as HIE
+
+    component "National Record Locator\n**Health Document Sharing (XDS)**" as XDS
+
+    component "National Analytics\nFederated Data Platform" as FDP  <<data warehouse>>
+
+    interface "Commissioning\nData Sets\nQOF Data" as QOF
+
+    triage --> CDR  : [[https://build.fhir.org/ig/HL7/sdc/ FHIR Structured Data Capture]]
     Apple --> obs
     Google --> obs
 
@@ -29,19 +39,29 @@
 
     bars <--> CDR: FHIR RESTful
 
-    im1 --> CDR : ETL + FHIR Bulk Load
+    im1 --> CDR : IM1 Bulk, ETL + \n[[https://hl7.org/fhir/uv/bulkdata/ FHIR Bulk Data]]
 
     CDR --> omop : ETL
 
+    HIE <-r- CDR: FHIR [[https://build.fhir.org/ig/HL7/fhir-ipa/ IPA]]
+
+    XDS <-l- CDR: [[https://en.wikipedia.org/wiki/EN_13606 ISO13606]]\nFHIR [[https://build.fhir.org/ig/HL7/fhir-ips/index.html IPS]] + EU
+
+    omop --> FDP: ETL
+
+    QOF -r-> FDP
+
     note as OMOP
-      Future upgrade?
-      OMOP
-      Intersystems IRIS
+      Future?
+      AI Ready
+      OMOP and [[ OHDSI]]
     end note
 
     note as FHIR
-      Currently AWS FHIRWorks
-      Replace with AWS Healthlake or ISC FHIR Repository
+      Based on HL7 FHIR [[artifacts.html#5 Data Model]]
+      ISO 13972 / [[https://build.fhir.org/ig/Xt-EHR/xt-ehr-common/artifacts.html EU EHDS]]
+      plus [[https://www.datadictionary.nhs.uk/ NHS Data Model and Dictionary]]
+      AI Ready
     end note
 
     OMOP .l. omop
