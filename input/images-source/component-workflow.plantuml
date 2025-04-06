@@ -1,0 +1,48 @@
+
+  @startuml
+
+    skinparam svgDimensionStyle false
+
+    component "Unstructured Correspondence\nemail + pdf" as email
+    component "Document Processing Service" as ai
+    component "Referral\nBARS" as BARS
+    component "Referral\nHL7 v2 REF_I12" as refi12
+    component "Referral\nI12" as REF
+
+    component "Discharge Report\nHL7 v2 ORU_R01" as report
+    component "Online Consultations" as cons
+    component "Consultation Writeback\nData Capture Service" as sdc
+
+    component "Discharge Report\nR01" as oru
+
+    frame "Enterprise Service Bus\nIntegration Engine (TIE)" as esb {
+      component "Repository Service and\nMessage Routing" as service
+      component "Document Transformation" as doc
+    }
+
+    component "Health Document Sharing (XDS)\nsupport for NRL" as xds <<database>>
+    component "Clinical Data Repository" as cdr <<database>>
+    component "Clinical Data Repository\nPrimary Care" as emis <<database>>
+    component "Clinical Data Repository\nExternal Primary Care" as ext <<database>>
+    component "Clinical Data Repository\nSecondary Care" as trust <<database>>
+
+    email --> ai
+    ai --> service: FHIR Message T02
+    cons --> sdc: FHIR QuestionnaireResponse
+    refi12 --> REF : FHIR Message
+    BARS --> REF: Bespoke FHIR Messages
+
+    REF --> service: FHIR Message I12
+
+    report --> oru: FHIR Message R01
+    sdc --> oru: FHIR Collection/Message
+    oru --> service: FHIR Message R01
+
+    service --> cdr : FHIR RESTful
+    service --> emis : FHIR Message/\nIM1 Transaction
+    service --> trust: HL7 v2 Message
+    service --> doc: FHIR Message
+    doc --> ext: GP Connect\nSend Document
+    doc --> xds: FHIR Message T02/T01\nIHE XDS/DSUBm
+
+  @enduml

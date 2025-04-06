@@ -455,7 +455,9 @@ pages:
   analytics.md:
     title: Analytics and Databases
     generation: markdown
-
+  workflow.md:
+    title: Workflow
+    generation: markdown
 menu:
   Home: index.html
   Analysis and Design (Vol 1):
