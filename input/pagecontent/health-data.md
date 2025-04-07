@@ -1,6 +1,7 @@
 
-<img style="padding:3px;width:70%;" src="Health Analytics.drawio.png" alt="Health Data Pipeline"/>
-<p class="figureTitle">Health Data Pipeline</p>   
+<img style="padding:3px;width:50%;" src="Health Analytics.drawio.png" alt="Health Data Pipeline"/>
+<p class="figureTitle">Health Data Pipeline</p>  
+<br/>
 
 ## Structured Data Capture
 

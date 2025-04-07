@@ -1,6 +1,7 @@
 
-<img style="padding:3px;width:70%;" src="Patient Care Coordination.drawio.png" alt="Patient Care Coordination Manager (Community)"/>
+<img style="padding:3px;width:50%;" src="Patient Care Coordination.drawio.png" alt="Patient Care Coordination Manager (Community)"/>
 <p class="figureTitle">Patient Care Coordination Manager (Community)</p>   
+<br/>
 
 Patient care coordination involves the deliberate organization of patient care activities and information sharing among all participants to ensure safe, effective, and patient-centered care, ultimately aiming to meet individual needs and preferences.
 
