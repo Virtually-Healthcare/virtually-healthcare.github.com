@@ -1,0 +1,50 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36" version="26.1.3">
+  <diagram name="Page-1" id="LnnqR6kVHhOkDCSa9I--">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="9I-J4Xs82Yw6y-lOxFPa-1" value="Structured Data Capture (SDC)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="210" y="200" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9I-J4Xs82Yw6y-lOxFPa-3" value="Clinical Data Repository (CDR)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="420" y="200" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9I-J4Xs82Yw6y-lOxFPa-5" value="Clinical Data Warehouse (CDW)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="625" y="200" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9I-J4Xs82Yw6y-lOxFPa-6" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;width=17;endSize=7;fillColor=#fff2cc;strokeColor=#d6b656;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="350" y="230" as="sourcePoint" />
+            <mxPoint x="400" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9I-J4Xs82Yw6y-lOxFPa-11" value="&lt;span style=&quot;background-color: rgb(255, 242, 204);&quot;&gt;feeds&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;" connectable="0" vertex="1" parent="9I-J4Xs82Yw6y-lOxFPa-6">
+          <mxGeometry x="-0.2" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9I-J4Xs82Yw6y-lOxFPa-12" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;width=17;endSize=7;fillColor=#fff2cc;strokeColor=#d6b656;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="560" y="229.67" as="sourcePoint" />
+            <mxPoint x="610" y="229.67" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9I-J4Xs82Yw6y-lOxFPa-13" value="feeds" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#FFF2CC;" connectable="0" vertex="1" parent="9I-J4Xs82Yw6y-lOxFPa-12">
+          <mxGeometry x="-0.2" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Le4vqtjaNi0sstYgu-De-1" value="Health Records" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="436" y="270" width="88" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Le4vqtjaNi0sstYgu-De-2" value="Health Analytics" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="640" y="270" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Le4vqtjaNi0sstYgu-De-3" value="Resource /Archetype/Template" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="228" y="270" width="84" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

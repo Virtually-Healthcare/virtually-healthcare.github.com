@@ -452,11 +452,11 @@ pages:
   enterprise.md:
     title: Design History
     generation: markdown
-  analytics.md:
-    title: Analytics and Databases
+  health-data.md:
+    title: Health Data
     generation: markdown
-  workflow.md:
-    title: Workflow
+  patient-care-coordination.md:
+    title: Patient Care Coordination
     generation: markdown
 menu:
   Home: index.html
