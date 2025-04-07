@@ -1,5 +1,6 @@
 
 <img style="padding:3px;width:50%;" src="Patient Care Coordination.drawio.png" alt="Patient Care Coordination Manager (Community)"/>
+<br clear="all">
 <p class="figureTitle">Patient Care Coordination Manager (Community)</p>   
 <br clear="all">
 
@@ -27,6 +28,8 @@ Patient care coordination involves the deliberate organization of patient care a
 - **Coordinating appointments and referrals:** Helping patients navigate the healthcare system and access the necessary services.
 - **Providing education and support:** Helping patients and their families understand their condition and how to manage it.
 - **Addressing social determinants of health:** Recognizing that factors beyond medical care, such as housing, transportation, and food security, can impact health outcomes.
+
+## Outline Design
 
 <figure>
 {%include component-workflow.svg%}

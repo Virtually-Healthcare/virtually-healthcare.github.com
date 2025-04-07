@@ -1,5 +1,6 @@
 
 <img style="padding:3px;width:50%;" src="Health Analytics.drawio.png" alt="Health Data Pipeline"/>
+<br clear="all">
 <p class="figureTitle">Health Data Pipeline</p>  
 <br clear="all">
 
@@ -68,7 +69,7 @@ Health analytics is the application of data analysis to healthcare data to gain 
 
 It utilizes data from various sources, including:
 
-- **Claims and Cost Data:** Analyzing insurance claims and healthcare costs.
+- **Claims and Cost Data:** Analyzing insurance claims, maximising QOF points and healthcare costs.
 - **Pharmaceutical and Research and Development Data:** Examining drug efficacy, research outcomes, and development trends.
 - **Clinical Data:** Studying patient records, medical procedures, and treatment outcomes.
 - **Patient Behaviors and Preferences Data:** Understanding patient choices, adherence to treatment plans, and satisfaction levels.
