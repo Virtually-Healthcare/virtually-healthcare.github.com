@@ -93,8 +93,8 @@ Health analytics is used for a wide range of purposes, including:
 ## Outline Design 
 
 <figure>
-{%include component-analytics.svg%}
-<p id="fX.X.X.X-X" class="figureTitle">Analytics (Domain Driven Design)</p>
+{%include component-health-data.svg%}
+<p id="fX.X.X.X-X" class="figureTitle">Health Data</p>
 </figure>
 <br clear="all">
 
