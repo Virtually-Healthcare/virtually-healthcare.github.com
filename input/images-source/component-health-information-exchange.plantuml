@@ -1,17 +1,24 @@
 
-@startuml
+  @startuml
 
-skinparam svgDimensionStyle false
+    skinparam svgDimensionStyle false
 
-component "**Health Information Exchange**\n(Clinical Portal)" as hie
+    component "**Health Information Exchange**\n(Clinical Portal)" as hie
 
-component "**Health Document Sharing (XDS)**" as xds <<database>>
-component "**Clinical Data Repository**" as cdr <<database>>
-component "**Clinical Data Repository**\nPrimary Care" as emis <<database>>
-component "**Clinical Data Repository**\nSecondary Care" as trust <<database>>
+    component "**Health Document Sharing (XDS)**" as xds <<database>>
+    component "**Clinical Data Repository**" as cdr <<database>>
+    component "**Clinical Data Repository**\nPrimary Care" as emis <<database>>
+    component "**Clinical Data Repository**\nSecondary Care" as trust <<database>>
 
-hie --> cdr: HL7 IPA (FHIR)
-hie --> trust: HL7 IPA (FHIR)
-hie --> xds: IHE MHD (FHIR)\nconverted from XDS SOAP
-hie --> emis : HL7 IPA (FHIR)\nconverted from IM1 Transaction\nor GP Connect
-@enduml
+    hie --> cdr: HL7 IPA (FHIR)
+    hie --> trust: HL7 IPA (FHIR)
+    hie --> xds: IHE MHD (FHIR)\nconverted from XDS SOAP
+    hie --> emis : HL7 IPA (FHIR)\nconverted from IM1 Transaction\nor GP Connect
+
+    note as bulk
+      Alternatively IM1 Bulk can be used
+      to store records in a central CDR
+    end note
+
+    bulk .u. emis
+  @enduml
