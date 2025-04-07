@@ -1,13 +1,13 @@
 
 <img style="padding:3px;width:50%;" src="Health Analytics.drawio.png" alt="Health Data Pipeline"/>
 <p class="figureTitle">Health Data Pipeline</p>  
-<br/>
+<br clear="all">
 
 ## Structured Data Capture
 
 Structured Data Capture (SDC) refers to a method of collecting and organizing data into a predefined, consistent format, making it easier to store, retrieve, analyze, and share. This approach uses standardized data elements, codes, and formats, ensuring that data can be easily exchanged across different systems and organizations.
 
-Key Characteristics of Structured Data Capture:
+### Key Characteristics of Structured Data Capture:
 
 - **Predefined Structure:** Data is organized into specific fields or columns with defined purposes, like names, dates, addresses, or lab values.
 - **Standardized Formats:** Data elements are captured using consistent formats and codes, ensuring uniformity and ease of interpretation.
@@ -17,7 +17,7 @@ Key Characteristics of Structured Data Capture:
 - **Interoperability:** Structured data can be easily exchanged and shared between different systems and organizations, as it follows a standardized format.
 - **Examples:** In healthcare, structured data includes patient demographics, lab results, medication lists, and vital signs. In business, it includes customer information, sales data, and inventory records.
 
-Benefits of Structured Data Capture:
+### Benefits of Structured Data Capture:
 
 - **Efficiency:** Structured data is easier to store, retrieve, and analyze, leading to increased efficiency in data management.
 - **Accuracy:** The predefined structure and formats help ensure data accuracy and consistency.
