@@ -9,6 +9,14 @@
   </tr>
 </table>
 
+Initial design
+
+<figure>
+{%include pcc.svg%}
+<p id="fX.X.X.X-X" class="figureTitle">IHE PCC Refactor to Clinical Data Repository</p>
+</figure>
+<br clear="all">
+
 ### Clinical Process
 
 The `Patient Care Coordination Manager (Community)` is aimed at supporting clinical process in the community. It is aligned with [Nursing Process (ADPIE)](https://en.wikipedia.org/wiki/Nursing_process)

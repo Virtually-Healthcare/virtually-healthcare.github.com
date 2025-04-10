@@ -1,0 +1,38 @@
+@startuml
+
+title "Patient Care Coordination Refactor to CDR"
+
+agent "**Order Placer**" as Placer
+agent "**Order Filler**" as Filler
+agent "**Automation Manager**\nincluding eRS support" as Manager
+agent "**Clinical Data Repository (CDR)**\nincluding Regional Care Record Support" as CDR
+agent "**Clinical Data Warehouse (CDW)**" as CDW
+agent "**Health Document Sharing (XDS)**\nincluding National Record Locator suport" as XDS
+agent "**Intermediary**\nTraditional\nincluding BARS & eRS support" as Intermediary1
+agent "**Intermediary**" as Intermediary2
+
+agent "**Structured Data Capture**" as SDC
+agent "Order Entry Form\n**Structured Data Capture**" as Entry
+agent "**Device Data Capture**" as DDC
+
+Entry -u-> Placer
+Placer -r-> Intermediary1: Patient Referral (Command)
+Intermediary1 -r-> Filler: Patient Referral (Command)
+Filler -l-> Intermediary1: Referral Updates (Events)
+Intermediary1 -l-> Placer: Referral Updates (Events)
+
+Intermediary1 -u-> CDR: Resouces (Events)
+Intermediary1 -u-> XDS: Discharge Reports (Document)
+CDR -r-> CDW: ETL
+
+Filler -d-> Manager: Work Order Management
+Manager -u-> Filler: Report Management
+
+SDC -d-> Intermediary2
+DDC -d-> Intermediary2
+
+Intermediary2 -d-> CDR : Resources
+
+
+@enduml
+
