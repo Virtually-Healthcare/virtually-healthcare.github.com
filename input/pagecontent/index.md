@@ -12,7 +12,7 @@
 Initial design
 
 <figure>
-{%include pcc.svg%}
+{%include PCC.svg%}
 <p id="fX.X.X.X-X" class="figureTitle">IHE PCC Refactor to Clinical Data Repository</p>
 </figure>
 <br clear="all">
