@@ -1,6 +1,8 @@
 @startuml
 
-title "Patient Care Coordination Refactor to CDR"
+skinparam svgDimensionStyle false
+
+title "Patient Care Coordination"
 
 agent "**Order Placer**" as Placer
 agent "**Order Filler**" as Filler
