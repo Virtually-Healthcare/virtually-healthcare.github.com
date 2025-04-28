@@ -472,7 +472,7 @@ menu:
     eReferral: I12.html
     eReport: R01.html
 
-  Data Models (Vol 3):
+  Domain Archetypes:
     eReferral: eReferral-model.html
     eReport: eReport-model.html
  #   Patient Care Coordination: pcc-model.html
