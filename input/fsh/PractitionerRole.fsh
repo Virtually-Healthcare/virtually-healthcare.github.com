@@ -10,6 +10,7 @@ DRAFT Extension of UKCore PractitionerRole
 * practitioner 1..1 MS
 * practitioner.identifier 1..1
 * practitioner.identifier only EnglandPractitionerIdentifier
+* practitioner.identifier.value MS
 * practitioner.display MS
 
 * organization 1..1 MS
