@@ -12,10 +12,7 @@ These represent data that needs to be captured for use with these services. This
 
 ### Domain Archetype
 
-[Patient Referral](Questionnaire-PatientReferral.html), which is based on a union of: 
-
-- [BARS Referral Form](Questionnaire-BARS-Referral-Form.html)
-- [eRS Referral Form](Questionnaire-eRS-Referral-Request.html)
+[Patient Referral](Questionnaire-PatientReferral.html)
 
 ### Entity Model
 

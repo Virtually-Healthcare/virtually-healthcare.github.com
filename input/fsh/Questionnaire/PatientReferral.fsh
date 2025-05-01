@@ -176,11 +176,62 @@ Usage:  #definition
     * text = "Specific disease suspected/reason for testing"
     * answerValueSet = Canonical(VHConditionCode)
     * definition = "https://fhir.virtually.healthcare/StructureDefinition/ServiceRequest#ServiceRequest.reasonCode"
+  * item[+]
+    * type = #date
+    * linkId = "eRS/ReferralPathwayStart"
+    * repeats = false
+    * text = "Referral Pathway Start"
+    * definition = "https://fhir.virtually.healthcare/StructureDefinition/ServiceRequest#ServiceRequest.authoredOn"
+  * item[+]
+    * type = #text
+    * linkId = "BARS/TriageAssessment"
+    * repeats = false
+    * text = "Triage Assessment"
+    * definition = "https://fhir.virtually.healthcare/StructureDefinition/ServiceRequest#ServiceRequest.note"
 
+* item[+]
+  * type = #group
+  * linkId = "AsAtOrderEntry"
+  * definition = "https://fhir.virtually.healthcare/StructureDefinition/Observation"
+  * text = "Ask At Order Entry"
+  * item[+]
+    * type = #choice
+    * linkId = "LN/19826-7"
+    * text = "Has consent has been obtained for tests (Y/N)"
+    * answerOption[+].valueCoding = $loinc#LA33-6 "Yes"
+    * answerOption[+].valueCoding = $loinc#LA32-8 "No"
+    * definition = "http://hl7.org/fhir/StructureDefinition/Observation#Observation.valueCodeableConcept"
+  * item[+]
+    * type = #choice
+    * linkId = "eRS/AgeandGenderAppropriate"
+    * text = "Age and Gender Appropriate"
+    * answerOption[+].valueCoding = $loinc#LA33-6 "Yes"
+    * answerOption[+].valueCoding = $loinc#LA32-8 "No"
+    * definition = "http://hl7.org/fhir/StructureDefinition/Observation#Observation.valueCodeableConcept"
+  * item[+]
+    * type = #quantity
+    * definition = "https://nw-gmsa.github.io/StructureDefinition/Observation#Observation.valueQuantity"
+    * linkId = "eRS/MaximumWaitTimeForAppointment"
+    * text = "Maximum wait time for appointment"
+  * item[+]
+    * type = #choice
+    * linkId = "eRS/IntentionToAddReferralLetter"
+    * text = "Intention to add referral letter"
+    * answerOption[+].valueCoding = $loinc#LA33-6 "Yes"
+    * answerOption[+].valueCoding = $loinc#LA32-8 "No"
+    * definition = "http://hl7.org/fhir/StructureDefinition/Observation#Observation.valueCodeableConcept"
+  * item[+]
+    * type = #quantity
+    * linkId = "eRS/FirstPatientReminderLetterFollowUp"
+    * text = "First Patient Reminder Letter Follow Up"
+    * definition = "http://hl7.org/fhir/StructureDefinition/Observation#Observation.valueQuantity"
+
+//.... 4.5	First Patient Reminder Letter Follow Up	1..1	integer		Definition: ServiceRequest.supportingInfo
+//.... 4.6	Commissioning Provisioning	0..1	choice		Definition: ServiceRequest.supportingInfo
 //.... 4.4	Provider Directory of Service Id	0..1	choice		Definition: ServiceRequest.performer.identifier.value
 //.... 4.5	When the procedure should take place	0..1	group
 //..... 4.5.1	Start Date	0..1	date		Definition: ServiceRequest.occurrencePeriod.start
 //..... 4.5.2	End Date	0..1	date		Definition: ServiceRequest.occurrencePeriod.end
-// 6	Triage Assessment Details	0..1	group
-//... 7	Consent	0..1	group		Definition: Consent
-//.... 7.1	Patient Consent for Referral and Sharing Data	0..1	boolean
+//.... 4.6	Commissioning Provisioning	0..1	choice		Definition: ServiceRequest.supportingInfo
+//Options: 4 options
+
