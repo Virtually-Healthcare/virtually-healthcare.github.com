@@ -8,7 +8,7 @@ Based on a combination of eRS and BARS requirements plus selected elements from 
 """
 Usage:  #definition
 
-* title = "North West Genomics Test Order"
+* title = "Virtually Healthcare Patient Referral"
 * status = #draft
 * url = "https://fhir.virtually.healthcare/Questionnaire/PatientReferral"
 
