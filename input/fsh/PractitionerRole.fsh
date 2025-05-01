@@ -20,6 +20,7 @@ DRAFT Extension of UKCore PractitionerRole
 * organization.display MS
 
 * specialty from Specialty
+* specialty.coding.code MS
 
 * telecom.value MS
 
