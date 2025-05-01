@@ -78,17 +78,17 @@ Usage:  #definition
     * type = #string
     * linkId = "phone"
     * text = "Phone"
-    * definition = "https://nw-gmsa.github.io/StructureDefinition/Patient#Patient.telecom"
+    * definition = "https://fhir.virtually.healthcare/StructureDefinition/Patient#Patient.telecom"
   * item[+]
     * type = #string
     * linkId = "email"
     * text = "Email"
-    * definition = "https://nw-gmsa.github.io/StructureDefinition/Patient#Patient.telecom"
+    * definition = "https://fhir.virtually.healthcare/StructureDefinition/Patient#Patient.telecom"
   * item[+]
     * type = #choice
     * linkId = "HL7/PD1-3"
     * text = "GP Surgery (ODS Code)"
-    * definition = "https://nw-gmsa.github.io/StructureDefinition/Patient#Patient.generalPractitioner"
+    * definition = "https://fhir.virtually.healthcare/StructureDefinition/Patient#Patient.generalPractitioner"
 
 * item[+]
   * linkId = "Episode/Patient Journey Id"
@@ -107,3 +107,45 @@ Usage:  #definition
     * text = "Start Date"
     * definition = "https://fhir.virtually.healthcare/StructureDefinition/Encounter#Encounter.period.start"
     * required = false
+
+* item[+]
+  * type = #group
+  * linkId = "HL7/ORC-12"
+  * definition = "https://fhir.virtually.healthcare/StructureDefinition/PractitionerRole#PractitionerRole"
+  * text = "Healthcare Professional"
+  * item[+]
+    * type = #string
+    * linkId = "LN/18705-4"
+    * code[+] = $loinc#18705-4
+    * required = true
+    * definition = "https://fhir.virtually.healthcare/StructureDefinition/PractitionerRole#PractitionerRole.practitioner.display"
+    * text = "Referring Clinician Name"
+  * item[+]
+    * type = #choice
+    * linkId = "LN/18707-0"
+    * definition = "https://fhir.virtually.healthcare/StructureDefinition/PractitionerRole#PractitionerRole.specialty.coding.code"
+    * text = "Referring Clinician Current Speciality"
+    * required = true
+    * answerValueSet = "https://fhir.hl7.org.uk/ValueSet/UKCore-PracticeSettingCode"
+  * item[+]
+    * type = #string
+    * linkId = "LN/46608-6"
+    * definition = "https://fhir.virtually.healthcare/StructureDefinition/PractitionerRole#PractitionerRole.practitioner.identifier.value"
+    * text = "Referring Clinician Professional Identifier"
+    * required = true
+  * item[+]
+    * type = #string
+    * linkId = "LN/89058-2"
+    * code[+] = $loinc#89058-2 "Contact email address"
+    * definition = "https://fhir.virtually.healthcare/StructureDefinition/PractitionerRole#PractitionerRole.telecom.value"
+    * text = "Email"
+  * item[+]
+    * type = #string
+    * linkId = "LN/81230-5"
+    * definition = "https://fhir.virtually.healthcare/StructureDefinition/PractitionerRole#PractitionerRole.telecom.value"
+    * text = "Phone"
+  * item[+]
+    * type = #string
+    * linkId = "HL7/ORC-21"
+    * definition = "https://fhir.virtually.healthcare/StructureDefinition/PractitionerRole#PractitionerRole.organization.identifier.value"
+    * text = "Referring Organisation ODS Code"
