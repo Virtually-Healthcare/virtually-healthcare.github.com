@@ -19,17 +19,18 @@ and [NHS England - Booking and Referral Standard](https://simplifier.net/guide/n
 * identifier ^slicing.description = "Slice based on the type"
 * identifier ^slicing.ordered = false
 * identifier contains
-  OriginatingReferralIdentifier 0..1 MS and UniqueBookingReferenceNumber 0..1 MS
+  OriginatingReferralIdentifier 0..1 MS
 
 * identifier[OriginatingReferralIdentifier] only OriginatingReferralIdentifier
 * identifier[OriginatingReferralIdentifier] ^short = "Identifier assigned by the Referrer. (HL7 v2 RF1-6 Originating Referral Identifier)"
 * identifier[OriginatingReferralIdentifier] insert Obligation(#SHOULD:populate-if-known, https://fhir.virtually.healthcare/ActorDefinition/ReferralRecipient)
 * identifier[OriginatingReferralIdentifier] insert Obligation(#SHALL:populate, https://fhir.virtually.healthcare/ActorDefinition/ReferralInitiator)
 
-* identifier[UniqueBookingReferenceNumber] only UniqueBookingReferenceNumber
-* identifier[UniqueBookingReferenceNumber] ^short = "Identifier assigned by the Referreral Booking Service."
-* identifier[UniqueBookingReferenceNumber] insert Obligation(#SHOULD:populate-if-known, https://fhir.virtually.healthcare/ActorDefinition/ReferralRecipient)
-* identifier[UniqueBookingReferenceNumber] insert Obligation(#SHALL:populate, https://fhir.virtually.healthcare/ActorDefinition/ReferralInitiator)
+* requisition MS
+* requisition only UniqueBookingReferenceNumber
+* requisition ^short = "Identifier assigned by the Referral Booking Service."
+* requisition insert Obligation(#SHOULD:populate-if-known, https://fhir.virtually.healthcare/ActorDefinition/ReferralRecipient)
+* requisition insert Obligation(#SHALL:populate, https://fhir.virtually.healthcare/ActorDefinition/ReferralInitiator)
 
 
 * code 1..1
