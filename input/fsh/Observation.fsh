@@ -59,3 +59,7 @@ Description: "Extension of [HL7 IPA Observation](https://build.fhir.org/ig/HL7/f
 
 //* value[x] insert Obligation(#SHALL:populate-if-known, https://fhir.virtually.healthcare/ActorDefinition/ClinicalDataRepository)
 //* value[x] insert Obligation(#SHALL:populate-if-known, https://fhir.virtually.healthcare/ActorDefinition/ClinicalDataService)
+
+* valueCodeableConcept MS
+* valueQuantity MS
+* valueDateTime MS

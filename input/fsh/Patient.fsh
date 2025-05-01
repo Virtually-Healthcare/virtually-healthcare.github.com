@@ -15,3 +15,7 @@ Description: "Extension of UKCore-Patient and includes elements from [HL7 Intern
 * identifier[MedicalRecordNumber] ^short = "Medical Record Number"
 
 * name 1..*
+* name.family MS
+* name.given MS
+
+* deceasedDateTime MS

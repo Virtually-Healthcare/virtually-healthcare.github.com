@@ -9,6 +9,9 @@
 <br clear="all">
 <p class="figureTitle">eReport relationships</p> 
 
+### Domain Archetype
+
+TODO
 
 ## Entity Model
 
