@@ -149,3 +149,38 @@ Usage:  #definition
     * linkId = "HL7/ORC-21"
     * definition = "https://fhir.virtually.healthcare/StructureDefinition/PractitionerRole#PractitionerRole.organization.identifier.value"
     * text = "Referring Organisation ODS Code"
+
+* item[+]
+  * type = #group
+  * linkId = "HL7/OBR/ORC"
+  * definition = "https://fhir.virtually.healthcare/StructureDefinition/ServiceRequest#ServiceRequest"
+  * text = "Referral Details"
+  * item[+]
+    * type = #string
+    * linkId = "HL7/OBR-2/ORC-2"
+    * text = "Test request ID/Order ID"
+    * definition = "https://fhir.virtually.healthcare/StructureDefinition/ServiceRequest#ServiceRequest.identifier:OriginatingReferralIdentifier"
+    * required = false
+    * readOnly = true
+  * item[+]
+    * type = #choice
+    * linkId = "HL7/OBR-4"
+    * text = "Referral code"
+    * required = true
+    * repeats = false
+    * definition = "https://fhir.virtually.healthcare/StructureDefinition/ServiceRequest#ServiceRequest.code:BARSReferralCode"
+  * item[+]
+    * type = #choice
+    * linkId = "HL7/DG1"
+    * repeats = true
+    * text = "Specific disease suspected/reason for testing"
+    * answerValueSet = Canonical(VHConditionCode)
+    * definition = "https://fhir.virtually.healthcare/StructureDefinition/ServiceRequest#ServiceRequest.reasonCode"
+
+//.... 4.4	Provider Directory of Service Id	0..1	choice		Definition: ServiceRequest.performer.identifier.value
+//.... 4.5	When the procedure should take place	0..1	group
+//..... 4.5.1	Start Date	0..1	date		Definition: ServiceRequest.occurrencePeriod.start
+//..... 4.5.2	End Date	0..1	date		Definition: ServiceRequest.occurrencePeriod.end
+// 6	Triage Assessment Details	0..1	group
+//... 7	Consent	0..1	group		Definition: Consent
+//.... 7.1	Patient Consent for Referral and Sharing Data	0..1	boolean
