@@ -212,6 +212,7 @@ Usage:  #definition
     * type = #quantity
     * definition = "https://nw-gmsa.github.io/StructureDefinition/Observation#Observation.valueQuantity"
     * extension[unitOption].valueCoding = $ucum#d "d"
+    * initial[+].valueCoding = $ucum#d "d"
     * linkId = "eRS/MaximumWaitTimeForAppointment"
     * text = "Maximum wait time for appointment"
   * item[+]
@@ -223,6 +224,7 @@ Usage:  #definition
     * definition = "http://hl7.org/fhir/StructureDefinition/Observation#Observation.valueCodeableConcept"
   * item[+]
     * extension[unitOption].valueCoding = $ucum#d "d"
+    * initial[+].valueCoding = $ucum#d "d"
     * type = #quantity
     * linkId = "eRS/FirstPatientReminderLetterFollowUp"
     * text = "First Patient Reminder Letter Follow Up"
