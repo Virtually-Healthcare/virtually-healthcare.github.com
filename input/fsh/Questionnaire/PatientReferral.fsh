@@ -76,12 +76,12 @@ Usage:  #definition
     * required = true
   * item[+]
     * type = #string
-    * linkId = "phone"
+    * linkId = "LN/42077-8"
     * text = "Phone"
     * definition = "https://fhir.virtually.healthcare/StructureDefinition/Patient#Patient.telecom"
   * item[+]
     * type = #string
-    * linkId = "email"
+    * linkId = "LN/76458-9"
     * text = "Email"
     * definition = "https://fhir.virtually.healthcare/StructureDefinition/Patient#Patient.telecom"
   * item[+]
@@ -103,7 +103,7 @@ Usage:  #definition
     * required = false
   * item[+]
     * type = #date
-    * linkId = "date"
+    * linkId = "HL7/PV1-44"
     * text = "Start Date"
     * definition = "https://fhir.virtually.healthcare/StructureDefinition/Encounter#Encounter.period.start"
     * required = false
