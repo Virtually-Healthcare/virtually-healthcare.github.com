@@ -62,7 +62,7 @@ Usage:  #definition
     * linkId = "LN/46098-0"
     * definition = "https://fhir.virtually.healthcare/StructureDefinition/Patient#Patient.gender"
     * text = "Sex registered at birth"
-    * answerValueSet = "http://hl7.org/fhir/ValueSet/administrative-gender"
+    * answerValueSet = "https://fhir.virtually.healthcare/ValueSet/administrative-gender"
   * item[+]
     * type = #string
     * linkId = "LN/89061-6"
@@ -200,17 +200,17 @@ Usage:  #definition
     * text = "Has consent has been obtained for tests (Y/N)"
     * answerOption[+].valueCoding = $loinc#LA33-6 "Yes"
     * answerOption[+].valueCoding = $loinc#LA32-8 "No"
-    * definition = "http://hl7.org/fhir/StructureDefinition/Observation#Observation.valueCodeableConcept"
+    * definition = "https://fhir.virtually.healthcare/StructureDefinition/Observation#Observation.valueCodeableConcept"
   * item[+]
     * type = #choice
     * linkId = "eRS/AgeandGenderAppropriate"
     * text = "Age and Gender Appropriate"
     * answerOption[+].valueCoding = $loinc#LA33-6 "Yes"
     * answerOption[+].valueCoding = $loinc#LA32-8 "No"
-    * definition = "http://hl7.org/fhir/StructureDefinition/Observation#Observation.valueCodeableConcept"
+    * definition = "https://fhir.virtually.healthcare/StructureDefinition/Observation#Observation.valueCodeableConcept"
   * item[+]
     * type = #quantity
-    * definition = "https://nw-gmsa.github.io/StructureDefinition/Observation#Observation.valueQuantity"
+    * definition = "https://fhir.virtually.healthcare/StructureDefinition/Observation#Observation.valueQuantity"
     * extension[unitOption].valueCoding = $ucum#d "d"
     * initial[+].valueCoding = $ucum#d "d"
     * linkId = "eRS/MaximumWaitTimeForAppointment"
@@ -221,14 +221,14 @@ Usage:  #definition
     * text = "Intention to add referral letter"
     * answerOption[+].valueCoding = $loinc#LA33-6 "Yes"
     * answerOption[+].valueCoding = $loinc#LA32-8 "No"
-    * definition = "http://hl7.org/fhir/StructureDefinition/Observation#Observation.valueCodeableConcept"
+    * definition = "https://fhir.virtually.healthcare/StructureDefinition/Observation#Observation.valueCodeableConcept"
   * item[+]
     * extension[unitOption].valueCoding = $ucum#d "d"
     * initial[+].valueCoding = $ucum#d "d"
     * type = #quantity
     * linkId = "eRS/FirstPatientReminderLetterFollowUp"
     * text = "First Patient Reminder Letter Follow Up"
-    * definition = "http://hl7.org/fhir/StructureDefinition/Observation#Observation.valueQuantity"
+    * definition = "https://fhir.virtually.healthcare/StructureDefinition/Observation#Observation.valueQuantity"
 
 //.... 4.5	First Patient Reminder Letter Follow Up	1..1	integer		Definition: ServiceRequest.supportingInfo
 //.... 4.6	Commissioning Provisioning	0..1	choice		Definition: ServiceRequest.supportingInfo
