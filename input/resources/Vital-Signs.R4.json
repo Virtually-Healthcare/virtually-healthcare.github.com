@@ -11,7 +11,7 @@
   "url": "https://fhir.virtually.healthcare/Questionnaire/VitalSigns",
   "title": "Vital Signs",
   "status": "draft",
-  "description": "This is a list of vital signs SNOMED CT and units. It is influenced by [NHS England Clinical Observations](https://simplifier.net/guide/ClinicalObservations/Home)",
+  "description": "This is a list of vital signs SNOMED CT and units.",
   "code": [
     {
       "system": "http://loinc.org",
