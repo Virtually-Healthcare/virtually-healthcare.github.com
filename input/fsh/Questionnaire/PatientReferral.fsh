@@ -20,6 +20,7 @@ Usage:  #definition
 
   * item[+]
     * type = #string
+    * code[+] = $loinc#45394-4
     * linkId = "LN/45394-4"
     * definition = "https://fhir.virtually.healthcare/StructureDefinition/Patient#Patient.name.family"
     * required = true
@@ -27,18 +28,21 @@ Usage:  #definition
   * item[+]
     * type = #string
     * linkId = "LN/45392-8"
+    * code[+] = $loinc#45392-8
     * required = true
     * definition = "https://fhir.virtually.healthcare/StructureDefinition/Patient#Patient.name.given"
     * text = "Patient first name"
   * item[+]
     * type = #date
     * linkId = "LN/21112-8"
+    * code[+] = $loinc#21112-8
     * required = true
     * definition = "https://fhir.virtually.healthcare/StructureDefinition/Patient#Patient.birthDate"
     * text = "Date of birth"
   * item[+]
     * type = #group
     * linkId = "LN/56799-0"
+    * code[+] = $loinc#56799-0
     * definition = "https://fhir.virtually.healthcare/StructureDefinition/Patient#Patient.address"
     * text = "Address"
     * item[+]
@@ -60,28 +64,33 @@ Usage:  #definition
   * item[+]
     * type = #choice
     * linkId = "LN/46098-0"
+    * code[+] = $loinc#46098-0
     * definition = "https://fhir.virtually.healthcare/StructureDefinition/Patient#Patient.gender"
     * text = "Sex registered at birth"
     * answerValueSet = "https://fhir.virtually.healthcare/ValueSet/administrative-gender"
   * item[+]
     * type = #string
     * linkId = "LN/89061-6"
+    * code[+] = $loinc#89061-6
     * definition = "https://fhir.virtually.healthcare/StructureDefinition/Patient#Patient.identifier:nhsNumber"
     * text = "NHS Number"
   * item[+]
     * type = #string
     * linkId = "LN/76435-7"
+    * code[+] = $loinc#76435-7
     * text = "Hospital (EMIS/TPP) Number"
     * definition = "https://fhir.virtually.healthcare/StructureDefinition/Patient#Patient.identifier:MedicalRecordNumber"
     * required = true
   * item[+]
     * type = #string
     * linkId = "LN/42077-8"
+    * code[+] = $loinc#42077-8
     * text = "Phone"
     * definition = "https://fhir.virtually.healthcare/StructureDefinition/Patient#Patient.telecom"
   * item[+]
     * type = #string
     * linkId = "LN/76458-9"
+    * code[+] = $loinc#76458-9
     * text = "Email"
     * definition = "https://fhir.virtually.healthcare/StructureDefinition/Patient#Patient.telecom"
   * item[+]
@@ -98,6 +107,7 @@ Usage:  #definition
   * item[+]
     * type = #string
     * linkId = "LN/56797-4"
+    * code[+] = $loinc#56797-4
     * text = "Stay/Problem Number"
     * definition = "https://fhir.virtually.healthcare/StructureDefinition/Encounter#Encounter.identifier.value"
     * required = false
@@ -123,6 +133,7 @@ Usage:  #definition
   * item[+]
     * type = #choice
     * linkId = "LN/18707-0"
+    * code[+] = $loinc#18707-0
     * definition = "https://fhir.virtually.healthcare/StructureDefinition/PractitionerRole#PractitionerRole.specialty.coding.code"
     * text = "Referring Clinician Current Speciality"
     * required = true
@@ -130,6 +141,7 @@ Usage:  #definition
   * item[+]
     * type = #string
     * linkId = "LN/46608-6"
+    * code[+] = $loinc#46608-6
     * definition = "https://fhir.virtually.healthcare/StructureDefinition/PractitionerRole#PractitionerRole.practitioner.identifier.value"
     * text = "Referring Clinician Professional Identifier"
     * required = true
@@ -142,6 +154,7 @@ Usage:  #definition
   * item[+]
     * type = #string
     * linkId = "LN/81230-5"
+    * code[+] = $loinc#81230-5
     * definition = "https://fhir.virtually.healthcare/StructureDefinition/PractitionerRole#PractitionerRole.telecom.value"
     * text = "Phone"
   * item[+]
@@ -197,6 +210,7 @@ Usage:  #definition
   * item[+]
     * type = #choice
     * linkId = "LN/19826-7"
+    * code[+] = $loinc#19826-7
     * text = "Has consent has been obtained for tests (Y/N)"
     * answerOption[+].valueCoding = $loinc#LA33-6 "Yes"
     * answerOption[+].valueCoding = $loinc#LA32-8 "No"
