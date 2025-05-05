@@ -207,23 +207,27 @@ resources:
     description: Task EMIS IM1 Medication review
     exampleBoolean: true
   Questionnaire/VitalSigns:
-    name: Questionnaire-VitalSigns
-    description: Questionnaire Vital Signs Definitions based on [NHS England Clinical Observations](https://simplifier.net/guide/ClinicalObservations/Home)
+    name: Vital Signs
+    description: Vital Signs Definitions based on [NHS England Clinical Observations](https://simplifier.net/guide/ClinicalObservations/Home)
     exampleBoolean: false
   Questionnaire/ExerciseActivity:
-    name: Questionnaire-ExerciseActivity
-    description: Questionnaire Exercise Activity based on activity based measures from [HL7 Physical Activity Implementation Guide](https://build.fhir.org/ig/HL7/physical-activity/)
+    name: Exercise Activity
+    description: Exercise Activity based on activity based measures from [HL7 Physical Activity Implementation Guide](https://build.fhir.org/ig/HL7/physical-activity/)
     exampleBoolean: false
   Questionnaire/DailyPhysicalActivity:
-    name: Questionnaire-DailyPhysicalActivity
-    description: Questionnaire Daily Physical Activity based on time based measures from [HL7 Physical Activity Implementation Guide](https://build.fhir.org/ig/HL7/physical-activity/)
+    name: Daily Physical Activity
+    description: Daily Physical Activity based on time based measures from [HL7 Physical Activity Implementation Guide](https://build.fhir.org/ig/HL7/physical-activity/)
     exampleBoolean: false
   Questionnaire/eRS-Referral-Request:
     name: eRS Referral From
     description: Data capture definition for [A011 Create Referral (Deprecated)](https://developer.nhs.uk/apis/e-Referrals/explore_endpoint_a011.html)
-    exampleBoolean: false
+    exampleBoolean: true
+  Questionnaire/BARS-Referral-Form:
+    name: BARS Referral From
+    description: Data capture definition based on BARS
+    exampleBoolean: true
   Questionnaire/PDSPatientPreferences:
-    name: Questionnaire-PDSPatientPreferences
+    name: PDS Patient Preferences
     description: PDS Patient Preferences - refactor of none demographics extensions in PDS Patient API
     exampleBoolean: false
   Task/Task-EMIS-PFS-Prescription-Refill:
