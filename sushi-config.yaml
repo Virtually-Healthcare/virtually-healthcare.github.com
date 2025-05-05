@@ -267,9 +267,9 @@ resources:
     description: Pharmacy Nomination
     exampleBoolean: false
   Questionnaire/NHSHealthCheckAssessment:
-    name: NHSHealthCheckAssessment
+    name: NHS Health Check Assessment
     description: NHS Health Check Assessment, based on [PRSB NHS Health Check Standard](https://theprsb.org/standards/nhshealthcheckstandard)
-    exampleBoolean: false
+    exampleBoolean: true
   Encounter/93d2c059-a934-4796-827b-dee1158cc4dc:
     name: Encounter Example
     description: Example
