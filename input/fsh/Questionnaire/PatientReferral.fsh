@@ -170,7 +170,8 @@ Usage:  #definition
   * text = "Referral Details"
   * item[+]
     * type = #string
-    * linkId = "HL7/OBR-2/ORC-2"
+    * linkId = "LN/106194-4"
+    * code[+] = $loinc#106194-4
     * text = "Test request ID/Order ID"
     * definition = "https://fhir.virtually.healthcare/StructureDefinition/ServiceRequest#ServiceRequest.identifier:OriginatingReferralIdentifier"
     * required = false
