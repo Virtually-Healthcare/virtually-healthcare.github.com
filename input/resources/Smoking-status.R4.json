@@ -106,15 +106,51 @@
         },
         {
           "type": "choice",
-          "linkId": "SCT/777918004",
+          "linkId": "SCT/719591006",
           "code": [
             {
               "system": "http://snomed.info/sct",
-              "code": "777918004",
-              "display": "Varenicline"
+              "code": "719591006",
+              "display": "Varenicline Therapy"
             }
           ],
-          "text": "Varenicline or other pharmacotherapy used",
+          "text": "Varenicline Therapy",
+          "definition": "http://hl7.org/fhir/StructureDefinition/Observation#valueCodeableConcept",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://loinc.org",
+                "code": "LA33-6",
+                "display": "Yes"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://loinc.org",
+                "code": "LA32-8",
+                "display": "No"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://loinc.org",
+                "code": "LA4489-6",
+                "display": "Unknown"
+              }
+            }
+          ]
+        },
+        {
+          "type": "choice",
+          "linkId": "SCT/719509001",
+          "code": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "719509001",
+              "display": "Bupropion therapy"
+            }
+          ],
+          "text": "Bupropion therapy",
           "definition": "http://hl7.org/fhir/StructureDefinition/Observation#valueCodeableConcept",
           "answerOption": [
             {
