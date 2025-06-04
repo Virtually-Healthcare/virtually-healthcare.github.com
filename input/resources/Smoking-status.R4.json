@@ -44,6 +44,7 @@
         {
           "type": "string",
           "linkId": "370146101497",
+          "definition": "http://hl7.org/fhir/StructureDefinition/Observation#valueString",
           "text": "Notes"
         }
       ],
