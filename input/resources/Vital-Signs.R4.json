@@ -433,6 +433,7 @@
     {
       "type": "integer",
       "linkId": "225908003",
+      "definition": "http://hl7.org/fhir/StructureDefinition/Observation#valueQuantity",
       "code": [
         {
           "system": "http://snomed.info/sct",
@@ -446,6 +447,7 @@
     {
       "type": "decimal",
       "linkId": "1104441000000107",
+      "definition": "http://hl7.org/fhir/StructureDefinition/Observation#valueQuantity",
       "code": [
         {
           "system": "http://snomed.info/sct",
@@ -454,7 +456,16 @@
         }
       ],
       "prefix": "12",
-      "text": "Person's level of arousal and awareness"
+      "text": "Person's level of arousal and awareness",
+      "initial": [
+        {
+          "valueQuantity": {
+            "unit": "{score}",
+            "system": "http://unitsofmeasure.org",
+            "code": "score"
+          }
+        }
+      ]
     },
     {
       "type": "boolean",
@@ -468,7 +479,16 @@
         }
       ],
       "prefix": "13",
-      "text": "Breathing room air"
+      "text": "Breathing room air",
+      "initial": [
+      {
+        "valueQuantity": {
+          "unit": "{score}",
+          "system": "http://unitsofmeasure.org",
+          "code": "score"
+        }
+      }
+    ]
     },
     {
       "type": "quantity",
