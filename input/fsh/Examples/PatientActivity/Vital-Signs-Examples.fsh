@@ -11,7 +11,7 @@ For Device based data capture populate device instead of derivedFrom
 Usage: #example
 
 * identifier[+]
-  * system = "https://tools.ietf.org/html/rfc4122"
+  * system = "urn:ietf:rfc:3986"
   * value = "af22811f-218e-4ff6-aa07-93f12c666dd7"
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
@@ -40,7 +40,7 @@ For Device based data capture populate device instead of derivedFrom
 Usage: #example
 
 * identifier[+]
-  * system = "https://tools.ietf.org/html/rfc4122"
+  * system = "urn:ietf:rfc:3986"
   * value = "9a2052b8-f00a-41ec-bc4e-3bd4cfae62c2"
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
@@ -68,7 +68,7 @@ For Device based data capture populate device instead of derivedFrom
 Usage: #example
 
 * identifier[+]
-  * system = "https://tools.ietf.org/html/rfc4122"
+  * system = "urn:ietf:rfc:3986"
   * value = "78fef4ce-cb0a-4e7d-b768-2565550b62a2"
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
@@ -96,7 +96,7 @@ For Device based data capture populate device instead of derivedFrom
 Usage: #example
 
 * identifier[+]
-  * system = "https://tools.ietf.org/html/rfc4122"
+  * system = "urn:ietf:rfc:3986"
   * value = "ba92afc0-a1c5-41df-93d8-c3df49888bcd"
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
@@ -124,7 +124,7 @@ For Device based data capture populate device instead of derivedFrom
 Usage: #example
 
 * identifier[+]
-  * system = "https://tools.ietf.org/html/rfc4122"
+  * system = "urn:ietf:rfc:3986"
   * value = "5ba52e14-9a98-48cb-8029-770e3e76f428"
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
@@ -153,7 +153,7 @@ For Device based data capture populate device instead of derivedFrom
 Usage: #example
 
 * identifier[+]
-  * system = "https://tools.ietf.org/html/rfc4122"
+  * system = "urn:ietf:rfc:3986"
   * value = "8037d992-5936-44bf-9253-f76f904ba7b9"
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
@@ -192,7 +192,7 @@ For Device based data capture populate device instead of derivedFrom
 Usage: #example
 
 * identifier[+]
-  * system = "https://tools.ietf.org/html/rfc4122"
+  * system = "urn:ietf:rfc:3986"
   * value = "3421ccda-63f3-4e6e-b39c-ca9e3850d3a2"
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
@@ -220,7 +220,7 @@ For Device based data capture populate device instead of derivedFrom
 Usage: #example
 
 * identifier[+]
-  * system = "https://tools.ietf.org/html/rfc4122"
+  * system = "urn:ietf:rfc:3986"
   * value = "65083da2-c77f-419e-a205-68a7d3863e90"
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
@@ -248,7 +248,7 @@ For Device based data capture populate device instead of derivedFrom
 Usage: #example
 
 * identifier[+]
-  * system = "https://tools.ietf.org/html/rfc4122"
+  * system = "urn:ietf:rfc:3986"
   * value = "f268716f-9dc6-4361-a124-0aad3604d8a2"
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
@@ -272,7 +272,7 @@ See also [HL7 FHIR Vital Signs](https://www.hl7.org/FHIR/R4/vitalspanel.html)
 Usage: #example
 
 * identifier[+]
-  * system = "https://tools.ietf.org/html/rfc4122"
+  * system = "urn:ietf:rfc:3986"
   * value = "1300fffb-e319-400b-84d0-4e9c1f619af4"
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs

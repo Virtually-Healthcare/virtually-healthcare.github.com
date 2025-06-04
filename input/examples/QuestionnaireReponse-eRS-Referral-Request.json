@@ -7,7 +7,7 @@
     ]
   },
   "identifier": {
-    "system": "https://tools.ietf.org/html/rfc4122",
+    "system": "urn:ietf:rfc:3986",
     "value": "6e2e2273-3b7b-46cb-adea-977962542c27"
   },
   "questionnaire": "https://fhir.virtually.healthcare/Questionnaire/eRS-Referral-Request",

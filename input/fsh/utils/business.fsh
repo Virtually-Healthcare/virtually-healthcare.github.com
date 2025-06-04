@@ -419,7 +419,7 @@ RuleSet: EntryTransaction(type, uuid, resourceId)
 // Bundle RuleSets
 RuleSet: MessageBundle(uuid, documentdate)
 * type = #message
-* identifier.system = "https://tools.ietf.org/html/rfc4122"
+* identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = {uuid}
 * timestamp = {documentdate}
 

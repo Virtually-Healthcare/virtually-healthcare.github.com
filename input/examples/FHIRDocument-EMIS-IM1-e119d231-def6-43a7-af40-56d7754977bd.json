@@ -8,7 +8,7 @@
   },
   "identifier": {
     "use": "usual",
-    "system": "https://tools.ietf.org/html/rfc4122",
+    "system": "urn:ietf:rfc:3986",
     "value": "4fd2407b-d044-49d7-b9b8-6c4006c897a2",
     "assigner": {
       "identifier": {
@@ -27,7 +27,7 @@
         "id": "e119d231-def6-43a7-af40-56d7754977bd",
         "identifier": {
           "use": "usual",
-          "system": "https://tools.ietf.org/html/rfc4122",
+          "system": "urn:ietf:rfc:3986",
           "value": "4fd2407b-d044-49d7-b9b8-6c4006c897a2",
           "assigner": {
             "identifier": {

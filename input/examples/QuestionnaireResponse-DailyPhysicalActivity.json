@@ -7,7 +7,7 @@
     ]
   },
   "identifier" : {
-      "system" : "https://tools.ietf.org/html/rfc4122",
+      "system" : "urn:ietf:rfc:3986",
       "value" : "238f1461-e644-4cca-98ad-e0b39ec2a96f"
     },
   "status": "completed",

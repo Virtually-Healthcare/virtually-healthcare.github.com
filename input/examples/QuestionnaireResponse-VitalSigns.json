@@ -8,7 +8,7 @@
   },
   "questionnaire": "https://fhir.virtually.healthcare/Questionnaire/VitalSigns",
   "identifier" : {
-    "system" : "https://tools.ietf.org/html/rfc4122",
+    "system" : "urn:ietf:rfc:3986",
     "value" : "115c96e8-2869-4c1b-b23a-401439990c85"
   },
   "subject": {

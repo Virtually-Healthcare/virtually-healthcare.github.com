@@ -7,7 +7,7 @@ Example conversion of [$ers.createReferral multishortlist](https://digital.nhs.u
 Usage: #example
 
 * identifier[OriginatingReferralIdentifier]
-  * system = "https://tools.ietf.org/html/rfc4122"
+  * system = "urn:ietf:rfc:3986"
   * value = "f3533ea0-9588-4f25-ace7-969d80823b20"
   * type = http://terminology.hl7.org/CodeSystem/v2-0203#PLAC
   * assigner.identifier.system = $ods-code

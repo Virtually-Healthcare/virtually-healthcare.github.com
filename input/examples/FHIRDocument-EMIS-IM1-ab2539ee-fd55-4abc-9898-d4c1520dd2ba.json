@@ -8,7 +8,7 @@
   },
   "identifier": {
     "use": "usual",
-    "system": "https://tools.ietf.org/html/rfc4122",
+    "system": "urn:ietf:rfc:3986",
     "value": "81397bc1-609d-4534-bba2-4892d575553e",
     "assigner": {
       "identifier": {
@@ -27,7 +27,7 @@
         "id": "ab2539ee-fd55-4abc-9898-d4c1520dd2ba",
         "identifier": {
           "use": "usual",
-          "system": "https://tools.ietf.org/html/rfc4122",
+          "system": "urn:ietf:rfc:3986",
           "value": "81397bc1-609d-4534-bba2-4892d575553e",
           "assigner": {
             "identifier": {
