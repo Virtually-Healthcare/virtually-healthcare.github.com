@@ -9,7 +9,7 @@ Loosely based on [NHS Digital End of Life Care FHIR STU3 - Advance Treatment Pre
 Usage: #example
 
 * identifier.system = "urn:ietf:rfc:3986"
-* identifier.value = "71fae5af-0b9e-4b9e-b6af-3d1bb4e223a0"
+* identifier.value = "urn:uuid:71fae5af-0b9e-4b9e-b6af-3d1bb4e223a0"
 * identifier.assigner.identifier.system = $ods-code
 * identifier.assigner.identifier.value = "F83004"
 

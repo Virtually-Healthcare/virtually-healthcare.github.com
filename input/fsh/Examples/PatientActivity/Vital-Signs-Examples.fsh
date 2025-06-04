@@ -12,7 +12,7 @@ Usage: #example
 
 * identifier[+]
   * system = "urn:ietf:rfc:3986"
-  * value = "af22811f-218e-4ff6-aa07-93f12c666dd7"
+  * value = "urn:uuid:af22811f-218e-4ff6-aa07-93f12c666dd7"
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 * code.coding[SNOMED][+] = http://snomed.info/sct#27113001 "Body weight"
@@ -41,7 +41,7 @@ Usage: #example
 
 * identifier[+]
   * system = "urn:ietf:rfc:3986"
-  * value = "9a2052b8-f00a-41ec-bc4e-3bd4cfae62c2"
+  * value = "urn:uuid:9a2052b8-f00a-41ec-bc4e-3bd4cfae62c2"
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 * code.coding[SNOMED][+] = http://snomed.info/sct#442476006 "Arterial oxygen saturation"
@@ -69,7 +69,7 @@ Usage: #example
 
 * identifier[+]
   * system = "urn:ietf:rfc:3986"
-  * value = "78fef4ce-cb0a-4e7d-b768-2565550b62a2"
+  * value = "urn:uuid:78fef4ce-cb0a-4e7d-b768-2565550b62a2"
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 * code.coding[SNOMED][+] = http://snomed.info/sct#363811000 "Head circumference measure"
@@ -97,7 +97,7 @@ Usage: #example
 
 * identifier[+]
   * system = "urn:ietf:rfc:3986"
-  * value = "ba92afc0-a1c5-41df-93d8-c3df49888bcd"
+  * value = "urn:uuid:ba92afc0-a1c5-41df-93d8-c3df49888bcd"
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 * code.coding[SNOMED][+] = http://snomed.info/sct#50373000 "Body height measure"
@@ -125,7 +125,7 @@ Usage: #example
 
 * identifier[+]
   * system = "urn:ietf:rfc:3986"
-  * value = "5ba52e14-9a98-48cb-8029-770e3e76f428"
+  * value = "urn:uuid:5ba52e14-9a98-48cb-8029-770e3e76f428"
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 * code.coding[SNOMED][+] = http://snomed.info/sct#276885007 "Core body temperature"
@@ -154,7 +154,7 @@ Usage: #example
 
 * identifier[+]
   * system = "urn:ietf:rfc:3986"
-  * value = "8037d992-5936-44bf-9253-f76f904ba7b9"
+  * value = "urn:uuid:8037d992-5936-44bf-9253-f76f904ba7b9"
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 * code.coding[LOINC][+] = http://loinc.org#85354-9
@@ -193,7 +193,7 @@ Usage: #example
 
 * identifier[+]
   * system = "urn:ietf:rfc:3986"
-  * value = "3421ccda-63f3-4e6e-b39c-ca9e3850d3a2"
+  * value = "urn:uuid:3421ccda-63f3-4e6e-b39c-ca9e3850d3a2"
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 * code.coding[SNOMED][+] = http://snomed.info/sct#364075005 "Heart rate"
@@ -221,7 +221,7 @@ Usage: #example
 
 * identifier[+]
   * system = "urn:ietf:rfc:3986"
-  * value = "65083da2-c77f-419e-a205-68a7d3863e90"
+  * value = "urn:uuid:65083da2-c77f-419e-a205-68a7d3863e90"
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 * code.coding[SNOMED][+] = http://snomed.info/sct#86290005 "Respiratory rate"
@@ -249,7 +249,7 @@ Usage: #example
 
 * identifier[+]
   * system = "urn:ietf:rfc:3986"
-  * value = "f268716f-9dc6-4361-a124-0aad3604d8a2"
+  * value = "urn:uuid:f268716f-9dc6-4361-a124-0aad3604d8a2"
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 * code.coding[SNOMED][+] = http://snomed.info/sct#60621009 "Body mass index"
@@ -273,7 +273,7 @@ Usage: #example
 
 * identifier[+]
   * system = "urn:ietf:rfc:3986"
-  * value = "1300fffb-e319-400b-84d0-4e9c1f619af4"
+  * value = "urn:uuid:1300fffb-e319-400b-84d0-4e9c1f619af4"
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 * code = http://loinc.org#85353-1 "Vital signs, weight, height, head circumference, oxygen saturation and BMI panel"

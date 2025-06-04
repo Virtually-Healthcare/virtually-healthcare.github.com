@@ -8,7 +8,7 @@ Usage: #example
 
 * identifier[OriginatingReferralIdentifier]
   * system = "urn:ietf:rfc:3986"
-  * value = "f3533ea0-9588-4f25-ace7-969d80823b20"
+  * value = "urn:uuid:f3533ea0-9588-4f25-ace7-969d80823b20"
   * type = http://terminology.hl7.org/CodeSystem/v2-0203#PLAC
   * assigner.identifier.system = $ods-code
   * assigner.identifier.value = "F83004"
