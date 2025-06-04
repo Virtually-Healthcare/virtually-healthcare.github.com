@@ -21,7 +21,7 @@
   ],
   "item": [
     {
-      "type": "quantity",
+      "type": "decimal",
       "extension": [
         {
           "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
@@ -32,7 +32,7 @@
           }
         }
       ],
-      "linkId": "OxygenSaturation",
+      "linkId": "442476006",
       "definition": "http://hl7.org/fhir/StructureDefinition/Observation#valueQuantity",
       "code": [
         {
@@ -56,7 +56,8 @@
       ]
     },
     {
-      "type": "quantity",
+      "type": "decimal",
+      "linkId": "103228002",
       "extension": [
         {
           "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
@@ -66,7 +67,6 @@
           }
         }
       ],
-      "linkId": "HemoglobinSaturationWithOxygen",
       "definition": "http://hl7.org/fhir/StructureDefinition/Observation#valueQuantity",
       "code": [
         {
@@ -87,10 +87,10 @@
       ]
     },
     {
-      "type": "quantity",
+      "type": "decimal",
       "extension": [
         {
-          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
           "valueCoding": {
             "system": "http://unitsofmeasure.org",
             "code": "kg",
@@ -98,7 +98,7 @@
           }
         }
       ],
-      "linkId": "Weight",
+      "linkId": "27113001",
       "definition": "http://hl7.org/fhir/StructureDefinition/Observation#valueQuantity",
       "code": [
         {
@@ -126,10 +126,10 @@
       ]
     },
     {
-      "type": "quantity",
+      "type": "decimal",
       "extension": [
         {
-          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
           "valueCoding": {
             "system": "http://unitsofmeasure.org",
             "code": "cm",
@@ -137,7 +137,7 @@
           }
         }
       ],
-      "linkId": "HeadCircumference",
+      "linkId": "363811000",
       "definition": "http://hl7.org/fhir/StructureDefinition/Observation#valueQuantity",
       "code": [
         {
@@ -165,10 +165,10 @@
       ]
     },
     {
-      "type": "quantity",
+      "type": "decimal",
       "extension": [
         {
-          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
           "valueCoding": {
             "system": "http://unitsofmeasure.org",
             "code": "cm",
@@ -176,7 +176,7 @@
           }
         }
       ],
-      "linkId": "BodyHeight",
+      "linkId": "50373000",
       "definition": "http://hl7.org/fhir/StructureDefinition/Observation#valueQuantity",
       "code": [
         {
@@ -204,10 +204,10 @@
       ]
     },
     {
-      "type": "quantity",
+      "type": "decimal",
       "extension": [
         {
-          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
           "valueCoding": {
             "system": "http://unitsofmeasure.org",
             "code": "Cel",
@@ -215,7 +215,7 @@
           }
         }
       ],
-      "linkId": "BodyTemperature",
+      "linkId": "276885007",
       "definition": "http://hl7.org/fhir/StructureDefinition/Observation#valueQuantity",
       "code": [
         {
@@ -245,17 +245,17 @@
     {
       "item": [
         {
-          "type": "quantity",
+          "type": "decimal",
           "extension": [
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
               "valueCoding": {
                 "system": "http://unitsofmeasure.org",
                 "code": "mm[Hg]"
               }
             }
           ],
-          "linkId": "DiastolicBloodPressure",
+          "linkId": "1091811000000102",
           "definition": "http://hl7.org/fhir/StructureDefinition/Observation#component.valueQuantity",
           "code": [
             {
@@ -278,10 +278,10 @@
           ]
         },
         {
-          "type": "quantity",
+          "type": "decimal",
           "extension": [
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
               "valueCoding": {
                 "system": "http://unitsofmeasure.org",
                 "code": "mm[Hg]",
@@ -289,7 +289,7 @@
               }
             }
           ],
-          "linkId": "SystolicBloodPressure",
+          "linkId": "72313002",
           "definition": "http://hl7.org/fhir/StructureDefinition/Observation#component.valueQuantity",
           "code": [
             {
@@ -313,7 +313,8 @@
         }
       ],
       "type": "group",
-      "linkId": "518001800840",
+      "linkId": "75367002",
+      "definition": "http://hl7.org/fhir/StructureDefinition/Observation#component",
       "code": [
         {
           "system": "http://snomed.info/sct",
@@ -321,21 +322,20 @@
         }
       ],
       "prefix": "7",
-      "text": "Blood Pressure",
-      "definition": "http://hl7.org/fhir/StructureDefinition/Observation#component"
+      "text": "Blood Pressure"
     },
     {
-      "type": "quantity",
+      "type": "decimal",
       "extension": [
         {
-          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
           "valueCoding": {
             "system": "http://unitsofmeasure.org",
             "code": "{beats}/min"
           }
         }
       ],
-      "linkId": "HeartRate",
+      "linkId": "364075005",
       "definition": "http://hl7.org/fhir/StructureDefinition/Observation#valueQuantity",
       "code": [
         {
@@ -363,17 +363,17 @@
       ]
     },
     {
-      "type": "quantity",
+      "type": "decimal",
       "extension": [
         {
-          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
           "valueCoding": {
             "system": "http://unitsofmeasure.org",
             "code": "{Breaths}/min"
           }
         }
       ],
-      "linkId": "RespiratoryRate",
+      "linkId": "86290005",
       "definition": "http://hl7.org/fhir/StructureDefinition/Observation#valueQuantity",
       "code": [
         {
@@ -401,10 +401,10 @@
       ]
     },
     {
-      "type": "quantity",
+      "type": "decimal",
       "extension": [
         {
-          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
           "valueCoding": {
             "system": "http://unitsofmeasure.org",
             "code": "kg/m2",
@@ -412,7 +412,7 @@
           }
         }
       ],
-      "linkId": "BodyMassIndex",
+      "linkId": "60621009",
       "definition": "http://hl7.org/fhir/StructureDefinition/Observation#valueQuantity",
       "code": [
         {
@@ -428,20 +428,37 @@
       ],
       "prefix": "10",
       "text": "Body Mass Index",
-      "required": false,
-      "initial": [
+      "required": false
+    },
+    {
+      "type": "integer",
+      "linkId": "225908003",
+      "code": [
         {
-          "valueQuantity": {
-            "unit": "kg/m2",
-            "system": "http://unitsofmeasure.org",
-            "code": "kg/m2"
-          }
+          "system": "http://snomed.info/sct",
+          "code": "225908003",
+          "display": "Pain score"
         }
-      ]
+      ],
+      "prefix": "11",
+      "text": "Pain Score"
+    },
+    {
+      "type": "decimal",
+      "linkId": "1104441000000107",
+      "code": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "1104441000000107",
+          "display": "Alert Confusion Voice Pain Unresponsive scale score"
+        }
+      ],
+      "prefix": "12",
+      "text": "Person's level of arousal and awareness"
     },
     {
       "type": "boolean",
-      "linkId": "BreathingRoomAir",
+      "linkId": "722742002",
       "definition": "http://hl7.org/fhir/StructureDefinition/Observation#valueBoolean",
       "code": [
         {
@@ -450,7 +467,7 @@
           "display": "Breathing room air"
         }
       ],
-      "prefix": "11",
+      "prefix": "13",
       "text": "Breathing room air"
     },
     {
@@ -465,7 +482,7 @@
           }
         }
       ],
-      "linkId": "PatientOnOxygen",
+      "linkId": "371825009",
       "definition": "http://hl7.org/fhir/StructureDefinition/Observation#valueQuantity",
       "code": [
         {
@@ -474,7 +491,7 @@
           "display": "Patient on oxygen"
         }
       ],
-      "prefix": "12",
+      "prefix": "14",
       "text": "Patient on oxygen",
       "initial": [
         {
