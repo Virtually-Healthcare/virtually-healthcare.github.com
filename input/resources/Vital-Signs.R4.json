@@ -21,10 +21,10 @@
   ],
   "item": [
     {
-      "type": "quantity",
+      "type": "decimal",
       "extension": [
         {
-          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
           "valueCoding": {
             "system": "http://unitsofmeasure.org",
             "code": "%",
@@ -56,11 +56,11 @@
       ]
     },
     {
-      "type": "quantity",
+      "type": "decimal",
       "linkId": "SCT/103228002",
       "extension": [
         {
-          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
           "valueCoding": {
             "system": "http://unitsofmeasure.org",
             "code": "%"
@@ -165,7 +165,7 @@
       ]
     },
     {
-      "type": "quantity",
+      "type": "decimal",
       "extension": [
         {
           "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
@@ -204,7 +204,7 @@
       ]
     },
     {
-      "type": "quantity",
+      "type": "decimal",
       "extension": [
         {
           "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
@@ -245,7 +245,7 @@
     {
       "item": [
         {
-          "type": "quantity",
+          "type": "decimal",
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
@@ -278,7 +278,7 @@
           ]
         },
         {
-          "type": "quantity",
+          "type": "decimal",
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
@@ -325,7 +325,7 @@
       "text": "Blood Pressure"
     },
     {
-      "type": "quantity",
+      "type": "decimal",
       "extension": [
         {
           "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
@@ -363,7 +363,7 @@
       ]
     },
     {
-      "type": "quantity",
+      "type": "decimal",
       "extension": [
         {
           "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
@@ -401,7 +401,7 @@
       ]
     },
     {
-      "type": "quantity",
+      "type": "decimal",
       "extension": [
         {
           "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
@@ -491,10 +491,10 @@
     ]
     },
     {
-      "type": "quantity",
+      "type": "decimal",
       "extension": [
         {
-          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
           "valueCoding": {
             "system": "http://unitsofmeasure.org",
             "code": "L/min",

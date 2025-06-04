@@ -22,12 +22,7 @@
       "text": "Oxygen Saturation",
       "answer": [
         {
-          "valueQuantity": {
-            "value": 98,
-            "unit": "percent",
-            "code": "%",
-            "system": "http://unitsofmeasure.org"
-          }
+          "valueDecimal": 98
         }
       ]
     },
@@ -54,12 +49,7 @@
       "text": "Body height",
       "answer": [
         {
-          "valueQuantity": {
-            "value": 179,
-            "unit": "centimeter",
-            "code": "cm",
-            "system": "http://unitsofmeasure.org"
-          }
+          "valueDecimal": 179
         }
       ]
     },
@@ -68,12 +58,7 @@
       "text": "Body temperature",
       "answer": [
         {
-          "valueQuantity": {
-            "value": 36.1,
-            "unit": "degree Celsius",
-            "code": "Cel",
-            "system": "http://unitsofmeasure.org"
-          }
+          "valueDecimal": 36.1
         }
       ]
     },
@@ -82,12 +67,7 @@
       "text": "Systolic blood pressure",
       "answer": [
         {
-          "valueQuantity": {
-            "value": 117,
-            "unit": "millimeter of mercury",
-            "code": "mm[Hg]",
-            "system": "http://unitsofmeasure.org"
-          }
+          "valueDecimal": 117
         }
       ]
     },
@@ -96,12 +76,7 @@
       "text": "Diastolic blood pressure",
       "answer": [
         {
-          "valueQuantity": {
-            "value": 74,
-            "unit": "millimeter of mercury",
-            "code": "mm[Hg]",
-            "system": "http://unitsofmeasure.org"
-          }
+          "valueDecimal": 74
         }
       ]
     },
@@ -110,12 +85,7 @@
       "text": "Heart rate",
       "answer": [
         {
-          "valueQuantity": {
-            "value": 49,
-            "unit": "heart beats per minute",
-            "code": "{beats}/min",
-            "system": "http://unitsofmeasure.org"
-          }
+          "valueDecimal": 49
         }
       ]
     },
@@ -124,12 +94,7 @@
       "text": "Respiratory rate",
       "answer": [
         {
-          "valueQuantity": {
-            "value": 19,
-            "unit": "Breaths / minute",
-            "code": "{Breaths}/min",
-            "system": "http://unitsofmeasure.org"
-          }
+          "valueDecimal": 19
         }
       ]
     },
@@ -138,12 +103,7 @@
       "text": "Body Mass Index",
       "answer": [
         {
-          "valueQuantity": {
-            "value": 25.1,
-            "unit": "kilogram per square meter",
-            "code": "kg/m2",
-            "system": "http://unitsofmeasure.org"
-          }
+          "valueDecimal": 25.1
         }
       ]
     }
