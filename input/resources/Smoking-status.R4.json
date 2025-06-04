@@ -38,6 +38,7 @@
             }
           ],
           "text": "Current Smoking Status",
+          "definition": "http://hl7.org/fhir/StructureDefinition/Observation#valueCodeableConcept",
           "answerValueSet": "https://fhir.virtually.healthcare/ValueSet/SmokingStatus"
         },
         {
@@ -69,6 +70,7 @@
             }
           ],
           "linkId": "SCT/151159008",
+          "definition": "http://hl7.org/fhir/StructureDefinition/Observation#valueCodeableConcept",
           "code": [
             {
               "system": "http://snomed.info/sct",
@@ -112,6 +114,7 @@
             }
           ],
           "text": "Varenicline or other pharmacotherapy used",
+          "definition": "http://hl7.org/fhir/StructureDefinition/Observation#valueCodeableConcept",
           "answerOption": [
             {
               "valueCoding": {
@@ -139,6 +142,7 @@
         {
           "type": "decimal",
           "linkId": "SCT/722499006",
+          "definition": "http://hl7.org/fhir/StructureDefinition/Observation#valueQuantity",
           "code": [
             {
               "system": "http://snomed.info/sct",
@@ -156,6 +160,7 @@
     {
       "type": "date",
       "linkId": "SCT/390901002",
+      "definition": "http://hl7.org/fhir/StructureDefinition/Observation#valueDateTime",
       "code": [
         {
           "system": "http://snomed.info/sct",
@@ -173,6 +178,7 @@
         {
           "type": "date",
           "linkId": "SCT/160625004",
+          "definition": "http://hl7.org/fhir/StructureDefinition/Observation#valueDateTime",
           "code": [
             {
               "system": "http://snomed.info/sct",
@@ -186,6 +192,7 @@
           "type": "choice",
           "linkId": "657980725273",
           "text": "Self reported quit",
+          "definition": "http://hl7.org/fhir/StructureDefinition/Observation#valueCodeableConcept",
           "answerOption": [
             {
               "valueCoding": {
