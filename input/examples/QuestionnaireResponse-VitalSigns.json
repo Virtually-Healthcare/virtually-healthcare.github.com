@@ -53,6 +53,7 @@
         }
       ]
     },
+
     {
       "linkId": "SCT/276885007",
       "text": "Body temperature",
@@ -61,22 +62,26 @@
           "valueDecimal": 36.1
         }
       ]
-    },
-    {
-      "linkId": "SCT/72313002",
-      "text": "Systolic blood pressure",
-      "answer": [
+    },{
+      "linkId": "SCT/75367002",
+      "item": [
         {
-          "valueDecimal": 117
-        }
-      ]
-    },
-    {
-      "linkId": "SCT/1091811000000102",
-      "text": "Diastolic blood pressure",
-      "answer": [
+          "linkId": "SCT/72313002",
+          "text": "Systolic blood pressure",
+          "answer": [
+            {
+              "valueDecimal": 117
+            }
+          ]
+        },
         {
-          "valueDecimal": 74
+          "linkId": "SCT/1091811000000102",
+          "text": "Diastolic blood pressure",
+          "answer": [
+            {
+              "valueDecimal": 74
+            }
+          ]
         }
       ]
     },
