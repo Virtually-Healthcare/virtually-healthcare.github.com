@@ -21,7 +21,7 @@
   ],
   "item": [
     {
-      "type": "decimal",
+      "type": "quantity",
       "extension": [
         {
           "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
@@ -56,7 +56,7 @@
       ]
     },
     {
-      "type": "decimal",
+      "type": "quantity",
       "linkId": "SCT/103228002",
       "extension": [
         {
@@ -87,7 +87,7 @@
       ]
     },
     {
-      "type": "decimal",
+      "type": "quantity",
       "extension": [
         {
           "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
@@ -126,7 +126,7 @@
       ]
     },
     {
-      "type": "decimal",
+      "type": "quantity",
       "extension": [
         {
           "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
@@ -165,7 +165,7 @@
       ]
     },
     {
-      "type": "decimal",
+      "type": "quantity",
       "extension": [
         {
           "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
@@ -204,7 +204,7 @@
       ]
     },
     {
-      "type": "decimal",
+      "type": "quantity",
       "extension": [
         {
           "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
@@ -245,7 +245,7 @@
     {
       "item": [
         {
-          "type": "decimal",
+          "type": "quantity",
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
@@ -278,7 +278,7 @@
           ]
         },
         {
-          "type": "decimal",
+          "type": "quantity",
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
@@ -325,7 +325,7 @@
       "text": "Blood Pressure"
     },
     {
-      "type": "decimal",
+      "type": "quantity",
       "extension": [
         {
           "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
@@ -363,7 +363,7 @@
       ]
     },
     {
-      "type": "decimal",
+      "type": "quantity",
       "extension": [
         {
           "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
@@ -401,7 +401,7 @@
       ]
     },
     {
-      "type": "decimal",
+      "type": "quantity",
       "extension": [
         {
           "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
@@ -445,7 +445,7 @@
       "text": "Pain Score"
     },
     {
-      "type": "decimal",
+      "type": "quantity",
       "linkId": "SCT/1104441000000107",
       "definition": "http://hl7.org/fhir/StructureDefinition/Observation#valueQuantity",
       "code": [
