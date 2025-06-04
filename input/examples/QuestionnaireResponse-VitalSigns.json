@@ -18,7 +18,7 @@
   "authored": "2024-03-04T06:27:40.701Z",
   "item": [
     {
-      "linkId": "OxygenSaturation",
+      "linkId": "SCT/442476006",
       "text": "Oxygen Saturation",
       "answer": [
         {
@@ -32,7 +32,7 @@
       ]
     },
     {
-      "linkId": "Weight",
+      "linkId": "SCT/27113001",
       "text": "Weight",
       "answer": [
         {
@@ -46,7 +46,7 @@
       ]
     },
     {
-      "linkId": "HeadCircumference",
+      "linkId": "SCT/363811000",
       "text": "Head circumference",
       "answer": [
         {
@@ -60,7 +60,7 @@
       ]
     },
     {
-      "linkId": "BodyHeight",
+      "linkId": "SCT/50373000",
       "text": "Body height",
       "answer": [
         {
@@ -74,7 +74,7 @@
       ]
     },
     {
-      "linkId": "BodyTemperature",
+      "linkId": "SCT/276885007",
       "text": "Body temperature",
       "answer": [
         {
@@ -88,7 +88,7 @@
       ]
     },
     {
-      "linkId": "SystolicBloodPressure",
+      "linkId": "SCT/72313002",
       "text": "Systolic blood pressure",
       "answer": [
         {
@@ -102,7 +102,7 @@
       ]
     },
     {
-      "linkId": "DiastolicBloodPressure",
+      "linkId": "SCT/1091811000000102",
       "text": "Diastolic blood pressure",
       "answer": [
         {
@@ -116,7 +116,7 @@
       ]
     },
     {
-      "linkId": "HeartRate",
+      "linkId": "SCT/364075005",
       "text": "Heart rate",
       "answer": [
         {
@@ -130,7 +130,7 @@
       ]
     },
     {
-      "linkId": "RespiratoryRate",
+      "linkId": "SCT/86290005",
       "text": "Respiratory rate",
       "answer": [
         {
@@ -144,7 +144,7 @@
       ]
     },
     {
-      "linkId": "BodyMassIndex",
+      "linkId": "SCT/60621009",
       "text": "Body Mass Index",
       "answer": [
         {
