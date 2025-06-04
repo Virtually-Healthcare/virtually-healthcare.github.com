@@ -208,7 +208,7 @@ resources:
     exampleBoolean: true
   Questionnaire/VitalSigns:
     name: Vital Signs
-    description: Vital Signs Definitions based on [NHS England Clinical Observations](https://simplifier.net/guide/ClinicalObservations/Home)
+    description: Vital Signs Definitions based on [PRSB Community Pharmacy Standard](https://theprsb.org/standards/communitypharmacy/) and [NHS England Clinical Observations](https://simplifier.net/guide/ClinicalObservations/Home)
     exampleBoolean: false
   Questionnaire/SmokingStatus:
     name: Smoking Status
