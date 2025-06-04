@@ -18,58 +18,38 @@
   "questionnaire": "https://fhir.virtually.healthcare/Questionnaire/DailyPhysicalActivity",
   "item": [
     {
-      "linkId": "DailyStepCount",
+      "linkId": "LN/41950-7",
       "text": "Daily Step Count",
       "answer": [
         {
-          "valueQuantity": {
-            "value": 9607,
-            "unit": "per day",
-            "code": "/d",
-            "system": "http://unitsofmeasure.org"
-          }
+          "valueDecimal":9607
         }
       ]
     },
     {
-      "linkId": "PeakDailyHeartRate",
+      "linkId": "LN/8873-2",
       "text": "Peak daily heart rate",
       "answer": [
         {
-          "valueQuantity": {
-            "value": 132,
-            "unit": "per minute",
-            "code": "/min",
-            "system": "http://unitsofmeasure.org"
-          }
+          "valueDecimal":132
         }
       ]
     },
     {
-      "linkId": "AverageRestingHeartRate",
+      "linkId": "LN/40443-4",
       "text": "Average resting heart rate",
       "answer": [
         {
-          "valueQuantity": {
-            "value": 64,
-            "unit": "per minute",
-            "code": "/min",
-            "system": "http://unitsofmeasure.org"
-          }
+          "valueDecimal":64
         }
       ]
     },
     {
-      "linkId": "CaloriesPerDay",
+      "linkId": "LN/41979-6",
       "text": "Calories per Day",
       "answer": [
         {
-          "valueQuantity": {
-            "value": 714,
-            "unit": "kilocalorie per 24 hour",
-            "code": "kcal/(24.h)",
-            "system": "http://unitsofmeasure.org"
-          }
+          "valueDecimal" : 714
         }
       ]
     }

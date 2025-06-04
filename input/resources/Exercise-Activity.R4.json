@@ -34,7 +34,7 @@
           }
         }
       ],
-      "linkId": "ExerciseActivity",
+      "linkId": "LN/73985-4",
       "code": [
         {
           "system": "http://loinc.org",
@@ -47,10 +47,10 @@
       "answerValueSet": "http://snomed.info/sct/900000000000207008?fhir_vs=ecl%2F%3C+415577004"
     },
     {
-      "type": "quantity",
+      "type": "decimal",
       "extension": [
         {
-          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
           "valueCoding": {
             "system": "http://unitsofmeasure.org",
             "code": "/min",
@@ -58,7 +58,7 @@
           }
         }
       ],
-      "linkId": "PeakActivityHeartRate",
+      "linkId": "LN/55426-1",
       "code": [
         {
           "system": "http://loinc.org",
@@ -79,10 +79,10 @@
       ]
     },
     {
-      "type": "quantity",
+      "type": "decimal",
       "extension": [
         {
-          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
           "valueCoding": {
             "system": "http://unitsofmeasure.org",
             "code": "min",
@@ -90,7 +90,7 @@
           }
         }
       ],
-      "linkId": "ActivityDuration",
+      "linkId": "LN/55411-3",
       "code": [
         {
           "system": "http://loinc.org",
@@ -111,10 +111,10 @@
       ]
     },
     {
-      "type": "quantity",
+      "type": "decimal",
       "extension": [
         {
-          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
           "valueCoding": {
             "system": "http://unitsofmeasure.org",
             "code": "kcal",
@@ -122,7 +122,7 @@
           }
         }
       ],
-      "linkId": "CaloriesPerActivity",
+      "linkId": "LN/55424-6",
       "code": [
         {
           "system": "http://loinc.org",
@@ -143,10 +143,10 @@
       ]
     },
     {
-      "type": "quantity",
+      "type": "decimal",
       "extension": [
         {
-          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
           "valueCoding": {
             "system": "http://unitsofmeasure.org",
             "code": "/min",
@@ -154,7 +154,7 @@
           }
         }
       ],
-      "linkId": "AverageHeartRate",
+      "linkId": "LN/55425-3",
       "code": [
         {
           "system": "http://loinc.org",

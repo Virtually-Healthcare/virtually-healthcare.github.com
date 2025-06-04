@@ -18,7 +18,7 @@
   "questionnaire": "https://fhir.virtually.healthcare/Questionnaire/ExerciseActivity",
   "item": [
     {
-      "linkId": "ExerciseActivity",
+      "linkId": "LN/73985-4",
       "text": "Exercise activity",
       "answer": [
         {
@@ -31,58 +31,38 @@
       ]
     },
     {
-      "linkId": "PeakActivityHeartRate",
+      "linkId": "LN/55426-1",
       "text": "Peak Activity Heart Rate",
       "answer": [
         {
-          "valueQuantity": {
-            "value": 119,
-            "unit": "per minute",
-            "code": "/min",
-            "system": "http://unitsofmeasure.org"
-          }
+          "valueDecimal": 119
         }
       ]
     },
     {
-      "linkId": "ActivityDuration",
+      "linkId": "LN/55411-3",
       "text": "Activity Duration",
       "answer": [
         {
-          "valueQuantity": {
-            "value": 51,
-            "unit": "minute",
-            "code": "min",
-            "system": "http://unitsofmeasure.org"
-          }
+          "valueDecimal":51
         }
       ]
     },
     {
-      "linkId": "CaloriesPerActivity",
+      "linkId": "LN/55424-6",
       "text": "Calories per activity",
       "answer": [
         {
-          "valueQuantity": {
-            "value": 413,
-            "unit": "kilocalorie",
-            "code": "kcal",
-            "system": "http://unitsofmeasure.org"
-          }
+          "valueDecimal":413
         }
       ]
     },
     {
-      "linkId": "AverageHeartRate",
+      "linkId": "LN/55425-3",
       "text": "Average Heart Rate",
       "answer": [
         {
-          "valueQuantity": {
-            "value": 116,
-            "unit": "per minute",
-            "code": "/min",
-            "system": "http://unitsofmeasure.org"
-          }
+          "valueDecimal": 116
         }
       ]
     }
