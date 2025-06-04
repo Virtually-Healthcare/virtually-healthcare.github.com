@@ -8,7 +8,7 @@ Usage: #example
 
 * identifier[+]
   * system = "urn:ietf:rfc:3986"
-  * value = "71fae5af-0b9e-4b9e-b6af-3d1bb4e223a0"
+  * value = "urn:uuid:71fae5af-0b9e-4b9e-b6af-3d1bb4e223a0"
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#activity
 * code = http://loinc.org#55424-6 "Calories burned in Unspecified Time, Pedometer"
@@ -30,7 +30,7 @@ Usage: #example
 
 * identifier[+]
   * system = "urn:ietf:rfc:3986"
-  * value = "cffe1a6e-8eda-4613-bf54-119b374bb5b9"
+  * value = "urn:uuid:cffe1a6e-8eda-4613-bf54-119b374bb5b9"
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 * code.coding[LOINC][+] = http://loinc.org#55425-3 "Heart rate unspecified time mean by Pedometer"
@@ -54,7 +54,7 @@ Usage: #example
 
 * identifier[+]
   * system = "urn:ietf:rfc:3986"
-  * value = "35eb7da3-9b85-46ce-bd29-75c2263b514a"
+  * value = "urn:uuid:35eb7da3-9b85-46ce-bd29-75c2263b514a"
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#activity
 * code = http://loinc.org#55411-3 "Exercise duration"
@@ -76,7 +76,7 @@ Usage: #example
 
 * identifier[+]
   * system = "urn:ietf:rfc:3986"
-  * value = "ad7c1832-f855-4ece-a4c7-c79b433a7890"
+  * value = "urn:uuid:ad7c1832-f855-4ece-a4c7-c79b433a7890"
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#activity
 * code = http://loinc.org#55426-1 "Maximum Heart rate in Unspecified Time"
@@ -98,7 +98,7 @@ Usage: #example
 
 * identifier[+]
   * system = "urn:ietf:rfc:3986"
-  * value = "cb3c778b-cee4-4027-8163-c082958f87f1"
+  * value = "urn:uuid:cb3c778b-cee4-4027-8163-c082958f87f1"
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#activity
 * code = http://loinc.org#73985-4 "Exercise activity"
@@ -118,7 +118,7 @@ Usage: #example
 
 * identifier[+]
   * system = "urn:ietf:rfc:3986"
-  * value = "8f750590-30d6-425f-a8c4-f0a7c41e01d4"
+  * value = "urn:uuid:8f750590-30d6-425f-a8c4-f0a7c41e01d4"
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#activity
 * code = http://snomed.info/sct#68130003 "Physical activity"

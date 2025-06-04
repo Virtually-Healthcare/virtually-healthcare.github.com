@@ -8,7 +8,7 @@ Usage: #example
 
 * identifier[+]
   * system = "urn:ietf:rfc:3986"
-  * value = "0a7f38ae-9658-4b43-a3f9-02f66f65bf38"
+  * value = "urn:uuid:0a7f38ae-9658-4b43-a3f9-02f66f65bf38"
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#activity
 * code.coding[LOINC][+] = http://loinc.org#41950-7 "Number of steps in 24 Hours, Measured"
@@ -31,7 +31,7 @@ Usage: #example
 
 * identifier[+]
   * system = "urn:ietf:rfc:3986"
-  * value = "a14a52b7-b647-45f3-851a-8c00e28c0968"
+  * value = "urn:uuid:a14a52b7-b647-45f3-851a-8c00e28c0968"
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 * code.coding[LOINC][+] = http://loinc.org#8873-2 "Maximum Heart rate in 24 Hours"
@@ -55,7 +55,7 @@ Usage: #example
 
 * identifier[+]
   * system = "urn:ietf:rfc:3986"
-  * value = "ea09866e-d540-4d9c-ba9c-8e22338e524c"
+  * value = "urn:uuid:ea09866e-d540-4d9c-ba9c-8e22338e524c"
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 * code.coding[LOINC][+] = http://loinc.org#40443-4 "Heart rate - resting"
@@ -79,7 +79,7 @@ Usage: #example
 
 * identifier[+]
   * system = "urn:ietf:rfc:3986"
-  * value = "b8df13d9-86f3-4545-9e82-50bca88090d9"
+  * value = "urn:uuid:b8df13d9-86f3-4545-9e82-50bca88090d9"
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#activity
 * code.coding[LOINC][+] = http://loinc.org#41979-6 "Calories burned in 24 Hours, Calc"
