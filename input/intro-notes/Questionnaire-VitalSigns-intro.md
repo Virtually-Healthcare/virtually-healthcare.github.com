@@ -3,5 +3,6 @@
 
 See also:
 
+- [PRSB Community Pharmacy Standard](https://theprsb.org/standards/communitypharmacy/)
 - [NHS England Clinical Observations](https://simplifier.net/guide/ClinicalObservations/Home)
 - [LOINC Vital signs, weight, height, head circumference, oxygen saturation and BMI panel](https://loinc.org/85353-1)
