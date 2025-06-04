@@ -87,7 +87,7 @@
       ]
     },
     {
-      "type": "quantity",
+      "type": "decimal",
       "extension": [
         {
           "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
@@ -126,7 +126,7 @@
       ]
     },
     {
-      "type": "quantity",
+      "type": "decimal",
       "extension": [
         {
           "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",

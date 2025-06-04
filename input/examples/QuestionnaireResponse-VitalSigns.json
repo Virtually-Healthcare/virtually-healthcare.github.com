@@ -36,12 +36,7 @@
       "text": "Weight",
       "answer": [
         {
-          "valueQuantity": {
-            "value": 81,
-            "unit": "kilogram",
-            "code": "kg",
-            "system": "http://unitsofmeasure.org"
-          }
+          "valueDecimal": 81
         }
       ]
     },
@@ -50,12 +45,7 @@
       "text": "Head circumference",
       "answer": [
         {
-          "valueQuantity": {
-            "value": 59,
-            "unit": "centimeter",
-            "code": "cm",
-            "system": "http://unitsofmeasure.org"
-          }
+          "valueDecimal": 59
         }
       ]
     },
