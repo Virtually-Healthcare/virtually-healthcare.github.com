@@ -462,7 +462,7 @@
           "valueQuantity": {
             "unit": "{score}",
             "system": "http://unitsofmeasure.org",
-            "code": "score"
+            "code": "{score}"
           }
         }
       ]
@@ -485,7 +485,7 @@
         "valueQuantity": {
           "unit": "{score}",
           "system": "http://unitsofmeasure.org",
-          "code": "score"
+          "code": "{score}"
         }
       }
     ]
