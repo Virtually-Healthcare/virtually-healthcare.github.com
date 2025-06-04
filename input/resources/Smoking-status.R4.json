@@ -1,0 +1,216 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "SmokingStatus",
+  "meta": {
+    "profile": [
+      "https://fhir.virtually.healthcare/StructureDefinition/Questionnaire"
+    ]
+  },
+  "url": "https://fhir.virtually.healthcare/Questionnaire/SmokingStatus",
+  "title": "Smoking status",
+  "status": "draft",
+  "description": "Based on PRSB Smoking Status for Community Pharmacy https://theprsb.org/standards/communitypharmacy/",
+  "item": [
+    {
+      "item": [
+        {
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "drop-down",
+                    "display": "Drop down"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId": "SCT/229819007",
+          "code": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "229819007",
+              "display": "Tobacco use and exposure"
+            }
+          ],
+          "text": "Current Smoking Status",
+          "answerValueSet": "https://fhir.virtually.healthcare/ValueSet/SmokingStatus"
+        },
+        {
+          "type": "string",
+          "linkId": "370146101497",
+          "text": "Notes"
+        }
+      ],
+      "type": "group",
+      "linkId": "682174811384",
+      "text": "Smoking Status"
+    },
+    {
+      "item": [
+        {
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "drop-down",
+                    "display": "Drop down"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId": "SCT/151159008",
+          "code": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "151159008",
+              "display": "Nicotine replacement therapy"
+            }
+          ],
+          "text": "Nicotine Replacement Therapy used",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://loinc.org",
+                "code": "LA33-6",
+                "display": "Yes"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://loinc.org",
+                "code": "LA32-8",
+                "display": "No"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://loinc.org",
+                "code": "LA4489-6",
+                "display": "Unknown"
+              }
+            }
+          ]
+        },
+        {
+          "type": "choice",
+          "linkId": "SCT/777918004",
+          "code": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "777918004",
+              "display": "Varenicline"
+            }
+          ],
+          "text": "Varenicline or other pharmacotherapy used",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://loinc.org",
+                "code": "LA33-6",
+                "display": "Yes"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://loinc.org",
+                "code": "LA32-8",
+                "display": "No"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://loinc.org",
+                "code": "LA4489-6",
+                "display": "Unknown"
+              }
+            }
+          ]
+        },
+        {
+          "type": "decimal",
+          "linkId": "SCT/722499006",
+          "code": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "722499006",
+              "display": "Electronic cigarette user"
+            }
+          ],
+          "text": "e-cigarettes used"
+        }
+      ],
+      "type": "string",
+      "linkId": "624707590079",
+      "text": "Smoking record"
+    },
+    {
+      "type": "date",
+      "linkId": "SCT/390901002",
+      "code": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "390901002",
+          "display": "Negotiated date for cessation of smoking"
+        }
+      ],
+      "text": "Quitting Date "
+    },
+    {
+      "type": "group",
+      "linkId": "277534201089",
+      "text": "Smoking Cessation",
+      "item": [
+        {
+          "type": "date",
+          "linkId": "SCT/160625004",
+          "code": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "160625004",
+              "display": "Date ceased smoking"
+            }
+          ],
+          "text": "Date ceased smoking"
+        },
+        {
+          "type": "choice",
+          "linkId": "657980725273",
+          "text": "Self reported quit",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://loinc.org",
+                "code": "LA33-6",
+                "display": "Yes"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://loinc.org",
+                "code": "LA32-8",
+                "display": "No"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://loinc.org",
+                "code": "LA4489-6",
+                "display": "Unknown"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

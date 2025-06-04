@@ -32,7 +32,7 @@
           }
         }
       ],
-      "linkId": "442476006",
+      "linkId": "SCT/442476006",
       "definition": "http://hl7.org/fhir/StructureDefinition/Observation#valueQuantity",
       "code": [
         {
@@ -57,7 +57,7 @@
     },
     {
       "type": "decimal",
-      "linkId": "103228002",
+      "linkId": "SCT/103228002",
       "extension": [
         {
           "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
@@ -98,7 +98,7 @@
           }
         }
       ],
-      "linkId": "27113001",
+      "linkId": "SCT/27113001",
       "definition": "http://hl7.org/fhir/StructureDefinition/Observation#valueQuantity",
       "code": [
         {
@@ -137,7 +137,7 @@
           }
         }
       ],
-      "linkId": "363811000",
+      "linkId": "SCT/363811000",
       "definition": "http://hl7.org/fhir/StructureDefinition/Observation#valueQuantity",
       "code": [
         {
@@ -176,7 +176,7 @@
           }
         }
       ],
-      "linkId": "50373000",
+      "linkId": "SCT/50373000",
       "definition": "http://hl7.org/fhir/StructureDefinition/Observation#valueQuantity",
       "code": [
         {
@@ -215,7 +215,7 @@
           }
         }
       ],
-      "linkId": "276885007",
+      "linkId": "SCT/276885007",
       "definition": "http://hl7.org/fhir/StructureDefinition/Observation#valueQuantity",
       "code": [
         {
@@ -255,7 +255,7 @@
               }
             }
           ],
-          "linkId": "1091811000000102",
+          "linkId": "SCT/1091811000000102",
           "definition": "http://hl7.org/fhir/StructureDefinition/Observation#component.valueQuantity",
           "code": [
             {
@@ -289,7 +289,7 @@
               }
             }
           ],
-          "linkId": "72313002",
+          "linkId": "SCT/72313002",
           "definition": "http://hl7.org/fhir/StructureDefinition/Observation#component.valueQuantity",
           "code": [
             {
@@ -313,7 +313,7 @@
         }
       ],
       "type": "group",
-      "linkId": "75367002",
+      "linkId": "SCT/75367002",
       "definition": "http://hl7.org/fhir/StructureDefinition/Observation#component",
       "code": [
         {
@@ -335,7 +335,7 @@
           }
         }
       ],
-      "linkId": "364075005",
+      "linkId": "SCT/364075005",
       "definition": "http://hl7.org/fhir/StructureDefinition/Observation#valueQuantity",
       "code": [
         {
@@ -373,7 +373,7 @@
           }
         }
       ],
-      "linkId": "86290005",
+      "linkId": "SCT/86290005",
       "definition": "http://hl7.org/fhir/StructureDefinition/Observation#valueQuantity",
       "code": [
         {
@@ -412,7 +412,7 @@
           }
         }
       ],
-      "linkId": "60621009",
+      "linkId": "SCT/60621009",
       "definition": "http://hl7.org/fhir/StructureDefinition/Observation#valueQuantity",
       "code": [
         {
@@ -432,7 +432,7 @@
     },
     {
       "type": "integer",
-      "linkId": "225908003",
+      "linkId": "SCT/225908003",
       "definition": "http://hl7.org/fhir/StructureDefinition/Observation#valueQuantity",
       "code": [
         {
@@ -446,7 +446,7 @@
     },
     {
       "type": "decimal",
-      "linkId": "1104441000000107",
+      "linkId": "SCT/1104441000000107",
       "definition": "http://hl7.org/fhir/StructureDefinition/Observation#valueQuantity",
       "code": [
         {
@@ -469,7 +469,7 @@
     },
     {
       "type": "boolean",
-      "linkId": "722742002",
+      "linkId": "SCT/722742002",
       "definition": "http://hl7.org/fhir/StructureDefinition/Observation#valueBoolean",
       "code": [
         {
@@ -502,7 +502,7 @@
           }
         }
       ],
-      "linkId": "371825009",
+      "linkId": "SCT/371825009",
       "definition": "http://hl7.org/fhir/StructureDefinition/Observation#valueQuantity",
       "code": [
         {
