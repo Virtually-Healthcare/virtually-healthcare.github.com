@@ -22,7 +22,7 @@ title "Consultation Note (online and pharmacy)"
 *** Risks
 **** [[StructureDefinition-ClinicalImpression.html ClinicalImpression]]
 *** [[StructureDefinition-Condition.html Condition]]
-** Plan and Requested Actions (PRSB) (ADPIE Plan)"
+** Plan and Requested Actions (PRSB) (ADPIE Plan)
 *** [[StructureDefinition-CarePlan.html Care Plan]]
 **** Safeguarding (PRSB)
 **** Signpost details (PRSB)
