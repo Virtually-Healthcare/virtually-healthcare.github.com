@@ -2,29 +2,35 @@
 
 title "Consultation Note (online and pharmacy)"
 
-* body
+* body (**composition**)
 ** <i>Subjective</i>
 *** Presenting complaints or issues (PRSB)
 **** [[StructureDefinition-Observation.html Observation]]
 **** Attachments ([[StructureDefinition-DocumentReference.html DocumentReference]] + Binary)
 ** <i>Objective (ADPIE Assement)</i>
 *** Social Context (PRSB)
-**** [[https://build.fhir.org/ig/HL7/fhir-sdoh-clinicalcare/ Social Determinents of Health]]  USA version
+**** [[https://build.fhir.org/ig/HL7/fhir-sdoh-clinicalcare/ Social Determinents of Health]] USA version
 *** Family History (PRSB)
 *** Examination findings (PRSB)
 **** [[assessments-and-observations.html#vital-signs Vital Signs]] <b>archetype</b>
+***** [[StructureDefinition-Observation.html Observation]] (other)
 **** [[assessments-and-observations.html#daily-physical-activity Physical Activity]] <b>archetype</b>
+***** [[StructureDefinition-Observation.html Observation]] (other)
 **** [[StructureDefinition-Observation.html Observation]] (other)
 ** <i>Assessment (ADPIE Diagnose)</i>
+*** Risks
+**** [[StructureDefinition-ClinicalImpression.html ClinicalImpression]]
 *** [[StructureDefinition-Condition.html Condition]]
 ** Plan and Requested Actions (PRSB) (ADPIE Plan)"
 *** [[StructureDefinition-CarePlan.html Care Plan]]
 **** Safeguarding
 **** Signpost details (PRSB)
 ** Implement (ADPIE)
-*** Referral Details
+*** Vaccination (PRSB)
+**** [[StructureDefinition-Immunization.html Immunization]]
+*** Referral Details (PRSB)
 **** [[StructureDefinition-ServiceRequest.html ServiceRequest]]
-*** Medications
+*** Medications (PRSB)
 **** [[StructureDefinition-MedicationRequest.html MedicationRequest]]
 *** Investigation
 **** [[StructureDefinition-ServiceRequest.html ServiceRequest]]
