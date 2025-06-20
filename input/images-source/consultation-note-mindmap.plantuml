@@ -6,6 +6,7 @@ title "Consultation Note (online and pharmacy)"
 ** <i>Subjective</i>
 *** Presenting complaints or issues (PRSB)
 **** [[StructureDefinition-Observation.html Observation]]
+**** Attachments ([[StructureDefinition-DocumentReference.html DocumentReference]] + Binary)
 ** <i>Objective (ADPIE Assement)</i>
 *** Social Context (PRSB)
 **** [[https://build.fhir.org/ig/HL7/fhir-sdoh-clinicalcare/ Social Determinents of Health]]
