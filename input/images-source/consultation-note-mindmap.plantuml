@@ -10,12 +10,13 @@ title "Consultation Note (online and pharmacy)"
 ** <i>Objective (ADPIE Assement)</i>
 *** Social Context (PRSB)
 **** [[https://build.fhir.org/ig/HL7/fhir-sdoh-clinicalcare/ Social Determinents of Health]] USA version
+***** [[StructureDefinition-Observation.html Observation]]
 *** Family History (PRSB)
 *** Examination findings (PRSB)
 **** [[assessments-and-observations.html#vital-signs Vital Signs]] <b>archetype</b>
-***** [[StructureDefinition-Observation.html Observation]] (other)
+***** [[StructureDefinition-Observation.html Observation]]
 **** [[assessments-and-observations.html#daily-physical-activity Physical Activity]] <b>archetype</b>
-***** [[StructureDefinition-Observation.html Observation]] (other)
+***** [[StructureDefinition-Observation.html Observation]]
 **** [[StructureDefinition-Observation.html Observation]] (other)
 ** <i>Assessment (ADPIE Diagnose)</i>
 *** Risks
@@ -23,8 +24,10 @@ title "Consultation Note (online and pharmacy)"
 *** [[StructureDefinition-Condition.html Condition]]
 ** Plan and Requested Actions (PRSB) (ADPIE Plan)"
 *** [[StructureDefinition-CarePlan.html Care Plan]]
-**** Safeguarding
+**** Safeguarding (PRSB)
 **** Signpost details (PRSB)
+*** [[StructureDefinition-CareTeam.html Care Team]]
+*** [[StructureDefinition-Goal.html Goal]]
 ** Implement (ADPIE)
 *** Vaccination (PRSB)
 **** [[StructureDefinition-Immunization.html Immunization]]
