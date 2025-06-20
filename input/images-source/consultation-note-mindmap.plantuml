@@ -9,7 +9,7 @@ title "Consultation Note (online and pharmacy)"
 **** Attachments ([[StructureDefinition-DocumentReference.html DocumentReference]] + Binary)
 ** <i>Objective (ADPIE Assement)</i>
 *** Social Context (PRSB)
-**** [[https://build.fhir.org/ig/HL7/fhir-sdoh-clinicalcare/ Social Determinents of Health]]
+**** [[https://build.fhir.org/ig/HL7/fhir-sdoh-clinicalcare/ Social Determinents of Health]]  USA version
 *** Family History (PRSB)
 *** Examination findings (PRSB)
 **** [[assessments-and-observations.html#vital-signs Vital Signs]] <b>archetype</b>
