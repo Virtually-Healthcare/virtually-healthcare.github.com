@@ -1,0 +1,31 @@
+@startmindmap
+
+title "Consultation Note (online and pharmacy)"
+
+* body
+** <i>Subjective</i>
+*** Presenting complaints or issues (PRSB)
+**** [[StructureDefinition-Observation.html Observation]]
+** <i>Objective (ADPIE Assement)</i>
+*** Social Context (PRSB)
+**** [[https://build.fhir.org/ig/HL7/fhir-sdoh-clinicalcare/ Social Determinents of Health]]
+*** Family History (PRSB)
+*** Examination findings (PRSB)
+**** [[assessments-and-observations.html#vital-signs Vital Signs]] <b>archetype</b>
+**** [[assessments-and-observations.html#daily-physical-activity Physical Activity]] <b>archetype</b>
+**** [[StructureDefinition-Observation.html Observation]] (other)
+** <i>Assessment (ADPIE Diagnose)</i>
+*** [[StructureDefinition-Condition.html Condition]]
+** Plan and Requested Actions (PRSB) (ADPIE Plan)"
+*** [[StructureDefinition-CarePlan.html Care Plan]]
+**** Safeguarding
+**** Signpost details (PRSB)
+** Implement (ADPIE)
+*** Referral Details
+**** [[StructureDefinition-ServiceRequest.html ServiceRequest]]
+*** Medications
+**** [[StructureDefinition-MedicationRequest.html MedicationRequest]]
+*** Investigation
+**** [[StructureDefinition-ServiceRequest.html ServiceRequest]]
+
+@endmindmap

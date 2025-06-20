@@ -424,8 +424,8 @@ pages:
   eReferral-model.md:
     title: eReferral Model
     generation: markdown
-  eReport-model.md:
-    title: eReport Model
+  consultation-note.md:
+    title: Consultation Note
     generation: markdown
   assessments-and-observations.md:
     title: Assessments and Observation Definitions
@@ -482,7 +482,7 @@ menu:
 
   Domain Archetypes:
     eReferral: eReferral-model.html
-    eReport: eReport-model.html
+    Consultation Note: consultation-note.html
  #   Patient Care Coordination: pcc-model.html
     Assessments and Observations: assessments-and-observations.html
   Artefacts: artifacts.html

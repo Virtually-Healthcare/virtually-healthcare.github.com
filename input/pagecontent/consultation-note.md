@@ -11,8 +11,15 @@
 
 ### Domain Archetype
 
-> TODO
+#### body
 
+<figure>
+{%include consultation-note-mindmap.svg%}
+<p id="fX.X.X.X-X" class="figureTitle">Consultation Note Model</p>
+</figure>
+<br clear="all">
+
+<!--
 ## Entity Model
 
 <figure>
@@ -20,3 +27,4 @@
 <p id="fX.X.X.X-X" class="figureTitle">eReport Model</p>
 </figure>
 <br clear="all">
+-->
