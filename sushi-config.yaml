@@ -234,6 +234,14 @@ resources:
     name: PDS Patient Preferences
     description: PDS Patient Preferences - refactor of none demographics extensions in PDS Patient API
     exampleBoolean: false
+  Questionnaire/ClinicalManagementPlan:
+    name: Clinical Management Plan
+    description: Clinical Management Plan
+    exampleBoolean: false
+  Questionnaire/PatientCommunication:
+    name: Patient Communication
+    description: Patient Communication
+    exampleBoolean: false
   Task/Task-EMIS-PFS-Prescription-Refill:
     name: Task-EMIS-PFS-Prescription-Refill
     description: Task EMIS PFS Prescription Refill

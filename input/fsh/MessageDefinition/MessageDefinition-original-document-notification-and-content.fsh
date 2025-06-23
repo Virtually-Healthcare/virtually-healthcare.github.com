@@ -9,7 +9,7 @@ Usage:  #definition
 * description = """
 DRAFT conversion of [HL7 v2.5.1 MDM_T02](https://hl7-definition.caristix.com/v2/HL7v2.5.1/TriggerEvents/MDM_T02)
 """
-* category = #consequence
+* category = #notification
 
 * focus[+]
 * focus[=]

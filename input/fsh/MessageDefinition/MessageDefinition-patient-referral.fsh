@@ -9,7 +9,7 @@ Usage:  #definition
 * description = """
 DRAFT conversion of [HL7 v2.5.1 REF_I12 - Patient referral](https://hl7-definition.caristix.com/v2/HL7v2.5.1/TriggerEvents/REF_I12)
 """
-* category = #consequence
+* category = #notification
 
 * focus[+]
 * focus[=]

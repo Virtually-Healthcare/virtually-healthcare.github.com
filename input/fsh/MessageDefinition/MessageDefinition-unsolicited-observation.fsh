@@ -9,7 +9,7 @@ Usage:  #definition
 * description = """
 DRAFT conversion of [HL7 v2.5.1 ORU_R01](https://hl7-definition.caristix.com/v2/HL7v2.5.1/TriggerEvents/ORU_R01)
 """
-* category = #consequence
+* category = #notification
 
 * focus[+]
 * focus[=]

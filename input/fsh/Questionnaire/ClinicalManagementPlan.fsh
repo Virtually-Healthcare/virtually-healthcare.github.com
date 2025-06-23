@@ -1,0 +1,98 @@
+Instance: ClinicalManagementPlan
+InstanceOf: Questionnaire
+Title: "Clinical Management Plan Form (Domain Archetype)"
+Description: """
+Formal definition of the clinical managment plan
+"""
+Usage:  #definition
+
+* title = "Clinical Management Plan"
+* status = #draft
+* url = "https://fhir.virtually.healthcare/Questionnaire/ClinicalManagementPlan"
+
+* item[+]
+  * linkId = "fat-1"
+  * text = "Comments and advice"
+  * type = #text
+
+* item[+]
+  * linkId = "fat-2"
+  * text = "Important red flags to be aware of"
+  * type = #text
+
+* item[+]
+  * linkId = "fat-3"
+  * text = "Clinician shorthand notes"
+  * type = #text
+
+* item[+]
+  * linkId = "fat-4"
+  * text = "My Condition"
+  * type = #text
+
+* item[+]
+  * linkId = "fat-5"
+  * text = "Radio Group"
+  * type = #text
+
+* item[+]
+  * linkId = "fat-6"
+  * text = "Select"
+  * type = #text
+
+* item[+]
+  * linkId = "fat-7"
+  * text = "Text field"
+  * type = #text
+
+* item[+]
+  * linkId = "fat-8"
+  * text = "Text area"
+  * type = #text
+
+* item[+]
+  * linkId = "fat-9"
+  * text = "Checkbox group"
+  * type = #text
+
+* item[+]
+  * linkId = "fat-10"
+  * text = "Date field"
+  * type = #text
+
+* item[+]
+  * linkId = "fat-11"
+  * text = "Number"
+  * type = #text
+
+* item[+]
+  * linkId = "fat-12"
+  * text = "File Upload"
+  * type = #attachment
+
+* item[+]
+  * linkId = "fat-13"
+  * text = "Multiple File Upload"
+  * type = #attachment
+  * repeats = true
+
+* item[+]
+  * linkId = "fat-14"
+  * text = "Problem"
+  * type = #group
+  * item[+]
+    * linkId = "problemStatus"
+    * text = "Problem Status"
+    * type = #boolean
+  * item[+]
+    * linkId = "problemSignificance"
+    * text = "Problem Significance"
+    * type = #integer
+  * item[+]
+    * linkId = "problemType"
+    * text = "Problem Type"
+    * type = #integer
+  * item[+]
+    * linkId = "problemExpectedDuration"
+    * text = "Problem Expected Duration (days)"
+    * type = #integer
