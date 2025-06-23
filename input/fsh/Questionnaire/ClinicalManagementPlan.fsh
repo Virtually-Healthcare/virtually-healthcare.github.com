@@ -113,13 +113,17 @@ Usage:  #definition
     * valueQuantity.code = #kg
 
 * item[+]
-  * type = #choice
-  * linkId = "SCT/365981007"
-  * definition = "https://fhir.virtually.healthcare/StructureDefinition/Observation#Observation.valueCodeableConcept"
-  * code[+] = $sct#365981007 "Tobacco smoking behaviour - finding"
-  * text = "Smoking Status"
+  * type = #decimal
+  * linkId = "SCT/50373000"
+  * definition = "https://fhir.virtually.healthcare/StructureDefinition/Observation#Observation.valueQuantity"
+  * code[+] = $sct#50373000 "Body height measure"
+  * code[+] = $loinc#8302-2 "Body height"
+  * text = "Height"
   * required = false
-  * answerValueSet = Canonical(SmokingStatus)
+  * initial[+]
+    * valueQuantity.unit = "centimeter"
+    * valueQuantity.system = "http://unitsofmeasure.org"
+    * valueQuantity.code = #cm
 
 * item[+]
   * type = #decimal
@@ -180,3 +184,11 @@ Usage:  #definition
       * valueQuantity.system = "http://unitsofmeasure.org"
       * valueQuantity.code = #mm[Hg]
 
+* item[+]
+  * type = #choice
+  * linkId = "SCT/365981007"
+  * definition = "https://fhir.virtually.healthcare/StructureDefinition/Observation#Observation.valueCodeableConcept"
+  * code[+] = $sct#365981007 "Tobacco smoking behaviour - finding"
+  * text = "Smoking Status"
+  * required = false
+  * answerValueSet = Canonical(SmokingStatus)
