@@ -81,6 +81,12 @@ Usage:  #definition
   * text = "Problem"
   * type = #group
   * item[+]
+    * linkId = "problem"
+    * text = "Problem Code"
+    * type = #choice
+    * definition = "https://fhir.virtually.healthcare/StructureDefinition/Condition#Condition.code"
+    * answerValueSet = "http://snomed.info/sct/900000000000207008?fhir_vs=ecl/<404684003"
+  * item[+]
     * linkId = "problemStatus"
     * text = "Problem Status"
     * type = #boolean
