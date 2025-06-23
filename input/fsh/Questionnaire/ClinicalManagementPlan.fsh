@@ -42,22 +42,22 @@ Usage:  #definition
 
 * item[+]
   * linkId = "fat-7"
-  * text = "Text field"
+  * text = "Text Field"
   * type = #text
 
 * item[+]
   * linkId = "fat-8"
-  * text = "Text area"
+  * text = "Text Area"
   * type = #text
 
 * item[+]
   * linkId = "fat-9"
-  * text = "Checkbox group"
+  * text = "Checkbox Group"
   * type = #text
 
 * item[+]
   * linkId = "fat-10"
-  * text = "Date field"
+  * text = "Date Field"
   * type = #text
 
 * item[+]
@@ -72,7 +72,7 @@ Usage:  #definition
 
 * item[+]
   * linkId = "fat-13"
-  * text = "Multiple File Upload"
+  * text = "Multi File Upload"
   * type = #attachment
   * repeats = true
 
