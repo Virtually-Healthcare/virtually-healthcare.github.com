@@ -177,7 +177,7 @@ Usage:  #definition
     * definition = "https://fhir.virtually.healthcare/StructureDefinition/Observation#Observation.valueQuantity"
     * code[+] = $sct#1091811000000102 "Diastolic arterial pressure"
     * code[+] = $loinc#8462-4 "Diastolic blood pressure"
-    * text = "Systolic blood pressure"
+    * text = "Diastolic blood pressure"
     * required = true
     * initial[+]
       * valueQuantity.unit = "millimeter of mercury"
