@@ -98,24 +98,51 @@ Usage:  #definition
     * linkId = "problemExpectedDuration"
     * text = "Problem Expected Duration (days)"
     * type = #integer
-  * item[+]
-    * type = #decimal
-    * linkId = "SCT/27113001"
-    * definition = "https://fhir.virtually.healthcare/StructureDefinition/Observation#Observation.valueQuantity"
-    * code[+] = $sct#27113001 "Body weight"
-    * code[+] = $loinc#29463-7 "Body Weight"
-    * text = "Weight"
-    * required = false
-    * initial[+]
-      * valueQuantity.unit = "kilogram"
-      * valueQuantity.system = "http://unitsofmeasure.org"
-      * valueQuantity.code = #kg
-  * item[+]
-    * type = #choice
-    * linkId = "SCT/365981007"
-    * definition = "https://fhir.virtually.healthcare/StructureDefinition/Observation#Observation.valueCodeableConcept"
-    * code[+] = $sct#365981007 "Tobacco smoking behaviour - finding"
-    * text = "Smoking Status"
-    * required = false
-    * answerValueSet = Canonical(SmokingStatus)
 
+* item[+]
+  * type = #decimal
+  * linkId = "SCT/27113001"
+  * definition = "https://fhir.virtually.healthcare/StructureDefinition/Observation#Observation.valueQuantity"
+  * code[+] = $sct#27113001 "Body weight"
+  * code[+] = $loinc#29463-7 "Body Weight"
+  * text = "Weight"
+  * required = false
+  * initial[+]
+    * valueQuantity.unit = "kilogram"
+    * valueQuantity.system = "http://unitsofmeasure.org"
+    * valueQuantity.code = #kg
+
+* item[+]
+  * type = #choice
+  * linkId = "SCT/365981007"
+  * definition = "https://fhir.virtually.healthcare/StructureDefinition/Observation#Observation.valueCodeableConcept"
+  * code[+] = $sct#365981007 "Tobacco smoking behaviour - finding"
+  * text = "Smoking Status"
+  * required = false
+  * answerValueSet = Canonical(SmokingStatus)
+
+* item[+]
+  * type = #decimal
+  * linkId = "SCT/363811000"
+  * definition = "https://fhir.virtually.healthcare/StructureDefinition/Observation#Observation.valueQuantity"
+  * code[+] = $sct#363811000 "Head circumference measure"
+  * code[+] = $loinc#9843-4 "Head Occipital-frontal circumference"
+  * text = "Head Circumference"
+  * required = false
+  * initial[+]
+    * valueQuantity.unit = "centimeter"
+    * valueQuantity.system = "http://unitsofmeasure.org"
+    * valueQuantity.code = #cm
+
+* item[+]
+  * type = #decimal
+  * linkId = "SCT/276885007"
+  * definition = "https://fhir.virtually.healthcare/StructureDefinition/Observation#Observation.valueQuantity"
+  * code[+] = $sct#363811000 "Core body temperature"
+  * code[+] = $loinc#8310-5 "Body temperature"
+  * text = "Body temperature"
+  * required = false
+  * initial[+]
+    * valueQuantity.unit = "Cel"
+    * valueQuantity.system = "http://unitsofmeasure.org"
+    * valueQuantity.code = #Cel
