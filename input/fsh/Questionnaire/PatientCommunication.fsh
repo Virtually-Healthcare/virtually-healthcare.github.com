@@ -16,11 +16,10 @@ Usage:  #definition
   * type = #string
   * required = true
   * definition = "http://hl7.org/fhir/StructureDefinition/Communication#Communication.payload.contentString"
-
-* item[+]
-  * linkId = "messageTopic"
-  * text = "Message Topic"
-  * type = #choice
-  * required = true
-  * answerOption[+].valueCoding = $sct#445450000 "Encounter by short message service text messaging"
-  * definition = "http://hl7.org/fhir/StructureDefinition/Communication#Communication.topic"
+  * item[+]
+    * linkId = "messageTopic"
+    * text = "Message Topic"
+    * type = #choice
+    * required = true
+    * answerOption[+].valueCoding = $sct#445450000 "Encounter by short message service text messaging"
+    * definition = "http://hl7.org/fhir/StructureDefinition/Communication#Communication.topic"

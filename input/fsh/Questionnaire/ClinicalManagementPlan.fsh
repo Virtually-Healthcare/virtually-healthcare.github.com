@@ -84,10 +84,12 @@ Usage:  #definition
     * linkId = "problemStatus"
     * text = "Problem Status"
     * type = #boolean
+    * definition = "https://fhir.virtually.healthcare/StructureDefinition/Condition#Condition.clinicalStatus"
   * item[+]
     * linkId = "problemSignificance"
     * text = "Problem Significance"
     * type = #integer
+    * definition = "https://fhir.virtually.healthcare/StructureDefinition/Condition#Condition.severity"
   * item[+]
     * linkId = "problemType"
     * text = "Problem Type"
@@ -96,3 +98,24 @@ Usage:  #definition
     * linkId = "problemExpectedDuration"
     * text = "Problem Expected Duration (days)"
     * type = #integer
+  * item[+]
+    * type = #decimal
+    * linkId = "SCT/27113001"
+    * definition = "https://fhir.virtually.healthcare/StructureDefinition/Observation#Observation.valueQuantity"
+    * code[+] = $sct#27113001 "Body weight"
+    * code[+] = $loinc#29463-7 "Body Weight"
+    * text = "Weight"
+    * required = false
+    * initial[+]
+      * valueQuantity.unit = "kilogram"
+      * valueQuantity.system = "http://unitsofmeasure.org"
+      * valueQuantity.code = #kg
+  * item[+]
+    * type = #choice
+    * linkId = "SCT/365981007"
+    * definition = "https://fhir.virtually.healthcare/StructureDefinition/Observation#Observation.valueCodeableConcept"
+    * code[+] = $sct#365981007 "Tobacco smoking behaviour - finding"
+    * text = "Smoking Status"
+    * required = false
+    * answerValueSet = Canonical(SmokingStatus)
+
