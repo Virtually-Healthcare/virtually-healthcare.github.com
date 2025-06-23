@@ -146,3 +146,37 @@ Usage:  #definition
     * valueQuantity.unit = "Cel"
     * valueQuantity.system = "http://unitsofmeasure.org"
     * valueQuantity.code = #Cel
+
+* item[+]
+  * type = #group
+  * linkId = "SCT/75367002"
+  * code[+] = $sct#75367002 "Blood pressure"
+  * code[+] = $loinc#85354-9 "Blood pressure panel with all children optional""
+  * text = "Blood pressure"
+  * required = false
+  * definition = "https://fhir.virtually.healthcare/StructureDefinition/Observation#Observation.component"
+  * item[+]
+    * type = #decimal
+    * linkId = "SCT/276885007"
+    * definition = "https://fhir.virtually.healthcare/StructureDefinition/Observation#Observation.valueQuantity"
+    * code[+] = $sct#72313002 "Systolic arterial pressure"
+    * code[+] = $loinc#8480-6 "Systolic blood pressure"
+    * text = "Systolic blood pressure"
+    * required = true
+    * initial[+]
+      * valueQuantity.unit = "millimeter of mercury"
+      * valueQuantity.system = "http://unitsofmeasure.org"
+      * valueQuantity.code = #mm[Hg]
+  * item[+]
+    * type = #decimal
+    * linkId = ""SCT/1091811000000102"
+    * definition = "https://fhir.virtually.healthcare/StructureDefinition/Observation#Observation.valueQuantity"
+    * code[+] = $sct#1091811000000102 "Diastolic arterial pressure"
+    * code[+] = $loinc#8462-4 "Diastolic blood pressure"
+    * text = "Systolic blood pressure"
+    * required = true
+    * initial[+]
+      * valueQuantity.unit = "millimeter of mercury"
+      * valueQuantity.system = "http://unitsofmeasure.org"
+      * valueQuantity.code = #mm[Hg]
+

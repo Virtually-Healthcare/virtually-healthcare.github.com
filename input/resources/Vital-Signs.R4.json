@@ -251,39 +251,6 @@
               "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
               "valueCoding": {
                 "system": "http://unitsofmeasure.org",
-                "code": "mm[Hg]"
-              }
-            }
-          ],
-          "linkId": "SCT/1091811000000102",
-          "definition": "http://hl7.org/fhir/StructureDefinition/Observation#component.valueQuantity",
-          "code": [
-            {
-              "system": "http://snomed.info/sct",
-              "code": "1091811000000102",
-              "display": "Diastolic arterial pressure"
-            }
-          ],
-          "prefix": "7.1",
-          "text": "Diastolic blood pressure",
-          "required": false,
-          "initial": [
-            {
-              "valueQuantity": {
-                "unit": "millimeter of mercury",
-                "system": "http://unitsofmeasure.org",
-                "code": "mm[Hg]"
-              }
-            }
-          ]
-        },
-        {
-          "type": "decimal",
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
-              "valueCoding": {
-                "system": "http://unitsofmeasure.org",
                 "code": "mm[Hg]",
                 "display": "mm[Hg]"
               }
@@ -310,7 +277,41 @@
               }
             }
           ]
+        },
+        {
+          "type": "decimal",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+              "valueCoding": {
+                "system": "http://unitsofmeasure.org",
+                "code": "mm[Hg]"
+              }
+            }
+          ],
+          "linkId": "SCT/1091811000000102",
+          "definition": "http://hl7.org/fhir/StructureDefinition/Observation#component.valueQuantity",
+          "code": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "1091811000000102",
+              "display": "Diastolic arterial pressure"
+            }
+          ],
+          "prefix": "7.1",
+          "text": "Diastolic blood pressure",
+          "required": false,
+          "initial": [
+            {
+              "valueQuantity": {
+                "unit": "millimeter of mercury",
+                "system": "http://unitsofmeasure.org",
+                "code": "mm[Hg]"
+              }
+            }
+          ]
         }
+
       ],
       "type": "group",
       "linkId": "SCT/75367002",
