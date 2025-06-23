@@ -151,7 +151,7 @@ Usage:  #definition
   * type = #group
   * linkId = "SCT/75367002"
   * code[+] = $sct#75367002 "Blood pressure"
-  * code[+] = $loinc#85354-9 "Blood pressure panel with all children optional""
+  * code[+] = $loinc#85354-9 "Blood pressure panel with all children optional"
   * text = "Blood pressure"
   * required = false
   * definition = "https://fhir.virtually.healthcare/StructureDefinition/Observation#Observation.component"
@@ -169,7 +169,7 @@ Usage:  #definition
       * valueQuantity.code = #mm[Hg]
   * item[+]
     * type = #decimal
-    * linkId = ""SCT/1091811000000102"
+    * linkId = "SCT/1091811000000102"
     * definition = "https://fhir.virtually.healthcare/StructureDefinition/Observation#Observation.valueQuantity"
     * code[+] = $sct#1091811000000102 "Diastolic arterial pressure"
     * code[+] = $loinc#8462-4 "Diastolic blood pressure"
