@@ -108,17 +108,21 @@ Usage:  #definition
   * code[+] = $loinc#61149-1 "Objective Narrative"
   * text = "Comments and advice"
   * type = #group
-  * repeats = true
-
+  * repeats = false
   * item[+]
-    * linkId = "question"
-    * text = "Question"
-    * type = #text
+      * linkId = "questions"
+      * type = #group
+      * repeats = true
 
-  * item[+]
-    * linkId = "answer"
-    * text = "Answer"
-    * type = #text
+    * item[+]
+      * linkId = "question"
+      * text = "Question"
+      * type = #text
+
+    * item[+]
+      * linkId = "answer"
+      * text = "Answer"
+      * type = #text
 
 * item[+]
   * linkId = "LOINC/29762-2"
@@ -139,29 +143,33 @@ Usage:  #definition
   * linkId = "LOINC/11450-4"
   * code[+] = $loinc#11450-4 "Problem list - Reported"
   * type = #group
-  * repeats = true
+  * repeats = false
   * item[+]
-    * linkId = "problem"
-    * text = "Problem Code"
-    * type = #choice
-    * definition = "https://fhir.virtually.healthcare/StructureDefinition/Condition#Condition.code"
-    * answerValueSet = "http://snomed.info/sct/900000000000207008?fhir_vs=ecl/<404684003"
-  * item[+]
-    * linkId = "problemStatus"
-    * text = "Problem Status"
-    * type = #boolean
-    * definition = "https://fhir.virtually.healthcare/StructureDefinition/Condition#Condition.clinicalStatus"
-  * item[+]
-    * linkId = "problemSignificance"
-    * text = "Problem Significance"
-    * type = #integer
-    * definition = "https://fhir.virtually.healthcare/StructureDefinition/Condition#Condition.severity"
-  * item[+]
-    * linkId = "problemType"
-    * text = "Problem Type"
-    * type = #integer
-  * item[+]
-    * linkId = "problemExpectedDuration"
-    * text = "Problem Expected Duration (days)"
-    * type = #integer
+    * linkId = "problems"
+    * type = #group
+    * repeats = true
+    * item[+]
+      * linkId = "problem"
+      * text = "Problem Code"
+      * type = #choice
+      * definition = "https://fhir.virtually.healthcare/StructureDefinition/Condition#Condition.code"
+      * answerValueSet = "http://snomed.info/sct/900000000000207008?fhir_vs=ecl/<404684003"
+    * item[+]
+      * linkId = "problemStatus"
+      * text = "Problem Status"
+      * type = #boolean
+      * definition = "https://fhir.virtually.healthcare/StructureDefinition/Condition#Condition.clinicalStatus"
+    * item[+]
+      * linkId = "problemSignificance"
+      * text = "Problem Significance"
+      * type = #integer
+      * definition = "https://fhir.virtually.healthcare/StructureDefinition/Condition#Condition.severity"
+    * item[+]
+      * linkId = "problemType"
+      * text = "Problem Type"
+      * type = #integer
+    * item[+]
+      * linkId = "problemExpectedDuration"
+      * text = "Problem Expected Duration (days)"
+      * type = #integer
 
