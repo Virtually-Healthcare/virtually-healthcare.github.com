@@ -43,6 +43,7 @@ Usage:  #definition
       * valueQuantity.unit = "centimeter"
       * valueQuantity.system = "http://unitsofmeasure.org"
       * valueQuantity.code = #cm
+    * extension[unitOption].valueCoding = $ucum#cm "centimeter"
 
   * item[+]
     * type = #decimal
@@ -56,6 +57,7 @@ Usage:  #definition
       * valueQuantity.unit = "centimeter"
       * valueQuantity.system = "http://unitsofmeasure.org"
       * valueQuantity.code = #cm
+    * extension[unitOption].valueCoding = $ucum#cm "centimeter"
 
   * item[+]
     * type = #decimal
@@ -69,6 +71,7 @@ Usage:  #definition
       * valueQuantity.unit = "Cel"
       * valueQuantity.system = "http://unitsofmeasure.org"
       * valueQuantity.code = #Cel
+    * extension[unitOption].valueCoding = $ucum#Cel "Cel"
 
   * item[+]
     * type = #group
