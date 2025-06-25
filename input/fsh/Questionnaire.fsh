@@ -7,3 +7,4 @@ Description: "Based on [HL7 Structured Data Capture](https://build.fhir.org/ig/H
 
 * item.extension contains http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl named itemControl 0..1
 * item.extension contains http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption named unitOption 0..*
+* item.extension contains http://hl7.org/fhir/StructureDefinition/questionnaire-unit named unit 0..1
