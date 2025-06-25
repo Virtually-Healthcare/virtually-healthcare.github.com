@@ -110,9 +110,9 @@ Usage:  #definition
   * type = #group
   * repeats = false
   * item[+]
-      * linkId = "questions"
-      * type = #group
-      * repeats = true
+    * linkId = "questions"
+    * type = #group
+    * repeats = true
 
     * item[+]
       * linkId = "question"
