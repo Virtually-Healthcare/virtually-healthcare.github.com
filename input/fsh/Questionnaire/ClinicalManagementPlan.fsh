@@ -30,7 +30,7 @@ Usage:  #definition
       * valueQuantity.unit = "kilogram"
       * valueQuantity.system = "http://unitsofmeasure.org"
       * valueQuantity.code = #kg
-    * extension[unitOption].valueCoding = $ucum#kg "kilogram"
+    * extension[questionnaire-unit].valueCoding = $ucum#kg "kilogram"
 
   * item[+]
     * type = #decimal
@@ -44,7 +44,7 @@ Usage:  #definition
       * valueQuantity.unit = "centimeter"
       * valueQuantity.system = "http://unitsofmeasure.org"
       * valueQuantity.code = #cm
-    * extension[unitOption].valueCoding = $ucum#cm "centimeter"
+    * extension[questionnaire-unit].valueCoding = $ucum#cm "centimeter"
 
   * item[+]
     * type = #decimal
@@ -58,7 +58,7 @@ Usage:  #definition
       * valueQuantity.unit = "centimeter"
       * valueQuantity.system = "http://unitsofmeasure.org"
       * valueQuantity.code = #cm
-    * extension[unitOption].valueCoding = $ucum#cm "centimeter"
+    * extension[questionnaire-unit].valueCoding = $ucum#cm "centimeter"
 
   * item[+]
     * type = #decimal
@@ -72,7 +72,7 @@ Usage:  #definition
       * valueQuantity.unit = "Cel"
       * valueQuantity.system = "http://unitsofmeasure.org"
       * valueQuantity.code = #Cel
-    * extension[unitOption].valueCoding = $ucum#Cel "Cel"
+    * extension[questionnaire-unit].valueCoding = $ucum#Cel "Cel"
 
   * item[+]
     * type = #group
@@ -94,7 +94,7 @@ Usage:  #definition
         * valueQuantity.unit = "millimeter of mercury"
         * valueQuantity.system = "http://unitsofmeasure.org"
         * valueQuantity.code = #mm[Hg]
-      * extension[unitOption].valueCoding = $ucum#mm[Hg] "mmHg"
+      * extension[questionnaire-unit].valueCoding = $ucum#mm[Hg] "mmHg"
     * item[+]
       * type = #decimal
       * linkId = "SCT/1091811000000102"
@@ -107,7 +107,7 @@ Usage:  #definition
         * valueQuantity.unit = "millimeter of mercury"
         * valueQuantity.system = "http://unitsofmeasure.org"
         * valueQuantity.code = #mm[Hg]
-      * extension[unitOption].valueCoding = $ucum#mm[Hg] "mmHg"
+      * extension[questionnaire-unit].valueCoding = $ucum#mm[Hg] "mmHg"
 
 * item[+]
   * linkId = "LOINC/61149-1"
