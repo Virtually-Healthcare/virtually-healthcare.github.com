@@ -30,6 +30,7 @@ Usage:  #definition
       * valueQuantity.unit = "kilogram"
       * valueQuantity.system = "http://unitsofmeasure.org"
       * valueQuantity.code = #kg
+    * extension[unitOption].valueCoding = $ucum#kg "kilogram"
 
   * item[+]
     * type = #decimal
@@ -93,6 +94,7 @@ Usage:  #definition
         * valueQuantity.unit = "millimeter of mercury"
         * valueQuantity.system = "http://unitsofmeasure.org"
         * valueQuantity.code = #mm[Hg]
+      * extension[unitOption].valueCoding = $ucum#mm[Hg] "mmHg"
     * item[+]
       * type = #decimal
       * linkId = "SCT/1091811000000102"
@@ -105,6 +107,7 @@ Usage:  #definition
         * valueQuantity.unit = "millimeter of mercury"
         * valueQuantity.system = "http://unitsofmeasure.org"
         * valueQuantity.code = #mm[Hg]
+      * extension[unitOption].valueCoding = $ucum#mm[Hg] "mmHg"
 
 * item[+]
   * linkId = "LOINC/61149-1"
