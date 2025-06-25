@@ -136,8 +136,8 @@ Usage:  #definition
 
 
 * item[+]
-  * linkId = "LOINC/47420-5"
-  * code[+] = $loinc#47420-5 "Functional status assessment note"
+  * linkId = "LOINC/11450-4"
+  * code[+] = $loinc#11450-4 "Problem list - Reported"
   * type = #group
   * repeats = true
   * item[+]
