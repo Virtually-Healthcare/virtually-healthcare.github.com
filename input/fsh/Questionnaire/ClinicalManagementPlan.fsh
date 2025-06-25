@@ -148,6 +148,7 @@ Usage:  #definition
 * item[+]
   * linkId = "LOINC/11450-4"
   * code[+] = $loinc#11450-4 "Problem list - Reported"
+  * text = "Problems"
   * type = #group
   * repeats = false
   * item[+]
