@@ -39,7 +39,7 @@ Usage:  #definition
     * type = #choice
     * repeats = true
     * definition = "https://fhir.virtually.healthcare/StructureDefinition/Observation#Observation.valueCodeableConcept"
-    * answerValueSet = "http://snomed.info/sct/900000000000207008?fhir_vs=ecl/%3C404684003"
+    * answerValueSet = "http://snomed.info/sct/900000000000207008?fhir_vs=ecl/%3C%3C404684003"
     * extension[+]
       * url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-preferredTerminologyServer"
       * valueUrl = "https://snowstorm.ihtsdotools.org/fhir"
