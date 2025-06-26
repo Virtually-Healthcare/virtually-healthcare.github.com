@@ -204,18 +204,22 @@ Usage:  #definition
       * linkId = "problemStatus"
       * text = "Problem Status"
       * type = #boolean
+      * required = true
       * definition = "https://fhir.virtually.healthcare/StructureDefinition/Condition#Condition.clinicalStatus"
     * item[+]
       * linkId = "problemSignificance"
       * text = "Problem Significance"
       * type = #integer
+      * required = true
       * definition = "https://fhir.virtually.healthcare/StructureDefinition/Condition#Condition.severity"
     * item[+]
       * linkId = "problemType"
       * text = "Problem Type"
       * type = #integer
+      * required = true
     * item[+]
       * linkId = "problemExpectedDuration"
       * text = "Problem Expected Duration (days)"
       * type = #integer
+      * required = true
 
