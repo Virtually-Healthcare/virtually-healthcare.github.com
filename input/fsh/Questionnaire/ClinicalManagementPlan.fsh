@@ -64,7 +64,7 @@ Usage:  #definition
     * type = #decimal
     * linkId = "SCT/276885007"
     * definition = "https://fhir.virtually.healthcare/StructureDefinition/Observation#Observation.valueQuantity"
-    * code[+] = $sct#363811000 "Core body temperature"
+    * code[+] = $sct#276885007 "Core body temperature"
     * code[+] = $loinc#8310-5 "Body temperature"
     * text = "Body temperature"
     * required = false
@@ -84,7 +84,7 @@ Usage:  #definition
     * definition = "https://fhir.virtually.healthcare/StructureDefinition/Observation#Observation.component"
     * item[+]
       * type = #decimal
-      * linkId = "SCT/276885007"
+      * linkId = "SCT/72313002"
       * definition = "https://fhir.virtually.healthcare/StructureDefinition/Observation#Observation.valueQuantity"
       * code[+] = $sct#72313002 "Systolic arterial pressure"
       * code[+] = $loinc#8480-6 "Systolic blood pressure"
@@ -117,6 +117,7 @@ Usage:  #definition
   * repeats = false
   * item[+]
     * linkId = "questions"
+    * text = "Questions"
     * type = #group
     * repeats = true
 
@@ -153,7 +154,8 @@ Usage:  #definition
   * type = #group
   * repeats = false
   * item[+]
-    * linkId = "problems"
+    * linkId = "problem"
+    * text = "Problem"
     * type = #group
     * repeats = true
     * item[+]
@@ -161,7 +163,10 @@ Usage:  #definition
       * text = "Problem Code"
       * type = #choice
       * definition = "https://fhir.virtually.healthcare/StructureDefinition/Condition#Condition.code"
-      * answerValueSet = "http://snomed.info/sct/900000000000207008?fhir_vs=ecl/<404684003"
+      * answerValueSet = "http://snomed.info/sct/900000000000207008?fhir_vs=ecl/%3C404684003"
+      * extension[+]
+        * url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-preferredTerminologyServer"
+        * valueUrl = "https://snowstorm.ihtsdotools.org/fhir"
     * item[+]
       * linkId = "problemStatus"
       * text = "Problem Status"
