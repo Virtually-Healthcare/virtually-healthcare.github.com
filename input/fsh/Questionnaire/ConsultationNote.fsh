@@ -11,15 +11,32 @@ Usage:  #definition
 * url = "https://fhir.virtually.healthcare/Questionnaire/ClinicalManagementPlan"
 
 * item[+]
+  * linkId = "LOINC/61150-9"
+  * code[+] = $loinc#61150-9 "Subjective Narrative"
+  * text = "Subjective"
+  * type = #group
+  * item[+]
+    * linkId = "narrative"
+    * text = "Symptoms"
+    * type = #text
+    * repeats = true
+
+* item[+]
   * linkId = "LOINC/10154-3"
   * code[+] = $loinc#10154-3 "Chief complaint Narrative"
   * text = "Chief complaint"
   * type = #group
-  * item[+]
-    * linkId = "complaint"
+  * definition = "https://fhir.virtually.healthcare/StructureDefinition/Observation#Observation"
+  * linkId = "complaint"
     * text = "Complaint"
-    * type = #text
+    * code[+] = $sct#1269489004 "Complaint"
+    * type = #choice
     * repeats = true
+    * definition = "https://fhir.virtually.healthcare/StructureDefinition/Observation#Observation.valueCodeableConcept"
+    * answerValueSet = "http://snomed.info/sct/900000000000207008?fhir_vs=ecl/%3C404684003"
+    * extension[+]
+      * url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-preferredTerminologyServer"
+      * valueUrl = "https://snowstorm.ihtsdotools.org/fhir"
 
 * item[+]
   * linkId = "LOINC/8716-3"
