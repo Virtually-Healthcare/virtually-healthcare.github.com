@@ -168,7 +168,7 @@ Usage:  #definition
     * type = #group
     * repeats = true
     * item[+]
-      * linkId = "problem"
+      * linkId = "problemCode"
       * text = "Problem Code"
       * type = #choice
       * definition = "https://fhir.virtually.healthcare/StructureDefinition/Condition#Condition.code"
