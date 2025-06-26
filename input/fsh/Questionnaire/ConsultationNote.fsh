@@ -22,6 +22,7 @@ Usage:  #definition
     * repeats = true
   * item[+]
     * linkId = "images"
+    * definition = "https://fhir.virtually.healthcare/StructureDefinition/DocumentReference#DocumentReference"
     * text = "Images"
     * type = #attachment
     * repeats = true
