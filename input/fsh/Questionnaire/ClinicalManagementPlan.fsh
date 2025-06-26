@@ -10,10 +10,19 @@ Usage:  #definition
 * status = #draft
 * url = "https://fhir.virtually.healthcare/Questionnaire/ClinicalManagementPlan"
 
-
+* item[+]
+  * linkId = "LOINC/10154-3"
+  * code[+] = $loinc#10154-3 "Chief complaint Narrative"
+  * text = "Chief complaint"
+  * type = #group
+  * item[+]
+    * linkId = "complaint"
+    * text = "Complaint"
+    * type = #text
+    * repeats = true
 
 * item[+]
-  * linkId = "LOINC/"
+  * linkId = "LOINC/8716-3"
   * code[+] = $loinc#8716-3 "Vital signs"
   * text = "Examinations"
   * type = #group
@@ -135,7 +144,7 @@ Usage:  #definition
 * item[+]
   * linkId = "LOINC/29762-2"
   * code[+] = $loinc#29762-2 "Social history Narrative"
-  * text = "Examinations"
+  * text = "Social history"
   * type = #group
   * item[+]
     * type = #choice
@@ -149,8 +158,8 @@ Usage:  #definition
 
 * item[+]
   * linkId = "LOINC/11450-4"
-  * code[+] = $loinc#11450-4 "Problem list - Reported"
-  * text = "Problems"
+  * code[+] = $loinc#11450-4 "Problem list"
+  * text = "Problem list"
   * type = #group
   * repeats = false
   * item[+]
