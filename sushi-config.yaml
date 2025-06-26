@@ -234,9 +234,9 @@ resources:
     name: PDS Patient Preferences
     description: PDS Patient Preferences - refactor of none demographics extensions in PDS Patient API
     exampleBoolean: false
-  Questionnaire/ClinicalManagementPlan:
-    name: Clinical Management Plan
-    description: Clinical Management Plan
+  Questionnaire/ConsultationNote:
+    name: Consultation Note
+    description: Consultation Note
     exampleBoolean: false
   Questionnaire/PatientCommunication:
     name: Patient Communication
