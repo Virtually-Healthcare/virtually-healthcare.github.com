@@ -1,8 +1,8 @@
-Instance: ClinicalManagementPlan
+Instance: ConsultationNote
 InstanceOf: Questionnaire
-Title: "Clinical Management Plan Form (Domain Archetype)"
+Title: "Consultation Note (Domain Archetype)"
 Description: """
-Formal definition of the clinical managment plan
+Formal definition of the Consultation Note
 """
 Usage:  #definition
 
