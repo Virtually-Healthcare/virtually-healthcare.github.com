@@ -1,5 +1,7 @@
 @startmindmap
 
+skinparam svgDimensionStyle false
+
 title "Consultation Note (online and pharmacy)"
 
 * body (**composition**)
