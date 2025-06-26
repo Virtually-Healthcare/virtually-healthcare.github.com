@@ -27,7 +27,8 @@ Usage:  #definition
   * text = "Chief complaint"
   * type = #group
   * definition = "https://fhir.virtually.healthcare/StructureDefinition/Observation#Observation"
-  * linkId = "complaint"
+  * item[+]
+    * linkId = "complaint"
     * text = "Complaint"
     * code[+] = $sct#1269489004 "Complaint"
     * type = #choice
@@ -41,7 +42,7 @@ Usage:  #definition
 * item[+]
   * linkId = "LOINC/8716-3"
   * code[+] = $loinc#8716-3 "Vital signs"
-  * text = "Examinations"
+  * text = "Vital signs"
   * type = #group
 
   * item[+]
