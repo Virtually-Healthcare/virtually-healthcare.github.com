@@ -8,7 +8,7 @@ Usage:  #definition
 
 * title = "Clinical Management Plan"
 * status = #draft
-* url = "https://fhir.virtually.healthcare/Questionnaire/ClinicalManagementPlan"
+* url = "https://fhir.virtually.healthcare/Questionnaire/ConsultationNote"
 
 * item[+]
   * linkId = "LOINC/61150-9"
@@ -40,7 +40,7 @@ Usage:  #definition
     * type = #choice
     * repeats = true
     * definition = "https://fhir.virtually.healthcare/StructureDefinition/Observation#Observation.valueCodeableConcept"
-    * answerValueSet = "http://snomed.info/sct/900000000000207008?fhir_vs=ecl/%3C%3C404684003"
+    * answerValueSet = "http://snomed.info/sct/83821000000107?fhir_vs=ecl/%5E991401000000107"
     * extension[+]
       * url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-preferredTerminologyServer"
       * valueUrl = "https://snowstorm.ihtsdotools.org/fhir"
