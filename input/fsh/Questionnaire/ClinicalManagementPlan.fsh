@@ -129,6 +129,7 @@ Usage:  #definition
       * linkId = "answer"
       * text = "Answer"
       * type = #text
+      * repeats = true
 
 * item[+]
   * linkId = "LOINC/29762-2"
