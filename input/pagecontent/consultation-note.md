@@ -9,9 +9,12 @@
 <br clear="all">
 <p class="figureTitle">eReport relationships</p> 
 
+
 ### Domain Archetype
 
-#### body
+> [Consultation Note](Questionnaire-ConsultationNote.html)
+
+#### Overview
 
 <figure>
 {%include consultation-note-mindmap.svg%}
