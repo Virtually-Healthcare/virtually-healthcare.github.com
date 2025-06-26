@@ -20,6 +20,11 @@ Usage:  #definition
     * text = "Symptoms"
     * type = #text
     * repeats = true
+  * item[+]
+    * linkId = "images"
+    * text = "Images"
+    * type = #attachment
+    * repeats = true
 
 * item[+]
   * linkId = "LOINC/10154-3"
