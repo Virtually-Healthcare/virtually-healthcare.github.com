@@ -53,6 +53,10 @@ All of these are combined in the document version of this consultation note enco
 
 > Note: the document format for GP Connect Send Document. Internal processes use FHIR Document/Composition to build an HTML version of the clinical note which is then converted to PDF.
 
+ <img style="padding:3px;width:50%;" src="FHIRDocument.png" alt="Example Document"/>
+<br clear="all">
+
+
 | Archetype                                                                | Composition                         |
 |--------------------------------------------------------------------------|-------------------------------------|
 | [Questionnaire - Consultation Note](Questionnaire-ConsultationNote.html) | [Composition - Consultation Note](StructureDefinition-ConsulationNote.html) |
