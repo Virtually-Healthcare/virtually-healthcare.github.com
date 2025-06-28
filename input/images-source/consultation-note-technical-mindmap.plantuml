@@ -1,0 +1,52 @@
+@startmindmap
+
+title "Consultation Note (technical)"
+
+skinparam svgDimensionStyle false
+
+* Consulation Note
+** Message (Writeback)
+*** Primary Care
+**** IM1
+***** EMIS Transaction API
+***** TPP Transaction API
+** Document Messaging (Writeback)
+*** Primary Care
+**** GP Connect Send Document
+**** Kettering XML
+**** Tranfer of Care (HL7 FHIR Message)
+***** Clinical Documents (FHIR Document)
+**** Digital Medicine (HL7 FHIR Message)
+***** Clinical Documents (FHIR Document)
+****[#FFBBCC] email + pdf
+*** Other Care Settings \n(and Regional)
+****[#lightyellow] HL7 v2 MDM_T02
+****[#lightyellow] FHIR Message
+****[#FFBBCC] email + pdf
+**[#lightgreen] Document Sharing
+*** Other Care Settings \n(and Regional)
+****[#lightgreen] IHE XDS.b and/or MHD/MHDS (HL7 FHIR REST API)
+*****[#lightblue] Clinical Documents (FHIR Document)
+*** Primary Care
+**** GP Connect Access Record: Document
+*** NHS England
+**** National Record Locator
+**[#lightgreen] Data Sharing
+*** Primary Care
+**** EMIS Transaction API
+**** TPP Transaction API
+**** GP Connect Access Record: Structured
+**** GP Connect Access Record: Unstructured
+*** Other Care Settings \n(and Regional)
+****[#lightgreen] IHE QEDm (HL7 FHIR REST API)
+**[#lightgreen] Event Notifications / Workflow
+*** Other Care Settings \n(and Regional)
+**** Encounter (Consultation)
+*****[#lightgreen] IHE PEM/NHS England ADT Specification (HL7 v2 ADT_A04)
+*****[#lightgreen] HL7 FHIR Pub/Sub
+**** Document
+*****[#lightgreen] HL7 v2 MDM_T01
+*****[#lightgreen] IHE DSUBm (HL7 FHIR Pub/Sub)
+
+
+@endmindmap

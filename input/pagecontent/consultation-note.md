@@ -22,3 +22,12 @@
 </figure>
 <br clear="all">
 
+### Technical Options
+
+<figure>
+{%include consultation-note-technical-mindmap.svg%}
+<p id="fX.X.X.X-X" class="figureTitle">Technical Options</p>
+</figure>
+<br clear="all">
+
+
