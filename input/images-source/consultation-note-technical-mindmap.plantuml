@@ -10,6 +10,8 @@ skinparam svgDimensionStyle false
 **** IM1
 ***** EMIS Transaction API
 ***** TPP Transaction API
+*** NHS England
+**** National Event Management System (FHIR Message)
 ** Document Messaging (Writeback)
 *** Primary Care
 **** GP Connect Send Document
@@ -43,12 +45,15 @@ skinparam svgDimensionStyle false
 **** Summary Care Record
 **[#lightgreen] Event Notifications / Workflow
 ***[#lightgreen] Other Care Settings \n(and Regional)
-**** Encounter (Consultation)
+****[#lightgreen] Encounter (Consultation)
 *****[#lightgreen] IHE PEM/NHS England ADT Specification (HL7 v2 ADT_A04)
 *****[#lightgreen] HL7 FHIR Pub/Sub
-**** Document
+****[#lightgreen] Document
 *****[#lightgreen] HL7 v2 MDM_T01
 *****[#lightgreen] IHE DSUBm (HL7 FHIR Pub/Sub)
+*** NHS England
+**** Document
+***** Multicast Notification Service API
 
 
 @endmindmap
