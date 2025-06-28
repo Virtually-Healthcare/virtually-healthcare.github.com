@@ -1,7 +1,7 @@
 ## References
 
-- Digital Health and Care Wales - HL7 ORU_R01 2.5.1 Implementation Guide
 - [HL7 Europe Hospital Discharge Report](https://build.fhir.org/ig/hl7-eu/hdr/index.html)
+- [International Patient Summary](https://build.fhir.org/ig/HL7/fhir-ips/index.html)
 
 ## Introduction
 
@@ -9,7 +9,7 @@ The consultation note forms the basis of `IM1 Consultation Writeback` and `GP Co
 
  <img style="padding:3px;width:70%;" src="EMISConsultation.png" alt="EMIS Consultation"/>
 
-It is also related to LOINC Document Section Codes, which can be found [Value Set: Document Section Codes](https://hl7.org/fhir/R4/valueset-doc-section-codes.html) and also [International Patient Summary](https://build.fhir.org/ig/HL7/fhir-ips/index.html).
+It is also related to LOINC Document Section Codes, which can be found [Value Set: Document Section Codes](https://hl7.org/fhir/R4/valueset-doc-section-codes.html).
 
 > This is not required to be SNOMED CT coded.
 
