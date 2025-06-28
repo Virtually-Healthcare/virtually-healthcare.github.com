@@ -36,7 +36,7 @@ It is also related to LOINC Document Section Codes, which can be found [Value Se
 
 Historically this is related to [SOAP Note](https://en.wikipedia.org/wiki/SOAP_note) and also [Nursing Process (ADPIE)](https://en.wikipedia.org/wiki/Nursing_process)
 
-#### Overview
+TODO This diagram is useful to show how FHIR Resources relate to each section.
 
 <figure>
 {%include consultation-note-mindmap.svg%}
