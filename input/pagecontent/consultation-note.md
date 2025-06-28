@@ -13,25 +13,25 @@ It is also related to LOINC Document Section Codes, which can be found [Value Se
 
 > This is not required to be SNOMED CT coded.
 
-| EMIS Document Section | LOINC Document Section Codes                                                                | PRSB Section Heading                                                       |
-|-----------------------|---------------------------------------------------------------------------------------------|----------------------------------------------------------------------------|
-| Care Plan             | [18776-5 Plan of care note](https://loinc.org/18776-5)                                      | <ul><li>Professional contacts</li><li>Plan and requested actions</li></ul> |
-| Result                | [30954-2 Relevant diagnostic tests/laboratory data Narrative](https://loinc.org/30954-2)    | Investigation results                                                      |
-| Examination           | [8716-3 Vital signs](https://loinc.org/8716-3)                                              | <ul><li>Observations</li><li>Examination findings</li></ul>                |
-|                       | [47420-5 Functional Status](https://loinc.org/47420-5)                                      |                                                                            |
-| Procedure             | [47519-4 History of procedures](https://loinc.org/47519-4)                                  |                                                                            |
-| Allergy               | [48765-2 Allergies and adverse reactions Document](https://loinc.org/48765-2)               | Allergies and adverse reactions                                            |
-| History               | [29762-2 Social history Narrative](https://loinc.org/29762-2)                               | <ul><li>Social context</li><li>Educational history</li></ul>               |
-|                       | [10162-6 History of pregnancies Narrative](https://loinc.org/10162-6)                       |                                                                            |
-| Test Request          | [42349-1 Reason for referral (narrative)](https://loinc.org/42349-1)                        | Referral details                                                           |
-| Comment               | [61149-1 Objective Narrative](https://loinc.org/61149-1)                                    |                                                                            |
-| Follow up             | [18776-5 Plan of treatment (narrative)](https://loinc.org/18776-5)                          |                                                                            |
-| Family History        | [10157-6 History of family member diseases Narrative](https://loinc.org/10157-6)            | Family history                                                             |
-| Medication            | [10160-0 History of medication use Narrative](https://loinc.org/10160-0)                    | Medications and medical devices                                            |
-| Problem               | [11450-4 Problem list - Reported](https://loinc.org/11450-4)                                | Problem list                                                               |
-| Document              |                                                                                             |                                                                            |         
-| N/a | [81338-6 Goals, preferences, and priorities for care experience](https://loinc.org/81338-6) |                                                                            |
-| N/a | [11369-6 Immunization](https://loinc.org/11369-6)                                                       | Vaccinations                                                               |
+| EMIS Document Section | LOINC Document Section Codes                                                                | PRSB Section Heading                                                       | FHIR Observation category |
+|-----------------------|---------------------------------------------------------------------------------------------|----------------------------------------------------------------------------|---------------------------|
+| Care Plan             | [18776-5 Plan of care note](https://loinc.org/18776-5)                                      | <ul><li>Professional contacts</li><li>Plan and requested actions</li></ul> |                           |
+| Result                | [30954-2 Relevant diagnostic tests/laboratory data Narrative](https://loinc.org/30954-2)    | Investigation results                                                      | `laboratory`              |
+| Examination           | [8716-3 Vital signs](https://loinc.org/8716-3)                                              | <ul><li>Observations</li><li>Examination findings</li></ul>                | `vital-signs`             |
+|                       | [47420-5 Functional Status](https://loinc.org/47420-5)                                      |                                                                            | `exam`                    |
+| Procedure             | [47519-4 History of procedures](https://loinc.org/47519-4)                                  |                                                                            | `procedure`               |
+| Allergy               | [48765-2 Allergies and adverse reactions Document](https://loinc.org/48765-2)               | Allergies and adverse reactions                                            |                           |
+| History               | [29762-2 Social history Narrative](https://loinc.org/29762-2)                               | <ul><li>Social context</li><li>Educational history</li></ul>               | `social-history`          |
+|                       | [10162-6 History of pregnancies Narrative](https://loinc.org/10162-6)                       |                                                                            |                           |
+| Test Request          | [42349-1 Reason for referral (narrative)](https://loinc.org/42349-1)                        | Referral details                                                           |                           |
+| Comment               | [61149-1 Objective Narrative](https://loinc.org/61149-1)                                    |                                                                            |                           |
+| Follow up             | [18776-5 Plan of treatment (narrative)](https://loinc.org/18776-5)                          |                                                                            |                           |
+| Family History        | [10157-6 History of family member diseases Narrative](https://loinc.org/10157-6)            | Family history                                                             |                           |
+| Medication            | [10160-0 History of medication use Narrative](https://loinc.org/10160-0)                    | Medications and medical devices                                            |                           |
+| Problem               | [11450-4 Problem list - Reported](https://loinc.org/11450-4)                                | Problem list                                                               |                           |
+| Document              |                                                                                             |                                                                            |                           |         
+| N/a                   | [81338-6 Goals, preferences, and priorities for care experience](https://loinc.org/81338-6) |                                                                            |                           |
+| N/a                   | [11369-6 Immunization](https://loinc.org/11369-6)                                           | Vaccinations                                                               |                           |
 
 
 Historically this is related to [SOAP Note](https://en.wikipedia.org/wiki/SOAP_note) and also [Nursing Process (ADPIE)](https://en.wikipedia.org/wiki/Nursing_process)
