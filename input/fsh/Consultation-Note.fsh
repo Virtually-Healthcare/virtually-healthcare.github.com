@@ -32,27 +32,28 @@ Basic outline of a Consulation Note for use with GP Connect Send Document
 * section.text 1.. MS
 * section.section ..0
 * section contains
-    Subjective 0..* MS
-    and Complaints 0..* MS
+    ComplaintsAndIssues 0..* MS
     and VitalSigns 0..* MS
     and Objective 0..* MS
     and SocialHistory 0..* MS
     and Problems 0..* MS
 
-* section[Subjective] ^short = "Subjective"
-* section[Subjective].code = $loinc#61150-9 "Subjective Narrative"
+* section[ComplaintsAndIssues] ^short = "Complaints and Issues"
+* section[ComplaintsAndIssues],title = "Presenting complaints or issues"
+* section[ComplaintsAndIssues].code = $loinc#61150-9 "Subjective Narrative"
 
-* section[Complaints] ^short = "Complaints"
-* section[Complaints].code = $loinc#10154-3 "Chief complaint Narrative"
-
-* section[VitalSigns] ^short = "VitalSigns"
+* section[VitalSigns] ^short = "Vital Signs"
+* section[VitalSigns].title = "Vital Signs"
 * section[VitalSigns].code = $loinc#8716-3 "Vital signs"
 
 * section[Objective] ^short = "Objective"
+* section[Objective].title = "Examination findings "
 * section[Objective].code = $loinc#61149-1 "Objective Narrative"
 
 * section[SocialHistory] ^short = "Social History"
+* section[SocialHistory],title = "Social Context"
 * section[SocialHistory].code = $loinc#29762-2 "Social history Narrative"
 
 * section[Problems] ^short = "Problems"
+* section[Problems].title = "Problems"
 * section[Problems].code = $loinc#11450-4 "Problem list"

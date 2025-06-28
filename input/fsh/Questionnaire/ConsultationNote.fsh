@@ -13,7 +13,7 @@ Usage:  #definition
 * item[+]
   * linkId = "LOINC/61150-9"
   * code[+] = $loinc#61150-9 "Subjective Narrative"
-  * text = "Subjective"
+  * text = "Complaints and Issues"
   * type = #group
   * item[+]
     * linkId = "narrative"
@@ -26,13 +26,6 @@ Usage:  #definition
     * text = "Images"
     * type = #attachment
     * repeats = true
-
-* item[+]
-  * linkId = "LOINC/10154-3"
-  * code[+] = $loinc#10154-3 "Chief complaint Narrative"
-  * text = "Chief complaint"
-  * type = #group
-  * definition = "https://fhir.virtually.healthcare/StructureDefinition/Observation#Observation"
   * item[+]
     * linkId = "complaint"
     * text = "Complaint"
