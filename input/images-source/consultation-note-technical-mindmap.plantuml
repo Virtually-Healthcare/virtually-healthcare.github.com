@@ -24,7 +24,7 @@ skinparam svgDimensionStyle false
 ****[#lightyellow] FHIR Message
 ****[#FFBBCC] email + pdf
 **[#lightgreen] Document Sharing
-*** Other Care Settings \n(and Regional)
+***[#lightgreen] Other Care Settings \n(and Regional)
 ****[#lightgreen] IHE XDS.b and/or MHD/MHDS (HL7 FHIR REST API)
 *****[#lightblue] Clinical Documents (FHIR Document)
 *** Primary Care
@@ -37,10 +37,12 @@ skinparam svgDimensionStyle false
 **** TPP Transaction API
 **** GP Connect Access Record: Structured
 **** GP Connect Access Record: Unstructured
-*** Other Care Settings \n(and Regional)
+***[#lightgreen] Other Care Settings \n(and Regional)
 ****[#lightgreen] IHE QEDm (HL7 FHIR REST API)
+*** NHS England
+**** Summary Care Record
 **[#lightgreen] Event Notifications / Workflow
-*** Other Care Settings \n(and Regional)
+***[#lightgreen] Other Care Settings \n(and Regional)
 **** Encounter (Consultation)
 *****[#lightgreen] IHE PEM/NHS England ADT Specification (HL7 v2 ADT_A04)
 *****[#lightgreen] HL7 FHIR Pub/Sub
