@@ -51,6 +51,8 @@ TODO This diagram is useful to show how FHIR Resources relate to each section.
 How the archetype is created is not fixed, it can be form-based, a mix of individual observations and forms, device's imports etc., but they all occur under the context of a single encounter.
 All of these are combined in the document version of this consultation note encounter when an exchange requires a document format (e.g. GP Connect Send Document)
 
+> Note: the document format for GP Connect Send Document. Internal processes use FHIR Document/Composition to build an HTML version of the clinical note which is then converted to PDF.
+
 | Archetype                                                                | Composition                         |
 |--------------------------------------------------------------------------|-------------------------------------|
 | [Questionnaire - Consultation Note](Questionnaire-ConsultationNote.html) | [Composition - Consultation Note](StructureDefinition-ConsulationNote.html) |
