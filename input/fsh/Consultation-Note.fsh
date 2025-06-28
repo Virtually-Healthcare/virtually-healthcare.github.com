@@ -39,7 +39,7 @@ Basic outline of a Consulation Note for use with GP Connect Send Document
     and Problems 0..* MS
 
 * section[ComplaintsAndIssues] ^short = "Complaints and Issues"
-* section[ComplaintsAndIssues],title = "Presenting complaints or issues"
+* section[ComplaintsAndIssues].title = "Presenting complaints or issues"
 * section[ComplaintsAndIssues].code = $loinc#61150-9 "Subjective Narrative"
 
 * section[VitalSigns] ^short = "Vital Signs"
@@ -51,7 +51,7 @@ Basic outline of a Consulation Note for use with GP Connect Send Document
 * section[Objective].code = $loinc#61149-1 "Objective Narrative"
 
 * section[SocialHistory] ^short = "Social History"
-* section[SocialHistory],title = "Social Context"
+* section[SocialHistory].title = "Social Context"
 * section[SocialHistory].code = $loinc#29762-2 "Social history Narrative"
 
 * section[Problems] ^short = "Problems"
