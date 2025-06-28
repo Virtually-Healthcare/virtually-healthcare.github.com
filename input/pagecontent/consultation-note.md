@@ -8,6 +8,7 @@
 The consultation note forms the basis of `IM1 Consultation Writeback` and `GP Connect Send Document`. It is also related to the EMIS consultation screen sections and [PRSB section headings](https://theprsb.org/wp-content/uploads/2019/03/Guidance-on-specific-PRSB-sections-to-use.pdf).
 
  <img style="padding:3px;width:70%;" src="EMISConsultation.png" alt="EMIS Consultation"/>
+<br clear="all">
 
 It is also related to LOINC Document Section Codes, which can be found [Value Set: Document Section Codes](https://hl7.org/fhir/R4/valueset-doc-section-codes.html).
 
@@ -46,6 +47,9 @@ TODO This diagram is useful to show how FHIR Resources relate to each section.
 
 
 ### Archetype and Composition
+
+How the archetype is created is not fixed, it can be form-based, a mix of individual observations and forms, device's imports etc., but they all occur under the context of a single encounter.
+All of these are combined in the document version of this consultation note encounter when an exchange requires a document format (e.g. GP Connect Send Document)
 
 | Archetype                                                                | Composition                         |
 |--------------------------------------------------------------------------|-------------------------------------|
