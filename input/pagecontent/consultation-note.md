@@ -35,7 +35,7 @@ It is also related to LOINC Document Section Codes, which can be found [Value Se
 | N/a                   | [11369-6 Immunization](https://loinc.org/11369-6)                                           | Vaccinations                                                               |                           |
 
 
-Historically this is related to [SOAP Note](https://en.wikipedia.org/wiki/SOAP_note) and also [Nursing Process (ADPIE)](https://en.wikipedia.org/wiki/Nursing_process)
+Historically this is related to [SOAP Note](https://en.wikipedia.org/wiki/SOAP_note) and is also present in the [Nursing Process (ADPIE)](https://en.wikipedia.org/wiki/Nursing_process)
 
 TODO This diagram is useful to show how FHIR Resources relate to each section.
 
