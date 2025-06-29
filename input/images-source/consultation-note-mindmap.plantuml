@@ -4,33 +4,37 @@ skinparam svgDimensionStyle false
 
 title "Consultation Note (online and pharmacy)"
 
-* body (**composition**)
-** <i>Subjective</i>
-*** Presenting complaints or issues (PRSB)
+* [[Questionnaire-ConsultationNote.html Consultation Note]] **template**
+** Subjective
+*** Complaints and Issues (61150-9)\nPresenting complaints or issues (PRSB)
 **** [[StructureDefinition-Observation.html Observation]]
 **** Attachments ([[StructureDefinition-DocumentReference.html DocumentReference]] + Binary)
-** <i>Objective (ADPIE Assement)</i>
-*** Social Context (PRSB)
-**** [[https://build.fhir.org/ig/HL7/fhir-sdoh-clinicalcare/ Social Determinents of Health]] <b>archetype</b> USA version
-***** [[StructureDefinition-Observation.html Observation]]
-*** Family History (PRSB)
+** Objective\n(ADPIE Assement)
 *** Examination findings (PRSB)
-**** [[assessments-and-observations.html#vital-signs Vital Signs]] <b>archetype</b>
-***** [[StructureDefinition-Observation.html Observation]]
-**** [[assessments-and-observations.html#daily-physical-activity Physical Activity]] <b>archetype</b>
-***** [[StructureDefinition-Observation.html Observation]]
-**** [[StructureDefinition-Observation.html Observation]] (other)
-** <i>Assessment (ADPIE Diagnose)</i>
-*** Risks
+**** [[Questionnaire-VitalSigns.html Vital Signs (8716-3)]] <b>archetype</b>
+***** [[StructureDefinition-Observation.html Observation (category=vital-signs]]
+**** [[Questionnaire-DailyPhysicalActivity.html Physical Activity]] **template**
+***** [[StructureDefinition-Observation.html Observation (category=activity)]]
+**** [[StructureDefinition-Observation.html Observation (category=exam)]]
+*** Social History (29762-2)\nSocial Context (PRSB)
+**** Social History TODO <b>template</b>
+***** [[StructureDefinition-Observation.html Observation (category=social-history)]]
+*** Family History (10157-6)
+**** Family History TODO <b>template</b>
+** Assessment\n(ADPIE Diagnose)
+*** Assessment (51848-0)\nClinical risk factors (PRSB)
 **** [[StructureDefinition-ClinicalImpression.html ClinicalImpression]]
-*** [[StructureDefinition-Condition.html Condition]]
-** Plan and Requested Actions (PRSB) (ADPIE Plan)
-*** [[StructureDefinition-CarePlan.html Care Plan]]
-**** Safeguarding (PRSB)
-**** Signpost details (PRSB)
-*** [[StructureDefinition-CareTeam.html Care Team]]
-*** [[StructureDefinition-Goal.html Goal]]
-** Implement (ADPIE)
+**** [[StructureDefinition-Observation.html Observation (category=survey?)]]
+*** Problem (11450-4)\nProblem List (PRSB)
+**** [[StructureDefinition-Condition.html Condition]]
+** Plan\n(ADPIE Plan)
+*** Care Plan (18776-5)\nProfessional contacts (PRSB)\nPlan and requested actions(PRSB)
+**** [[StructureDefinition-CarePlan.html Care Plan]]
+***** Safeguarding (PRSB)
+***** Signpost details (PRSB)
+**** [[StructureDefinition-CareTeam.html Care Team]]
+**** [[StructureDefinition-Goal.html Goal]]
+** Plan\n(ADPIE Implement)
 *** Vaccination (PRSB)
 **** [[StructureDefinition-Immunization.html Immunization]]
 *** Referral Details (PRSB)

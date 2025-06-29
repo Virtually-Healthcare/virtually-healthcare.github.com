@@ -2,6 +2,7 @@
 
 - [HL7 Europe Hospital Discharge Report](https://build.fhir.org/ig/hl7-eu/hdr/index.html)
 - [International Patient Summary](https://build.fhir.org/ig/HL7/fhir-ips/index.html)
+- [LOINC Consultation note - recommended C-CDA R1.1 sections](https://loinc.org/72231-4)
 
 ## Introduction
 
@@ -32,14 +33,14 @@ Many questions within the archetype / template will be the same and also overlap
 
 These questions will be SNOMED or LOINC coded.
 
-## Composition / FHIR Document
+## Composition & FHIR Document
 
 The basic structure of a composition is shown above, in its aggregated form it is known as a [FHIR Document]() and a redendered example is shown below:  
 
  <img style="padding:3px;width:40%;" src="FHIRDocument.png" alt="Example Document"/>
 <br clear="all">
 
-### Cmposition.section - Document Section Codes
+### Comosition.section - Document Section Codes
 
 Each section is coded using Document Section Codes, which can be found [Value Set: Document Section Codes](https://hl7.org/fhir/R4/valueset-doc-section-codes.html).
 
@@ -51,10 +52,10 @@ Each section is coded using Document Section Codes, which can be found [Value Se
 | Care Plan             | [18776-5 Plan of care note](https://loinc.org/18776-5)                                      | Professional contacts<br/>Plan and requested actions |                           |
 | Result                | [30954-2 Relevant diagnostic tests/laboratory data Narrative](https://loinc.org/30954-2)    | Investigation results                                | `laboratory`              |
 | Examination           | [8716-3 Vital signs](https://loinc.org/8716-3)                                              | Observations<br/>Examination findings                | `vital-signs`             |
-|                       | [47420-5 Functional Status](https://loinc.org/47420-5)                                      |                                                      | `exam`                    |
+|                       | [29545-1 Physical examination](https://loinc.org/29545-1)                                      |                                                      | `exam`                    |
 | Procedure             | [47519-4 History of procedures](https://loinc.org/47519-4)                                  |                                                      | `procedure`               |
 | Allergy               | [48765-2 Allergies and adverse reactions Document](https://loinc.org/48765-2)               | Allergies and adverse reactions                      |                           |
-| History               | [29762-2 Social history Narrative](https://loinc.org/29762-2)                               | Social context<br/>Educational history       | `social-history`          |
+| History               | [29762-2 Social history Narrative](https://loinc.org/29762-2)                               | Social context<br/>Educational history               | `social-history`          |
 |                       | [10162-6 History of pregnancies Narrative](https://loinc.org/10162-6)                       |                                                      |                           |
 | Test Request          | [42349-1 Reason for referral (narrative)](https://loinc.org/42349-1)                        | Referral details                                     |                           |
 | Comment               | [61149-1 Objective Narrative](https://loinc.org/61149-1)                                    |                                                      |                           |
@@ -65,20 +66,13 @@ Each section is coded using Document Section Codes, which can be found [Value Se
 | Document              |                                                                                             |                                                      |                           |         
 | N/a                   | [81338-6 Goals, preferences, and priorities for care experience](https://loinc.org/81338-6) |                                                      |                           |
 | N/a                   | [11369-6 Immunization](https://loinc.org/11369-6)                                           | Vaccinations                                         |                           |
+| N/a                   | [51848-0 Assessment](https://loinc.org/72231-4/panel#64371) | Clinical risk factors                                                     | `survey`                   |
 
+## Domain Archetype
 
-## Domain Archetype / FHIR Questionnaire
+As composition is not for **data capture**, we need an archetype to form the high framework for the consulation-note.
 
-
-
-
-
-
-
-
-Historically this is related to [SOAP Note](https://en.wikipedia.org/wiki/SOAP_note) and is also present in the [Nursing Process (ADPIE)](https://en.wikipedia.org/wiki/Nursing_process)
-
-TODO This diagram is useful to show how FHIR Resources relate to each section.
+The current model is shown below. Historically this is related to [SOAP Note](https://en.wikipedia.org/wiki/SOAP_note) and also [Nursing Process (ADPIE)](https://en.wikipedia.org/wiki/Nursing_process) which are also included for documentation purposes.
 
 <figure>
 {%include consultation-note-mindmap.svg%}
