@@ -10,6 +10,25 @@ The consultation note forms the basis of `IM1 Consultation Writeback` and `GP Co
  <img style="padding:3px;width:70%;" src="EMISConsultation.png" alt="EMIS Consultation"/>
 <br clear="all">
 
+## Entity Model
+
+The consultation note consists of three main structures:
+
+- composition which forms the main body of the consultation
+- archetype/template, which are a templated set of questions that can be used during a consultation. It will often be referred to as a form, and it is primarily a data capture method. Examples include
+    - [vital signs](Questionnaire-VitalSigns.html)
+    - [daily physical activity](Questionnaire-DailyPhysicalActivity.html)
+- entities/resources which are the data structures persisted in the clinical repository. The most common resource will be:
+    - [Observation](StructureDefinition-Observation.html)
+
+ <img style="padding:3px;width:70%;" src="ConsultationNote.drawio.png" alt="EMIS Consultation"/>
+<br clear="all">
+
+Both archetype/template and entities are **data capture** related and will often relate to a data entry screen within an application. Compositions provide a high-level structure to the consultation, but they are generally assembled from both archetype/templates and entities, it is a **data aggregate**.
+
+
+### Document Section Codes
+
 It is also related to LOINC Document Section Codes, which can be found [Value Set: Document Section Codes](https://hl7.org/fhir/R4/valueset-doc-section-codes.html).
 
 > This is not required to be SNOMED CT coded.

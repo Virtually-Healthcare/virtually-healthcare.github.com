@@ -1,0 +1,48 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" version="27.1.6">
+  <diagram name="Page-1" id="B3fR873dCyqSvVCb6Dkg">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Wlj88OMTx_fnJnA9LAmV-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=ERmany;endFill=0;" edge="1" parent="1" source="Wlj88OMTx_fnJnA9LAmV-1" target="Wlj88OMTx_fnJnA9LAmV-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Wlj88OMTx_fnJnA9LAmV-18" value="&lt;b&gt;section&lt;/b&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="Wlj88OMTx_fnJnA9LAmV-10">
+          <mxGeometry x="-0.0182" y="-4" relative="1" as="geometry">
+            <mxPoint x="-24" y="6" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Wlj88OMTx_fnJnA9LAmV-1" value="Composition&lt;div&gt;&lt;br&gt;(FHIR Composition)&lt;/div&gt;" style="html=1;whiteSpace=wrap;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="120" y="80" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Wlj88OMTx_fnJnA9LAmV-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=ERmany;endFill=0;" edge="1" parent="1" source="Wlj88OMTx_fnJnA9LAmV-2" target="Wlj88OMTx_fnJnA9LAmV-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Wlj88OMTx_fnJnA9LAmV-17" value="FHIR Observation&lt;br&gt;&lt;b&gt;basedOn&lt;/b&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="Wlj88OMTx_fnJnA9LAmV-5">
+          <mxGeometry x="-0.02" y="-2" relative="1" as="geometry">
+            <mxPoint x="37" y="18" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Wlj88OMTx_fnJnA9LAmV-2" value="Archetype&lt;div&gt;&lt;br&gt;(FHIR Questionnaire)&lt;/div&gt;" style="html=1;whiteSpace=wrap;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="360" y="230" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Wlj88OMTx_fnJnA9LAmV-3" value="Entity&lt;br&gt;&lt;br&gt;(FHIR Resource)" style="html=1;whiteSpace=wrap;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="680" y="230" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Wlj88OMTx_fnJnA9LAmV-12" value="&lt;b&gt;entry&lt;/b&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=ERmany;endFill=0;" edge="1" parent="1" source="Wlj88OMTx_fnJnA9LAmV-9" target="Wlj88OMTx_fnJnA9LAmV-3">
+          <mxGeometry x="-0.7895" y="-10" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Wlj88OMTx_fnJnA9LAmV-19" value="FHIR Observation&lt;br&gt;&lt;b&gt;category&lt;/b&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="Wlj88OMTx_fnJnA9LAmV-12">
+          <mxGeometry x="0.7965" y="2" relative="1" as="geometry">
+            <mxPoint x="-67" y="17" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Wlj88OMTx_fnJnA9LAmV-9" value="Sections" style="html=1;whiteSpace=wrap;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="360" y="80" width="130" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
