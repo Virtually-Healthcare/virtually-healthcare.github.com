@@ -18,14 +18,19 @@ The consultation note consists of three main structures:
 - archetype/template, which are a templated set of questions that can be used during a consultation. It will often be referred to as a form, and it is primarily a data capture method. Examples include
     - [vital signs](Questionnaire-VitalSigns.html)
     - [daily physical activity](Questionnaire-DailyPhysicalActivity.html)
-- entities/resources which are the data structures persisted in the clinical repository. The most common resource will be:
+- resource entities, which are the data structures persisted in the clinical repository. The most common resource will be:
     - [Observation](StructureDefinition-Observation.html)
 
  <img style="padding:3px;width:70%;" src="ConsultationNote.drawio.png" alt="EMIS Consultation"/>
 <br clear="all">
 
-Both archetype/template and entities are **data capture** related and will often relate to a data entry screen within an application. Compositions provide a high-level structure to the consultation, but they are generally assembled from both archetype/templates and entities, it is a **data aggregate**.
+Both archetype/template and entities are **data capture** related and will often relate to a data entry screen within an application. Compositions provide a high-level structure to the consultation, but they are generally assembled from both archetype/templates and resource entities; it is a **data aggregate**.
 
+Many questions within the archetype / template will be the same and also overlap with directly captured entities. I.e., in remote patient monitoring (virtual wards) a patient's weight, pulse rate and blood pressure can be captured from device data. These data items also exist in [vital signs](Questionnaire-VitalSigns.html). 
+
+> Where a template/archetype question may have multiple uses, it is persisted as a resource entity.
+
+These questions will be SNOMED or LOINC coded.
 
 ### Document Section Codes
 
