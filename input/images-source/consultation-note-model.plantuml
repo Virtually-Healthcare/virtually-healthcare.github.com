@@ -1,0 +1,61 @@
+@startuml
+
+
+  class "[[StructureDefinition-Encounter.html Encounter]]" as Encounter <<aggregate root>> {
+  subject 1..1: Patient
+  period
+  participant 1..*
+  }
+
+
+  class "[[StructureDefinition-Observation.html Observation]]" as Observation <<entity>> {
+    identifier 1..*
+    subject 1..1: Patient
+    category
+    code : UK SNOMED CT or LOINC
+    derivedFrom: QuestionnaireResponse
+    effectiveDateTime
+    value[x]: codes are UK SNOMED CT or LOINC
+    encounter 0..1
+  }
+
+  class "[[StructureDefinition-QuestionnaireResponse.html QuestionnaireResponse]]" as QuestionnaireResponse <<entity>> {
+    identifier 1..*
+    subject 1..1: Patient
+    questionniare
+    encounter 0..1
+  }
+
+  class "[[StructureDefinition-Questionnaire.html Questionnaire]]" as Questionnaire <<entity>> {
+    url
+    item 1..*
+  }
+
+
+  class "[[StructureDefinition-DocumentReference.html DocumentReference]]" as DocumentEntry <<entity>> {
+    category: UK SNOMED CT
+    type : UK SNOMED CT
+    subject : PatientIdentifier
+    attachment 1..1 : Binary
+  }
+
+  class Binary <<entity>> {
+  contentType
+  data: file contents
+  }
+
+
+
+Observation "encounter" <--o Encounter
+DocumentEntry "encounter" <--o Encounter
+QuestionnaireResponse "encounter" <--o Encounter
+
+QuestionnaireResponse o--> "derivedFrom" Observation
+
+Binary <-- DocumentEntry : attachment
+
+Questionnaire "url" --> "questionniare" QuestionnaireResponse
+
+
+
+@enduml

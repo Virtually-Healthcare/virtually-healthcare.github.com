@@ -35,6 +35,8 @@ These questions will be SNOMED or LOINC coded.
 
 ## Composition & FHIR Document
 
+> [Composition - Consultation Note](StructureDefinition-ConsulationNote.html)
+
 The basic structure of a composition is shown above, in its aggregated form it is known as a [FHIR Document]() and a redendered example is shown below:  
 
  <img style="padding:3px;width:40%;" src="FHIRDocument.png" alt="Example Document"/>
@@ -70,40 +72,33 @@ Each section is coded using Document Section Codes, which can be found [Value Se
 
 ## Domain Archetype
 
+> [Questionnaire - Consultation Note](Questionnaire-ConsultationNote.html)
+
 As composition is not for **data capture**, we need an archetype to form the high framework for the consulation-note.
 
 The current model is shown below. Historically this is related to [SOAP Note](https://en.wikipedia.org/wiki/SOAP_note) and also [Nursing Process (ADPIE)](https://en.wikipedia.org/wiki/Nursing_process) which are also included for documentation purposes.
 
 <figure>
 {%include consultation-note-mindmap.svg%}
+<p id="fX.X.X.X-X" class="figureTitle">Consultation Note Map</p>
+</figure>
+<br clear="all">
+
+## Resource Model
+
+The current model with the addition of Questionnaire (the definition for archetype/template discussed above) is shown below:
+
+<figure>
+{%include consultation-note-model.svg%}
 <p id="fX.X.X.X-X" class="figureTitle">Consultation Note Model</p>
 </figure>
 <br clear="all">
 
+The main changes are:
 
-### Archetype and Composition
-
-How the archetype is created is not fixed, it can be form-based, a mix of individual observations and forms, device's imports etc., but they all occur under the context of a single encounter.
-All of these are combined in the document version of this consultation note encounter when an exchange requires a document format (e.g. GP Connect Send Document)
-
-> Note: the document format for GP Connect Send Document. Internal processes use FHIR Document/Composition to build an HTML version of the clinical note which is then converted to PDF.
+* 'derivedFrom' should be populated if a Observation has been generated from a Questionnaire.
+* `category` should be populated in order to support creation of the **composition** aggregate.
 
 
-
-
-| Archetype                                                                | Composition                         |
-|--------------------------------------------------------------------------|-------------------------------------|
-| [Questionnaire - Consultation Note](Questionnaire-ConsultationNote.html) | [Composition - Consultation Note](StructureDefinition-ConsulationNote.html) |
-
-
-### Technical Options
-
-Maybe remove this, it's a bit complicated. Leave for now to help explain the complexity and why we've took a step back.
-
-<figure>
-{%include consultation-note-technical-mindmap.svg%}
-<p id="fX.X.X.X-X" class="figureTitle">Technical Options</p>
-</figure>
-<br clear="all">
 
 

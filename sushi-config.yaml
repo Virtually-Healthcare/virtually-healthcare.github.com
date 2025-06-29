@@ -465,6 +465,9 @@ pages:
   R01.md:
     title: eReport
     generation: markdown
+  A04.md:
+    title: Consultation Writeback (and Sharing) (A04)
+    generation: markdown
   enterprise.md:
     title: Design History
     generation: markdown
@@ -485,8 +488,9 @@ menu:
 #    Clinical Data Repository (CDR):  clinical-data-repository.html
 #    Internet User Authorization (IUA): IUA.html
   Interfaces (Vol 2):
-    eReferral: I12.html
-    eReport: R01.html
+     Consultation Writeback (and Sharing) (A04): A04.html
+#    eReferral: I12.html
+#    eReport: R01.html
 
   Domain Archetypes:
     eReferral: eReferral-model.html
