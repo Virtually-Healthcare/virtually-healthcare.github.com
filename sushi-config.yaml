@@ -430,7 +430,7 @@ pages:
     title: Remote Patient Monitoring
     generation: markdown
   eReferral-model.md:
-    title: eReferral Model
+    title: Patient Referral and Consultation Note
     generation: markdown
   consultation-note.md:
     title: Consultation Note
@@ -460,13 +460,13 @@ pages:
     title: Architecture
     generation: markdown
   I12.md:
-    title: eReferral
+    title: Patient Referral
     generation: markdown
   R01.md:
     title: eReport
     generation: markdown
   A04.md:
-    title: Consultation Writeback (and Sharing) (A04)
+    title: Consultation Note Writeback/Sharing (A04)
     generation: markdown
   enterprise.md:
     title: Design History
@@ -480,7 +480,7 @@ pages:
 menu:
   Home: index.html
   Analysis and Design (Vol 1):
-     eReferral and eReport: eReferral.html
+     Patient Referral and Consultation Note: eReferral.html
      Data Capture: data-capture.html
      Remote Patient Monitoring: remote-patient-monitoring.html
 #    Health Information Exchange (HIE): HIE.html
@@ -488,8 +488,8 @@ menu:
 #    Clinical Data Repository (CDR):  clinical-data-repository.html
 #    Internet User Authorization (IUA): IUA.html
   Interfaces (Vol 2):
-     Consultation Writeback (and Sharing) (A04): A04.html
-#    eReferral: I12.html
+     Consultation Note Writeback/Sharing (A04): A04.html
+     Patient Referral: I12.html
 #    eReport: R01.html
 
   Domain Archetypes:
