@@ -10,7 +10,7 @@ The consultation note forms the basis of `IM1 Consultation Writeback` and `GP Co
  <img style="padding:3px;width:70%;" src="EMISConsultation.png" alt="EMIS Consultation"/>
 <br clear="all">
 
-## Entity Model
+## Informatics Model
 
 The consultation note consists of three main structures:
 
@@ -32,11 +32,19 @@ Many questions within the archetype / template will be the same and also overlap
 
 These questions will be SNOMED or LOINC coded.
 
-### Document Section Codes
+## Composition / FHIR Document
 
-It is also related to LOINC Document Section Codes, which can be found [Value Set: Document Section Codes](https://hl7.org/fhir/R4/valueset-doc-section-codes.html).
+The basic structure of a composition is shown above, in its aggregated form it is known as a [FHIR Document]() and a redendered example is shown below:  
+
+ <img style="padding:3px;width:40%;" src="FHIRDocument.png" alt="Example Document"/>
+<br clear="all">
+
+### Cmposition.section - Document Section Codes
+
+Each section is coded using Document Section Codes, which can be found [Value Set: Document Section Codes](https://hl7.org/fhir/R4/valueset-doc-section-codes.html).
 
 > This is not required to be SNOMED CT coded.
+
 
 | EMIS Document Section | LOINC Document Section Codes                                                                | PRSB Section Heading                                 | FHIR Observation category |
 |-----------------------|---------------------------------------------------------------------------------------------|------------------------------------------------------|---------------------------|
@@ -59,6 +67,15 @@ It is also related to LOINC Document Section Codes, which can be found [Value Se
 | N/a                   | [11369-6 Immunization](https://loinc.org/11369-6)                                           | Vaccinations                                         |                           |
 
 
+## Domain Archetype / FHIR Questionnaire
+
+
+
+
+
+
+
+
 Historically this is related to [SOAP Note](https://en.wikipedia.org/wiki/SOAP_note) and is also present in the [Nursing Process (ADPIE)](https://en.wikipedia.org/wiki/Nursing_process)
 
 TODO This diagram is useful to show how FHIR Resources relate to each section.
@@ -77,8 +94,7 @@ All of these are combined in the document version of this consultation note enco
 
 > Note: the document format for GP Connect Send Document. Internal processes use FHIR Document/Composition to build an HTML version of the clinical note which is then converted to PDF.
 
- <img style="padding:3px;width:50%;" src="FHIRDocument.png" alt="Example Document"/>
-<br clear="all">
+
 
 
 | Archetype                                                                | Composition                         |
