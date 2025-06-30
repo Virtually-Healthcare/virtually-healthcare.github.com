@@ -39,6 +39,8 @@ This uses a series of common data and interaction standards (green in the diagra
 
 ### Enterprise and Data Standards
 
+#### Enterprise Frameworks
+
 A number of frameworks [IHE Patient Care Coordination (PCC)](https://profiles.ihe.net/PCC/index.html) are followed in this guide, including:
 
 - [Query for Existing Data for Mobile (QEDm)](https://profiles.ihe.net/PCC/QEDm/index.html)
@@ -46,6 +48,19 @@ A number of frameworks [IHE Patient Care Coordination (PCC)](https://profiles.ih
 - [Mobile access to Health Documents (MHD)](https://profiles.ihe.net/ITI/MHD/index.html) (A REST API for IHE XDS.b and EDMS)
 - [Mobile Care Services Discovery (mCSD)](https://profiles.ihe.net/ITI/mCSD/volume-1.html)
 - [Patient Demographics Query for Mobile (PDQm)](https://profiles.ihe.net/ITI/PDQm/index.html)
+
+#### Technical Workflow 
+
+The interactions use HL7 FHIR and is designed to be compatible with:
+
+- HL7 v2 Messaging via: 
+  - [FHIR Messaging](https://hl7.org/fhir/R4/messaging.html) - a direct conversion of HL7 v2 Messaging
+  - [HL7 FHIR Workflow](https://hl7.org/fhir/R4/workflow.html) which allows [Conversation Patterns](https://www.enterpriseintegrationpatterns.com/patterns/conversation/)
+  - [HL7 FHIR Subscription](https://build.fhir.org/ig/HL7/fhir-subscription-backport-ig/)
+- HL7 Clinical Document Architecture via: 
+  - [FHIR Documents](https://hl7.org/fhir/R4/documents.html)
+
+#### Data Standards
 
 Support for these frameworks includes core [canonical data model](https://www.enterpriseintegrationpatterns.com/patterns/messaging/CanonicalDataModel.html)/[domain model](https://martinfowler.com/eaaCatalog/domainModel.html) which meets general NHS requirements:
 
