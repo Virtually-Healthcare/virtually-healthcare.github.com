@@ -6,7 +6,7 @@ component "**Referral Recipient**\n\nSecondary Care" as secondary
 
 component "**Referral Recipient**\n\nUnscheduled Care" as UEC
 
-component "**Intermediary**\n\nHealth Information Exchange" as TIE
+component "**Intermediary**\n\nCommunity Integration Engine" as TIE
 
 component "**Referral Initiator**\n\nPrimary Care" as gp
 component "**Referral Initiator**\n\nCommunity, Primary,Mental\nHealth, Social Care, Private\nand Secondary Care" as userOther
