@@ -1,5 +1,33 @@
 ## Patient Care Coordination (PCC)
 
+### Clinical Process
+
+The `Patient Care Coordination (Community)` is designed around supporting clinical processes in primary, pharmacy and community care settings. It is aligned with [Nursing Process (ADPIE)](https://en.wikipedia.org/wiki/Nursing_process)
+
+<img style="padding:3px;width:80%;" src="NursingProcess.png" alt="Nursing Process (ADPIE)"/>
+<br clear="all">
+<p class="figureTitle">Nursing Process (ADPIE)</p> 
+
+This uses a series of common data and interaction standards (green in the diagram below) which allows different applications to be connected together. These interfaces will often provide a layer of extraction of over other interfaces such as:
+
+- [Consultation Note](consultation-note.html)
+  - GP Connect Send Document
+  - NHS England Digital Medicines
+  - NHS England IM1 Transaction API
+- [Referral Letter](referral-letter.html)
+  - NHS England Booking and Referral Standard (BARS)
+  - NHS England Electroninc Referral System (eRS)
+- Patient Clinical Data Sharing
+  - GP Connect Access Record: HTML
+  - GP Connect Access Record: Structured
+  - GP Connect Access Record: Document
+  - NHS England IM1 Transaction API
+- Care and Patient Directory 
+  - NHS England Personnel Demographic Service (PDS)
+  - Directory of Service (DoS)
+  - Organisation Data Service
+  - Spine Directory Service
+
 <table style="width:80%">
   <tr>
     <td>
@@ -9,39 +37,21 @@
   </tr>
 </table>
 
-Initial design
+### Enterprise and Data Standards
 
-<figure>
-{%include PCC.svg%}
-<p id="fX.X.X.X-X" class="figureTitle">IHE PCC Refactor to Clinical Data Repository</p>
-</figure>
-<br clear="all">
+A number of frameworks [IHE Patient Care Coordination (PCC)](https://profiles.ihe.net/PCC/index.html) are followed in this guide, including:
 
-### Clinical Process
+- [Query for Existing Data for Mobile (QEDm)](https://profiles.ihe.net/PCC/QEDm/index.html)
+- [Dynamic Care Planning (DCP)](https://www.ihe.net/uploadedFiles/Documents/PCC/IHE_PCC_Suppl_DCP.pdf)
+- [Mobile access to Health Documents (MHD)](https://profiles.ihe.net/ITI/MHD/index.html) (A REST API for IHE XDS.b and EDMS)
+- [Mobile Care Services Discovery (mCSD)](https://profiles.ihe.net/ITI/mCSD/volume-1.html)
+- [Patient Demographics Query for Mobile (PDQm)](https://profiles.ihe.net/ITI/PDQm/index.html)
 
-The `Patient Care Coordination Manager (Community)` is aimed at supporting clinical process in the community. It is aligned with [Nursing Process (ADPIE)](https://en.wikipedia.org/wiki/Nursing_process)
-
-<img style="padding:3px;width:80%;" src="NursingProcess.png" alt="Nursing Process (ADPIE)"/>
-<br clear="all">
-<p class="figureTitle">Nursing Process (ADPIE)</p> 
-
-
-## Standards
-
-This guide documents the [canonical data model](https://www.enterpriseintegrationpatterns.com/patterns/messaging/CanonicalDataModel.html)/[domain model](https://martinfowler.com/eaaCatalog/domainModel.html) we use internally to meet general NHS requirements such as using:
+Support for these frameworks includes core [canonical data model](https://www.enterpriseintegrationpatterns.com/patterns/messaging/CanonicalDataModel.html)/[domain model](https://martinfowler.com/eaaCatalog/domainModel.html) which meets general NHS requirements:
 
 - [UK SNOMED CT](https://digital.nhs.uk/services/terminology-and-classifications/snomed-ct) for our clinical terminology.
 - [NHS Data Dictionary](https://www.datadictionary.nhs.uk/) for identifiers and values, such as NHS Number, GMC, GMP, ODS, etc. 
-- [HL7 UK Core](https://simplifier.net/HL7FHIRUKCoreR4/)
-
-We are also moving towards several international standards such as:
-
-- [HL7 Europe Hospital Discharge Report](https://build.fhir.org/ig/hl7-eu/hdr/)
-- [HL7 International Patient Access](https://build.fhir.org/ig/HL7/fhir-ipa/)
-- [HL7 Structured Data Capture](https://build.fhir.org/ig/HL7/sdc/)
-- [IHE Mobile Care Services Discovery (mCSD)](https://profiles.ihe.net/ITI/mCSD/volume-1.html)
-
-The section on **adaptors** describes how we have interfaced to external systems, as we internally use a domain model we need to build an [Anti-Corruption-Layer](https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/acl.html) to convert external models to our domain model.
+- [HL7 UK Core](https://simplifier.net/HL7FHIRUKCoreR4/).
 
 ### SNOMED CT
 

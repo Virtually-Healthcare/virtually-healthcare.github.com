@@ -456,14 +456,11 @@ pages:
   testing.md:
     title: Testing
     generation: markdown
-  architecture.md:
-    title: Architecture
+  interfaces-introduction.md:
+    title: Introduction
     generation: markdown
   I12.md:
     title: Patient Referral
-    generation: markdown
-  R01.md:
-    title: eReport
     generation: markdown
   A04.md:
     title: Consultation Note Writeback/Sharing (A04)
@@ -488,16 +485,16 @@ menu:
 #    Clinical Data Repository (CDR):  clinical-data-repository.html
 #    Internet User Authorization (IUA): IUA.html
   Interfaces (Vol 2):
+     Introduction: interfaces-introduction.html
      Consultation Note Writeback/Sharing (A04): A04.html
      Patient Referral: I12.html
 #    eReport: R01.html
 
   Domain Archetypes:
-    eReferral: eReferral-model.html
+    Referral Letter: referral-letter.html
     Consultation Note: consultation-note.html
  #   Patient Care Coordination: pcc-model.html
     Assessments and Observations: assessments-and-observations.html
   Artefacts: artifacts.html
   Development:
-    Architecture: architecture.html
     Testing: testing.html
