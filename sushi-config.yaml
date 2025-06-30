@@ -426,9 +426,6 @@ pages:
   pcc-model.md:
     title: Patient Care Coordination Model
     generation: markdown
-  remote-patient-monitoring.md:
-    title: Remote Patient Monitoring
-    generation: markdown
   referral-letter.md:
     title: Referral Letter
     generation: markdown
@@ -479,7 +476,7 @@ menu:
   Analysis and Design (Vol 1):
      Patient Referral and Consultation Note: eReferral.html
      Data Capture: data-capture.html
-     Remote Patient Monitoring: remote-patient-monitoring.html
+     Clinical Assessment: clinical-assessment.html
 #    Health Information Exchange (HIE): HIE.html
 #    Mobile access to Health Documents (MHD): MHD.html
 #    Clinical Data Repository (CDR):  clinical-data-repository.html
