@@ -421,7 +421,7 @@ pages:
     title: Patient Referral and Consultation Note [360X]
     generation: markdown
   data-capture.md:
-    title: Data Capture
+    title: Data Capture [SDC]
     generation: markdown
   pcc-model.md:
     title: Patient Care Coordination Model
@@ -436,7 +436,7 @@ pages:
     title: Assessments and Observation Definitions
     generation: markdown
   clinical-assessment.md:
-    title: Clinical Assessment
+    title: Clinical Assessment [ACDC]
     generation: markdown
   kettering.md:
     title: Kettering XML
@@ -478,8 +478,8 @@ menu:
   Home: index.html
   Analysis and Design (Vol 1):
      Patient Referral and Consultation Note [360X]: 360X.html
-     Data Capture: data-capture.html
-     Clinical Assessment: clinical-assessment.html
+     Data Capture [SDC]: data-capture.html
+     Clinical Assessment [ACDC]: clinical-assessment.html
 #    Health Information Exchange (HIE): HIE.html
 #    Mobile access to Health Documents (MHD): MHD.html
 #    Clinical Data Repository (CDR):  clinical-data-repository.html
