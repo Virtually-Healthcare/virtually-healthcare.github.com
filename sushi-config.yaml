@@ -429,8 +429,8 @@ pages:
   remote-patient-monitoring.md:
     title: Remote Patient Monitoring
     generation: markdown
-  eReferral-model.md:
-    title: Patient Referral and Consultation Note
+  referral-letter.md:
+    title: Referral Letter
     generation: markdown
   consultation-note.md:
     title: Consultation Note
