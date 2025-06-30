@@ -1,0 +1,42 @@
+@startuml
+
+component "**Consultation Note Recipient**\n\nPrimary Care\n(EMIS/TPP IM1 Transaction API)" as LIMS
+
+component "**Consultation Note Recipient**\n\nSecondary Care and others" as secondary
+
+component "**Consultation Note Recipient**\n\nPrimary Care (GP Connect Send Document)\nRegional (IHE XDS)\nNational Record Locatior (NRL)" as UEC
+
+component "**Intermediary**\n\nCommunity Integration Engine (TIE)" as TIE
+
+
+component "**Consultation Note Creator**\nOnline or Pharmacy" as userOther
+
+interface "**Consultation Note Message**\nHL7 v2 ADT_A04 or\nFHIR A04 Message" as HL7_I12
+interface "**Consultation Note Message**\nHL7 v2 ADT_A04 or\nFHIR A04 Message" as HL7_I122
+
+
+
+interface "**Consultation Note Document**\nDocument format: PDF or FHIR Document\nHL7 v2 MDM_T02,\nFHIR T02 Message\or IHE MHD/XDS interaction" as BARS
+
+userOther -d-> HL7_I12
+HL7_I12 -d-> TIE
+
+
+
+TIE -d-> HL7_I122
+HL7_I122 -d-> LIMS
+
+HL7_I122 .d.> secondary
+
+TIE -d-> BARS
+BARS -d-> UEC
+
+
+note top of HL7_I12
+This may alternatively use FHIR Workflow which includes:
+- event notifications using FHIR Subscription
+- Clinical Data Repository with a IHE QEDm Data Sharing FHIR REST API
+end note
+
+
+@enduml

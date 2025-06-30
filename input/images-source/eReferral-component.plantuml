@@ -11,8 +11,8 @@ component "**Intermediary**\n\nHealth Information Exchange" as TIE
 component "**Referral Initiator**\n\nPrimary Care" as gp
 component "**Referral Initiator**\n\nCommunity, Primary,Mental\nHealth, Social Care, Private\nand Secondary Care" as userOther
 
-interface "**eReferral**\nHL7 v2 ORU_R01 or\nFHIR R01 Message" as HL7_I12
-interface "**eReferral**\nHL7 v2 ORU_R01 or\nFHIR R01 Message" as HL7_I122
+interface "**eReferral**\nHL7 v2 REF_I12 or\nFHIR I12 Message" as HL7_I12
+interface "**eReferral**\nHL7 v2 REF_I12 or\nFHIR I12 Message" as HL7_I122
 
 frame "NHS England Intermediary Services" as service {
   interface "**eRS**\nFHIR RESTful" as eRS
