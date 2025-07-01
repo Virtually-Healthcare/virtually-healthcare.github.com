@@ -13,7 +13,7 @@ placer -> filler : [[I12.html Referral Request (PCC-55)]]
 filler -> filler: Triage Referral
 alt Referral Accepted
   filler -> placer: Accept Referral
-  loop until referral is completed
+  loop until service/referral is completed
     filler -> filler: Perform requested service and provide care
     filler -> placer: Interim [[A04.html Consultation Note (PCC-59)]]
   end

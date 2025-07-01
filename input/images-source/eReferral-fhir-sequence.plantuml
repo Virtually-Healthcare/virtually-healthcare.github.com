@@ -1,0 +1,30 @@
+@startuml
+
+
+title "Shared Repositories with FHIR Workflow"
+
+hide footbox
+
+participant "Referral Initiator" as placer
+participant "Initiator Shared Repository" as cdri
+participant "Recipient Shared Repository" as cdrr
+participant "Referral Recipient" as filler
+
+placer -> cdri : [[I12.html Referral Request (PCC-55)]]
+placer -> filler: FHIR Task (requested)
+filler -> cdri: Retrieve [[I12.html Referral Request (PCC-55)]]
+filler -> placer: FHIR Task (accepted/rejected)
+filler -> placer: FHIR Task (in-progress)
+loop until until service/referral is completed
+filler -> cdrr:  Interim [[A04.html Consultation Note (PCC-59)]]
+filler -> placer: FHIR Encounter (or ADT_A04)
+alt (when required)
+placer -> cdrr: Rertieve Interim [[A04.html Consultation Note (PCC-59)]]
+end
+end
+filler -> placer: FHIR Task (completed)
+filler -> cdrr: [[A03.html Discharge Report (PCC-57)]]
+alt (when required)
+placer -> cdrr: Rertieve [[A03.html Discharge Report (PCC-57)]]
+end
+@enduml
