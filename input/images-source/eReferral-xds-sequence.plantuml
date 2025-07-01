@@ -9,21 +9,21 @@ participant "Referral Initiator" as placer
 participant "Enterprise Document/Data Sharing" as XDS
 participant "Referral Recipient" as filler
 
-placer -> XDS : [[I12.html Referral Request (PCC-55)]]
+placer -> XDS : [[I12.html Referral Request (PCC-55)]] Document Message
 placer -> filler: REF_I12 Command Message
-filler -> XDS: Retrieve [[I12.html Referral Request (PCC-55)]]
+filler -> XDS: Retrieve [[I12.html Referral Request (PCC-55)]] REST API
 
 loop until until service/referral is completed
-filler -> XDS:  Interim [[A04.html Consultation Note (PCC-59)]]
+filler -> XDS:  Interim [[A04.html Consultation Note (PCC-59)]] Document Message
 filler -> placer: ADT_A04 Event Message
 alt (when required)
-placer -> XDS: Retrieve Interim [[A04.html Consultation Note (PCC-59)]]
+placer -> XDS: Retrieve Interim [[A04.html Consultation Note (PCC-59)]] REST API
 end
 end
 filler -> placer: ADT_A03 Event Message
-filler -> XDS: [[A03.html Discharge Report (PCC-57)]]
+filler -> XDS: [[A03.html Discharge Report (PCC-57)]] Document Message
 alt (when required)
-placer -> XDS: Retrieve [[A03.html Discharge Report (PCC-57)]]
+placer -> XDS: Retrieve [[A03.html Discharge Report (PCC-57)]] REST API
 end
 
 @enduml

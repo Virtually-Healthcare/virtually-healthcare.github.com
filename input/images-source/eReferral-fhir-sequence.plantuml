@@ -10,21 +10,21 @@ participant "Initiator Shared Repository" as cdri
 participant "Recipient Shared Repository" as cdrr
 participant "Referral Recipient" as filler
 
-placer -> cdri : [[I12.html Referral Request (PCC-55)]]
-placer -> filler: [[StructureDefinition-Task.html FHIR Task]] (requested)
-filler -> cdri: Retrieve [[I12.html Referral Request (PCC-55)]]
-filler -> placer: [[StructureDefinition-Task.html FHIR Task]] (accepted/rejected)
-filler -> placer: [[StructureDefinition-Task.html FHIR Task]] (in-progress)
+placer -> cdri : [[I12.html Referral Request (PCC-55)]] Document Message
+placer -> filler: [[StructureDefinition-Task.html FHIR Task]] (requested) Event Message
+filler -> cdri: Retrieve [[I12.html Referral Request (PCC-55)]] REST API
+filler -> placer: [[StructureDefinition-Task.html FHIR Task]] (accepted/rejected) Event Message
+filler -> placer: [[StructureDefinition-Task.html FHIR Task]] (in-progress) Event Message
 loop until until service/referral is completed
-filler -> cdrr:  Interim [[A04.html Consultation Note (PCC-59)]]
-filler -> placer: [[[[StructureDefinition-Encounter.html FHIR Encounter]] (or ADT_A04)
+filler -> cdrr:  Interim [[A04.html Consultation Note (PCC-59)]] Document Message
+filler -> placer: [[[[StructureDefinition-Encounter.html FHIR Encounter]] (or ADT_A04) Event Message
 alt (when required)
-placer -> cdrr: Retrieve Interim [[A04.html Consultation Note (PCC-59)]]
+placer -> cdrr: Retrieve Interim [[A04.html Consultation Note (PCC-59)]] REST API
 end
 end
-filler -> placer: [[StructureDefinition-Task.html FHIR Task]] (completed)
-filler -> cdrr: [[A03.html Discharge Report (PCC-57)]]
+filler -> placer: [[StructureDefinition-Task.html FHIR Task]] (completed) Event Message
+filler -> cdrr: [[A03.html Discharge Report (PCC-57)]] Document Message
 alt (when required)
-placer -> cdrr: Retrieve [[A03.html Discharge Report (PCC-57)]]
+placer -> cdrr: Retrieve [[A03.html Discharge Report (PCC-57)]] REST API
 end
 @enduml

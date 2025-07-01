@@ -9,15 +9,15 @@ participant "Care Directory Service" as mMCSD
 placer -> mMCSD: Lookup of care providers
 placer -> placer: Select care provider(s)
 placer -> placer : Complete Referral Form
-placer -> filler : [[I12.html Referral Request (PCC-55)]]
+placer -> filler : [[I12.html Referral Request (PCC-55)]] Command Message
 filler -> filler: Triage Referral
 alt Referral Accepted
   filler -> placer: Accept Referral
   loop until service/referral is completed
     filler -> filler: Perform requested service and provide care
-    filler -> placer: Interim [[A04.html Consultation Note (PCC-59)]]
+    filler -> placer: Interim [[A04.html Consultation Note (PCC-59)]] Document Message
   end
-  filler -> placer : [[A03.html Discharge Report (PCC-57)]]
+  filler -> placer : [[A03.html Discharge Report (PCC-57)]] Document Message
 else Referral Rejected
   filler -> placer: Reject Referral
 end
