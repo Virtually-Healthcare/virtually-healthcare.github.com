@@ -17,13 +17,13 @@ loop until until service/referral is completed
 filler -> XDS:  Interim [[A04.html Consultation Note (PCC-59)]]
 filler -> placer: ADT_A04 Event Message
 alt (when required)
-placer -> XDS: Rertieve Interim [[A04.html Consultation Note (PCC-59)]]
+placer -> XDS: Retrieve Interim [[A04.html Consultation Note (PCC-59)]]
 end
 end
 filler -> placer: ADT_A03 Event Message
 filler -> XDS: [[A03.html Discharge Report (PCC-57)]]
 alt (when required)
-placer -> XDS: Rertieve [[A03.html Discharge Report (PCC-57)]]
+placer -> XDS: Retrieve [[A03.html Discharge Report (PCC-57)]]
 end
 
 @enduml

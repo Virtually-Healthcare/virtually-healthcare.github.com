@@ -19,12 +19,12 @@ loop until until service/referral is completed
 filler -> cdrr:  Interim [[A04.html Consultation Note (PCC-59)]]
 filler -> placer: FHIR Encounter (or ADT_A04)
 alt (when required)
-placer -> cdrr: Rertieve Interim [[A04.html Consultation Note (PCC-59)]]
+placer -> cdrr: Retrieve Interim [[A04.html Consultation Note (PCC-59)]]
 end
 end
 filler -> placer: FHIR Task (completed)
 filler -> cdrr: [[A03.html Discharge Report (PCC-57)]]
 alt (when required)
-placer -> cdrr: Rertieve [[A03.html Discharge Report (PCC-57)]]
+placer -> cdrr: Retrieve [[A03.html Discharge Report (PCC-57)]]
 end
 @enduml
