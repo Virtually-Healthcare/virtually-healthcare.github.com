@@ -465,6 +465,9 @@ pages:
   A03.md:
     title: Discharge Report [PCC-57]
     generation: markdown
+  Tasking.md:
+    title: Task Conversations
+    generation: markdown
   enterprise.md:
     title: Design History
     generation: markdown
@@ -489,6 +492,7 @@ menu:
      Consultation Note [PCC-59]: A04.html
      Patient Referral [PCC-55]: I12.html
      Discharge Report [PCC-57]: A03.html
+     Task Conversations: Tasking.html
 #    eReport: R01.html
 
   Domain Archetypes:

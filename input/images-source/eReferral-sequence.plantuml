@@ -10,13 +10,11 @@ placer -> mMCSD: Lookup of care providers
 placer -> placer: Select care provider(s)
 placer -> placer : Complete Referral Form
 placer -> filler : [[I12.html Referral Request (PCC-55)]]
-opt
-  filler -> filler: Triage Referral
-end
-opt Referral Accepted
+filler -> filler: Triage Referral
+alt Referral Accepted
   filler -> placer: Accept Referral
   loop until referral is completed
-    filler -> filler: Perform procedure and provide care
+    filler -> filler: Perform requested service and provide care
     filler -> placer: Interim [[A04.html Consultation Note (PCC-59)]]
   end
   filler -> placer : [[A03.html Discharge Report (PCC-57)]]
