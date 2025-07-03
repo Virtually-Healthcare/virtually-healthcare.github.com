@@ -33,10 +33,15 @@ Usage:  #definition
     * linkId = "encountertype"
     * text = "Directive"
     * type = #choice
+    * answerOption[+].valueCoding = $sct#308021002 "Seen in clinic"
+    * answerOption[+].valueCoding = $sct#185317003 "Telephone encounter"
+    * answerOption[+].valueCoding = $sct#307321000000107 "Video-link encounter"
+
   * item[+]
     * linkId = "encounterservice"
     * text = "Service"
     * type = #choice
+    * answerOption[+].valueCoding = $sct#1577041000000109 "Community Pharmacist Consultation Service for minor illness"
 
 * item[+]
   * linkId = "LOINC/61150-9"
@@ -53,7 +58,7 @@ Usage:  #definition
     * linkId = "complaint"
     * text = "Complaint"
     * code[+] = $sct#1269489004 "Complaint"
-    * type = #choice
+    * type = #open-choice
     * repeats = true
     * definition = "https://fhir.virtually.healthcare/StructureDefinition/Observation#Observation.valueCodeableConcept"
     * answerValueSet = "http://snomed.info/sct/900000000000207008?fhir_vs=ecl/%3C404684003"
@@ -65,6 +70,27 @@ Usage:  #definition
   * linkId = "AllergyIntolerance"
   * text = "Allergies"
   * type = #group
+  * code[+] = $loinc#48765-2 "Allergies and adverse reactions Document"
+  * item[+]
+    * linkId = "substance"
+    * text = "Substance"
+    * type = #open-choice
+    * code[+] = $sct#105590001 "Substance"
+    * repeats = true
+    * answerValueSet = "http://snomed.info/sct/900000000000207008?fhir_vs=ecl/%3C105590001"
+    * extension[+]
+      * url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-preferredTerminologyServer"
+      * valueUrl = "https://snowstorm.ihtsdotools.org/fhir"
+  * item[+]
+      * linkId = "drug"
+      * text = "Drug"
+      * type = #open-choice
+      * code[+] = $sct#416098002 "Allergy to drug"
+      * repeats = true
+      * answerValueSet = "http://snomed.info/sct/900000000000207008?fhir_vs=ecl/%3C416098002"
+      * extension[+]
+        * url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-preferredTerminologyServer"
+        * valueUrl = "https://snowstorm.ihtsdotools.org/fhir"
 
 * item[+]
   * linkId = "History"
