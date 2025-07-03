@@ -15,6 +15,7 @@ Usage:  #definition
   * code[+] = $loinc#42348-3 "Advance healthcare directives"
   * text = "Consent"
   * type = #group
+  * definition = "https://fhir.virtually.healthcare/StructureDefinition/Consent"
   * item[+]
     * linkId = "directive"
     * text = "Directive"
@@ -23,23 +24,27 @@ Usage:  #definition
 
 * item[+]
   * linkId = "Encounter"
-  * text = "Consultation Date and Type"
+  * text = "Consultation"
   * type = #group
+  * definition = "https://fhir.virtually.healthcare/StructureDefinition/Encounter"
   * item[+]
     * linkId = "encounterdate"
-    * text = "Date and time of consult"
+    * text = "Date and time of consultation"
+    * definition = "https://fhir.virtually.healthcare/StructureDefinition/Encounter#Encounter.period.start"
     * type = #dateTime
   * item[+]
     * linkId = "encountertype"
-    * text = "Directive"
+    * text = "Type of Consultation"
     * type = #choice
+    * definition = "https://fhir.virtually.healthcare/StructureDefinition/Encounter#Encounter.type"
     * answerOption[+].valueCoding = $sct#308021002 "Seen in clinic"
     * answerOption[+].valueCoding = $sct#185317003 "Telephone encounter"
     * answerOption[+].valueCoding = $sct#307321000000107 "Video-link encounter"
 
   * item[+]
     * linkId = "encounterservice"
-    * text = "Service"
+    * text = "Service Provided"
+    * definition = "https://fhir.virtually.healthcare/StructureDefinition/Encounter#Encounter.serviceType"
     * type = #choice
     * answerOption[+].valueCoding = $sct#1577041000000109 "Community Pharmacist Consultation Service for minor illness"
 
@@ -71,22 +76,26 @@ Usage:  #definition
   * text = "Allergies"
   * type = #group
   * code[+] = $loinc#48765-2 "Allergies and adverse reactions Document"
+  * definition = "https://fhir.virtually.healthcare/StructureDefinition/AllergyIntolerance"
+
   * item[+]
     * linkId = "substance"
-    * text = "Substance"
+    * text = "Substance Allergy"
     * type = #open-choice
     * code[+] = $sct#105590001 "Substance"
     * repeats = true
+    * definition = "https://fhir.virtually.healthcare/StructureDefinition/AllergyIntolerance#AllergyIntolerance.code"
     * answerValueSet = "http://snomed.info/sct/900000000000207008?fhir_vs=ecl/%3C105590001"
     * extension[+]
       * url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-preferredTerminologyServer"
       * valueUrl = "https://snowstorm.ihtsdotools.org/fhir"
   * item[+]
     * linkId = "drug"
-    * text = "Drug"
+    * text = "Drug Allergy"
     * type = #open-choice
     * code[+] = $sct#416098002 "Allergy to drug"
     * repeats = true
+    * definition = "https://fhir.virtually.healthcare/StructureDefinition/AllergyIntolerance#AllergyIntolerance.code"
     * answerValueSet = "http://snomed.info/sct/900000000000207008?fhir_vs=ecl/%3C416098002"
     * extension[+]
       * url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-preferredTerminologyServer"
@@ -246,9 +255,10 @@ Usage:  #definition
   * code[+] = $loinc#10160-0 "Medication use"
   * text = "Medications"
   * type = #group
+  * definition = "https://fhir.virtually.healthcare/StructureDefinition/MedciationDispense"
   * item[+]
     * linkId = "medication"
-    * text = "Medication"
+    * text = "Medications Dispensed"
     * type = #group
     * repeats = true
     * item[+]
@@ -264,6 +274,7 @@ Usage:  #definition
   * linkId = "FollowUp"
   * text = "Follow up"
   * type = #group
+  * definition = "https://fhir.virtually.healthcare/StructureDefinition/Task"
   * item[+]
     * linkId = "task"
     * text = "Tasks"
@@ -284,6 +295,7 @@ Usage:  #definition
   * linkId = "Referral"
   * text = "Sign Posting"
   * type = #group
+  * definition = "https://fhir.virtually.healthcare/StructureDefinition/ServiceRequest"
   * item[+]
     * linkId = "serviceRequest"
     * text = "Services"
