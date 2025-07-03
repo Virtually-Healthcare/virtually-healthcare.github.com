@@ -1,0 +1,50 @@
+@startmindmap
+
+title "Domain Driven Design and Health Standards (UK focused)"
+
+skinparam svgDimensionStyle false
+
+* User Requirements
+**[#FFBBCC] Business Analysis\n(inc Business Process Modelling)
+***[#lightgreen] Data Semantics/Governance\nArchetype and Templates \n(inc. openEHR, FHIR Questionnaire\nand/or Logicial Models)
+****[#lightyellow] Composition (ISO 13606-1)\n(often used with IHE XDS.b/MHD)
+*****[#lightyellow] HL7 FHIR Document
+***** Clinical Document Architecture (CDA)
+****[#lightyellow] Template (/Archetype) (ISO 13606-2)\n(often used to define data capture)
+*****[#lightyellow] FHIR Questionnaire
+***** openEHR Template
+****[#lightyellow] Entity/Resource (ISO 13972)\n(Defines HL7 v2 segments and FHIR resources)
+***** openEHR Archetype
+******[#lightyellow] FHIR Profile
+*** Data Architecture
+**** Data Fabric
+**** Data Mesh
+**** Data Analytics
+***** Machine Learning
+***[#FFBBCC] Software Architecture
+****[#FFBBCC] Events
+*****[#FFBBCC] Event, Command and Document Message
+******[#lightyellow] IHE Laboratory and Testing Workflow (LTW)
+*******[#lightgreen] HL7 v2 OML/ORM
+*******[#lightgreen] HL7 v2 ORU
+******[#lightgreen] IHE Patient Administration Module (PAM)
+*******[#lightgreen] HL7 v2 ADT
+******[#FFBBCC] IHE Closed Loop Referral (X360)
+*******[#lightyellow] HL7 v2 REF
+*******[#lightyellow] HL7 v2 SIU
+*******[#lightgreen] HL7 v2 ADT_A03 and ADT_A04
+
+*****[#FFBBCC] Conversation and Event Notifications
+******[#FFBBCC] FHIR Workflow
+*******[#lightyellow] FHIR Message
+*******[#FFBBCC] FHIR Subscription
+****[#FFBBCC] REST API
+*****[#lightyellow] IHE Query for Existing Data (QEDm)
+******[#lightgreen] HL7 FHIR RESTful
+*******[#lightgreen] HL7 FHIR Resource
+*****[#lightyellow] IHE Health Documents (MHD) \nXML+SOAP version is IHE XDS.b
+******[#lightgreen] HL7 FHIR RESTful
+*******[#FFBBCC] HL7 FHIR Document
+******[#lightgreen] DICOM
+
+@endmindmap
