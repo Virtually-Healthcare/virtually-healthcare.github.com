@@ -6,7 +6,7 @@ Formal definition of the Consultation Note
 """
 Usage:  #definition
 
-* title = "Clinical Management Plan"
+* title = "Consultation Note"
 * status = #draft
 * url = "https://fhir.virtually.healthcare/Questionnaire/ConsultationNote"
 
@@ -96,6 +96,11 @@ Usage:  #definition
   * linkId = "History"
   * text = "History"
   * type = #group
+  * item[+]
+    * linkId = "historynarrative"
+    * text = "Patient History"
+    * type = #text
+    * repeats = true
 
 * item[+]
   * linkId = "Examination"
@@ -239,13 +244,30 @@ Usage:  #definition
 * item[+]
   * linkId = "LOINC/10160-0"
   * code[+] = $loinc#10160-0 "Medication use"
-  * text = "Medication"
+  * text = "Medications"
   * type = #group
+  * item[+]
+    * linkId = "medication"
+    * text = "Medication"
+    * type = #group
+    * repeats = true
+    * item[+]
+      * linkId = "drug"
+      * text = "Drug"
+      * type = #text
+    * item[+]
+      * linkId = "dosage"
+      * text = "Dosage"
+      * type = #text
 
 * item[+]
   * linkId = "FollowUp"
   * text = "Follow up"
   * type = #group
+  * item[+]
+    * linkId = "task"
+    * text = "Tasks"
+    * type = #text
 
 * item[+]
   * linkId = "Documents"
@@ -262,6 +284,15 @@ Usage:  #definition
   * linkId = "Referral"
   * text = "Sign Posting"
   * type = #group
+  * item[+]
+    * linkId = "serviceRequest"
+    * text = "Services"
+    * type = #group
+    * repeats = true
+    * item[+]
+      * linkId = "serviceType"
+      * text = "Type of Signposting"
+      * type = #text
 
 
 
