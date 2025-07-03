@@ -17,8 +17,8 @@ Usage:  #definition
   * type = #group
   * definition = "https://fhir.virtually.healthcare/StructureDefinition/Consent"
   * item[+]
-    * linkId = "directive"
-    * text = "Directive"
+    * linkId = "consentType"
+    * text = "Type of Consent"
     * type = #text
     * repeats = true
 
