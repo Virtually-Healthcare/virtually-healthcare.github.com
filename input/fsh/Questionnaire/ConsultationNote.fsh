@@ -15,11 +15,28 @@ Usage:  #definition
   * code[+] = $loinc#42348-3 "Advance healthcare directives"
   * text = "Consent"
   * type = #group
+  * item[+]
+    * linkId = "directive"
+    * text = "Directive"
+    * type = #text
+    * repeats = true
 
 * item[+]
   * linkId = "Encounter"
-  * text = "Date and time of consult"
+  * text = "Consultation Date and Type"
   * type = #group
+  * item[+]
+    * linkId = "encounterdate"
+    * text = "Date and time of consult"
+    * type = #dateTime
+  * item[+]
+    * linkId = "encountertype"
+    * text = "Directive"
+    * type = #choice
+  * item[+]
+    * linkId = "encounterservice"
+    * text = "Service"
+    * type = #choice
 
 * item[+]
   * linkId = "LOINC/61150-9"
