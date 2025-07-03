@@ -82,15 +82,15 @@ Usage:  #definition
       * url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-preferredTerminologyServer"
       * valueUrl = "https://snowstorm.ihtsdotools.org/fhir"
   * item[+]
-      * linkId = "drug"
-      * text = "Drug"
-      * type = #open-choice
-      * code[+] = $sct#416098002 "Allergy to drug"
-      * repeats = true
-      * answerValueSet = "http://snomed.info/sct/900000000000207008?fhir_vs=ecl/%3C416098002"
-      * extension[+]
-        * url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-preferredTerminologyServer"
-        * valueUrl = "https://snowstorm.ihtsdotools.org/fhir"
+    * linkId = "drug"
+    * text = "Drug"
+    * type = #open-choice
+    * code[+] = $sct#416098002 "Allergy to drug"
+    * repeats = true
+    * answerValueSet = "http://snomed.info/sct/900000000000207008?fhir_vs=ecl/%3C416098002"
+    * extension[+]
+      * url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-preferredTerminologyServer"
+      * valueUrl = "https://snowstorm.ihtsdotools.org/fhir"
 
 * item[+]
   * linkId = "History"
