@@ -39,3 +39,5 @@ where ROA is the ODS code for Manchester University NHS Foundation Trust
 * assigner.identifier.value 1..1 MS
 * assigner.identifier.system 1..1 MS
 * assigner.identifier.system = $ods-code
+* assigner.identifier.value ^example.valueString = "F83671"
+* assigner.identifier.value ^example.label = "THE BEAUMONT PRACTICE"

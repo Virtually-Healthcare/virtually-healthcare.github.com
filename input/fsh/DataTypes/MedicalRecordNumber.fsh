@@ -17,7 +17,7 @@ Only use in References Data Type if the NHS Number is not known or unverified.
 //* system ^example = "https://www.acme.org/Id/medical-record-number"
 * assigner ^short = "Assigning Facility"
 * assigner.identifier.system = $ods-code
-* assigner ^example.valueString = "F83671"
-* assigner ^example.label = "THE BEAUMONT PRACTICE"
+* assigner.identifier.value ^example.valueString = "F83671"
+* assigner.identifier.value ^example.label = "THE BEAUMONT PRACTICE"
 
 
