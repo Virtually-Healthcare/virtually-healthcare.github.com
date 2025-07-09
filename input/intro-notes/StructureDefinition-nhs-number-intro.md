@@ -1,26 +1,12 @@
+Format: NNNNNNNNNN
+- England, Wales and the Isle of Man value ranges: 400 000 000 to 499 999 999, and 600 000 000 to 799 999.
+- Testing: 999 000 0000 to 999 999 9999
 
-Note: FHIR Identifier is very similar to HL7 v2 CX and so should be kept compatible.
+Values include a checksum, details can be found in [NHS NUMBER](https://www.datadictionary.nhs.uk/attributes/nhs_number.html)
 
-### England and Wales
-
-Only traced NHS Number **SHOULD** be used, un-traced NHS Numbers **MUST** be clearly indicated.
-
-NHS Data Dictionary: [NHS NUMBER](https://www.datadictionary.nhs.uk/data_elements/nhs_number.html)
-
-Format: ^[0-9]{10}$ (400 000 000 to 499 999 999, and 600 000 000 to 799 999 with the tenth digit being a modulus 11 check digit)
-
-Naming System (HL7 FHIR, v2 and OID): [nhs-number](https://simplifier.net/ukfhircommunityassets/namingsystem-nhs-number)
-
-See also [NHS England HL7 v2 ADT](HSCIC-ITK-HL7-V2-Message-Specifications.pdf) 5.3.1 Patient Identifiers (CX).
-
-### Scotland
-
-NHS Data Dictionary: [COMMUNITY HEALTH INDEX NUMBER](https://www.datadictionary.nhs.uk/attributes/community_health_index_number.html)
-
-Format: ^[0-3]{10}$ (010 100 0000 to 311 299 9999 with the tenth digit being a modulus 11 check digit)
-
-**Northern Ireland**
-
-NHS Data Dictionary: [HEALTH AND CARE NUMBER](https://www.datadictionary.nhs.uk/attributes/health_and_care_number.html)
-
-Format: ^[3]{10}$ (320 000 001 to 399 999 999 with the tenth digit being a modulus 11 check digit)
+| Field               | HL7 FHIR Identifier | OID                       | HL7 v2 CX | HL7 FHIR Example                                 | HL7 v2 Example |
+|---------------------|---------------------|---------------------------|-----------|--------------------------------------------------|----------------|
+| Value               | value               |                           | CX.1      | 9449305552                                       | 9449305552     |
+| Type                | type                |                           | CX.5      | http://terminology.hl7.org/CodeSystem/v2-0203#NH | NH             |
+| Assigning Authority | assigner.identifier |                           | CX.6      |                                                  | NHS            |
+| System              | system              | 2.16.840.1.113883.2.1.4.1 | N/a       | https://fhir.nhs.uk/Id/nhs-number                | N/a            |

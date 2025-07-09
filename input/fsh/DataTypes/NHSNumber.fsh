@@ -8,7 +8,12 @@ NHS Data Dictionary: [NHS NUMBER](https://www.datadictionary.nhs.uk/data_element
 
 * system 1..1
 * system from UKNationalIdentifiers
+* system ^example.valueString = "https://fhir.nhs.uk/Id/nhs-number"
+* system ^example.label = "NHS Number"
+
 * value 1..1
+
 * type = $v2-0203#NH (exactly)
+
 * assigner ^short = "Assigning organisation, populate if known (i.e. X24/X26 for NHS England)"
 * assigner.identifier only OrganisationCode
