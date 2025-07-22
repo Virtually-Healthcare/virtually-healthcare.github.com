@@ -477,6 +477,10 @@ pages:
   patient-care-coordination.md:
     title: Patient Care Coordination
     generation: markdown
+  data-pipeline.md:
+    title: IM1 Bulk
+    generation: markdown
+
 menu:
   Home: index.html
   Analysis and Design (Vol 1):

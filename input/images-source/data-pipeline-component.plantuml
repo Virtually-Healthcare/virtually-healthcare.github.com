@@ -1,0 +1,14 @@
+@startuml
+
+interface airflow as "Apache Airflow\nExtract, Transform and Load (ETL)"
+
+component "[[ActorDefinition-ClinicalDataRepository.html Clinical Data Repository]]" as CDR
+
+component "IM1 Bulk CSV File Share(s)" as CSV
+
+CSV --> airflow
+
+airflow --> CDR
+
+
+@enduml
