@@ -334,6 +334,9 @@ resources:
   Bundle/FHIRDocument-DischargeReport:
     name: Bundle `Document` - Discharge Report
     description: FHIR Document Discharge report with multiple panels and individual observations
+  Bundle/a820f27e-b626-4b89-88b1-7e759d0b9eb1:
+    name: Bundle `Document` - GP Connect Patient Summary
+    description: FHIR Document Patient Summary using GP Connect Access Record HTML
 
 groups:
   -ex-example-eReferral:
