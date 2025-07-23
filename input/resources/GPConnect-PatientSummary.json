@@ -1,248 +1,246 @@
-{
-        "resourceType": "Bundle",
-        "id": "a820f27e-b626-4b89-88b1-7e759d0b9eb1",
-        "type": "document",
-        "entry": [
-          {
-            "resource": {
-              "resourceType": "Composition",
-              "meta": {
-                "profile": [
-                  "http://fhir.nhs.net/StructureDefinition/gpconnect-carerecord-composition-1"
-                ]
+ {
+    "resourceType": "Bundle",
+    "id": "a820f27e-b626-4b89-88b1-7e759d0b9eb1",
+    "identifier": {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:uuid:0ffb99e8-b076-4475-af2b-47979271f969"
+    },
+    "type": "document",
+    "timestamp": "2025-07-23T11:46:42.000+00:00",
+    "entry": [
+      {
+        "fullUrl": "urn:uuid:0ffb99e8-b076-4475-af2b-47979271f969",
+        "resource": {
+          "resourceType": "Composition",
+          "status": "final",
+          "type": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "60591-5"
               },
-              "status": "final",
-              "type": {
+              {
+                "system": "http://snomed.info/sct",
+                "code": "824321000000109"
+              }
+            ]
+          },
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "700232004",
+                  "display": "general medical service (qualifier value)"
+                }
+              ],
+              "text": "general medical service (qualifier value)"
+            }
+          ],
+          "subject": {
+            "reference": "urn:uuid:bdc77a1d-f799-424b-b4fc-912acb20d723"
+          },
+          "date": "2025-07-23T12:46:42+01:00",
+          "author": [
+            {
+              "reference": "urn:uuid:203dee3d-3508-43c4-8085-497468fc8c77"
+            }
+          ],
+          "title": "GP Patient Summary",
+          "custodian": {
+            "reference": "urn:uuid:0d645985-f9d6-4e59-ba9f-3b4e43f53b14"
+          },
+          "section": [
+            {
+              "title": "History - Last 3 Encounters",
+              "code": {
                 "coding": [
                   {
                     "system": "http://loinc.org",
-                    "code": "60591-5"
-                  },
+                    "code": "11329-0"
+                  }
+                ]
+              },
+              "text": {
+                "status": "generated",
+                "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div><h2>Last 3 Encounters</h2><p>No 'Last 3 Encounters' data is recorded for this patient.</p></div></div>"
+              }
+            },
+            {
+              "title": "Problems",
+              "code": {
+                "coding": [
                   {
-                    "system": "http://snomed.info/sct",
-                    "code": "824321000000109"
+                    "system": "http://loinc.org",
+                    "code": "11450-4"
                   }
                 ]
               },
-              "category": [
-                {
-                  "coding": [
-                    {
-                      "system": "http://snomed.info/sct",
-                      "code": "700232004",
-                      "display": "general medical service (qualifier value)"
-                    }
-                  ],
-                  "text": "general medical service (qualifier value)"
-                }
-              ],
-              "subject": {
-                "reference": "Patient/6"
+              "text": {
+                "status": "generated",
+                "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div><h2>Active Problems and Issues</h2><p>No 'Active Problems and Issues' data is recorded for this patient.</p></div><div><h2>Major Inactive Problems and Issues</h2><p>No 'Major Inactive Problems and Issues' data is recorded for this patient.</p></div></div>"
+              }
+            },
+            {
+              "title": "Allergy",
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://loinc.org",
+                    "code": "48765-2"
+                  }
+                ]
               },
-              "date": "2025-07-23T12:06:52+01:00",
-              "author": [
-                {
-                  "reference": "Practitioner/1"
-                }
-              ],
-              "title": "GP Patient Summary",
-              "section": [
-                {
-                  "title": "History - Last 3 Encounters",
-                  "code": {
-                    "coding": [
-                      {
-                        "system": "http://loinc.org",
-                        "code": "11329-0"
-                      }
-                    ]
-                  },
-                  "text": {
-                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div><h2>Last 3 Encounters</h2><p>No 'Last 3 Encounters' data is recorded for this patient.</p></div></div>"
+              "text": {
+                "status": "generated",
+                "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div><h2>Current Allergies and Adverse Reactions</h2><p>No 'Current Allergies and Adverse Reactions' data is recorded for this patient.</p></div></div>"
+              }
+            },
+            {
+              "title": "Medication",
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://loinc.org",
+                    "code": "10160-0"
                   }
-                },
-                {
-                  "title": "Problems",
-                  "code": {
-                    "coding": [
-                      {
-                        "system": "http://loinc.org",
-                        "code": "11450-4"
-                      }
-                    ]
-                  },
-                  "text": {
-                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div><h2>Active Problems and Issues</h2><p>No 'Active Problems and Issues' data is recorded for this patient.</p></div><div><h2>Major Inactive Problems and Issues</h2><p>No 'Major Inactive Problems and Issues' data is recorded for this patient.</p></div></div>"
-                  }
-                },
-                {
-                  "title": "Allergy",
-                  "code": {
-                    "coding": [
-                      {
-                        "system": "http://loinc.org",
-                        "code": "48765-2"
-                      }
-                    ]
-                  },
-                  "text": {
-                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div><h2>Current Allergies and Adverse Reactions</h2><p>No 'Current Allergies and Adverse Reactions' data is recorded for this patient.</p></div></div>"
-                  }
-                },
-                {
-                  "title": "Medication",
-                  "code": {
-                    "coding": [
-                      {
-                        "system": "http://loinc.org",
-                        "code": "10160-0"
-                      }
-                    ]
-                  },
-                  "text": {
-                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div><h2>Acute Medication (Last 12 Months)</h2><table id=\"med-tab-acu-med\"><thead><tr><th>Type</th><th>Start Date</th><th>Medication Item</th><th>Dosage Instruction</th><th>Quantity</th><th>Scheduled End Date</th><th>Days Duration</th><th>Additional Information</th></tr></thead><tbody><tr><td>Acute</td><td class=\"date-column\">01-Apr-2023</td><td>Amoxicillin 500mg capsules Supply (42) capsule(s)</td><td>three times per day</td><td>14 days</td><td class=\"date-column\">19-Aug-2026</td><td align=\"right\">7</td><td>Take every 8 hours (three times a day) with or without food</td></tr><tr><td>Acute</td><td class=\"date-column\">01-Feb-2022</td><td>Lansoprazole 15mg gastro-resistant capsules</td><td>one tablet daily</td><td>28 days</td><td class=\"date-column\">19-Aug-2026</td><td align=\"right\">2</td><td>Take your doses 30 minutes before breakfast when your stomach is empty</td></tr></tbody></table></div><div><h2>Current Repeat Medication</h2><table id=\"med-tab-curr-rep\"><thead><tr><th>Type</th><th>Start Date</th><th>Medication Item</th><th>Dosage Instruction</th><th>Quantity</th><th>Last Issued Date</th><th>Number of Prescriptions Issued</th><th>Max Issues</th><th>Review Date</th><th>Additional Information</th></tr></thead><tbody><tr><td>Repeat</td><td class=\"date-column\">01-Apr-2023</td><td>Metformin 500mg tablets</td><td>one tablet 2 to 3 time daily</td><td>28 days</td><td/><td/><td/><td/><td>Take with food and water</td></tr><tr><td>Repeat</td><td class=\"date-column\">01-Feb-2022</td><td>Metformin 500mg tablets</td><td>one tablet 2 to 3 time daily</td><td>28 days</td><td/><td/><td/><td/><td>Take with food and water</td></tr></tbody></table></div></div>"
-                  }
-                }
-              ]
+                ]
+              },
+              "text": {
+                "status": "generated",
+                "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div><h2>Acute Medication (Last 12 Months)</h2><table id=\"med-tab-acu-med\"><thead><tr><th>Type</th><th>Start Date</th><th>Medication Item</th><th>Dosage Instruction</th><th>Quantity</th><th>Scheduled End Date</th><th>Days Duration</th><th>Additional Information</th></tr></thead><tbody><tr><td>Acute</td><td class=\"date-column\">01-Apr-2023</td><td>Amoxicillin 500mg capsules Supply (42) capsule(s)</td><td>three times per day</td><td>14 days</td><td class=\"date-column\">19-Aug-2026</td><td align=\"right\">7</td><td>Take every 8 hours (three times a day) with or without food</td></tr><tr><td>Acute</td><td class=\"date-column\">01-Feb-2022</td><td>Lansoprazole 15mg gastro-resistant capsules</td><td>one tablet daily</td><td>28 days</td><td class=\"date-column\">19-Aug-2026</td><td align=\"right\">2</td><td>Take your doses 30 minutes before breakfast when your stomach is empty</td></tr></tbody></table></div><div><h2>Current Repeat Medication</h2><table id=\"med-tab-curr-rep\"><thead><tr><th>Type</th><th>Start Date</th><th>Medication Item</th><th>Dosage Instruction</th><th>Quantity</th><th>Last Issued Date</th><th>Number of Prescriptions Issued</th><th>Max Issues</th><th>Review Date</th><th>Additional Information</th></tr></thead><tbody><tr><td>Repeat</td><td class=\"date-column\">01-Apr-2023</td><td>Metformin 500mg tablets</td><td>one tablet 2 to 3 time daily</td><td>28 days</td><td/><td/><td/><td/><td>Take with food and water</td></tr><tr><td>Repeat</td><td class=\"date-column\">01-Feb-2022</td><td>Metformin 500mg tablets</td><td>one tablet 2 to 3 time daily</td><td>28 days</td><td/><td/><td/><td/><td>Take with food and water</td></tr></tbody></table></div></div>"
+              }
             }
+          ]
+        }
+      },
+      {
+        "fullUrl": "urn:uuid:203dee3d-3508-43c4-8085-497468fc8c77",
+        "resource": {
+          "resourceType": "Practitioner",
+          "id": "1",
+          "meta": {
+            "versionId": "1469444400000",
+            "lastUpdated": "2016-07-25T12:00:00.000+01:00"
           },
-          {
-            "fullUrl": "Practitioner/1",
-            "resource": {
-              "resourceType": "Practitioner",
-              "id": "1",
-              "meta": {
-                "versionId": "1469444400000",
-                "lastUpdated": "2016-07-25T12:00:00.000+01:00",
-                "profile": [
-                  "http://fhir.nhs.net/StructureDefinition/gpconnect-practitioner-1"
-                ]
-              },
-              "identifier": [
-                {
-                  "system": "http://fhir.nhs.net/Id/sds-user-id",
-                  "value": "G13579135"
-                },
-                {
-                  "system": "http://fhir.nhs.net/Id/sds-role-profile-id",
-                  "value": "PT1234"
-                }
+          "identifier": [
+            {
+              "system": "http://fhir.nhs.net/Id/sds-user-id",
+              "value": "G13579135"
+            },
+            {
+              "system": "http://fhir.nhs.net/Id/sds-role-profile-id",
+              "value": "PT1234"
+            }
+          ],
+          "name": [
+            {
+              "use": "usual",
+              "family": "Gilbert",
+              "given": [
+                "Nichole"
               ],
-              "name": [
+              "prefix": [
+                "Miss"
+              ]
+            }
+          ],
+          "gender": "female",
+          "communication": [
+            {
+              "coding": [
                 {
-                  "use": "usual",
-                  "family": "Gilbert",
-                  "given": [
-                    "Nichole"
-                  ],
-                  "prefix": [
-                    "Miss"
-                  ]
-                }
-              ],
-              "gender": "female",
-              "communication": [
-                {
-                  "coding": [
-                    {
-                      "system": "http://fhir.nhs.net/ValueSet/human-language-1",
-                      "code": "en",
-                      "display": "English"
-                    }
-                  ]
+                  "system": "http://fhir.nhs.net/ValueSet/human-language-1",
+                  "code": "en",
+                  "display": "English"
                 }
               ]
             }
+          ]
+        }
+      },
+      {
+        "fullUrl": "urn:uuid:0d645985-f9d6-4e59-ba9f-3b4e43f53b14",
+        "resource": {
+          "resourceType": "Organization",
+          "id": "8",
+          "meta": {
+            "versionId": "1548849600000",
+            "lastUpdated": "2019-01-30T12:00:00.000+00:00"
           },
-          {
-            "fullUrl": "Organization/8",
-            "resource": {
-              "resourceType": "Organization",
-              "id": "8",
-              "meta": {
-                "versionId": "1548849600000",
-                "lastUpdated": "2019-01-30T12:00:00.000+00:00",
-                "profile": [
-                  "http://fhir.nhs.net/StructureDefinition/gpconnect-organization-1"
-                ]
-              },
-              "identifier": [
-                {
-                  "system": "http://fhir.nhs.net/Id/ods-organization-code",
-                  "value": "A20047"
-                }
-              ],
-              "name": "Dr Legg's Surgery",
-              "telecom": [
-                {
-                  "system": "phone",
-                  "value": "12345678",
-                  "use": "work"
-                }
-              ],
-              "address": [
-                {
-                  "use": "work",
-                  "line": [
-                    "NHS NPFIT",
-                    "Test Data Manager",
-                    "Princes Exchange"
-                  ],
-                  "city": "Leeds",
-                  "postalCode": "LS1 4HY"
-                }
-              ]
+          "identifier": [
+            {
+              "system": "http://fhir.nhs.net/Id/ods-organization-code",
+              "value": "A20047"
             }
+          ],
+          "name": "Dr Legg's Surgery",
+          "telecom": [
+            {
+              "system": "phone",
+              "value": "12345678",
+              "use": "work"
+            }
+          ],
+          "address": [
+            {
+              "use": "work",
+              "line": [
+                "NHS NPFIT",
+                "Test Data Manager",
+                "Princes Exchange"
+              ],
+              "city": "Leeds",
+              "postalCode": "LS1 4HY"
+            }
+          ]
+        }
+      },
+      {
+        "fullUrl": "urn:uuid:bdc77a1d-f799-424b-b4fc-912acb20d723",
+        "resource": {
+          "resourceType": "Patient",
+          "id": "6",
+          "meta": {
+            "versionId": "1521806400000",
+            "lastUpdated": "2018-03-23T12:00:00.000+00:00"
           },
-          {
-            "fullUrl": "Patient/6",
-            "resource": {
-              "resourceType": "Patient",
-              "id": "6",
-              "meta": {
-                "versionId": "1521806400000",
-                "lastUpdated": "2018-03-23T12:00:00.000+00:00",
-                "profile": [
-                  "http://fhir.nhs.net/StructureDefinition/gpconnect-patient-1"
-                ]
-              },
-              "identifier": [
-                {
-                  "system": "http://fhir.nhs.net/Id/nhs-number",
-                  "value": "9658218997"
-                }
+          "identifier": [
+            {
+              "system": "http://fhir.nhs.net/Id/nhs-number",
+              "value": "9658218997"
+            }
+          ],
+          "name": [
+            {
+              "use": "usual",
+              "text": "Lauren CORR",
+              "family": "CORR",
+              "given": [
+                "Lauren"
               ],
-              "name": [
-                {
-                  "use": "usual",
-                  "text": "Lauren CORR",
-                  "family": "CORR",
-                  "given": [
-                    "Lauren"
-                  ],
-                  "prefix": [
-                    "MS"
-                  ]
-                }
-              ],
-              "telecom": [
-                {
-                  "system": "phone",
-                  "value": "01454587554",
-                  "use": "home"
-                }
-              ],
-              "gender": "female",
-              "birthDate": "1944-12-28",
-              "address": [
-                {
-                  "use": "home",
-                  "type": "physical",
-                  "text": "11 MANLAKE AVENUE, WINTERTON, DN15 9SD"
-                }
+              "prefix": [
+                "MS"
               ]
             }
-          }
-        ]
+          ],
+          "telecom": [
+            {
+              "system": "phone",
+              "value": "01454587554",
+              "use": "home"
+            }
+          ],
+          "gender": "female",
+          "birthDate": "1944-12-28",
+          "address": [
+            {
+              "use": "home",
+              "type": "physical",
+              "text": "11 MANLAKE AVENUE, WINTERTON, DN15 9SD"
+            }
+          ]
+        }
       }
-
+    ]
+  }
