@@ -207,7 +207,7 @@
           },
           "identifier": [
             {
-              "system": "http://fhir.nhs.net/Id/nhs-number",
+              "system": "https://fhir.nhs.net/Id/nhs-number",
               "value": "9658218997"
             }
           ],
