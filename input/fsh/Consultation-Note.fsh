@@ -12,6 +12,21 @@ Basic outline of a Consulation Note for use with GP Connect Send Document
 * relatesTo.target[x] only Identifier or Reference(Composition)
 * custodian.identifier only OrganisationCode
 
+* type.coding ^slicing.discriminator[0].type = #value
+* type.coding ^slicing.discriminator[=].path = "system"
+* type.coding ^slicing.ordered = false
+* type.coding ^slicing.rules = #closed
+* type.coding contains
+    SNOMED 0..* MS and
+    LOINC 0..*
+* type.coding[SNOMED] from VHObservationCode (required)
+* type.coding[SNOMED].system = $sct
+* type.coding[SNOMED].code = #823651000000106
+* type.coding[LOINC] from http://hl7.org/fhir/ValueSet/observation-codes (extensible)
+* type.coding[LOINC].system = $loinc
+* type.coding[LOINC].code = #11488-4
+
+
 * section 1.. MS
 * section.text 1.. MS
 * section.section ..0
