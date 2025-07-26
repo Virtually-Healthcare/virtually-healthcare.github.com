@@ -1,0 +1,154 @@
+{
+  "resourceType": "Composition",
+  "id": "96a8dc4f-b86d-4461-ae56-c2db38de61ad",
+  "meta": {
+    "profile" : [
+      "https://fhir.virtually.healthcare/StructureDefinition/PatientSummary"
+    ]
+  },
+  "status": "final",
+  "type": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "60591-5"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "824321000000109"
+      }
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "700232004",
+          "display": "general medical service (qualifier value)"
+        }
+      ],
+      "text": "general medical service (qualifier value)"
+    }
+  ],
+  "subject": {
+    "reference": "urn:uuid:2da4ef7b-c18e-4d95-b91e-2406317d4477"
+  },
+  "date": "2025-07-24T06:34:33+01:00",
+  "author": [
+    {
+      "reference": "urn:uuid:44b7ff18-5c26-414e-8f53-d8a9515ea243"
+    }
+  ],
+  "title": "GP Patient Summary",
+  "custodian": {
+    "reference": "urn:uuid:83521388-6fd3-4e2f-bda6-6fb889190c61"
+  },
+  "section": [
+    {
+      "title": "Problems",
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "11450-4"
+          }
+        ]
+      },
+      "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>Problems and Issues</h1><div><h2>Active Problems and Issues</h2><div class=\"date-banner\"><p>Date filter not applied</p></div><table id=\"prb-tab-act\"><thead><tr><th>Start Date</th><th>Entry</th><th>Significance</th><th>Details</th></tr></thead><tbody><tr><td class=\"date-column\">25-Apr-2018</td><td>Lower back pain</td><td>Minor</td><td/></tr><tr><td class=\"date-column\">01-May-2015</td><td>Type II Diabetes mellitus</td><td>Major</td><td>Diabetes type II blood glucose management</td></tr></tbody></table></div><div><h2>Major Inactive Problems and Issues</h2><div class=\"date-banner\"><p>For the period '24-Jul-2015' to '24-Jul-2025'</p></div><p>No 'Major Inactive Problems and Issues' data is recorded for this patient.</p></div><div><h2>Other Inactive Problems and Issues</h2><div class=\"date-banner\"><p>For the period '24-Jul-2015' to '24-Jul-2025'</p></div><p>No 'Other Inactive Problems and Issues' data is recorded for this patient.</p></div></div>"
+      }
+    },
+    {
+      "title": "Allergy",
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "48765-2"
+          }
+        ]
+      },
+      "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>Allergies and Adverse Reactions</h1><div><h2>Current Allergies and Adverse Reactions</h2><table id=\"all-tab-curr\"><thead><tr><th>Start Date</th><th>Details</th></tr></thead><tbody><tr><td class=\"date-column\">15-Mar-2016</td><td>Allergy to Penicillin, Patient experienced rash, nausea and vomiting</td></tr></tbody></table></div><div><h2>Historical Allergies and Adverse Reactions</h2><table id=\"all-tab-hist\"><thead><tr><th>Start Date</th><th>End Date</th><th>Details</th></tr></thead><tbody><tr><td class=\"date-column\">02-Jun-1963</td><td/><td>Hayfever, allergy to pollen</td></tr></tbody></table></div></div>"
+      }
+    },
+    {
+      "title": "Medication",
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "10160-0"
+          }
+        ]
+      },
+      "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>Medications</h1><div><h2>Acute Medication (Last 12 Months)</h2><div class=\"date-banner\"><p>Date filter not applied</p></div><table id=\"med-tab-acu-med\"><thead><tr><th>Type</th><th>Start Date</th><th>Medication Item</th><th>Dosage Instruction</th><th>Quantity</th><th>Scheduled End Date</th><th>Days Duration</th><th>Additional Information</th></tr></thead><tbody><tr><td>NHS Medication</td><td class=\"date-column\">25-Jan-2025</td><td>Tramadol 50mg capsules</td><td>one tablet every 4 to 6 hours</td><td>28 days</td><td/><td align=\"right\">28</td><td>Take 1 or 2 tablets as directed up to 4 times per day</td></tr></tbody></table></div><div><h2>Current Repeat Medication</h2><div class=\"date-banner\"><p>Date filter not applied</p></div><table id=\"med-tab-curr-rep\"><thead><tr><th>Type</th><th>Start Date</th><th>Medication Item</th><th>Dosage Instruction</th><th>Quantity</th><th>Last Issued Date</th><th>Number of Prescriptions Issued</th><th>Max Issues</th><th>Review Date</th><th>Additional Information</th></tr></thead><tbody><tr><td>Repeat</td><td class=\"date-column\">01-Feb-2022</td><td>Metformin 500mg tablets</td><td>one tablet 2 to 3 times daily</td><td>28 days</td><td class=\"date-column\">28-Dec-2024</td><td align=\"right\">3</td><td align=\"right\">6</td><td class=\"date-column\">15-Jul-2025</td><td>Take one tablet three times daily</td></tr><tr><td>Repeat</td><td class=\"date-column\">01-Dec-2012</td><td>Lercanidipine 20mg tablets</td><td>one tablet daily</td><td>28 days</td><td class=\"date-column\">20-Dec-2024</td><td align=\"right\">3</td><td align=\"right\">6</td><td class=\"date-column\">15-Jul-2025</td><td>Take one tablet daily</td></tr></tbody></table></div><div><h2>Discontinued Repeat Medication</h2><div class=\"content-banner\"><p>All repeat medication ended by a clinician action</p></div><div class=\"date-banner\"><p>Date filter not applied</p></div><table id=\"med-tab-dis-rep\"><thead><tr><th>Type</th><th>Last Issued Date</th><th>Medication Item</th><th>Dosage Instruction</th><th>Quantity</th><th>Discontinued Date</th><th>Discontinuation Reason</th><th>Additional Information</th></tr></thead><tbody><tr><td>Repeat</td><td class=\"date-column\">01-Feb-2012</td><td>Metformin 500mg tablets</td><td>one tablet 2 to 3 times per day</td><td>28 days</td><td class=\"date-column\">01-Feb-2012</td><td>60 tablet pack discontinued</td><td>Take with food and water</td></tr></tbody></table></div><div><h2>All Medication</h2><div class=\"date-banner\"><p>For the period '24-Jul-2015' to '24-Jul-2025'</p></div><table id=\"med-tab-all-sum\"><thead><tr><th>Type</th><th>Start Date</th><th>Medication Item</th><th>Dosage Instruction</th><th>Quantity</th><th>Last Issued Date</th><th>Number of Prescriptions Issued</th><th>Discontinuation Details</th><th>Additional Information</th></tr></thead><tbody><tr><td colspan=\"9\" class=\"med-item-column\"><b>Lercanidipine 20mg tablets</b></td></tr><tr><td>Repeat</td><td class=\"date-column\">01-Dec-2012</td><td>Lercanidipine 20mg tablets</td><td>one tablet daily</td><td>28 days</td><td class=\"date-column\">01-Dec-2012</td><td align=\"right\">1</td><td/><td>Take one tablet daily</td></tr><tr><td colspan=\"9\" class=\"med-item-column\"><b>Metformin 500mg tablets</b></td></tr><tr><td>Repeat</td><td class=\"date-column\">01-Feb-2022</td><td>Metformin 500mg tablets</td><td>one tablet 2 to 3 times daily</td><td>28 days</td><td class=\"date-column\">01-Feb-2022</td><td align=\"right\">1</td><td/><td>Take one tablet three times daily</td></tr><tr><td>Repeat</td><td class=\"date-column\">01-Feb-2012</td><td>Metformin 500mg tablets</td><td>one tablet 2 to 3 times per day</td><td>28 days</td><td class=\"date-column\">01-Feb-2012</td><td align=\"right\">1</td><td>DISCONTINUED:<br/>01-Feb-2012<br/>60 tablet pack discontinued</td><td>Take with food and water</td></tr><tr><td colspan=\"9\" class=\"med-item-column\"><b>Tramadol 50mg capsules</b></td></tr><tr><td>NHS Medication</td><td class=\"date-column\">25-Jan-2025</td><td>Tramadol 50mg capsules</td><td>one tablet every 4 to 6 hours</td><td>28 days</td><td class=\"date-column\">25-Jan-2025</td><td align=\"right\">1</td><td/><td>Take 1 or 2 tablets as directed up to 4 times per day</td></tr></tbody></table></div><div><h2>All Medication Issues</h2><div class=\"date-banner\"><p>For the period '24-Jul-2015' to '24-Jul-2025'</p></div><table id=\"med-tab-all-iss\"><thead><tr><th>Type</th><th>Issue Date</th><th>Medication Item</th><th>Dosage Instruction</th><th>Quantity</th><th>Days Duration</th><th>Additional Information</th></tr></thead><tbody><tr><td colspan=\"7\" class=\"med-item-column\"><b>Lercanidipine 20mg tablets</b></td></tr><tr><td>Repeat</td><td class=\"date-column\">01-Dec-2012</td><td>Lercanidipine 20mg tablets</td><td>one tablet daily</td><td>28 days</td><td/><td>Take one tablet daily</td></tr><tr><td colspan=\"7\" class=\"med-item-column\"><b>Metformin 500mg tablets</b></td></tr><tr><td>Repeat</td><td class=\"date-column\">01-Feb-2022</td><td>Metformin 500mg tablets</td><td>one tablet 2 to 3 times daily</td><td>28 days</td><td/><td>Take one tablet three times daily</td></tr><tr><td>Repeat</td><td class=\"date-column\">01-Feb-2012</td><td>Metformin 500mg tablets</td><td>one tablet 2 to 3 times per day</td><td>28 days</td><td align=\"right\">4</td><td>Take with food and water</td></tr><tr><td colspan=\"7\" class=\"med-item-column\"><b>Tramadol 50mg capsules</b></td></tr><tr><td>NHS Medication</td><td class=\"date-column\">25-Jan-2025</td><td>Tramadol 50mg capsules</td><td>one tablet every 4 to 6 hours</td><td>28 days</td><td align=\"right\">28</td><td>Take 1 or 2 tablets as directed up to 4 times per day</td></tr></tbody></table></div></div>"
+      }
+    },
+    {
+      "title": "Immunisations",
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "11369-6"
+          }
+        ]
+      },
+      "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>Immunisations</h1><table id=\"imm-tab\"><thead><tr><th>Date</th><th>Vaccination</th><th>Part</th><th>Contents</th><th>Details</th></tr></thead><tbody><tr><td class=\"date-column\">30-Aug-2015</td><td>Pneumovax II</td><td align=\"right\">1</td><td>Pneumoccocal</td><td/></tr><tr><td class=\"date-column\">18-Jan-2013</td><td>Influenza vaccine</td><td align=\"right\">1</td><td>Influenza</td><td/></tr><tr><td class=\"date-column\">04-Oct-2010</td><td>Influenza vaccine</td><td align=\"right\">1</td><td>Influenza</td><td/></tr></tbody></table></div>"
+      }
+    },
+    {
+      "title": "Referral",
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "47519-4"
+          }
+        ]
+      },
+      "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>Referrals</h1><div class=\"date-banner\"><p>For the period '24-Jul-2015' to '24-Jul-2025'</p></div><table id=\"ref-tab\"><thead><tr><th>Date</th><th>From</th><th>To</th><th>Priority</th><th>Details</th></tr></thead><tbody><tr><td class=\"date-column\">02-Jul-2016</td><td>Dr Johnson and Partners</td><td>Community Diabetic Clinic</td><td>Routine</td><td>Needs further support with dietary needs</td></tr></tbody></table></div>"
+      }
+    },
+    {
+      "title": "History - Encounters",
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "11329-0"
+          }
+        ]
+      },
+      "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>Encounters</h1><div class=\"date-banner\"><p>All relevant items</p></div><table id=\"enc-tab\"><thead><tr><th>Date</th><th>Title</th><th>Details</th></tr></thead><tbody><tr><td class=\"date-column\">01-Feb-2018</td><td>Care navigation</td><td>Reception signposting regarding exercise classes</td></tr></tbody></table></div>"
+      }
+    },
+    {
+      "title": "Observation",
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "61149-1"
+          }
+        ]
+      },
+      "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>Clinical Items</h1><div class=\"date-banner\"><p>For the period '24-Jul-2015' to '24-Jul-2025'</p></div><p>No 'Clinical Items' data is recorded for this patient.</p><h1>Observations</h1><div class=\"date-banner\"><p>For the period '24-Jul-2015' to '24-Jul-2025'</p></div><table id=\"obs-tab\"><thead><tr><th>Date</th><th>Entry</th><th>Value</th><th>Range</th><th>Details</th></tr></thead><tbody><tr><td class=\"date-column\">07-May-2017</td><td>Foot Risk Classification</td><td>Left diabetic foot at low risk</td><td>Low to High Risk</td><td>Annual review</td></tr><tr><td class=\"date-column\">07-May-2017</td><td>Foot Risk Classification</td><td>Right diabetic foot at low risk</td><td>Low to High Risk</td><td>Annual review</td></tr></tbody></table><h1>Administrative Items</h1><div class=\"date-banner\"><p>All relevant items</p></div><table id=\"adm-tab\"><thead><tr><th>Date</th><th>Entry</th><th>Details</th></tr></thead><tbody><tr><td class=\"date-column\">02-May-2015</td><td>Appointment Letter</td><td>Community diabetes clinic</td></tr></tbody></table></div>"
+      }
+    }
+  ]
+}

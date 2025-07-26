@@ -1,0 +1,594 @@
+{
+  "resourceType": "Composition",
+  "meta": {
+    "profile" : [
+      "https://fhir.virtually.healthcare/StructureDefinition/ConsulationNote"
+    ]
+  },
+  "id": "ab2539ee-fd55-4abc-9898-d4c1520dd2ba",
+  "identifier": {
+    "use": "usual",
+    "system": "urn:ietf:rfc:3986",
+    "value": "81397bc1-609d-4534-bba2-4892d575553e",
+    "assigner": {
+      "identifier": {
+        "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+        "value": "F83004"
+      }
+    }
+  },
+  "status": "final",
+  "type": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "823651000000106",
+        "display": "Clinical note"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "urn:uuid:335bf7ee-47c8-4fe7-bfce-831db4d3b769",
+    "type": "Patient"
+  },
+  "encounter": {
+    "reference": "urn:uuid:ab2539ee-fd55-4abc-9898-d4c1520dd2ba",
+    "identifier": {
+      "system": "https://emis.com/Id/Consultation/GUID",
+      "value": "ab2539ee-fd55-4abc-9898-d4c1520dd2ba",
+      "assigner": {
+        "identifier": {
+          "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+          "value": "F83004"
+        }
+      }
+    }
+  },
+  "date": "2024-11-08T15:51:00+00:00",
+  "author": [
+    {
+      "reference": "urn:uuid:a716058c-f9d5-4537-b1e7-d021bd2185a3",
+      "type": "Practitioner",
+      "identifier": {
+        "system": "https://fhir.hl7.org.uk/Id/professional-code",
+        "value": "25825845"
+      },
+      "display": "Dr HealthOnline Test"
+    }
+  ],
+  "title": "Clinical note",
+  "section": [
+    {
+      "title": "Result",
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "30954-2",
+            "display": "Relevant diagnostic tests/laboratory data Narrative"
+          }
+        ],
+        "text": "Result"
+      },
+      "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Serum TSH (thyroid stimulating hormone) level, 12 mU/L <i>Added some lines of text</i></p></div>"
+      },
+      "entry": [
+        {
+          "reference": "urn:uuid:5fa04e13-3d6e-4ccd-99df-3d3ecdcb264b",
+          "type": "Observation",
+          "display": "Serum TSH (thyroid stimulating hormone) level, 12 mU/L"
+        }
+      ]
+    },
+    {
+      "title": "Examination",
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "61149-1",
+            "display": "Objective Narrative"
+          }
+        ],
+        "text": "Examination"
+      },
+      "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Body weight, 79 kg</p><p>Standing height, 179 cm</p><p>Body mass index, 24.66 kg/m2</p></div>"
+      },
+      "entry": [
+        {
+          "reference": "urn:uuid:d3adf58c-bd92-4d45-b598-d76e2210a4a5",
+          "type": "Observation",
+          "display": "Body weight, 79 kg"
+        },
+        {
+          "reference": "urn:uuid:f859d2b0-a68f-4ff5-aa5d-44ebeff18505",
+          "type": "Observation",
+          "display": "Standing height, 179 cm"
+        },
+        {
+          "reference": "urn:uuid:9f8e11e9-381e-434c-b9da-a309ee669f83",
+          "type": "Observation",
+          "display": "Body mass index, 24.66 kg/m2"
+        }
+      ]
+    },
+    {
+      "title": "Procedure",
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "61150-9",
+            "display": "Subjective Narrative"
+          }
+        ],
+        "text": "Procedure"
+      },
+      "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Physical therapy procedure</p><p> <i>getting hip pain</i></p></div>"
+      },
+      "entry": [
+        {
+          "reference": "urn:uuid:d7c55283-f991-4854-85f5-e6def3cc82be",
+          "type": "Observation",
+          "display": "Physical therapy procedure"
+        }
+      ]
+    },
+    {
+      "title": "Referral",
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "61150-9",
+            "display": "Subjective Narrative"
+          }
+        ],
+        "text": "Referral"
+      },
+      "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Refer for thyroid test</p></div>"
+      },
+      "entry": [
+        {
+          "reference": "urn:uuid:71f58a26-5daa-491d-b85f-cf60fbe90236",
+          "type": "ServiceRequest"
+        }
+      ]
+    },
+    {
+      "title": "Document",
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "61150-9",
+            "display": "Subjective Narrative"
+          }
+        ],
+        "text": "Document"
+      },
+      "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Referral Letter (08-Nov-2024) <i>for Refer for thyroid test</i></p><p>Discharge summary report <i>Discharge summary report from Gynaecologist at EMIS PCS Test Surgery 2 (08-Nov-2024)</i></p></div>"
+      },
+      "entry": [
+        {
+          "reference": "urn:uuid:900566b1-a93d-4cb1-998a-a5141e2127bf",
+          "type": "DocumentReference"
+        },
+        {
+          "reference": "urn:uuid:4a838ced-3568-4839-b247-316fabef3163",
+          "type": "DocumentReference"
+        }
+      ]
+    },
+    {
+      "title": "Allergy",
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "61150-9",
+            "display": "Subjective Narrative"
+          }
+        ],
+        "text": "Allergy"
+      },
+      "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Adverse reaction to drug <i>aspirin</i></p><p>Allergy to drug</p><p>Allergy to aspirin</p></div>"
+      },
+      "entry": [
+        {
+          "reference": "urn:uuid:b795e488-21eb-49cb-9360-d4cb7a02dc6e",
+          "type": "AllergyIntolerance",
+          "display": "Adverse reaction to drug"
+        },
+        {
+          "reference": "urn:uuid:6a18b33e-23f7-4fab-9899-232e494267c7",
+          "type": "AllergyIntolerance",
+          "display": "Allergy to drug"
+        },
+        {
+          "reference": "urn:uuid:6e1a1654-a02b-4638-bad1-c64b65fd09f3",
+          "type": "AllergyIntolerance",
+          "display": "Allergy to aspirin"
+        }
+      ]
+    },
+    {
+      "title": "History",
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "11329-0",
+            "display": "History general Narrative - Reported"
+          }
+        ],
+        "text": "History"
+      },
+      "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Family history of alcohol misuse (Aunt)</p></div>"
+      },
+      "entry": [
+        {
+          "reference": "urn:uuid:552182f3-208a-479f-ad28-bca5a82e312e",
+          "type": "Observation",
+          "display": "Family history of alcohol misuse (Aunt)"
+        }
+      ]
+    },
+    {
+      "title": "Test Request",
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "30954-2",
+            "display": "Relevant diagnostic tests/laboratory data Narrative"
+          }
+        ],
+        "text": "Test Request"
+      },
+      "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Venous blood specimen</p></div>"
+      },
+      "entry": [
+        {
+          "reference": "urn:uuid:3fe68913-6016-46b1-a20a-fb97fd125ea1",
+          "type": "Observation",
+          "display": "Venous blood specimen"
+        }
+      ]
+    },
+    {
+      "title": "Comment",
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "48767-8",
+            "display": "Annotation comment [Interpretation] Narrative"
+          }
+        ],
+        "text": "Comment"
+      },
+      "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p> <i>this is a comment. steps. weight</i></p></div>"
+      }
+    },
+    {
+      "title": "Follow up",
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "18776-5",
+            "display": "Plan of care note"
+          }
+        ],
+        "text": "Follow up"
+      },
+      "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Medication review 08/12/2024</p></div>"
+      },
+      "entry": [
+        {
+          "reference": "urn:uuid:70efbefb-9985-4579-90ed-fc1b36ef2905",
+          "type": "Task",
+          "display": "Medication review 08/12/2024"
+        }
+      ]
+    },
+    {
+      "title": "Family History",
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "61150-9",
+            "display": "Subjective Narrative"
+          }
+        ],
+        "text": "Family History"
+      },
+      "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>No family history diabetes <i>some test</i></p><p>Family history of breast cancer (Uncle)</p></div>"
+      },
+      "entry": [
+        {
+          "reference": "urn:uuid:603260f4-3d90-4418-925b-4766f96f8575",
+          "type": "Observation",
+          "display": "No family history diabetes"
+        },
+        {
+          "reference": "urn:uuid:0242b574-fa7b-4614-9e7d-2a5736b58eda",
+          "type": "Observation",
+          "display": "Family history of breast cancer (Uncle)"
+        }
+      ]
+    },
+    {
+      "title": "Medication",
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "10160-0",
+            "display": "History of Medication use Narrative"
+          }
+        ],
+        "text": "Medication"
+      },
+      "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Aspirin 75mg dispersible tablets</p></div>"
+      },
+      "entry": [
+        {
+          "reference": "urn:uuid:da40f003-7178-474b-b14a-ac143d2be49f",
+          "type": "MedicationRequest"
+        }
+      ]
+    },
+    {
+      "title": "Problem",
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "10154-3",
+            "display": "Chief complaint Narrative - Reported"
+          }
+        ],
+        "text": "Problem"
+      },
+      "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Current non-smoker</p><p>Essential hypertension</p></div>"
+      },
+      "entry": [
+        {
+          "reference": "urn:uuid:9c58bbb7-7211-48fc-8368-1b88d04fc6cf",
+          "type": "Observation",
+          "display": "Current non-smoker"
+        },
+        {
+          "reference": "urn:uuid:27201baa-56c6-40b2-b1b5-9dc709b50f89",
+          "type": "Observation",
+          "display": "Essential hypertension"
+        }
+      ]
+    },
+    {
+      "title": "Assessment",
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "61150-9",
+            "display": "Subjective Narrative"
+          }
+        ],
+        "text": "Assessment"
+      },
+      "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Hypertension monitoring</p><p>Hypertension six month review</p><p>Medication review done</p></div>"
+      },
+      "entry": [
+        {
+          "reference": "urn:uuid:0abe00a6-7142-4cac-8478-042516975bf3",
+          "type": "Observation",
+          "display": "Hypertension monitoring"
+        },
+        {
+          "reference": "urn:uuid:388867f2-2e40-4b13-91e5-7bbf6b309a5b",
+          "type": "Observation",
+          "display": "Hypertension six month review"
+        },
+        {
+          "reference": "urn:uuid:b26a203d-51d9-4dfe-a6f1-143dec6a7d28",
+          "type": "Observation",
+          "display": "Medication review done"
+        }
+      ]
+    },
+    {
+      "title": "Additional",
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "61150-9",
+            "display": "Subjective Narrative"
+          }
+        ],
+        "text": "Additional"
+      },
+      "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Hypertension resolved</p><p>Excepted from hypertension quality indicators - patient unsuitable</p><p>British or mixed British - ethnic category 2001 census</p><p>Dietary advice</p><p>Education about alcohol consumption</p><p>ECG requested</p></div>"
+      },
+      "entry": [
+        {
+          "reference": "urn:uuid:470190a2-309a-4f28-a107-418bfc22ba77",
+          "type": "Observation",
+          "display": "Hypertension resolved"
+        },
+        {
+          "reference": "urn:uuid:d47702bf-a108-41a2-8f1f-0e34f718a654",
+          "type": "Observation",
+          "display": "Excepted from hypertension quality indicators - patient unsuitable"
+        },
+        {
+          "reference": "urn:uuid:f47bd9a2-5de0-4598-be29-d45b242c18b7",
+          "type": "Observation",
+          "display": "British or mixed British - ethnic category 2001 census"
+        },
+        {
+          "reference": "urn:uuid:77828dc0-c740-4d22-8543-be5e44036c79",
+          "type": "Observation",
+          "display": "Dietary advice"
+        },
+        {
+          "reference": "urn:uuid:5ea579ff-88c8-4265-a539-c15d0e0ba185",
+          "type": "Observation",
+          "display": "Education about alcohol consumption"
+        },
+        {
+          "reference": "urn:uuid:22ba9307-b02e-4424-9856-3c424b2cdfe9",
+          "type": "Observation",
+          "display": "ECG requested"
+        }
+      ]
+    },
+    {
+      "title": "Social",
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "29762-2",
+            "display": "Social history Narrative"
+          }
+        ],
+        "text": "Social"
+      },
+      "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Alcohol consumption, 0 U/week</p></div>"
+      },
+      "entry": [
+        {
+          "reference": "urn:uuid:01247827-f6d8-4766-bf19-97d0cb029d1a",
+          "type": "Observation",
+          "display": "Alcohol consumption, 0 U/week"
+        }
+      ]
+    },
+    {
+      "title": "Result",
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "30954-2",
+            "display": "Relevant diagnostic tests/laboratory data Narrative"
+          }
+        ],
+        "text": "Result"
+      },
+      "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Serum cholesterol level, 123 mmol/L</p><p>Serum high density lipoprotein cholesterol level, 234 mmol/L</p><p>Serum creatinine level, 123 umol/L</p></div>"
+      },
+      "entry": [
+        {
+          "reference": "urn:uuid:9955d4bb-51fb-41c3-9e24-182eb108dfe7",
+          "type": "Observation",
+          "display": "Serum cholesterol level, 123 mmol/L"
+        },
+        {
+          "reference": "urn:uuid:02bb3059-6ff1-48af-a4ec-27afb78ef59d",
+          "type": "Observation",
+          "display": "Serum high density lipoprotein cholesterol level, 234 mmol/L"
+        },
+        {
+          "reference": "urn:uuid:44fa1523-ffef-4d71-ba05-4a38f629b02e",
+          "type": "Observation",
+          "display": "Serum creatinine level, 123 umol/L"
+        }
+      ]
+    },
+    {
+      "title": "Follow up",
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "18776-5",
+            "display": "Plan of care note"
+          }
+        ],
+        "text": "Follow up"
+      },
+      "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Hypertension monitoring 08/11/2024</p></div>"
+      },
+      "entry": [
+        {
+          "reference": "urn:uuid:b8657275-8d33-4b78-9f93-8977ffb319df",
+          "type": "Task",
+          "display": "Hypertension monitoring 08/11/2024"
+        }
+      ]
+    },
+    {
+      "title": "Additional",
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "61150-9",
+            "display": "Subjective Narrative"
+          }
+        ],
+        "text": "Additional"
+      },
+      "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Test request : Full Blood Count</p><p>Test request : Plasma Viscosity</p><p>Test request : Antenatal</p><p>Blood Pressure 117/75 mmHg</p></div>"
+      },
+      "entry": [
+        {
+          "reference": "urn:uuid:39e7a63a-4f09-4ad9-a2a0-66ad94a77851"
+        },
+        {
+          "reference": "urn:uuid:2715a9e3-7c06-4925-ae4a-0b11e5b8e987"
+        },
+        {
+          "reference": "urn:uuid:c59dee86-4d6e-40e0-ad1e-e7959075e753"
+        },
+        {
+          "reference": "urn:uuid:107b410c-384c-4c0f-b5f5-def84619d40f"
+        }
+      ]
+    }
+  ]
+}

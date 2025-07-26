@@ -122,6 +122,14 @@ resources:
     name: Condition-EMIS-IM1-Hypertension-monitoring
     description: Condition EMIS IM1 Hypertension monitoring
     exampleBoolean: true
+  Composition/ab2539ee-fd55-4abc-9898-d4c1520dd2ba:
+    name: Composition EMIS IM1 Consultation Note
+    description: Composition EMIS IM1 Consultation Note
+    exampleBoolean: true
+  Composition/96a8dc4f-b86d-4461-ae56-c2db38de61ad:
+    name: Composition GP Connect Access Record html Patient Summary
+    description: Composition GP Connect Access Record html Patient Summary
+    exampleBoolean: true
   Observation/9e77f499-1081-4ec5-ad71-4eeb71bd25ba:
     name: Observation-EMIS-PFS-Weight
     description: Observation EMIS PFS Weight
@@ -498,7 +506,8 @@ menu:
 
   Domain Archetypes:
     Referral Letter: Questionnaire-PatientReferral.html
-    Consultation Note: Questionnaire-ConsultationNote.html
+    Consultation Note: StructureDefinition-ConsulationNote.html
+    Patient Summary: StructureDefinition-PatientSummary.html
     Vital Signs: Questionnaire-VitalSigns.html
     Daily Physical Activity: Questionnaire-DailyPhysicalActivity.html
     Exercise Activity: Questionnaire-ExerciseActivity.html
