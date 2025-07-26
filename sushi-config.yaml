@@ -499,8 +499,9 @@ menu:
   Domain Archetypes:
     Referral Letter: Questionnaire-PatientReferral.html
     Consultation Note: Questionnaire-ConsultationNote.html
- #   Patient Care Coordination: pcc-model.html
-    Assessments and Observations: assessments-and-observations.html
+    Vital Signs: Questionnaire-VitalSigns.html
+    Daily Physical Activity: Questionnaire-DailyPhysicalActivity.html
+    Exercise Activity: Questionnaire-ExerciseActivity.html
   Artefacts: artifacts.html
   Development:
     Testing: testing.html
