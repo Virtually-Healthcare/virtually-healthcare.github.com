@@ -35,11 +35,12 @@ These questions will be SNOMED or LOINC coded.
 
 ## Composition & FHIR Document
 
+The basic structure of a composition is shown above and detailed below, in its aggregated form which is typically how it is exchanged, it is known as a [FHIR Document]() and a redendered example is shown below:
+
 > Examples
 > - [FHIR Document EMIS IM1 Consultation Note 30 Jun 2002](Bundle-e119d231-def6-43a7-af40-56d7754977bd.html)
 > - [FHIR Document EMIS IM1 Consultation Note 8 Nov 2024](Bundle-ab2539ee-fd55-4abc-9898-d4c1520dd2ba.html)
 
-The basic structure of a composition is shown above, in its aggregated form it is known as a [FHIR Document]() and a redendered example is shown below:
 
  <img style="padding:3px;width:40%;" src="FHIRDocument.png" alt="Example Document"/>
 <br clear="all">
