@@ -429,12 +429,6 @@ pages:
   pcc-model.md:
     title: Patient Care Coordination Model
     generation: markdown
-  referral-letter.md:
-    title: Referral Letter
-    generation: markdown
-  consultation-note.md:
-    title: Consultation Note
-    generation: markdown
   assessments-and-observations.md:
     title: Assessments and Observation Definitions
     generation: markdown
@@ -503,8 +497,8 @@ menu:
 #    eReport: R01.html
 
   Domain Archetypes:
-    Referral Letter: referral-letter.html
-    Consultation Note: consultation-note.html
+    Referral Letter: Questionnaire-PatientReferral.html
+    Consultation Note: Questionnaire-ConsultationNote.html
  #   Patient Care Coordination: pcc-model.html
     Assessments and Observations: assessments-and-observations.html
   Artefacts: artifacts.html
