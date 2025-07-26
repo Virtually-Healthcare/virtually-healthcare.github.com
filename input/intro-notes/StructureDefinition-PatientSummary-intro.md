@@ -1,6 +1,12 @@
 Is based on [HL7 International Patient Summary](https://build.fhir.org/ig/HL7/fhir-ips/index.html)
 
-Not following UKCore-Composition due to coding issues around section.code.
+## Overview
+
+<figure>
+{%include patient-summary-mindmap.svg%}
+<p id="fX.X.X.X-X" class="figureTitle">Patient Summary Map</p>
+</figure>
+<br clear="all">
 
 ## Composition & FHIR Document
 
@@ -13,11 +19,5 @@ The basic structure of a composition is shown above and detailed below, in its a
  <img style="padding:3px;width:40%;" src="FHIRDocument.png" alt="Example Document"/>
 <br clear="all">
 
-## Domain Archetype
 
-<figure>
-{%include patient-summary-mindmap.svg%}
-<p id="fX.X.X.X-X" class="figureTitle">Patient Summary Map</p>
-</figure>
-<br clear="all">
 

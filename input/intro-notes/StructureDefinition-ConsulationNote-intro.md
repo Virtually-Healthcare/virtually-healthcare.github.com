@@ -11,6 +11,18 @@ The consultation note forms the basis of `IM1 Consultation Writeback` and `GP Co
  <img style="padding:3px;width:70%;" src="EMISConsultation.png" alt="EMIS Consultation"/>
 <br clear="all">
 
+### Overview
+
+As composition is not for **data capture**, we need an archetype to form the high framework for the consulation-note.
+
+The current model is shown below. Historically this is related to [SOAP Note](https://en.wikipedia.org/wiki/SOAP_note) and also [Nursing Process (ADPIE)](https://en.wikipedia.org/wiki/Nursing_process) which are also included for documentation purposes.
+
+<figure>
+{%include consultation-note-mindmap.svg%}
+<p id="fX.X.X.X-X" class="figureTitle">Consultation Note Map</p>
+</figure>
+<br clear="all">
+
 ## Informatics Model
 
 The consultation note consists of three main structures:
@@ -73,14 +85,4 @@ Each section is coded using Document Section Codes, which can be found [Value Se
 | N/a                   | [11369-6 Immunization](https://loinc.org/11369-6)                                           | Vaccinations                                         |                           |
 | N/a                   | [51848-0 Assessment](https://loinc.org/72231-4/panel#64371) | Clinical risk factors                                                     | `survey`                   |
 
-## Domain Archetype
 
-As composition is not for **data capture**, we need an archetype to form the high framework for the consulation-note.
-
-The current model is shown below. Historically this is related to [SOAP Note](https://en.wikipedia.org/wiki/SOAP_note) and also [Nursing Process (ADPIE)](https://en.wikipedia.org/wiki/Nursing_process) which are also included for documentation purposes.
-
-<figure>
-{%include consultation-note-mindmap.svg%}
-<p id="fX.X.X.X-X" class="figureTitle">Consultation Note Map</p>
-</figure>
-<br clear="all">
