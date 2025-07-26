@@ -35,7 +35,9 @@ These questions will be SNOMED or LOINC coded.
 
 ## Composition & FHIR Document
 
-> [Composition - Consultation Note](StructureDefinition-ConsulationNote.html)
+> Examples
+> - [FHIR Document EMIS IM1 Consultation Note 30 Jun 2002](Bundle-e119d231-def6-43a7-af40-56d7754977bd.html)
+> - [FHIR Document EMIS IM1 Consultation Note 8 Nov 2024](Bundle-ab2539ee-fd55-4abc-9898-d4c1520dd2ba.html)
 
 The basic structure of a composition is shown above, in its aggregated form it is known as a [FHIR Document]() and a redendered example is shown below:
 

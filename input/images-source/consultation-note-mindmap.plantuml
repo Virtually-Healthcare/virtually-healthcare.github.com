@@ -4,7 +4,7 @@ skinparam svgDimensionStyle false
 
 title "Consultation Note (online and pharmacy)"
 
-* [[Questionnaire-ConsultationNote.html Consultation Note]] **template**
+* [[StructureDefinition-ConsulationNote.html Consultation Note (823651000000106/11488-4)]]
 ** Subjective
 *** Complaints and Issues (61150-9)\nPresenting complaints or issues (PRSB)
 **** [[StructureDefinition-Observation.html Observation]]

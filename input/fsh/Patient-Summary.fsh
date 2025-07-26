@@ -2,8 +2,6 @@ Profile: PatientSummary
 Parent: http://hl7.org/fhir/StructureDefinition/Composition
 Id: PatientSummary
 Description: """
-Merge of PRSB Section Headers, NHS England [Transfer of Care - Outpatient Letter](https://developer.nhs.uk/apis/itk3tocoutpatientletter-2-9-0/explore_headings.html) and [HL7 International Patient Summary](https://build.fhir.org/ig/HL7/fhir-ips/index.html)
-Not following UKCore-Composition due to coding issues around section.code.
 """
 
 * subject 1..1

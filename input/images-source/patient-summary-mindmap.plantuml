@@ -1,0 +1,25 @@
+@startmindmap
+
+skinparam svgDimensionStyle false
+
+title "Patient Summary (GP Connect Access Record html)"
+
+* Patient Summary (824321000000109/60591-5)
+** Problem (11450-4)
+*** GP Connect Record Section **PRB**
+** Allergy (48765-2)
+*** GP Connect Record Section **ALL**
+** Medication (10160-0)
+*** GP Connect Record Section **MED**
+** Immunisations (11369-6)
+*** GP Connect Record Section **IMM**
+** Referral (47519-4)
+*** GP Connect Record Section **REF**
+** History - Encounters (11329-0)
+*** GP Connect Record Section **ENC**
+** Observation (61149-1)
+*** GP Connect Record Section **OBS**
+*** GP Connect Record Section **CLI**
+*** GP Connect Record Section **ADM**
+
+@endmindmap
