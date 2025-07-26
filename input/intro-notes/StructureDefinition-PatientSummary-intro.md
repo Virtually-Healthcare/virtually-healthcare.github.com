@@ -20,3 +20,4 @@ The basic structure of a composition is shown above and detailed below, in its a
 <p id="fX.X.X.X-X" class="figureTitle">Patient Summary Map</p>
 </figure>
 <br clear="all">
+

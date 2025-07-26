@@ -505,12 +505,12 @@ menu:
 #    eReport: R01.html
 
   Domain Archetypes:
-    Referral Letter: Questionnaire-PatientReferral.html
-    Consultation Note: StructureDefinition-ConsulationNote.html
-    Patient Summary: StructureDefinition-PatientSummary.html
-    Vital Signs: Questionnaire-VitalSigns.html
-    Daily Physical Activity: Questionnaire-DailyPhysicalActivity.html
-    Exercise Activity: Questionnaire-ExerciseActivity.html
+    Referral Letter (Template): Questionnaire-PatientReferral.html
+    Consultation Note (Composition): StructureDefinition-ConsulationNote.html
+    Patient Summary (Composition): StructureDefinition-PatientSummary.html
+    Vital Signs (Template): Questionnaire-VitalSigns.html
+    Daily Physical Activity (Template): Questionnaire-DailyPhysicalActivity.html
+    Exercise Activity (Template): Questionnaire-ExerciseActivity.html
   Artefacts: artifacts.html
   Development:
     Testing: testing.html
