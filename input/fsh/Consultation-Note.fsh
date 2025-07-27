@@ -77,5 +77,5 @@ Basic outline of a Consulation Note for use with GP Connect Send Document
 
 * section[Problems] ^short = "Problems"
 * section[Problems].title = "Problems"
-* section[Problems].code = $loinc#11450-4 "Problem list"
+* section[Problems].code = $loinc#57852-6 "Problem list Narrative - Reported"
 * section[Problems].entry only Reference(Condition)
