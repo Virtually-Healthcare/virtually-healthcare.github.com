@@ -25,7 +25,7 @@ jobs:
       - name: Install Java
         uses: actions/setup-java@v3
         with:
-          java-version: '11'
+          java-version: '21'
           distribution: 'adopt'
 
       - name: Install Ruby
