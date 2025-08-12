@@ -19,7 +19,7 @@ title "Shared Patient Records"
 ** MedicationRequest (prescriptions)
 ** Observation
 ** Patient (demographics)
+** QuestionnaireResponse
 ** ServiceRequest (referrals and laboratory orders)
-
 
 @endtmindmap
