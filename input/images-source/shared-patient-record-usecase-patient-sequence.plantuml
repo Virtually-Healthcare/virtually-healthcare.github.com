@@ -1,0 +1,21 @@
+@startuml
+
+hide footbox
+
+title "Shared Patient Record - Patient"
+
+participant "Patient" as patient
+participant "PDS" as pds
+participant "IM1 PFS" as PFS
+participant "VH CDR" as CDR
+
+patient -> pds : Lookup Patient
+== Patient GP Practice is using EMIS ==
+patient -> PFS: Retrieve detailed record
+patient -> patient: Convert to summary record
+opt as required by patient
+patient -> PFS: Retrieve detailed record
+patient -> CDR: Retrieve detailed record
+end
+
+@enduml
