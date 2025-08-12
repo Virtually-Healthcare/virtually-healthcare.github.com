@@ -4,7 +4,7 @@ hide footbox
 
 title "Shared Patient Record - Practitioner Local Patient"
 
-participant "Practitioner" as practitioner
+participant "Practitioner client application" as practitioner
 participant "PDS" as pds
 participant "GP Connect (html)" as GPC
 participant "VH CDR" as CDR
@@ -12,6 +12,7 @@ participant "VH CDR" as CDR
 practitioner -> pds : Lookup Patient
 == Patient GP Practice is using EMIS IM1 ==
 practitioner -> GPC: Retrieve Patient Summary Record
+practitioner -> practitioner: Display Summary Record
 opt as required by practitioner
 practitioner -> CDR: Retrieve detailed record
 end
