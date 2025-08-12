@@ -1,0 +1,25 @@
+@startmindmap
+
+title "Shared Patient Records"
+
+* [[StructureDefinition-PatientSummary.html Patient Summary]]
+** Problem (11450-4)
+** Allergy (48765-2)
+** Medication (10160-0)
+** etc
+* Patient Record Detail
+** AllegyIntolerance
+** Binary (documents)
+** Condition
+** DiagnosticReport (Laboratory reports)
+** DocumentReference (index of documents)
+** Encounter
+*** Composition ([[StructureDefinition-ConsulationNote.html Consultation Notes]])
+** Immunization
+** MedicationRequest (prescriptions)
+** Observation
+** Patient (demographics)
+** ServiceRequest (referrals and laboratory orders)
+
+
+@endtmindmap

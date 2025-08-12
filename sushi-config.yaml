@@ -465,7 +465,7 @@ pages:
     title: Patient Referral [PCC-55]
     generation: markdown
   A04.md:
-    title: Consultation Note [PCC-59]
+    title: Shared Patient Record
     generation: markdown
   A03.md:
     title: Discharge Report [PCC-57]
@@ -498,7 +498,7 @@ menu:
 #    Internet User Authorization (IUA): IUA.html
   Interfaces (Vol 2):
      Introduction: interfaces-introduction.html
-     Consultation Note [PCC-59]: A04.html
+     Shared Patient Record: A04.html
      Patient Referral [PCC-55]: I12.html
      Discharge Report [PCC-57]: A03.html
      Task Conversations: Tasking.html
