@@ -23,7 +23,7 @@ Based on UK Definitions from [IHE Europe Metadata for exchange medical documents
 
 * context.encounter 0..1 MS
 * context.encounter only Reference(Encounter)
-* context.encounter.identifier only VisitNumber
+* context.encounter.identifier only HospitalProviderSpellIdentifier
 
 * context.related 0..*
 
@@ -34,12 +34,12 @@ Based on UK Definitions from [IHE Europe Metadata for exchange medical documents
 * context.related ^slicing.ordered = false
 
 * context.related contains
-  OriginatingReferralIdentifier 0..1 MS
-* context.related[OriginatingReferralIdentifier] only Reference(ServiceRequest)
-* context.related[OriginatingReferralIdentifier].type 1..1 MS
-* context.related[OriginatingReferralIdentifier].type = "ServiceRequest"
-* context.related[OriginatingReferralIdentifier].identifier 1..1
-* context.related[OriginatingReferralIdentifier].identifier only OriginatingReferralIdentifier
+  PatientPathwayIdentifier 0..1 MS
+* context.related[PatientPathwayIdentifier] only Reference(ServiceRequest)
+* context.related[PatientPathwayIdentifier].type 1..1 MS
+* context.related[PatientPathwayIdentifier].type = "ServiceRequest"
+* context.related[PatientPathwayIdentifier].identifier 1..1
+* context.related[PatientPathwayIdentifier].identifier only PatientPathwayIdentifier
 
 * context.sourcePatientInfo only Reference(Patient)
 * context.sourcePatientInfo.identifier only MedicalRecordNumber

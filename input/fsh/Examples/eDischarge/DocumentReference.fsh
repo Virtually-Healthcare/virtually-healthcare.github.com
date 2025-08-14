@@ -35,11 +35,11 @@ Description: "TODO"
     * assigner.identifier.system = $ods-code
     * assigner.identifier.value = "F83004"
 
-* context.related[OriginatingReferralIdentifier].identifier.value = "urn:uuid:f3533ea0-9588-4f25-ace7-969d80823b20"
-* context.related[OriginatingReferralIdentifier].identifier.system = "urn:uuid:urn:ietf:rfc:3986"
-* context.related[OriginatingReferralIdentifier].identifier.type = http://terminology.hl7.org/CodeSystem/v2-0203#PLAC
-* context.related[OriginatingReferralIdentifier].identifier.assigner.identifier.system = $ods-code
-* context.related[OriginatingReferralIdentifier].identifier.assigner.identifier.value = "F83004"
+* context.related[PatientPathwayIdentifier].identifier.value = "urn:uuid:f3533ea0-9588-4f25-ace7-969d80823b20"
+* context.related[PatientPathwayIdentifier].identifier.system = "urn:uuid:urn:ietf:rfc:3986"
+* context.related[PatientPathwayIdentifier].identifier.type = http://terminology.hl7.org/CodeSystem/v2-0203#PLAC
+* context.related[PatientPathwayIdentifier].identifier.assigner.identifier.system = $ods-code
+* context.related[PatientPathwayIdentifier].identifier.assigner.identifier.value = "F83004"
 
 * content[+]
   * attachment.contentType = #application/pdf

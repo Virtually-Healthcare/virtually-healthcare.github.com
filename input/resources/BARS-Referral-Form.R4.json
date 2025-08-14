@@ -194,7 +194,7 @@
         {
           "type": "string",
           "linkId": "4.1",
-          "definition": "http://hl7.org/fhir/StructureDefinition/ServiceRequest#ServiceRequest.identifier:OriginatingReferralIdentifier",
+          "definition": "http://hl7.org/fhir/StructureDefinition/ServiceRequest#ServiceRequest.identifier:PatientPathwayIdentifier",
           "text": "Order Number",
           "required": false,
           "readOnly": true

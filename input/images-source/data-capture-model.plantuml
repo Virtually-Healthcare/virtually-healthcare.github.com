@@ -57,7 +57,7 @@
       entity "[[StructureDefinition-DocumentReference.html DocumentReference]]" as documentReference <<aggregate>> {
         type
         subject : Patient
-        context.encounter: stay, problem or episode number [[StructureDefinition-VisitNumber.html Visit Number]]
+        context.encounter: stay, problem or episode number [[StructureDefinition-HospitalProviderSpellIdentifier.html Visit Number]]
       }
 
       class "[[StructureDefinition-NWAttachment.html Attachment]]" as attachment {

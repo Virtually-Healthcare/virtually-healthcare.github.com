@@ -4,12 +4,12 @@
     frame "Patient Referral I12" as Composition {
 
       entity "[[StructureDefinition-ServiceRequest.html ServiceRequest]]" as ORC <<aggregate>> {
-        OriginatingReferralIdentifier : Order Number
+        PatientPathwayIdentifier : Order Number
         subject : Patient
         code:
         requester
         performer
-        encounter: stay, problem or episode number  [[StructureDefinition-VisitNumber.html Visit Number]]
+        encounter: stay, problem or episode number  [[StructureDefinition-HospitalProviderSpellIdentifier.html Visit Number]]
         supportingInfo: Patient Summary, Referral Letter, etc
         reasonCode
         note
@@ -30,7 +30,7 @@
       entity "[[StructureDefinition-DocumentReference.html DocumentReference]]" as documentReference <<aggregate>> {
         type
         subject : Patient
-        context.encounter: stay, problem or episode number [[StructureDefinition-VisitNumber.html Visit Number]]
+        context.encounter: stay, problem or episode number [[StructureDefinition-HospitalProviderSpellIdentifier.html Visit Number]]
       }
 
       class "[[StructureDefinition-NWAttachment.html Attachment]]" as attachment {

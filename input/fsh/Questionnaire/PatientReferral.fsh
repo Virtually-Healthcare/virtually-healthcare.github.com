@@ -173,7 +173,7 @@ Usage:  #definition
     * linkId = "LN/106194-4"
     * code[+] = $loinc#106194-4
     * text = "Test request ID/Order ID"
-    * definition = "https://fhir.virtually.healthcare/StructureDefinition/ServiceRequest#ServiceRequest.identifier:OriginatingReferralIdentifier"
+    * definition = "https://fhir.virtually.healthcare/StructureDefinition/ServiceRequest#ServiceRequest.identifier:PatientPathwayIdentifier"
     * required = false
     * readOnly = true
   * item[+]

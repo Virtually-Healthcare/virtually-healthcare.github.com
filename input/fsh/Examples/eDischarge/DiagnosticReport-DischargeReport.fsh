@@ -11,7 +11,7 @@ Description: "Based on US Physical Activity IG"
   * assigner.identifier.system = $ods-code
   * assigner.identifier.value = "FFX11"
 
-* basedOn[OriginatingReferralIdentifier]
+* basedOn[PatientPathwayIdentifier]
   * type = "ServiceRequest"
   * identifier.system = "urn:ietf:rfc:3986"
   * identifier.value = "urn:uuid:f3533ea0-9588-4f25-ace7-969d80823b20"
