@@ -4,12 +4,15 @@ title "Shared Patient Records"
 
 * [[StructureDefinition-PatientSummary.html Patient Summary]]
 ** Problem (11450-4)
+*** [[StructureDefinition-Condition.html Condition]]
 ** Allergy (48765-2)
+*** [[StructureDefinition-AllergyIntolerance.html AllegyIntolerance]]
 ** Medication (10160-0)
+*** [[StructureDefinition-MedicationRequest.html MedicationRequest]] (prescriptions)
 ** etc
 * Patient Record Detail
 ** [[StructureDefinition-AllergyIntolerance.html AllegyIntolerance]]
-** Condition
+** [[StructureDefinition-Condition.html Condition]]
 ** [[StructureDefinition-DiagnosticReport.html DiagnosticReport]] (Laboratory reports)
 ** [[StructureDefinition-DocumentReference.html DocumentReference]] (index of documents)
 *** Binary (documents)

@@ -55,7 +55,7 @@ Description: "Extension of [HL7 IPA Observation](https://build.fhir.org/ig/HL7/f
 * performer 1..* MS
 * performer only Reference(Practitioner or Patient)
 * performer.reference 0..1
-* performer.identifier only EnglandPractitionerIdentifier or NHSNumber or StaffEnterpriseNumber
+* performer.identifier only PractitionerIdentifier or NHSNumber or StaffEnterpriseNumber
 
 //* value[x] insert Obligation(#SHALL:populate-if-known, https://fhir.virtually.healthcare/ActorDefinition/ClinicalDataRepository)
 //* value[x] insert Obligation(#SHALL:populate-if-known, https://fhir.virtually.healthcare/ActorDefinition/ClinicalDataService)

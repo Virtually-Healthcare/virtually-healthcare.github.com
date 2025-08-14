@@ -49,7 +49,7 @@ Based on UK Definitions from [IHE Europe Metadata for exchange medical documents
 * subject.identifier only NHSNumber
 
 * author only Reference(Practitioner)
-* author.identifier only EnglandPractitionerIdentifier
+* author.identifier only PractitionerIdentifier
 * author 1..1 MS
 
 * custodian 0..1 MS

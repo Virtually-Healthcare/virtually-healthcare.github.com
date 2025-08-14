@@ -92,7 +92,7 @@ and [NHS England - Booking and Referral Standard](https://simplifier.net/guide/n
 * performer[Clinician].type = "Practitioner"
 * performer[Clinician] only Reference(Practitioner)
 * performer[Clinician].identifier 0..1 MS
-* performer[Clinician].identifier only EnglandPractitionerIdentifier
+* performer[Clinician].identifier only PractitionerIdentifier
 * performer[Service].type = "HealthcareService"
 * performer[Service] only Reference(HealthcareService)
 * performer[Service].identifier 0..1 MS

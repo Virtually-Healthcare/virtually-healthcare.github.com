@@ -19,5 +19,5 @@ Description: "[HL7 IPA MedicationRequest](http://hl7.org/fhir/uv/ipa/StructureDe
 
 * performer only Reference(Practitioner)
 * performer.reference 1..1
-* performer.identifier only EnglandPractitionerIdentifier or StaffEnterpriseNumber
+* performer.identifier only PractitionerIdentifier or StaffEnterpriseNumber
 

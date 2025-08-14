@@ -3,20 +3,14 @@ Parent:         CorrelationIdentifier
 Id:             AccessionNumber
 Title:          "Accession Number"
 Description:     """
-Usually assigned by the order filler.
+- **NHS Data Model and Dictionary** nil, see also [RADIOLOGICAL ACCESSION NUMBER](https://www.datadictionary.nhs.uk/data_elements/radiological_accession_number.html)
+- **HL7 v2** Accession ID (SPM-30)
+- **IHE XDS** referenceIdList
+
+Uniquely identifies a Specimen across multiple laboratory systems.
 """
 
-* ^purpose = """
-| Data Item | Standard | Data Type | Value |
-|----------|-------|-------|-------|
-| |HL7 FHIR | Identifier.value | {value} |
-| |IHE XDS  | DocumentEntry.referenceIdList | {value} using HL7 v2 CX format? |
-|  | HL7 v2  | CX.1 | {value} |
-| Identifier type | HL7 v2 | CX.5 | ACSN |
-|  |HL7 FHIR | Identifier.type | http://terminology.hl7.org/CodeSystem/v2-0203#ACSN |
-| Assigning Facility | HL7 v2  | CX.6 | ODS Code |
-| | HL7 FHIR | Identifier.assigner.identifier | https://fhir.nhs.uk/Id/ods-organization-code#{ODS Code} |
-"""
+* ^purpose = ""
 
 * type = $v2-0203#ACSN
 * system ^short = "uri should be defined and unique supplying organisation."
