@@ -9,10 +9,10 @@ title "Shared Patient Records"
 ** etc
 * Patient Record Detail
 ** AllegyIntolerance
-** Binary (documents)
 ** Condition
 ** DiagnosticReport (Laboratory reports)
 ** DocumentReference (index of documents)
+*** Binary (documents)
 ** Encounter
 *** Composition ([[StructureDefinition-ConsulationNote.html Consultation Notes]])
 ** Immunization
