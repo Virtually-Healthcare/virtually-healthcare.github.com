@@ -8,18 +8,18 @@ title "Shared Patient Records"
 ** Medication (10160-0)
 ** etc
 * Patient Record Detail
-** AllegyIntolerance
+** [[StructureDefinition-AllergyIntolerance.html AllegyIntolerance]]
 ** Condition
-** DiagnosticReport (Laboratory reports)
-** DocumentReference (index of documents)
+** [[StructureDefinition-DiagnosticReport.html DiagnosticReport]] (Laboratory reports)
+** [[StructureDefinition-DocumentReference.html DocumentReference]] (index of documents)
 *** Binary (documents)
-** Encounter
+** [[StructureDefinition-Encounter.html Encounter]]
 *** Composition ([[StructureDefinition-ConsulationNote.html Consultation Notes]])
-** Immunization
-** MedicationRequest (prescriptions)
-** Observation
-** Patient (demographics)
-** QuestionnaireResponse Templates/Forms/Assessments
-** ServiceRequest (referrals and laboratory orders)
+** [[StructureDefinition-Immunization.html Immunization]]
+** [[StructureDefinition-MedicationRequest.html MedicationRequest]] (prescriptions)
+** [[StructureDefinition-Observation.html Observation]]
+** [[StructureDefinition-Patient.html Patient]] (demographics)
+** [[StructureDefinition-QuestionnaireResponse.html QuestionnaireResponse]] Templates/Forms/Assessments
+** [[StructureDefinition-ServiceRequest.html ServiceRequest]] (referrals and laboratory orders)
 
 @endtmindmap
