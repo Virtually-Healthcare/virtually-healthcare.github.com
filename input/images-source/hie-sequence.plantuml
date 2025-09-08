@@ -4,25 +4,25 @@ hide footbox
 
 participant "Data Consumer" as DataConsumer
 participant "Health Information Exchange (HIE)" as HIE
-participant "Patient Demographic Query (PDS)\n(includes Personnal Demographic Service)" as PDS
-participant "Care Directory Service (CSD)\n(Spine)" as CSD
+participant "Patient Demographic Query (PDS)\n(includes Personnal Demographic Service API)" as PDS
+participant "Care Directory Service (CSD)\n(includes Spine API)" as CSD
 
 participant "Data Source\n(Primary Care System)" as DataSource
 participant "Data Source\n(Clinical Data Repository)" as CDR
 
-DataConsumer -> HIE: Query for Patient:: Query for Patient (ITI-78)\n(FHIR RESTful API)
-HIE -> PDS: Query for Patient (ITI-78)\n(FHIR R4 RESTful API)
+DataConsumer -> HIE: Query for Patient: [[https://profiles.ihe.net/ITI/PDQm/ITI-78.html Query for Patient (ITI-78)]]\n(FHIR RESTful API)
+HIE -> PDS: Query for Patient\n(FHIR R4 RESTful API)
 PDS --> HIE: Search results
 HIE --> DataConsumer: Search results\n(FHIR R4)
 
 opt (GP Connect) national patient and consumer is practitioner
 note over DataConsumer, DataSource: **Patient Summary** GP Connect Access Record HTML
 DataConsumer -> HIE: IPS Query\n(FHIR R4 RESTful API)
-HIE -> CSD: Endpoint Endpoint lookup (ITI-90)\n(FHIR RESTfull API)
+HIE -> CSD: [[https://profiles.ihe.net/ITI/mCSD/ITI-90.html Endpoint Endpoint lookup (ITI-90)]]\n(FHIR RESTfull API)
 CSD --> HIE: Search Results\n(FHIR R4)
 HIE -> DataSource: GP Connect AR html\n(FHIR STU3 bespoke API)
 DataSource --> HIE: Search Results\n(FHIR STU3 Document)
-HIE -> HIE: Convert to IPS FHIR R4 Document
+HIE -> HIE: Convert to [[https://build.fhir.org/ig/HL7/fhir-ips/ International Patient Summary]] FHIR R4 Document
 HIE --> DataConsumer: Search Results\n(FHIR R4 Document)
 end
 
@@ -31,8 +31,8 @@ note over DataConsumer, DataSource: **Patient Detailed Record** IM1 Transaction 
 DataConsumer -> HIE: Mobile Query Existing Data (PCC-44)\n(FHIR R4 RESTful API)
 HIE -> DataSource: IM1 Transaction API or PFS API
 DataSource --> HIE: Search results
-HIE -> HIE: Convert to FHIR R4
-HIE -> CDR: Mobile Query Existing Data (PCC-44)\n(FHIR R4 RESTful API)
+HIE -> HIE: Convert to [[https://build.fhir.org/ig/HL7/fhir-ipa/ International Patient Access]] FHIR R4
+HIE -> CDR: [[https://profiles.ihe.net/PCC/QEDm/PCC-44.html Mobile Query Existing Data (PCC-44)]]\n(FHIR R4 RESTful API)
 CDR --> HIE: Search Results
 HIE -> HIE: Aggregate results
 HIE --> DataConsumer: Search Results\n(FHIR R4)
