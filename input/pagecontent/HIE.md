@@ -7,13 +7,13 @@
 
 ## Actors and Transactions
 
-| Actor                                | Description                                                                                   |
-|--------------------------------------|-----------------------------------------------------------------------------------------------|
-| Data Consumer                        | A system/user that wants patient information.                                                 |                                                 
-| Health Information Exchange (HIE)    | Mediates between the consumer and healthcare data sources.                                    | 
-| Patient Demographic Query (PDS)      | Looks up patient demographics (like NHS number, date of birth, etc.).                         | 
-| Care Directory Service (CSD / Spine) | Finds where patient records are stored (service directory).                                   | 
-| Data Sources                         | The actual systems storing patient data: \n- Primary Care System \n- Clinical Data Repository |                                                                  | 
+| Actor                                | Description                                                                               |
+|--------------------------------------|-------------------------------------------------------------------------------------------|
+| Data Consumer                        | A system/user that wants patient information.                                             |                                                 
+| Health Information Exchange (HIE)    | Mediates between the consumer and healthcare data sources.                                | 
+| Patient Demographic Query (PDS)      | Looks up patient demographics (like NHS number, date of birth, etc.).                     | 
+| Care Directory Service (CSD / Spine) | Finds where patient records are stored (service directory).                               | 
+| Data Sources                         | The actual systems storing patient data: Primary Care System and Clinical Data Repository |                                                                  | 
 
 ### Process Flow
 
