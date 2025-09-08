@@ -4,7 +4,6 @@
 - [IHE Query for Existing Data (Mobile)](https://profiles.ihe.net/PCC/QEDm/)
   - [HL7 International Patient Access](https://build.fhir.org/ig/HL7/fhir-ipa/)
 - [HL7 International Patient Summary](https://build.fhir.org/ig/HL7/fhir-ips/)
-- [IHE Internet User Authentication (IUA)](https://profiles.ihe.net/ITI/IUA/index.html)
 
 ## Actors and Transactions
 
@@ -42,3 +41,14 @@
   - Another PCC-44 query sent to Data Source(s).
   - Multiple search results returned and aggregated.
   - Final FHIR R4 Search Results sent back to Data Consumer.
+
+## Security Considerations
+
+### Authentication and Authorization
+
+All users will be authenticated using [CIS2](https://digital.nhs.uk/services/care-identity-service/applications-and-services/cis2-authentication).
+All API calls will follow [IHE Internet User Authentication (IUA)](https://profiles.ihe.net/ITI/IUA/index.html)
+
+### Audits
+
+All API calls will be audited following [IHE Basic Audit Log Patterns (BALP)](https://profiles.ihe.net/ITI/BALP/index.html)

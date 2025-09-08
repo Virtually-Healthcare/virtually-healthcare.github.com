@@ -1,5 +1,7 @@
 @startuml
 
+skinparam svgDimensionStyle false
+
 hide footbox
 
 participant "Data Consumer" as DataConsumer
