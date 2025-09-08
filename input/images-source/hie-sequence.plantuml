@@ -1,0 +1,41 @@
+@startuml
+
+hide footbox
+
+participant "Data Consumer" as DataConsumer
+participant "Health Information Exchange (HIE)" as HIE
+participant "Patient Demographic Query (PDS)\n(includes Personnal Demographic Service)" as PDS
+participant "Care Directory Service (CSD)\n(Spine)" as CSD
+
+participant "Data Source\n(Primary Care System)" as DataSource
+participant "Data Source\n(Clinical Data Repository)" as CDR
+
+DataConsumer -> HIE: Query for Patient:: Query for Patient (ITI-78)\n(FHIR RESTful API)
+HIE -> PDS: Query for Patient (ITI-78)\n(FHIR R4 RESTful API)
+PDS --> HIE: Search results
+HIE --> DataConsumer: Search results\n(FHIR R4)
+
+opt (GP Connect) national patient and consumer is practitioner
+note over DataConsumer, DataSource: **Patient Summary** GP Connect Access Record HTML
+DataConsumer -> HIE: IPS Query\n(FHIR R4 RESTful API)
+HIE -> CSD: Endpoint Endpoint lookup (ITI-90)\n(FHIR RESTfull API)
+CSD --> HIE: Search Results\n(FHIR R4)
+HIE -> DataSource: GP Connect AR html\n(FHIR STU3 bespoke API)
+DataSource --> HIE: Search Results\n(FHIR STU3 Document)
+HIE -> HIE: Convert to IPS FHIR R4 Document
+HIE --> DataConsumer: Search Results\n(FHIR R4 Document)
+end
+
+opt (Not GP Connect) local patient or patient is data consumer
+note over DataConsumer, DataSource: **Patient Detailed Record** IM1 Transaction API, local record or IM1 PFS
+DataConsumer -> HIE: Mobile Query Existing Data (PCC-44)\n(FHIR R4 RESTful API)
+HIE -> DataSource: IM1 Transaction API or PFS API
+DataSource --> HIE: Search results
+HIE -> HIE: Convert to FHIR R4
+HIE -> CDR: Mobile Query Existing Data (PCC-44)\n(FHIR R4 RESTful API)
+CDR --> HIE: Search Results
+HIE -> HIE: Aggregate results
+HIE --> DataConsumer: Search Results\n(FHIR R4)
+end
+
+@enduml
