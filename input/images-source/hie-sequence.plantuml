@@ -29,7 +29,7 @@ HIE --> DataConsumer: Search Results\n(FHIR R4 Document)
 end
 
 opt (Not GP Connect) local patient or patient is data consumer
-note over DataConsumer, DataSource: **Patient Detailed Record** IM1 Transaction API, local record or IM1 PFS
+note over DataConsumer, DataSource: **Patient Record Detailed** IM1 Transaction API, local record or IM1 PFS
 DataConsumer -> HIE: Mobile Query Existing Data (PCC-44)\n(FHIR R4 RESTful API)
 HIE -> DataSource: IM1 Transaction API or PFS API
 DataSource --> HIE: Search results

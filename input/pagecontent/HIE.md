@@ -34,7 +34,7 @@
   - Data returned as an HTML record (DSTU2 format).
   - Converted into a standardised IPS FHIR R4 Document.
   - Final FHIR R4 Search Results sent back to the Data Consumer.
-- Patient Detailed Record (Non-GP Connect scenario). This path is used when the Data Consumer is not a GP or the patient themselves is requesting data.
+- Patient Record Detailed (Non-GP Connect scenario). This path is used when the Data Consumer is not a GP or the patient themselves is requesting data.
   - Mobile Query Existing Data (PCC-44) request sent.
   - Request forwarded to IM1 Transaction API / PFS API.
   - Search results returned and converted to FHIR R4.
