@@ -1,2 +1,4 @@
+<div class="alert alert-info" role="alert">
+Archetype Viewer <a href="https://project-wildfyre.github.io/domain-archetype/?q=https://virtually-healthcare.github.io/Questionnaire-NHSHealthCheckAssessment.json" target="_blank">Questionnaire-NHSHealthCheckAssessment</a>
+</div>
 
-[Questionnaire Viewer](https://project-wildfyre.github.io/domain-archetype/?q=https://virtually-healthcare.github.io/R4/Questionnaire-NHSHealthCheckAssessment.json)

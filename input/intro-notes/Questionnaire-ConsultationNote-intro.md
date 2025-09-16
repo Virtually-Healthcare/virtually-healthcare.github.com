@@ -82,4 +82,6 @@ The current model is shown below. Historically this is related to [SOAP Note](ht
 </figure>
 <br clear="all">
 
-[Questionnaire Viewer](https://project-wildfyre.github.io/domain-archetype/?q=https://virtually-healthcare.github.io/R4/Questionnaire-ConsultationNote.json)
+<div class="alert alert-info" role="alert">
+Archetype Viewer <a href="https://project-wildfyre.github.io/domain-archetype/?q=https://virtually-healthcare.github.io/Questionnaire-ConsultationNote.json" target="_blank">Questionnaire-ConsultationNote</a>
+</div>

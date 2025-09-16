@@ -38,4 +38,6 @@ These are additional observations which will be present in a patients (mobile de
 | Blood Glucose               | [997671000000106](http://snomed.info/id/997671000000106)  | Blood glucose level                           |                                      |                 |           |
 | Atrial Fibrillation Burden  | [713801000000102](http://snomed.info/id/713801000000102)    | Atrial fibrillation monitoring administration |                                      |
 
-[Questionnaire Viewer](https://project-wildfyre.github.io/domain-archetype/?q=https://virtually-healthcare.github.io/R4/Questionnaire-VitalSigns.json)
+<div class="alert alert-info" role="alert">
+Archetype Viewer <a href="https://project-wildfyre.github.io/domain-archetype/?q=https://virtually-healthcare.github.io/Questionnaire-VitalSigns.json" target="_blank">Questionnaire-VitalSigns</a>
+</div>

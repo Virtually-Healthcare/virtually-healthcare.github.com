@@ -1,2 +1,5 @@
 
-[Questionnaire Viewer](https://project-wildfyre.github.io/domain-archetype/?q=https://virtually-healthcare.github.io/R4/Questionnaire-eRS-Referral-Request.json)
+
+<div class="alert alert-info" role="alert">
+Archetype Viewer <a href="https://project-wildfyre.github.io/domain-archetype/?q=https://virtually-healthcare.github.io/Questionnaire-eRS-Referral-Request.json" target="_blank">Questionnaire-eRS-Referral-Request</a>
+</div>

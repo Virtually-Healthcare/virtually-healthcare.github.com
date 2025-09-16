@@ -11,4 +11,7 @@ These represent data that needs to be captured for use with these services. This
 <p class="figureTitle">eReferral relationships</p> 
 
 
-[Questionnaire Viewer](https://project-wildfyre.github.io/domain-archetype/?q=https://virtually-healthcare.github.io/R4/Questionnaire-PatientReferral.json)
+<div class="alert alert-info" role="alert">
+Archetype Viewer <a href="https://project-wildfyre.github.io/domain-archetype/?q=https://virtually-healthcare.github.io/Questionnaire-PatientReferral.json" target="_blank">Questionnaire-PatientReferral</a>
+</div>
+

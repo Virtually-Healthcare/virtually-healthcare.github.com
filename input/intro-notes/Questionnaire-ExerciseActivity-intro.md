@@ -13,4 +13,6 @@ This is related to the [HL7 Physical Activity Implementation Guide](https://buil
 | Activity Duration        | [252132001](http://snomed.info/id/252132001) Recommendation by NHS England  | Measurement period   | [55411-3](https://loinc.org/55411-3)                                        | Quantity                                       | min       | [Activity Duration example](Observation-35eb7da3-9b85-46ce-bd29-75c2263b514a.html)        |
 | Peak Activity Heart Rate |                                                                            |                      | [55426-1](https://loinc.org/55426-1)                                        | Quantity                                       | /min      | [Peak Activity Heart Rate example](Observation-ad7c1832-f855-4ece-a4c7-c79b433a7890.html) |
 
-[Questionnaire Viewer](https://project-wildfyre.github.io/domain-archetype/?q=https://virtually-healthcare.github.io/R4/Questionnaire-ExerciseActivity.json)
+<div class="alert alert-info" role="alert">
+Archetype Viewer <a href="https://project-wildfyre.github.io/domain-archetype/?q=https://virtually-healthcare.github.io/Questionnaire-ExerciseActivity.json" target="_blank">Questionnaire-ExerciseActivity</a>
+</div>
