@@ -79,7 +79,8 @@
         {
           "type": "string",
           "linkId": "SMOKE/365981007/Detail",
-          "text": "Smoking details"
+          "text": "Smoking details",
+          "definition": "https://fhir.virtually.healthcare/StructureDefinition/Observation#Observation.note"
         },
         {
           "type": "date",
