@@ -103,7 +103,7 @@
               "code": "160617001"
             }
           ],
-          "text": "Data stopped smoking",
+          "text": "Date stopped smoking",
           "enableWhen": [
             {
               "question": "SMOKE/365981007",
