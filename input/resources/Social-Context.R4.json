@@ -3,7 +3,7 @@
   "id": "SocialContext",
   "meta": {
     "profile": [
-      "https://fhir.virtually.healthcare/StructureDefinition/Questionnaire"
+      "http://hl7.org/fhir/4.0/StructureDefinition/Questionnaire"
     ]
   },
   "url": "https://fhir.virtually.healthcare/Questionnaire/SocialContext",
@@ -22,6 +22,7 @@
         {
           "type": "choice",
           "linkId": "SMOKE/365981007",
+          "definition": "https://fhir.virtually.healthcare/StructureDefinition/Observation#Observation.valueCodeableConcept",
           "code": [
             {
               "system": "http://snomed.info/sct",
@@ -29,7 +30,6 @@
               "display": "Finding of tobacco smoking behaviour"
             }
           ],
-          "definition": "https://fhir.virtually.healthcare/StructureDefinition/Observation#Observation.valueCodeableConcept",
           "text": "Current smoking status",
           "answerOption": [
             {
@@ -79,20 +79,42 @@
         {
           "type": "string",
           "linkId": "SMOKE/365981007/Detail",
+          "definition": "https://fhir.virtually.healthcare/StructureDefinition/Observation#Observation.note",
           "text": "Smoking details",
-          "definition": "https://fhir.virtually.healthcare/StructureDefinition/Observation#Observation.note"
+          "enableWhen": [
+            {
+              "question": "SMOKE/365981007",
+              "operator": "!=",
+              "answerCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "266919005",
+                "display": "Never smoked tobacco"
+              }
+            }
+          ]
         },
         {
           "type": "date",
           "linkId": "SMOKE/160617001",
+          "definition": "https://fhir.virtually.healthcare/StructureDefinition/Observation#Observation.valueDateTime",
           "code": [
             {
               "system": "http://snomed.info/sct",
               "code": "160617001"
             }
           ],
-          "definition": "https://fhir.virtually.healthcare/StructureDefinition/Observation#Observation.valueDateTime",
-          "text": "Data stopped smoking"
+          "text": "Data stopped smoking",
+          "enableWhen": [
+            {
+              "question": "SMOKE/365981007",
+              "operator": "=",
+              "answerCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "8517006",
+                "display": "Ex-smoker"
+              }
+            }
+          ]
         }
       ],
       "type": "group",

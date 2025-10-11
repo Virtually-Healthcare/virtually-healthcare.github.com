@@ -14,7 +14,7 @@ Usage: #example
 * code.coding[SNOMED][+] = http://snomed.info/sct#228273003 "Finding relating to alcohol drinking behaviour"
 * subject.reference = "urn:uuid:073eef49-81ee-4c2e-893b-bc2e4efd2630"
 * effectiveDateTime = "2025-10-11T10:50:40.701Z"
-* valueCodeableConcept.coding[+] = http://snomed.info/sct#105542008 "Current non-drinker of alcohol"
+* valueCodeableConcept.coding[SNOMED][+] = http://snomed.info/sct#105542008 "Current non-drinker of alcohol"
 * performer.reference = "urn:uuid:073eef49-81ee-4c2e-893b-bc2e4efd2630"
 
 
@@ -34,7 +34,7 @@ Usage: #example
 * code.coding[SNOMED][+] = http://snomed.info/sct#228273003 "Finding relating to alcohol drinking behaviour"
 * subject.reference = "urn:uuid:073eef49-81ee-4c2e-893b-bc2e4efd2630"
 * effectiveDateTime = "2025-10-11T10:50:40.701Z"
-* valueCodeableConcept.coding[+] = http://snomed.info/sct#105543003 "Non-drinker for personal reasons"
+* valueCodeableConcept.coding[SNOMED][+] = http://snomed.info/sct#105543003 "Non-drinker for personal reasons"
 * performer.reference = "urn:uuid:073eef49-81ee-4c2e-893b-bc2e4efd2630"
 
 
@@ -54,7 +54,7 @@ Usage: #example
 * code.coding[SNOMED][+] = http://snomed.info/sct#365981007 "Finding of tobacco smoking behaviour"
 * subject.reference = "urn:uuid:073eef49-81ee-4c2e-893b-bc2e4efd2630"
 * effectiveDateTime = "2025-10-11T10:50:40.701Z"
-* valueCodeableConcept.coding[+] = http://snomed.info/sct#8517006 "Former smoker"
+* valueCodeableConcept.coding[SNOMED][+] = http://snomed.info/sct#8517006 "Former smoker"
 * performer.reference = "urn:uuid:073eef49-81ee-4c2e-893b-bc2e4efd2630"
 
 
