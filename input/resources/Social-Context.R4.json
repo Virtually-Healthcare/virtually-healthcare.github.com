@@ -29,6 +29,7 @@
               "display": "Finding of tobacco smoking behaviour"
             }
           ],
+          "definition": "https://fhir.virtually.healthcare/StructureDefinition/Observation#Observation.valueCodeableConcept",
           "text": "Current smoking status",
           "answerOption": [
             {
@@ -89,6 +90,7 @@
               "code": "160617001"
             }
           ],
+          "definition": "https://fhir.virtually.healthcare/StructureDefinition/Observation#Observation.valueDateTime",
           "text": "Data stopped smoking"
         }
       ],
@@ -104,9 +106,11 @@
           "code": [
             {
               "system": "http://snomed.info/sct",
-              "code": "228273003"
+              "code": "228273003",
+              "display": "Finding relating to alcohol drinking behavior"
             }
           ],
+          "definition": "https://fhir.virtually.healthcare/StructureDefinition/Observation#Observation.valueCodeableConcept",
           "text": "Alcohol current status",
           "answerOption": [
             {
@@ -154,13 +158,19 @@
               "valueUrl": "https://snowstorm.ihtsdotools.org/fhir"
             }
           ],
-          "linkId": "ALCOHOL/219006",
+          "linkId": "ALCOHOL/228273003/219006",
           "code": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "228273003",
+              "display": "Finding relating to alcohol drinking behavior"
+            },
             {
               "system": "http://snomed.info/sct",
               "code": "219006"
             }
           ],
+          "definition": "https://fhir.virtually.healthcare/StructureDefinition/Observation#Observation.valueCodeableConcept",
           "text": "Amount of drinking",
           "enableWhen": [
             {
@@ -183,14 +193,20 @@
               "valueUrl": "https://snowstorm.ihtsdotools.org/fhir"
             }
           ],
-          "linkId": "ALCOHOL/105542008",
+          "linkId": "ALCOHOL/228273003/105542008",
           "code": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "228273003",
+              "display": "Finding relating to alcohol drinking behavior"
+            },
             {
               "system": "http://snomed.info/sct",
               "code": "105542008",
               "display": "Non - drinker"
             }
           ],
+          "definition": "https://fhir.virtually.healthcare/StructureDefinition/Observation#Observation.valueCodeableConcept",
           "text": "Non drinker type",
           "enableWhen": [
             {

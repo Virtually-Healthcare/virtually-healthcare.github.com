@@ -33,7 +33,7 @@
         }
       ],
       "linkId": "SCT/442476006",
-      "definition": "http://hl7.org/fhir/StructureDefinition/Observation#valueQuantity",
+      "definition": "https://fhir.virtually.healthcare/StructureDefinition/Observation#Observation.valueQuantity",
       "code": [
         {
           "system": "http://snomed.info/sct",
@@ -67,7 +67,7 @@
           }
         }
       ],
-      "definition": "http://hl7.org/fhir/StructureDefinition/Observation#valueQuantity",
+      "definition": "https://fhir.virtually.healthcare/StructureDefinition/Observation#Observation.valueQuantity",
       "code": [
         {
           "system": "http://snomed.info/sct",
@@ -99,7 +99,7 @@
         }
       ],
       "linkId": "SCT/27113001",
-      "definition": "http://hl7.org/fhir/StructureDefinition/Observation#valueQuantity",
+      "definition": "https://fhir.virtually.healthcare/StructureDefinition/Observation#Observation.valueQuantity",
       "code": [
         {
           "system": "http://snomed.info/sct",
@@ -138,7 +138,7 @@
         }
       ],
       "linkId": "SCT/363811000",
-      "definition": "http://hl7.org/fhir/StructureDefinition/Observation#valueQuantity",
+      "definition": "https://fhir.virtually.healthcare/StructureDefinition/Observation#Observation.valueQuantity",
       "code": [
         {
           "system": "http://snomed.info/sct",
@@ -177,7 +177,7 @@
         }
       ],
       "linkId": "SCT/50373000",
-      "definition": "http://hl7.org/fhir/StructureDefinition/Observation#valueQuantity",
+      "definition": "https://fhir.virtually.healthcare/StructureDefinition/Observation#Observation.valueQuantity",
       "code": [
         {
           "system": "http://snomed.info/sct",
@@ -216,7 +216,7 @@
         }
       ],
       "linkId": "SCT/276885007",
-      "definition": "http://hl7.org/fhir/StructureDefinition/Observation#valueQuantity",
+      "definition": "https://fhir.virtually.healthcare/StructureDefinition/Observation#Observation.valueQuantity",
       "code": [
         {
           "system": "http://snomed.info/sct",
@@ -257,7 +257,7 @@
             }
           ],
           "linkId": "SCT/72313002",
-          "definition": "http://hl7.org/fhir/StructureDefinition/Observation#component.valueQuantity",
+          "definition": "https://fhir.virtually.healthcare/StructureDefinition/Observation#Observation.component.valueQuantity",
           "code": [
             {
               "system": "http://snomed.info/sct",
@@ -290,7 +290,7 @@
             }
           ],
           "linkId": "SCT/1091811000000102",
-          "definition": "http://hl7.org/fhir/StructureDefinition/Observation#component.valueQuantity",
+          "definition": "https://fhir.virtually.healthcare/StructureDefinition/Observation#Observation.component.valueQuantity",
           "code": [
             {
               "system": "http://snomed.info/sct",
@@ -315,7 +315,7 @@
       ],
       "type": "group",
       "linkId": "SCT/75367002",
-      "definition": "http://hl7.org/fhir/StructureDefinition/Observation#component",
+      "definition": "https://fhir.virtually.healthcare/StructureDefinition/Observation#Observation.component",
       "code": [
         {
           "system": "http://snomed.info/sct",
@@ -337,7 +337,7 @@
         }
       ],
       "linkId": "SCT/364075005",
-      "definition": "http://hl7.org/fhir/StructureDefinition/Observation#valueQuantity",
+      "definition": "https://fhir.virtually.healthcare/StructureDefinition/Observation#Observation.valueQuantity",
       "code": [
         {
           "system": "http://snomed.info/sct",
@@ -375,7 +375,7 @@
         }
       ],
       "linkId": "SCT/86290005",
-      "definition": "http://hl7.org/fhir/StructureDefinition/Observation#valueQuantity",
+      "definition": "https://fhir.virtually.healthcare/StructureDefinition/Observation#Observation.valueQuantity",
       "code": [
         {
           "system": "http://snomed.info/sct",
@@ -414,7 +414,7 @@
         }
       ],
       "linkId": "SCT/60621009",
-      "definition": "http://hl7.org/fhir/StructureDefinition/Observation#valueQuantity",
+      "definition": "https://fhir.virtually.healthcare/StructureDefinition/Observation#Observation.valueQuantity",
       "code": [
         {
           "system": "http://snomed.info/sct",
@@ -434,7 +434,7 @@
     {
       "type": "integer",
       "linkId": "SCT/225908003",
-      "definition": "http://hl7.org/fhir/StructureDefinition/Observation#valueQuantity",
+      "definition": "https://fhir.virtually.healthcare/StructureDefinition/Observation#Observation.valueQuantity",
       "code": [
         {
           "system": "http://snomed.info/sct",
@@ -448,7 +448,7 @@
     {
       "type": "quantity",
       "linkId": "SCT/1104441000000107",
-      "definition": "http://hl7.org/fhir/StructureDefinition/Observation#valueQuantity",
+      "definition": "https://fhir.virtually.healthcare/StructureDefinition/Observation#Observation.valueQuantity",
       "code": [
         {
           "system": "http://snomed.info/sct",
@@ -471,7 +471,7 @@
     {
       "type": "boolean",
       "linkId": "SCT/722742002",
-      "definition": "http://hl7.org/fhir/StructureDefinition/Observation#valueBoolean",
+      "definition": "https://fhir.virtually.healthcare/StructureDefinition/Observation#Observation.valueBoolean",
       "code": [
         {
           "system": "http://snomed.info/sct",
@@ -504,7 +504,7 @@
         }
       ],
       "linkId": "SCT/371825009",
-      "definition": "http://hl7.org/fhir/StructureDefinition/Observation#valueQuantity",
+      "definition": "https://fhir.virtually.healthcare/StructureDefinition/Observation#Observation.valueQuantity",
       "code": [
         {
           "system": "http://snomed.info/sct",

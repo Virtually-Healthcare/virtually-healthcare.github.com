@@ -31,6 +31,7 @@
           "display": "Number of steps in 24 Hours, Measured"
         }
       ],
+      "definition": "https://fhir.virtually.healthcare/StructureDefinition/Observation#Observation.valueQuantity",
       "text": "Daily Step Count",
       "initial": [
         {
@@ -62,6 +63,7 @@
           "display": "Maximum Heart rate in 24 Hours"
         }
       ],
+      "definition": "https://fhir.virtually.healthcare/StructureDefinition/Observation#Observation.valueQuantity",
       "text": "Peak daily heart rate",
       "initial": [
         {
@@ -93,6 +95,7 @@
           "display": "Heart rate - resting"
         }
       ],
+      "definition": "https://fhir.virtually.healthcare/StructureDefinition/Observation#Observation.valueQuantity",
       "text": "Average resting heart rate",
       "initial": [
         {
@@ -124,6 +127,7 @@
           "display": "Calories burned in 24 Hours, Calc"
         }
       ],
+      "definition": "https://fhir.virtually.healthcare/StructureDefinition/Observation#Observation.valueQuantity",
       "text": "Calories per Day",
       "initial": [
         {

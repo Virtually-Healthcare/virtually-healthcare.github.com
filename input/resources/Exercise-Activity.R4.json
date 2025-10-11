@@ -42,6 +42,7 @@
           "display": "Exercise activity"
         }
       ],
+      "definition": "https://fhir.virtually.healthcare/StructureDefinition/Observation#Observation.valueCodeableConcept",
       "prefix": "1",
       "text": "Exercise activity",
       "answerValueSet": "http://snomed.info/sct/900000000000207008?fhir_vs=ecl%2F%3C+415577004"
@@ -66,6 +67,7 @@
           "display": "Maximum Heart rate in Unspecified Time"
         }
       ],
+      "definition": "https://fhir.virtually.healthcare/StructureDefinition/Observation#Observation.valueQuantity",
       "prefix": "2",
       "text": "Peak Activity Heart Rate",
       "initial": [
@@ -98,6 +100,7 @@
           "display": "Exercise duration"
         }
       ],
+      "definition": "https://fhir.virtually.healthcare/StructureDefinition/Observation#Observation.valueQuantity",
       "prefix": "3",
       "text": "Activity Duration",
       "initial": [
@@ -130,6 +133,7 @@
           "display": "Calories burned in Unspecified Time, Pedometer"
         }
       ],
+      "definition": "https://fhir.virtually.healthcare/StructureDefinition/Observation#Observation.valueQuantity",
       "prefix": "4",
       "text": "Calories per activity",
       "initial": [
@@ -162,6 +166,7 @@
           "display": "Heart rate unspecified time mean by Pedometer"
         }
       ],
+      "definition": "https://fhir.virtually.healthcare/StructureDefinition/Observation#Observation.valueQuantity",
       "prefix": "5",
       "text": "Average Heart Rate",
       "initial": [
