@@ -1,0 +1,239 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "SocialContext",
+  "meta": {
+    "profile": [
+      "https://fhir.virtually.healthcare/StructureDefinition/Questionnaire"
+    ]
+  },
+  "url": "https://fhir.virtually.healthcare/Questionnaire/SocialContext",
+  "title": "Social Context",
+  "status": "draft",
+  "description": "Based on Social Context from PRSB Social Prescribing Standard",
+  "code": [
+    {
+      "system": "http://snomed.info/sct",
+      "code": "48176007"
+    }
+  ],
+  "item": [
+    {
+      "item": [
+        {
+          "type": "choice",
+          "linkId": "SMOKE/365981007",
+          "code": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "365981007",
+              "display": "Finding of tobacco smoking behaviour"
+            }
+          ],
+          "text": "Current smoking status",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "405746006",
+                "display": "Current non smoker but past smoking history unknown"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "8517006",
+                "display": "Ex-smoker"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "1098881000000103",
+                "display": "Declined to give smoking status"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "77176002",
+                "display": "Smoker"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "266919005",
+                "display": "Never smoked tobacco"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "160614008",
+                "display": "Tobacco consumption unknown"
+              }
+            }
+          ]
+        },
+        {
+          "type": "string",
+          "linkId": "SMOKE/365981007/Detail",
+          "text": "Smoking details"
+        },
+        {
+          "type": "date",
+          "linkId": "SMOKE/160617001",
+          "code": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "160617001"
+            }
+          ],
+          "text": "Data stopped smoking"
+        }
+      ],
+      "type": "group",
+      "linkId": "SMOKE",
+      "text": "Smoking Status"
+    },
+    {
+      "item": [
+        {
+          "type": "choice",
+          "linkId": "ALCOHOL/228273003",
+          "code": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "228273003"
+            }
+          ],
+          "text": "Alcohol current status",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "219006",
+                "display": "Current drinker"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "105542008",
+                "display": "Current non-drinker of alcohol"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "783261004",
+                "display": "Lifetime non-drinker of alcohol"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "1104551000000109",
+                "display": "Declined to provide information about alcohol use"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "371434005",
+                "display": "History of alcohol abuse"
+              }
+            }
+          ]
+        },
+        {
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-preferredTerminologyServer",
+              "valueUrl": "https://snowstorm.ihtsdotools.org/fhir"
+            }
+          ],
+          "linkId": "ALCOHOL/219006",
+          "code": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "219006"
+            }
+          ],
+          "text": "Amount of drinking",
+          "enableWhen": [
+            {
+              "question": "ALCOHOL/228273003",
+              "operator": "=",
+              "answerCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "219006",
+                "display": "Current drinker"
+              }
+            }
+          ],
+          "answerValueSet": "http://snomed.info/sct/900000000000207008?fhir_vs=ecl/%3C%3C219006"
+        },
+        {
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-preferredTerminologyServer",
+              "valueUrl": "https://snowstorm.ihtsdotools.org/fhir"
+            }
+          ],
+          "linkId": "ALCOHOL/105542008",
+          "code": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "105542008",
+              "display": "Non - drinker"
+            }
+          ],
+          "text": "Non drinker type",
+          "enableWhen": [
+            {
+              "question": "ALCOHOL/228273003",
+              "operator": "=",
+              "answerCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "105542008",
+                "display": "Current non-drinker of alcohol"
+              }
+            }
+          ],
+          "answerValueSet": "http://snomed.info/sct/900000000000207008?fhir_vs=ecl/%3C%3C105542008"
+        }
+      ],
+      "type": "group",
+      "linkId": "ALCOHOL",
+      "text": "Alcohol intake"
+    },
+    {
+      "type": "group",
+      "linkId": "DRUG",
+      "text": " Drug/substance use"
+    },
+    {
+      "type": "string",
+      "linkId": "SOCIAL",
+      "text": "Social circumstances"
+    },
+    {
+      "type": "group",
+      "linkId": "ACCOMMODATION",
+      "text": " Accommodation status"
+    },
+    {
+      "type": "string",
+      "linkId": "OCCUPATIONAL",
+      "text": " Occupational"
+    },
+    {
+      "type": "string",
+      "linkId": "EDUCATIONAL",
+      "text": "Educational"
+    }
+  ]
+}

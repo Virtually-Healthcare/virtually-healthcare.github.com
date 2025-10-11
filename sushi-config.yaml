@@ -511,6 +511,7 @@ menu:
     Vital Signs (Template): Questionnaire-VitalSigns.html
     Daily Physical Activity (Template): Questionnaire-DailyPhysicalActivity.html
     Exercise Activity (Template): Questionnaire-ExerciseActivity.html
+    Social Context (Template): Questionnaire-SocialContext.html
   Artefacts: artifacts.html
   Development:
     Testing: testing.html
