@@ -8,14 +8,17 @@ The `Patient Care Coordination (Community)` is designed around supporting clinic
 <br clear="all">
 <p class="figureTitle">Nursing Process (ADPIE)</p> 
 
-<div class="mermaid">
+
+
+```mermaid
 graph TD;
     A[Assessment]-->B;
     B[Diagnosis]-->C;
     C[Plan/Goals]-->D;
     D[Implement/Interventions]-->E;
     E[Evaluate]-->A;
-</div>
+```
+
 
 This uses a series of common data and interaction standards (green in the diagram below) which allows different applications to be connected together. These interfaces will often provide a layer of extraction of over other interfaces such as:
 
