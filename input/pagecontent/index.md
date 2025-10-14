@@ -12,10 +12,10 @@ The `Patient Care Coordination (Community)` is designed around supporting clinic
 
 ```mermaid
 graph TD;
-    A[Assessment]-->B;
-    B[Diagnosis]-->C;
-    C[Plan/Goals]-->D;
-    D[Implement/Interventions]-->E;
+    A[Assessment]-->|Observation| B;
+    B[Diagnosis]-->|Condition| C;
+    C[Plan]-->|Goal| D;
+    D[Implement/Interventions]-->|Task| E;
     E[Evaluate]-->A;
 ```
 
