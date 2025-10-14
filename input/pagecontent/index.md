@@ -4,12 +4,6 @@
 
 The `Patient Care Coordination (Community)` is designed around supporting clinical processes in primary, pharmacy and community care settings. It is aligned with [Nursing Process (ADPIE)](https://en.wikipedia.org/wiki/Nursing_process)
 
-<img style="padding:3px;width:80%;" src="NursingProcess.png" alt="Nursing Process (ADPIE)"/>
-<br clear="all">
-<p class="figureTitle">Nursing Process (ADPIE)</p> 
-
-
-
 ```mermaid
 graph TD;
     A[Assessment]-->|Observation| B;
@@ -17,10 +11,25 @@ graph TD;
     C[Plan]-->|Goal| D;
     D[Implement/Interventions]-->|Task| E;
     E[Evaluate]-->A;
+    
+    classDef yellow fill:#FFF2CC;
+    classDef pink fill:#F8CECC
+    classDef green fill:#D5E8D4;
+    classDef blue fill:#DAE8FC;
+    classDef orange fill:#FFE6CC;
+
+    class A pink
+    class B yellow
+    class C green
+    class D blue
+    class E orange
 ```
 
+<img style="padding:3px;width:80%;" src="NursingProcess.png" alt="Nursing Process (ADPIE)"/>
+<br clear="all">
+<p class="figureTitle">Nursing Process (ADPIE)</p> 
 
-This uses a series of common data and interaction standards (green in the diagram below) which allows different applications to be connected together. These interfaces will often provide a layer of extraction of over other interfaces such as:
+This uses a series of common data and interaction standards (green in the diagram below) which allow different applications to be connected together. These interfaces will often provide a layer of extraction of over other interfaces such as:
 
 - [Consultation Note](consultation-note.html)
   - GP Connect Send Document
