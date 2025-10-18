@@ -6,10 +6,10 @@ The `Patient Care Coordination (Community)` is designed around supporting clinic
 
 ```mermaid
 graph TD;
-    A[Assessment]-->|<a href='StructureDefinition-Observation.html'>Observation</a>| B;
-    B[Diagnosis]-->|<a href='StructureDefinition-Condition.html'>Condition</a>| C;
-    C[Plan]-->|<a href='StructureDefinition-Goal.html'>Goal</a>| D;
-    D[Implement/Interventions]-->|<a href='StructureDefinition-Task.html'>Task</a>| E;
+    A[Assessment]-->|Observation| B;
+    B[Diagnosis]-->|Condition| C;
+    C[Plan]-->|Goal| D;
+    D[Implement/Interventions]-->|Task| E;
     E[Evaluate]-->A;
     
     classDef yellow fill:#FFF2CC;
