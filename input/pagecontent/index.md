@@ -5,7 +5,7 @@
 The `Patient Care Coordination (Community)` is designed around supporting clinical processes in primary, pharmacy and community care settings. It is aligned with [Nursing Process (ADPIE)](https://en.wikipedia.org/wiki/Nursing_process)
 
 ```mermaid
-graph LR;
+graph TD;
     A[Assessment]-->|Observation| B;
     B[Diagnosis]-->|Condition| C;
     C[Plan]-->|Goal| D;
