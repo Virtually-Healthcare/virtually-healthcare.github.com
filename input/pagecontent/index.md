@@ -12,9 +12,9 @@ graph TD;
 
     ClinicalDecisionSupport[Clinical Decision Support]  --> |"Create Observation (Score)<br/>Cinical Assessment"| Diagnosis
     DiagnosticTesting[Diagnostic Testing] --> |"Sends Report <br/> Observations)"| Diagnosis
-    Diagnosis[Create Diagnosis]-->|Condition| Plan;
+    Diagnosis[Diagnosis]-->|Create Condition| Plan;
     Plan -->|Creates Tasks| Implement;
-    Implement[Implement/Interventions]-->|"Deliver Care <br/>(Action Tasks)"| Evaluate;
+    Implement[Implement/Interventions]-->|"Deliver Care <br/>(Series of Patient Encounters)"| Evaluate;
     Evaluate[Evaluate]-->Assessment;
 
     EPR[fas:fa-database Electronic Patient Record] 
@@ -41,7 +41,7 @@ graph TD;
 <br clear="all">
 <p class="figureTitle">Nursing Process (ADPIE)</p> 
 
-## How to Read this IG
+### How to Read this IG
 
 <table >
   <thead>
@@ -87,15 +87,6 @@ graph TD;
 </table>
 
 
-<table style="width:80%">
-  <tr>
-    <td>
-       <img style="padding:3px;width:70%;" src="Patient Care Coordination.drawio.png" alt="Patient Care Coordination Manager (Community)"/>
-      <p class="figureTitle">Patient Care Coordination Manager (Community)</p>   
-    </td>
-  </tr>
-</table>
-
 | Patient Care Process        | Analysis and Design                                  | Interfaces                                                                                                                         | Domain Archetype                                                                                                                                                                                                                         | Domain Entity (Resources)                                                                                   |
 |-----------------------------|------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
 | Assessment                  |                                                      | Device Dats Capture <br/> [Structured Data Capture](Stuctured Data Capture)                                                        | [Vital Signs](Questionnaire-VitalSigns.html) <br/> [Physical Activity](Questionnaire-DailyPhysicalActivity.html) <br/> [Exercise Activity](Questionnaire-ExerciseActivity.html) <br/> [Social Context](Questionnaire-SocialContext.html) | [Observation](StructureDefinition-Observation.html)                                                         |
@@ -107,6 +98,64 @@ graph TD;
 | - Report/Consultation Note  | [Patient Referral 360X](360X.html)                   |                                                                                                                                    | [Consultation Note](consultation-note.html)                                                                                                                                                                                              |                                                                                                             |
 | Evaluate                    |                                                      |                                                                                                                                    |                                                                                                                                                                                                                                          |                                                                                                             |
 | Electronic Patient Record   | [Health Information Exchange HIE](HIE.html)          | [IHE Query for Existing Data QEDm PCC-44](https://profiles.ihe.net/PCC/QEDm/PCC-44.html) <br/> [IHE Health Documents MHD ITI-67](https://profiles.ihe.net/ITI/MHD/ITI-67.html) | [Patient Care Record](A04.html)                                                                                                                                                                                                          | Varies [Resources](artifacts.html#structures-resource-profiles)                                             |                                                                                        |
+
+
+### Patient Encounters
+
+Patient Encounters occur multiple times throughout a patient’s care journey and may be repeated at various stages. The diagram below illustrates that each encounter involves several steps — it’s a flexible, iterative process. To make this clearer for both developers and non-clinical users, the  [SOAP Notes](https://en.wikipedia.org/wiki/SOAP_note)
+framework has been used as a reference.
+
+While this description reflects a physician-centered workflow, the [clinical process](#clinical-process) is more closely aligned with nursing practices.
+
+The data archetype associated with this is [Consultation Note](StructureDefinition-ConsulationNote.html) 
+
+Event notifications are common in secondary care, where they are known as **HL7 v2 Admission, Discharge and Transder (ADT)** and also [IHE Patient Administration Management (PAM) - Patient Encounter](https://profiles.ihe.net/ITI/TF/Volume1/ch-14.html#14.2.1). *Note that HL7 FHIR does not currently define a specific standard for these event notifications.*
+Some general practice (GP) systems do, however, receive such encounter notifications from secondary care.
+
+```mermaid
+graph TD;
+    EncounterStart[Start Encounter] --> Subjective
+    Subjective --> Objective 
+    Objective --> Assessment 
+    Assessment[Assessment / Differential Diagnosis] --> Plan 
+    Plan --> EncounterEnd
+    Subjective --> |View Patient Record| HIE[fas:fa-database Clinical Portal /<br/> Electronic Patient Record /<br/> Health Information Exchange] 
+    EncounterEnd --> |Encounter Notification| Other["Other Practitioners and <br/>Patient (if not present)"]
+    Subjective --> |Query Patient| Patient
+    Objective --> Patient 
+
+    Subjective --> |Create Observations| EPR[fas:fa-database Electronic Patient Record] 
+    Objective --> |Create Observations| EPR[fas:fa-database Electronic Patient Record] 
+    Assessment --> |Create Condition| EPR[fas:fa-database Electronic Patient Record] 
+    Plan --> |Create Tasks and Orders| EPR[fas:fa-database Electronic Patient Record] 
+
+    classDef yellow fill:#FFF2CC;
+    classDef pink fill:#F8CECC
+    classDef green fill:#D5E8D4;
+    classDef blue fill:#DAE8FC;
+    classDef orange fill:#FFE6CC;
+
+    class Subjective pink
+    class Objective pink
+    class Assessment yellow
+    class Plan green
+```
+
+
+## Technical Overview
+
+### High Level Architecture
+
+The diagram below shows the high level architecture of the Patient Care Coordination Manager (Community)
+
+<table style="width:80%">
+  <tr>
+    <td>
+       <img style="padding:3px;width:70%;" src="Patient Care Coordination.drawio.png" alt="Patient Care Coordination Manager (Community)"/>
+      <p class="figureTitle">Patient Care Coordination Manager (Community)</p>   
+    </td>
+  </tr>
+</table>
 
 This uses a series of common data and interaction standards (green in the diagram below) which allow different applications to be connected together. These interfaces will often provide a layer of extraction of over other interfaces such as:
 
@@ -129,9 +178,7 @@ This uses a series of common data and interaction standards (green in the diagra
     - Spine Directory Service
 
 
-### Enterprise and Data Standards
-
-#### Enterprise Frameworks
+### Enterprise Frameworks
 
 A number of frameworks [IHE Patient Care Coordination (PCC)](https://profiles.ihe.net/PCC/index.html) are followed in this guide, including:
 
