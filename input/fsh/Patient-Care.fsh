@@ -1,6 +1,6 @@
-Profile: PatientSummary
+Profile: PatientCare
 Parent: http://hl7.org/fhir/StructureDefinition/Composition
-Id: PatientSummary
+Id: PatientCare
 Description: """
 """
 
