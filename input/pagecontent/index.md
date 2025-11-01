@@ -6,21 +6,22 @@ The `Patient Care Coordination (Community)` is designed around supporting clinic
 
 ```mermaid
 graph TD;
-    Assessment[Assessment]-->|Create Observation| Diagnosis;
-    Assessment --> |Create Observation| ClinicalDecisionSupport
+    Assessment[Assessment]-->|Create Observations| Diagnosis;
+    Assessment --> |Create Observations| ClinicalDecisionSupport
     Assessment --> |Create Order| DiagnosticTesting
 
     ClinicalDecisionSupport[Clinical Decision Support]  --> |"Create Observation (Score)<br/>Cinical Assessment"| Diagnosis
     DiagnosticTesting[Diagnostic Testing] --> |"Sends Report <br/> Observations)"| Diagnosis
     Diagnosis[Create Diagnosis]-->|Condition| Plan;
-    Plan -->|Create Goal| Implement;
-    Implement[Implement/Interventions]-->|Perform Tasks| Evaluate;
+    Plan -->|Creates Tasks| Implement;
+    Implement[Implement/Interventions]-->|Provide Care <br/> Action Tasks| Evaluate;
     Evaluate[Evaluate]-->Assessment;
 
     EPR[fas:fa-database Electronic Patient Record] 
     Assessment --> |Read Care Record| EPR
     Diagnosis --> |Read Care Record| EPR
     Plan --> |Read Care Record| EPR
+    Plan --> |Create Care Plan| EPR
     Implement --> |Read Care Record| EPR
     Evaluate --> |Read Care Record| EPR
     
