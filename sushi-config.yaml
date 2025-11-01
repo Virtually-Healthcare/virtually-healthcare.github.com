@@ -504,7 +504,7 @@ menu:
 #    eReport: R01.html
 
   Domain Archetypes:
-    Patient Care Record: A04.html
+    # Patient Care Record: A04.html
     Referral Letter (Template): Questionnaire-PatientReferral.html
     Consultation Note (Composition): StructureDefinition-ConsulationNote.html
     Patient Summary (Composition): StructureDefinition-PatientSummary.html

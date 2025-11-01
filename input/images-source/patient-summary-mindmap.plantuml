@@ -1,20 +1,38 @@
 @startmindmap
 
-title "Patient Summary (GP Connect Access Record html)"
+title "Patient Care"
 
-* Patient Summary (824321000000109/60591-5)
+* Patient Summary (60591-5)
 ** Problem (11450-4)
+*** [[StructureDefinition-Condition.html Condition]]
 *** GP Connect Record Section **PRB**
 ** Allergy (48765-2)
+*** [[StructureDefinition-AllergyIntolerance.html AllegyIntolerance]]
 *** GP Connect Record Section **ALL**
 ** Medication (10160-0)
+*** [[StructureDefinition-MedicationRequest.html MedicationRequest]] (prescriptions)
 *** GP Connect Record Section **MED**
 ** Immunisations (11369-6)
+*** [[StructureDefinition-Immunization.html Immunization]]
 *** GP Connect Record Section **IMM**
+** Results (30954-2)
+*** [[StructureDefinition-DiagnosticReport.html DiagnosticReport]] (Laboratory reports)
+*** [[StructureDefinition-Observation.html Observation]] category = laboratory
+** Procedures (47519-4)
+*** [[StructureDefinition-Procedure.html Procedure]]
+** Devices (46264-8)
 ** Referral (47519-4)
+*** [[StructureDefinition-ServiceRequest.html ServiceRequest]] (referrals and laboratory orders)
 *** GP Connect Record Section **REF**
 ** History - Encounters (11329-0)
+*** [[StructureDefinition-Encounter.html Encounter]]
+*** [[StructureDefinition-ConsulationNote.html Clinical Note (11488-4)]]
+**** [[StructureDefinition-DocumentReference.html DocumentReference]]
 *** GP Connect Record Section **ENC**
+** [[Questionnaire-SocialContext.html Social History (29762-2)]]
+*** [[StructureDefinition-Observation.html Observation]] category = social-history
+** [[Questionnaire-VitalSigns.html Vital Signs (8716-3)]]
+*** [[StructureDefinition-Observation.html Observation]] category = vital-signs
 ** Observation (61149-1)
 *** GP Connect Record Section **OBS**
 *** GP Connect Record Section **CLI**
