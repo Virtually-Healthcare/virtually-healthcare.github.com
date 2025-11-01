@@ -14,14 +14,13 @@ graph TD;
     DiagnosticTesting[Diagnostic Testing] --> |"Sends Report <br/> Observations)"| Diagnosis
     Diagnosis[Create Diagnosis]-->|Condition| Plan;
     Plan -->|Creates Tasks| Implement;
-    Implement[Implement/Interventions]-->|Provide Care <br/> Action Tasks| Evaluate;
+    Implement[Implement/Interventions]-->|"Deliver Care <br/>(Action Tasks)"| Evaluate;
     Evaluate[Evaluate]-->Assessment;
 
     EPR[fas:fa-database Electronic Patient Record] 
     Assessment --> |Read Care Record| EPR
     Diagnosis --> |Read Care Record| EPR
-    Plan --> |Read Care Record| EPR
-    Plan --> |Create Care Plan| EPR
+    Plan --> |Read Care Record <br/> Create Care Plan| EPR
     Implement --> |Read Care Record| EPR
     Evaluate --> |Read Care Record| EPR
     
