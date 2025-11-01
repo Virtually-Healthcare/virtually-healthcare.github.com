@@ -507,7 +507,7 @@ menu:
     # Patient Care Record: A04.html
     Referral Letter (Template): Questionnaire-PatientReferral.html
     Consultation Note (Composition): StructureDefinition-ConsulationNote.html
-    Patient Summary (Composition): StructureDefinition-PatientSummary.html
+    Patient Care Record: StructureDefinition-PatientCare.html
     Vital Signs (Template): Questionnaire-VitalSigns.html
     Daily Physical Activity (Template): Questionnaire-DailyPhysicalActivity.html
     Exercise Activity (Template): Questionnaire-ExerciseActivity.html
