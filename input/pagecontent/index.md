@@ -1,46 +1,5 @@
 ## Patient Care Coordination (PCC)
 
-### Clinical Process
-
-The `Patient Care Coordination (Community)` is designed around supporting clinical processes in primary, pharmacy and community care settings. It is aligned with [Nursing Process (ADPIE)](https://en.wikipedia.org/wiki/Nursing_process)
-
-```mermaid
-graph TD;
-    Assessment[Assessment]-->|Create Observations| Diagnosis;
-    Assessment --> |Create Observations| ClinicalDecisionSupport
-    Assessment --> |Create Order| DiagnosticTesting
-
-    ClinicalDecisionSupport[Clinical Decision Support]  --> |"Create Observation (Score)<br/>Cinical Assessment"| Diagnosis
-    DiagnosticTesting[Diagnostic Testing] --> |"Sends Report <br/> Observations)"| Diagnosis
-    Diagnosis[Diagnosis]-->|Create Condition| Plan;
-    Plan -->|Creates Tasks| Implement;
-    Implement[Implement/Interventions]-->|"Deliver Care <br/>(Series of Patient Encounters)"| Evaluate;
-    Evaluate[Evaluate]-->Assessment;
-
-    EPR[fas:fa-database Electronic Patient Record] 
-    Assessment --> |Read Care Record| EPR
-    Diagnosis --> |Read Care Record| EPR
-    Plan --> |Read Care Record <br/> Create Care Plan| EPR
-    Implement --> |Read Care Record| EPR
-    Evaluate --> |Read Care Record| EPR
-    
-    classDef yellow fill:#FFF2CC;
-    classDef pink fill:#F8CECC
-    classDef green fill:#D5E8D4;
-    classDef blue fill:#DAE8FC;
-    classDef orange fill:#FFE6CC;
-
-    class Assessment pink
-    class Diagnosis yellow
-    class Plan green
-    class Implement blue
-    class Evaluate orange
-```
-
-<img style="padding:3px;width:80%;" src="NursingProcess.png" alt="Nursing Process (ADPIE)"/>
-<br clear="all">
-<p class="figureTitle">Nursing Process (ADPIE)</p> 
-
 ### How to Read this IG
 
 <table >
@@ -85,6 +44,47 @@ graph TD;
     </tr>
   </tbody>
 </table>
+
+### Clinical Process
+
+The `Patient Care Coordination (Community)` is designed around supporting clinical processes in primary, pharmacy and community care settings. It is aligned with [Nursing Process (ADPIE)](https://en.wikipedia.org/wiki/Nursing_process)
+
+```mermaid
+graph TD;
+    Assessment[Assessment]-->|Create Observations| Diagnosis;
+    Assessment --> |Create Observations| ClinicalDecisionSupport
+    Assessment --> |Create Order| DiagnosticTesting
+
+    ClinicalDecisionSupport[Clinical Decision Support]  --> |"Create Observation (Score)<br/>Cinical Assessment"| Diagnosis
+    DiagnosticTesting[Diagnostic Testing] --> |"Sends Report <br/> Observations)"| Diagnosis
+    Diagnosis[Diagnosis]-->|Create Condition| Plan;
+    Plan -->|Creates Tasks| Implement;
+    Implement[Implement/Interventions]-->|"Deliver Care <br/>(Series of Patient Encounters)"| Evaluate;
+    Evaluate[Evaluate]-->Assessment;
+
+    EPR[fas:fa-database Electronic Patient Record] 
+    Assessment --> |Read Care Record| EPR
+    Diagnosis --> |Read Care Record| EPR
+    Plan --> |Read Care Record <br/> Create Care Plan| EPR
+    Implement --> |Read Care Record| EPR
+    Evaluate --> |Read Care Record| EPR
+    
+    classDef yellow fill:#FFF2CC;
+    classDef pink fill:#F8CECC
+    classDef green fill:#D5E8D4;
+    classDef blue fill:#DAE8FC;
+    classDef orange fill:#FFE6CC;
+
+    class Assessment pink
+    class Diagnosis yellow
+    class Plan green
+    class Implement blue
+    class Evaluate orange
+```
+
+<img style="padding:3px;width:80%;" src="NursingProcess.png" alt="Nursing Process (ADPIE)"/>
+<br clear="all">
+<p class="figureTitle">Nursing Process (ADPIE)</p> 
 
 
 | Patient Care Process        | Analysis and Design                                  | Interfaces                                                                                                                         | Domain Archetype                                                                                                                                                                                                                         | Domain Entity (Resources)                                                                                   |
@@ -140,7 +140,6 @@ graph TD;
     class Assessment yellow
     class Plan green
 ```
-
 
 ## Technical Overview
 
