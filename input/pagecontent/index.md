@@ -6,11 +6,23 @@ The `Patient Care Coordination (Community)` is designed around supporting clinic
 
 ```mermaid
 graph TD;
-    A[Assessment]-->|Observation| B;
-    B[Diagnosis]-->|Condition| C;
-    C[Plan]-->|Goal| D;
-    D[Implement/Interventions]-->|Task| E;
-    E[Evaluate]-->A;
+    Assessment[Assessment]-->|Create Observation| Diagnosis;
+    Assessment --> |Create Observation| ClinicalDecisionSupport
+    Assessment --> |Create Order| DiagnosticTesting
+
+    ClinicalDecisionSupport[Clinical Decision Support]  --> |"Create Observation (Score)<br/>Cinical Assessment"| Diagnosis
+    DiagnosticTesting[Diagnostic Testing] --> |"Sends Report <br/> Observations)"| Diagnosis
+    Diagnosis[Create Diagnosis]-->|Condition| Plan;
+    Plan -->|Create Goal| Implement;
+    Implement[Implement/Interventions]-->|Perform Tasks| Evaluate;
+    Evaluate[Evaluate]-->Assessment;
+
+    EPR[fas:fa-database Electronic Patient Record] 
+    Assessment --> |Read Care Record| EPR
+    Diagnosis --> |Read Care Record| EPR
+    Plan --> |Read Care Record| EPR
+    Implement --> |Read Care Record| EPR
+    Evaluate --> |Read Care Record| EPR
     
     classDef yellow fill:#FFF2CC;
     classDef pink fill:#F8CECC
@@ -18,36 +30,62 @@ graph TD;
     classDef blue fill:#DAE8FC;
     classDef orange fill:#FFE6CC;
 
-    class A pink
-    class B yellow
-    class C green
-    class D blue
-    class E orange
+    class Assessment pink
+    class Diagnosis yellow
+    class Plan green
+    class Implement blue
+    class Evaluate orange
 ```
 
 <img style="padding:3px;width:80%;" src="NursingProcess.png" alt="Nursing Process (ADPIE)"/>
 <br clear="all">
 <p class="figureTitle">Nursing Process (ADPIE)</p> 
 
-This uses a series of common data and interaction standards (green in the diagram below) which allow different applications to be connected together. These interfaces will often provide a layer of extraction of over other interfaces such as:
+## How to Read this IG
 
-- [Consultation Note](consultation-note.html)
-  - GP Connect Send Document
-  - NHS England Digital Medicines
-  - NHS England IM1 Transaction API
-- [Referral Letter](referral-letter.html)
-  - NHS England Booking and Referral Standard (BARS)
-  - NHS England Electroninc Referral System (eRS)
-- Patient Clinical Data Sharing
-  - GP Connect Access Record: HTML
-  - GP Connect Access Record: Structured
-  - GP Connect Access Record: Document
-  - NHS England IM1 Transaction API
-- Care and Patient Directory 
-  - NHS England Personnel Demographic Service (PDS)
-  - Directory of Service (DoS)
-  - Organisation Data Service
-  - Spine Directory Service
+<table >
+  <thead>
+    <tr>
+      <th></th>
+      <th>Menu Item</th>
+      <th>Description</th>
+      <th>Audience</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="background-color: #E1D5E7">&nbsp;&nbsp;</td>
+      <td>Analysis and Design (Volume 1)</td>
+      <td>Description of the processes and corresponding technical frameworks</td>
+      <td>General</td>
+    </tr>
+    <tr>
+      <td style="background-color: #F8CECC">&nbsp;&nbsp;</td>
+      <td>Interfaces (Volume 2)</td>
+      <td>Description of the processes and corresponding technical frameworks (HL7 v2 and FHIR Interactions)</td>
+      <td>Detailed Technical (Integration Developer)</td>
+    </tr>
+    <tr>
+      <td style="background-color: #DAE8FC">&nbsp;&nbsp;</td>
+      <td>Domain Archetype (Volume 3)</td>
+      <td>Forms, Templates, Reports and Compositions</td>
+      <td>Data Modeling (Detailed Technical)</td>
+    </tr>
+    <tr>
+      <td style="background-color: #DAE8FC">&nbsp;&nbsp;</td>
+      <td>Artefacts (Volume 4)</td>
+      <td>Common Data Models</td>
+      <td>Detailed Technical</td>
+    </tr>
+    <tr>
+      <td style="background-color: #DAE8FC">&nbsp;&nbsp;</td>
+      <td>Development</td>
+      <td>Testing, Suppport and Architecture</td>
+      <td>Detailed Technical (Developer)</td>
+    </tr>
+  </tbody>
+</table>
+
 
 <table style="width:80%">
   <tr>
@@ -57,6 +95,39 @@ This uses a series of common data and interaction standards (green in the diagra
     </td>
   </tr>
 </table>
+
+| Patient Care Process        | Analysis and Design                                  | Interfaces                                                                                                                         | Domain Archetype                                                                                                                                                                                                                         | Domain Entity (Resources)                                                                                   |
+|-----------------------------|------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
+| Assessment                  |                                                      | Device Dats Capture <br/> [Structured Data Capture](Stuctured Data Capture)                                                        | [Vital Signs](Questionnaire-VitalSigns.html) <br/> [Physical Activity](Questionnaire-DailyPhysicalActivity.html) <br/> [Exercise Activity](Questionnaire-ExerciseActivity.html) <br/> [Social Context](Questionnaire-SocialContext.html) | [Observation](StructureDefinition-Observation.html)                                                         |
+| - Clinical Decision Support | [Clinical Assessment ACDC](clinical-assessment.html) |                                                                                                                                    |                                                                                                                                                                                                                                          |                                                                                                             |
+| Diagnosis                   |                                                      |                                                                                                                                    |                                                                                                                                                                                                                                          | [Condition](StructureDefinition-Condition.html)                                                             |
+| Plan                        |                                                      |                                                                                                                                    |                                                                                                                                                                                                                                          | [Goal](StructureDefinition-Goal.html) <br/> [Care Plan](StructureDefinition-CarePlan.html)                  |
+| Implement                   |                                                      |                                                                                                                                    |                                                                                                                                                                                                                                          | [Task](StructureDefinition-Task.html) <br/> [MedicationRequest](StructureDefinition-MedicationRequest.html) |
+| - Order                     | [Patient Referral 360X](360X.html)                   |                                                                                                                                    | [Referral Letter](referral-letter.html)                                                                                                                                                                                                  |                                                                                                             |
+| - Report/Consultation Note  | [Patient Referral 360X](360X.html)                   |                                                                                                                                    | [Consultation Note](consultation-note.html)                                                                                                                                                                                              |                                                                                                             |
+| Evaluate                    |                                                      |                                                                                                                                    |                                                                                                                                                                                                                                          |                                                                                                             |
+| Electronic Patient Record   | [Health Information Exchange HIE](HIE.html)          | [IHE Query for Existing Data QEDm PCC-44](https://profiles.ihe.net/PCC/QEDm/PCC-44.html) <br/> [IHE Health Documents MHD ITI-67](https://profiles.ihe.net/ITI/MHD/ITI-67.html) | [Patient Care Record](A04.html)                                                                                                                                                                                                          | Varies [Resources](artifacts.html#structures-resource-profiles)                                                                                        |                                                                                        |
+
+This uses a series of common data and interaction standards (green in the diagram below) which allow different applications to be connected together. These interfaces will often provide a layer of extraction of over other interfaces such as:
+
+- [Consultation Note](consultation-note.html)
+    - GP Connect Send Document
+    - NHS England Digital Medicines
+    - NHS England IM1 Transaction API
+- [Referral Letter](referral-letter.html)
+    - NHS England Booking and Referral Standard (BARS)
+    - NHS England Electroninc Referral System (eRS)
+- Patient Clinical Data Sharing
+    - GP Connect Access Record: HTML
+    - GP Connect Access Record: Structured
+    - GP Connect Access Record: Document
+    - NHS England IM1 Transaction API
+- Care and Patient Directory
+    - NHS England Personnel Demographic Service (PDS)
+    - Directory of Service (DoS)
+    - Organisation Data Service
+    - Spine Directory Service
+
 
 ### Enterprise and Data Standards
 

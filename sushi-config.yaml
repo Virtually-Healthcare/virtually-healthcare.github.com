@@ -490,7 +490,7 @@ menu:
   Home: index.html
   Analysis and Design (Vol 1):
      Patient Referral and Consultation Note [360X]: 360X.html
-     Data Capture [SDC]: data-capture.html
+     Stuctured Data Capture [SDC]: data-capture.html
      Clinical Assessment [ACDC]: clinical-assessment.html
      Health Information Exchange (HIE): HIE.html
 #    Mobile access to Health Documents (MHD): MHD.html
@@ -498,13 +498,13 @@ menu:
 #    Internet User Authorization (IUA): IUA.html
   Interfaces (Vol 2):
      Introduction: interfaces-introduction.html
-     Shared Patient Record: A04.html
      Patient Referral [PCC-55]: I12.html
      Discharge Report [PCC-57]: A03.html
      Task Conversations: Tasking.html
 #    eReport: R01.html
 
   Domain Archetypes:
+    Patient Care Record: A04.html
     Referral Letter (Template): Questionnaire-PatientReferral.html
     Consultation Note (Composition): StructureDefinition-ConsulationNote.html
     Patient Summary (Composition): StructureDefinition-PatientSummary.html
