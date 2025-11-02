@@ -53,7 +53,7 @@ The `Patient Care Coordination (Community)` is designed around supporting clinic
 graph TD;
     Start --> |Perform Patient Administration| Assessment
     Assessment[Assessment]-->|Create Observations| Diagnosis;
-    Assessment --> |Create Observations| ClinicalDecisionSupport
+    Assessment --> |"Shares Observations from Data Capture"| ClinicalDecisionSupport
     Assessment --> |Create Order| DiagnosticTesting
 
     ClinicalDecisionSupport[Clinical Decision Support]  --> |"Create Observation (Score)<br/>Cinical Assessment"| Diagnosis
