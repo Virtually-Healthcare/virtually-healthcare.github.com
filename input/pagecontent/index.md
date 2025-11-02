@@ -113,7 +113,7 @@ While this description reflects a physician-centered workflow, the [clinical pro
 
 The data archetype associated with this is [Consultation Note](StructureDefinition-ConsulationNote.html) 
 
-Event notifications are common in secondary care, where they are known as **HL7 v2 Admission, Discharge and Transder (ADT)** and also [IHE Patient Administration Management (PAM) - Patient Encounter](https://profiles.ihe.net/ITI/TF/Volume1/ch-14.html#14.2.1). *Note that HL7 FHIR does not currently define a specific standard for these event notifications.*
+Event notifications are common in secondary care, where they are known as **HL7 v2 Admission, Discharge and Transfer (ADT)** and also [IHE Patient Administration Management (PAM) - Patient Encounter](https://profiles.ihe.net/ITI/TF/Volume1/ch-14.html#14.2.1). *Note that HL7 FHIR does not currently define a specific standard for these event notifications.*
 Some general practice (GP) systems do, however, receive such encounter notifications from secondary care.
 
 ```mermaid
