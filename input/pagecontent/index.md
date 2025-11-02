@@ -118,20 +118,21 @@ Some general practice (GP) systems do, however, receive such encounter notificat
 
 ```mermaid
 graph TD;
-    EncounterStart[Start Encounter] --> Subjective
+    Start[Start] --> Subjective
     Subjective --> Objective 
     Objective --> Assessment 
     Assessment[Assessment / Differential Diagnosis] --> Plan 
-    Plan --> EncounterEnd
+    Plan --> End
     Subjective --> |View Patient Record| HIE[fas:fa-database Clinical Portal /<br/> Electronic Patient Record /<br/> Health Information Exchange] 
-    EncounterEnd --> |Encounter Notification| Other["Other Practitioners and <br/>Patient (if not present)"]
+    End --> |Encounter Notification| Other["Other Practitioners and <br/>Patient (if not present)"]
     Subjective --> |Query Patient| Patient
     Objective --> Patient 
 
     Subjective --> |Create Observations| EPR[fas:fa-database Electronic Patient Record] 
     Objective --> |Create Observations| EPR[fas:fa-database Electronic Patient Record] 
     Assessment --> |Create Condition| EPR[fas:fa-database Electronic Patient Record] 
-    Plan --> |Create Tasks and Orders| EPR[fas:fa-database Electronic Patient Record] 
+    Plan --> |Create Tasks| EPR[fas:fa-database Electronic Patient Record] 
+    Plan --> |"Create Prescriptions and Orders (Referrals and Diagnostic)"| Other
 
     classDef yellow fill:#FFF2CC;
     classDef pink fill:#F8CECC
