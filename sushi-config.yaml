@@ -512,6 +512,7 @@ menu:
     Referral Letter (Template): Questionnaire-PatientReferral.html
     Consultation Note (Composition): StructureDefinition-ConsulationNote.html
     Patient Care Record: StructureDefinition-PatientCare.html
+    Care Plan (Template): Questionnaire-CarePlan.html
     Vital Signs (Template): Questionnaire-VitalSigns.html
     Daily Physical Activity (Template): Questionnaire-DailyPhysicalActivity.html
     Exercise Activity (Template): Questionnaire-ExerciseActivity.html
