@@ -1,11 +1,15 @@
 
-### References
+## References
 
 - [PRSB Community Pharmacy Standard](https://theprsb.org/standards/communitypharmacy/)
 - [NHS England Clinical Observations](https://simplifier.net/guide/ClinicalObservations/Home)
 - [LOINC Vital signs, weight, height, head circumference, oxygen saturation and BMI panel](https://loinc.org/85353-1)
 
-### Overview 
+## Domain Archetype
+
+<div class="alert alert-info" role="alert">
+Archetype Viewer <a href="https://project-wildfyre.github.io/domain-archetype/?q=https://virtually-healthcare.github.io/Questionnaire-VitalSigns.json" target="_blank">Questionnaire-VitalSigns</a>
+</div>
 
 This relates to the *Vital Signs* section of the [HL7 International Patient Summary](https://build.fhir.org/ig/HL7/fhir-ips/Structure-of-the-International-Patient-Summary.html#vital-signs)
 
@@ -38,6 +42,4 @@ These are additional observations which will be present in a patients (mobile de
 | Blood Glucose               | [997671000000106](http://snomed.info/id/997671000000106)  | Blood glucose level                           |                                      |                 |           |
 | Atrial Fibrillation Burden  | [713801000000102](http://snomed.info/id/713801000000102)    | Atrial fibrillation monitoring administration |                                      |
 
-<div class="alert alert-info" role="alert">
-Archetype Viewer <a href="https://project-wildfyre.github.io/domain-archetype/?q=https://virtually-healthcare.github.io/Questionnaire-VitalSigns.json" target="_blank">Questionnaire-VitalSigns</a>
-</div>
+

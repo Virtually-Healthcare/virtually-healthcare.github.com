@@ -1,4 +1,12 @@
+## References
+
 This is related to the [HL7 Physical Activity Implementation Guide](https://build.fhir.org/ig/HL7/physical-activity/)
+
+## Domain Archetype
+
+<div class="alert alert-info" role="alert">
+Archetype Viewer <a href="https://project-wildfyre.github.io/domain-archetype/?q=https://virtually-healthcare.github.io/Questionnaire-DailyPhysicalActivity.json" target="_blank">Questionnaire-DailyPhysicalActivity</a>
+</div>
 
 | Panel | SNOMED CT | SNOMED CT Display | LOINC | Example |
 |-------|-----------|-------------------|-------|---------|
@@ -11,6 +19,4 @@ This is related to the [HL7 Physical Activity Implementation Guide](https://buil
 | Average Resting Heart Rate |           |                   | [40443-4](https://loinc.org/40443-4) and [8867-4](https://loinc.org/8867-4) | Quantity        | /min        | [Average resting heart rate example](Observation-ea09866e-d540-4d9c-ba9c-8e22338e524c.html) | 
 | Calories per Day           |           |                   | [41979-6](https://loinc.org/41979-6)                                        | Quantity        | kcal/(24.h) | [Calories per Day example](Observation-b8df13d9-86f3-4545-9e82-50bca88090d9.html)          | 
 
-<div class="alert alert-info" role="alert">
-Archetype Viewer <a href="https://project-wildfyre.github.io/domain-archetype/?q=https://virtually-healthcare.github.io/Questionnaire-DailyPhysicalActivity.json" target="_blank">Questionnaire-DailyPhysicalActivity</a>
-</div>
+

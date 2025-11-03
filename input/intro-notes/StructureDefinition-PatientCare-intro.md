@@ -4,7 +4,7 @@
 - [HL7 International Patient Access](https://build.fhir.org/ig/HL7/fhir-ipa/) 
 - [NHS England - GP Connect Access Record HTML](https://developer.nhs.uk/apis/gpconnect-0-7-4/accessrecord_development_html_layout_guide.html) ]
 
-## Overview
+## Domain Archetype
 
 <figure>
 {%include patient-summary-mindmap.svg%}
