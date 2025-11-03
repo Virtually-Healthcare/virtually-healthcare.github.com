@@ -250,6 +250,10 @@ resources:
     name: Patient Communication
     description: Patient Communication
     exampleBoolean: false
+  Questionnaire/CarePlan:
+    name: Care Plan
+    description: Care Plan
+    exampleBoolean: false
   Task/Task-EMIS-PFS-Prescription-Refill:
     name: Task-EMIS-PFS-Prescription-Refill
     description: Task EMIS PFS Prescription Refill

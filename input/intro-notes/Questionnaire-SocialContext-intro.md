@@ -3,13 +3,12 @@
 Archetype Viewer <a href="https://project-wildfyre.github.io/domain-archetype/?q=https://virtually-healthcare.github.io/Questionnaire-SocialContext.json" target="_blank">Questionnaire-SocialContext</a>
 </div>
 
-Is based on:
+## Reference
 
-- Social Context section of [PRSB Social Prescribing Standard](https://theprsb.org/standards/social-prescribing-standard/)
-
-See also:
-
-- USA Social determinants of health (SDOH) Clinical Care [SDOHCC Questionnaire PRAPARE](https://build.fhir.org/ig/HL7/fhir-sdoh-clinicalcare/Questionnaire-SDOHCC-QuestionnairePRAPARE.html)
+- PRSB Social Context sections from:
+  - [Core Information Standard](https://prsb2.vercel.app/page/core-information-standard?hsCtaTracking=412c8eeb-e7f4-4353-b506-7f6dfbfcda94%7C1046f173-8053-4747-b51b-00082e3c3db8)
+  - [Social Prescribing Standard](https://theprsb.org/standards/social-prescribing-standard/)
+- US Social determinants of health (SDOH) Clinical Care [SDOHCC Questionnaire PRAPARE](https://build.fhir.org/ig/HL7/fhir-sdoh-clinicalcare/Questionnaire-SDOHCC-QuestionnairePRAPARE.html)
 
 ### Observation Examples
 

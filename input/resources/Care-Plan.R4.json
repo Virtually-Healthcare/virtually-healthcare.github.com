@@ -1,0 +1,219 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "CarePlan",
+  "meta": {
+    "profile": [
+      "https://fhir.virtually.healthcare/StructureDefinition/Questionnaire"
+    ]
+  },
+  "url": "https://fhir.virtually.healthcare/Questionnaire/CarePlan",
+  "title": "Care Plan",
+  "status": "draft",
+  "description": "This is a summary care plan - detail will be recorded elsewhere",
+  "item": [
+    {
+      "item": [
+        {
+          "type": "string",
+          "linkId": "777970101498",
+          "text": "NHS Number"
+        },
+        {
+          "type": "string",
+          "linkId": "273775960222",
+          "text": "Medical Record Number"
+        },
+        {
+          "type": "string",
+          "linkId": "443096592865",
+          "text": "Case/Episode/Account ID"
+        }
+      ],
+      "type": "group",
+      "linkId": "646382388557",
+      "text": "Patient Administration"
+    },
+    {
+      "item": [
+        {
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-preferredTerminologyServer",
+              "valueUrl": "https://snowstorm.ihtsdotools.org/fhir"
+            }
+          ],
+          "linkId": "202924275870",
+          "text": "Condition",
+          "required": false,
+          "repeats": true,
+          "answerValueSet": "http://snomed.info/sct/900000000000207008?fhir_vs=ecl/%3C404684003"
+        }
+      ],
+      "type": "group",
+      "linkId": "525590025574",
+      "text": "Addresses"
+    },
+    {
+      "item": [
+        {
+          "type": "string",
+          "linkId": "692401202597",
+          "text": "Name"
+        },
+        {
+          "type": "string",
+          "linkId": "868349382149",
+          "text": "Role"
+        },
+        {
+          "type": "string",
+          "linkId": "346065787961",
+          "text": "Contact (email/telephone)",
+          "repeats": true
+        }
+      ],
+      "type": "group",
+      "linkId": "931078068583",
+      "text": "Care Team",
+      "repeats": true
+    },
+    {
+      "item": [
+        {
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-preferredTerminologyServer",
+              "valueUrl": "https://snowstorm.ihtsdotools.org/fhir"
+            }
+          ],
+          "linkId": "681625344075",
+          "text": "Goal",
+          "answerValueSet": "http://snomed.info/sct/900000000000207008?fhir_vs=ecl/%3C404684003"
+        },
+        {
+          "type": "choice",
+          "linkId": "704751126159",
+          "text": "Goal Status",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "proposed",
+                "display": "Proposed"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "planned",
+                "display": "Planned"
+              }
+            }
+          ]
+        }
+      ],
+      "type": "string",
+      "linkId": "160486328742",
+      "text": "Goals"
+    },
+    {
+      "item": [
+        {
+          "type": "choice",
+          "linkId": "887346701951",
+          "text": "Type",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "Appointment"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "Prescription"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "Communication"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "Referral"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "LaboratoryImagingOrder"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "Task"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "Device"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "Nutrition"
+              }
+            }
+          ]
+        },
+        {
+          "type": "string",
+          "linkId": "326614847823",
+          "text": "Intervention (Text)"
+        },
+        {
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-preferredTerminologyServer",
+              "valueUrl": "https://snowstorm.ihtsdotools.org/fhir"
+            }
+          ],
+          "linkId": "753942676497",
+          "text": "Intervention (Coded)",
+          "answerValueSet": "http://snomed.info/sct/900000000000207008?fhir_vs=ecl/%3C71388002"
+        },
+        {
+          "type": "choice",
+          "linkId": "770397997708",
+          "text": "Intervention Status",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "scheduled"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "in-progress"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "on-hold"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "completed"
+              }
+            }
+          ]
+        }
+      ],
+      "type": "group",
+      "linkId": "841970339775",
+      "text": "Intervention (current and planned)",
+      "repeats": true
+    }
+  ]
+}
