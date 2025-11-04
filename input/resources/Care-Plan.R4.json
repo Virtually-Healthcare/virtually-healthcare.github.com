@@ -1,13 +1,13 @@
 {
   "resourceType": "Questionnaire",
-  "id": "CarePlan",
+  "id": "TreatmentPlan",
   "meta": {
     "profile": [
       "https://fhir.virtually.healthcare/StructureDefinition/Questionnaire"
     ]
   },
-  "url": "https://fhir.virtually.healthcare/Questionnaire/CarePlan",
-  "title": "Care Plan",
+  "url": "https://fhir.virtually.healthcare/Questionnaire/TreatmentPlan",
+  "title": "Treatment Plan",
   "status": "draft",
   "description": "This is a summary care plan - detail will be recorded elsewhere",
   "item": [

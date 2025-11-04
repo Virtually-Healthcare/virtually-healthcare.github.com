@@ -1,3 +1,9 @@
+
+<div class="alert alert-danger" role="alert">
+This is currently being elaborated and subject to change.
+</div>
+
+
 ## References
 
 - [HL7 Europe Hospital Discharge Report](https://build.fhir.org/ig/hl7-eu/hdr/index.html)

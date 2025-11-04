@@ -15,5 +15,10 @@ This is currently being elaborated and subject to change.
 Archetype Viewer <a href="https://project-wildfyre.github.io/domain-archetype/?q=https://virtually-healthcare.github.io/Questionnaire-CarePlan.json" target="_blank">Questionnaire-CarePlan</a>
 </div>
 
+<figure>
+{%include treatment-plan-mindmap.svg%}
+<p id="fX.X.X.X-X" class="figureTitle">Treatment Plan Model</p>
+</figure>
+<br clear="all">
 
 

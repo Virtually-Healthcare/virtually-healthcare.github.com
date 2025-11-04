@@ -37,7 +37,6 @@ dependencies:
    version: 3.0.0
   hl7.fhir.uv.ipa: 1.0.0
   hl7.fhir.extensions.r5:
-    id: r5ext
     version: 4.0.1
     reason: |
       Makes available certain R5 elements for use as part of this R4 IG
@@ -250,9 +249,9 @@ resources:
     name: Patient Communication
     description: Patient Communication
     exampleBoolean: false
-  Questionnaire/CarePlan:
-    name: Care Plan
-    description: Care Plan
+  Questionnaire/TreatmentPlan:
+    name: Treatment Plan
+    description: Treatment Plan
     exampleBoolean: false
   Task/Task-EMIS-PFS-Prescription-Refill:
     name: Task-EMIS-PFS-Prescription-Refill
@@ -512,7 +511,7 @@ menu:
     Referral Letter (Template): Questionnaire-PatientReferral.html
     Consultation Note (Composition): StructureDefinition-ConsulationNote.html
     Patient Care Record: StructureDefinition-PatientCare.html
-    Care Plan (Template): Questionnaire-CarePlan.html
+    Treatment Plan (Template): Questionnaire-TreatmentPlan.html
     Vital Signs (Template): Questionnaire-VitalSigns.html
     Daily Physical Activity (Template): Questionnaire-DailyPhysicalActivity.html
     Exercise Activity (Template): Questionnaire-ExerciseActivity.html
