@@ -22,13 +22,6 @@ Archetype Viewer <a href="https://project-wildfyre.github.io/domain-archetype/?q
 </figure>
 <br clear="all">
 
-### Smoking use
-
-| Question               | SNOMED CT                                    | LOINC | Answer ValueSet <br/> SNOMED ECL | FHIR Value Type | Unit Code | Example                                                                  |
-|------------------------|----------------------------------------------|-------|----------------------------------|-----------------|-----------|--------------------------------------------------------------------------|
-| Current Smoking Status | [365981007](http://snomed.info/id/365981007) |       |                                 |                 |           | [Ex Smoker](Observation-a2cf5305-6de3-4ec5-8c7c-4c1b68b30d5c.html)       |
-| Data stopped smoking   | [160617001](http://snomed.info/id/160617001) |       |                                  |                 |           | [Stopped smoking](Observation-07604762-0a52-456f-9602-7f76b66da6af.html) |
-
 ### Alcohol use
 
 | Question               | SNOMED CT                                    | LOINC | Answer ValueSet <br/> SNOMED ECL | FHIR Value Type | Unit Code | Example                                                                                   |

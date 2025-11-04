@@ -516,6 +516,7 @@ menu:
     Daily Physical Activity (Template): Questionnaire-DailyPhysicalActivity.html
     Exercise Activity (Template): Questionnaire-ExerciseActivity.html
     Social Context (Template): Questionnaire-SocialContext.html
+    Smoking Status: Questionnaire-SmokingStatus.html
   Artefacts: artifacts.html
   Development:
     Testing: testing.html
